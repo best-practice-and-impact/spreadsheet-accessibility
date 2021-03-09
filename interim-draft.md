@@ -116,7 +116,7 @@ Make sure that links to the same destination have consistent text and that links
 
 ## Colour and formatting
 
-The following pointers must be followed to pass the accessibility regulations:
+The following pointers must be followed to pass the accessibility regulations at the legal AA level:
 
 * All written content follows the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
 * No cells with text have ‘hidden’ spaces at the start or end. 
