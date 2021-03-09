@@ -119,17 +119,17 @@ Make sure that links to the same destination have consistent text and that links
 The following pointers must be followed to pass the accessibility regulations:
 
 * All written content follows the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
-* The minimum font size used is size 12.
-* All fonts used are sans serif (for example, Arial or Calibri).
 * No cells with text have ‘hidden’ spaces at the start or end. 
 * No visual devices such as colour, shading or patterns are used to divide up data regions.
 * No text is set in a vertical or diagonal direction.
 * No text has spaces between letters in a word for visual effect. 
-* Colour is never used as the only way to communicate a message.
+* Colour is never used as the only way to communicate a message ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color))
 * Indentation is not used to indicate subsections (for example indenting a list of regions under a row for ‘England’).
 
 Other pointers in terms of best practice: 
-* Avoid the use of underline and italic text as this makes content hard to read for people with dyslexia - if you need to highlight text it is best to use bold. 
+* The minimum font size used is size 12 - this is important for people with low vision.
+* All fonts used are sans serif (for example, Arial or Calibri) - people with dyslexia find serif fonts hard to read. 
+* Avoid the use of underline and italic text - people with dyslexia can find italic and underlined tex hard to read, if you need to highlight text it is best to use bold. 
 * Avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour. 
 * Aim to use the ‘automatic’ colour settings for all text – doing this will ensure the spreadsheet takes on the specialised colour settings a user has set up on their software.
 * Avoid adding a background fill - some users will have settings that change the colour of the background and this can’t happen if you’ve put a fill colour in – even if it is white. 
@@ -139,18 +139,18 @@ Other pointers in terms of best practice:
 * Right align all data within a table and all column headings
 * Use commas after every three decimal places in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation).
 
-### Checking colour contrast  
+### Checking text colour contrast  
 
 If colour is used in cells with text, use the [WebAIM colour contrast checker](https://webaim.org/resources/contrastchecker/) to see if the colours meet the accessibility regulations. Remember, legally you need to meet the AA standard. 
 
 Be aware that colours are coded in different ways. To use the WebAIM colour contrast checker you will need to know the hex code of the colours. Excel will give you the Red Green Blue (RGB) codes - you can use this [colour code converter](https://www.webfx.com/web-design/hex-to-rgb/) to get the hex codes.  
 
-### Checking colours used in charts 
+### Checking colour contrast in charts 
 
-The use of colours in charts is more complex as you often have to consider contrast between colours as well as the contrast with the background. Our [data visualisation guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-9) and the [style guide from the Office for National Statistics](https://style.ons.gov.uk/category/data-visualisation/using-colours/) both have useful tips but neither have yet been fully updated with regards to the accessibility regulations. We are planning on looking into this in more detail soon. 
+The use of colours in charts is more complex as you often have to consider contrast between different colours as well as the contrast with the background. Our [data visualisation guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-9) and the [style guide from the Office for National Statistics](https://style.ons.gov.uk/category/data-visualisation/using-colours/) both have useful tips but neither have yet been fully updated with regards to the accessibility regulations. We are planning on looking into this in more detail soon. 
 
 ### Dates and time periods 
-Format dates and time periods as advised by the [Office for National Statistics style guide](https://style.ons.gov.uk/house-style/dates/) and [Government Digital Service guidance](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style). 
+It is best practice to format dates and time periods as advised by the [Office for National Statistics style guide](https://style.ons.gov.uk/house-style/dates/) and [Government Digital Service guidance](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style). 
 
 This means: 
 * do not use dashes, use ‘to’, for example, don’t use ‘Jan – Mar 2020’ use ‘Jan to Mar 2020’
