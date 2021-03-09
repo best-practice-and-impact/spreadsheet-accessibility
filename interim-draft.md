@@ -90,35 +90,50 @@ If an image is just decorative you should mark it as such by ticking the 'Decora
 
 ## Hyperlink text
 
-Embedding hyperlinks correctly is specifically mentioned in the accessibility guidelines. It comes under success criterion 2.4.4 Link Purpose (In Context) (A standard) and Guideline 3.2 Predictable.
-Hyperlink text should be a specific description of the destination, not just ‘blog post’ or ‘report’ for example. It should never be directional text like ‘click here’.
-Do not use the URL of a webpage as the hyperlink text, unless it is very short (e.g. www.unsplash.com). Long URLs get read out by a screen reader in full which can be very time consuming and annoying. Also, in most circumstances they do not describe the destination page.
-If you are linking to another document the link text should contain the descriptive text, the type of document and its size, for example: ‘Template to report breaches of the Code of Practice for Statistics (ODT, 23 KB)’.
-Screen readers can be programmed to read out a list of links within a document. When link text is not specific, the links will be difficult to tell apart so the person cannot easily find a link they may be interested in.
-When you write links, make sure that links to the same destination have consistent text and that links with different purposes and destinations have different link text. For example, it is bad practice to provide lots of links to different destinations with non-specific link text like ‘Find out more’.
-Link text should be underlined by default. If it is not underlined you have to consider colour contrast with surrounding text and a "visual cue" that appears on mouse hover and keyboard focus. 
-It is best practice for hyperlink text to be underlined and have the correct amount of colour contrast with the background and the surrounding text. 
+Embedding hyperlinks correctly is specifically mentioned in the accessibility guidelines. It comes under [success criterion 2.4.4 link purpose (in context)](https://www.w3.org/TR/WCAG21/#link-purpose-in-context) and [guideline 3.2 predictable](https://www.w3.org/TR/WCAG21/#predictable).
 
-Colour and formatting
+### Making hyperlinks accessible
 
-Pointers:
-•	Don’t use visual devices such as colour, shading, patterns or borders to divide up data regions. 
-•	Do not set text in a vertical or diagonal direction and do not add spaces between letters in a word for visual effect - screen reader and magnification users will find such text difficult or impossible to access.
-•	Do not use italic text – if you want to highlight something, use bold
-•	Avoid the use of colour to highlight a message whenever possible and never use it as the only way to communicate a message. 
-•	Aim to use the ‘automatic’ colour settings for all text – doing this will ensure the spreadsheet takes on the specialised colour settings a user has set up on their software.
-•	Avoid changing the colour of text to draw attention to it - if you do this you have to check the colour contrast of the text against the background colour. 
-•	The minimum font size used should be size 12.
-•	All fonts used should be sans serif (e.g. Arial or Calibri)
-•	We advise against adding a background fill as some users will have settings that change the colour of the background and this can’t happen if you’ve put a fill colour in – even if it is white. 
-•	We advise against adding grid lines or cell borders - in general it’s better to keep things simple
-•	Ensure all written content follows the advice in the ‘Making written content accessible’ section of the ‘Making analytical publications accessible’ guidance.
-•	If you have included any charts in your spreadsheet, note that the use of colour in charts is more complicated. Our data visualisation guidance has some tips but this hasn’t yet been updated with regards to the accessibility regulations. 
-•	Don’t use indentation to indicate subsections (for example indenting a list of regions under a row for ‘England’) - the extra spaces can be confusing for assistive technology and not best practice for machine readability 
-•	Left align all text in cells outside the table and all row headings within the table 
-•	Right align all data within a table and all column headings
-•	Make sure no cells with text have ‘hidden’ spaces at the start or end
-•	Use commas after every three decimal places in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation).
+1. Use specific descriptions 
+
+Hyperlink text should be a specific description of the destination, not just ‘blog post’ or ‘report’ for example. The text should never be directional text like ‘click here’. Bear in mind that screen readers can be programmed to read out a list of links within a document. When link text is not specific, the links will be difficult to tell apart so the person cannot easily find a link they may be interested in.
+
+2. Don't use URLs 
+
+Do not use the [URL](https://techterms.com/definition/url) of a webpage as the hyperlink text, unless it is very short (e.g. www.unsplash.com). Long URLs get read out by a screen reader in full which can be very time consuming and annoying. Also, in most circumstances they do not describe the destination page.
+
+3. Linking to documents 
+
+If you are linking to another document the link text should contain the descriptive text, the type of document and its size, for example: ‘[Template to report breaches of the Code of Practice for Statistics (ODT, 23 KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2020/10/Breach-reporting-template.odt)’.
+
+4. Consistency in signposting  
+
+Make sure that links to the same destination have consistent text and that links with different purposes and destinations have different link text. For example, it is bad practice to provide lots of links to different destinations with non-specific link text like ‘Find out more’.
+
+5. Formatting link text
+
+[Link text should be underlined by default](https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF). If it is not underlined the regulations say that you have to consider colour contrast with surrounding text and a 'visual cue' that appears on mouse hover and keyboard focus. Bear in mind that, while not a necessity in terms of the regulations, it is best practice for hyperlink text to be both underlined and have the correct amount of colour contrast with the background and the surrounding text. 
+
+## Colour and formatting
+
+### Pointers:
+* Do not use visual devices such as colour, shading or patterns to divide up data regions. 
+* Do not set text in a vertical or diagonal direction and do not add spaces between letters in a word for visual effect - screen reader and magnification users will find such text difficult or impossible to access.
+* Do not use italic text – if you want to highlight something, use bold
+* Avoid the use of colour to highlight a message whenever possible and never use it as the only way to communicate a message. 
+* Aim to use the ‘automatic’ colour settings for all text – doing this will ensure the spreadsheet takes on the specialised colour settings a user has set up on their software.
+* Avoid changing the colour of text to draw attention to it - if you do this you have to check the colour contrast of the text against the background colour. 
+* The minimum font size used should be size 12.
+* All fonts used should be sans serif (e.g. Arial or Calibri)
+* We advise against adding a background fill as some users will have settings that change the colour of the background and this can’t happen if you’ve put a fill colour in – even if it is white. 
+* We advise against adding grid lines or cell borders - in general it’s better to keep things simple
+* Ensure all written content follows the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
+* If you have included any charts in your spreadsheet, note that the use of colour in charts is more complicated. Our data visualisation guidance has some tips but this hasn’t yet been updated with regards to the accessibility regulations. 
+* Don’t use indentation to indicate subsections (for example indenting a list of regions under a row for ‘England’) - the extra spaces can be confusing for assistive technology and not best practice for machine readability 
+* Left align all text in cells outside the table and all row headings within the table 
+* Right align all data within a table and all column headings
+* Make sure no cells with text have ‘hidden’ spaces at the start or end
+* Use commas after every three decimal places in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation).
 
 Checking colour contrast  
 If colour is used in cells with text, use the WebAIM colour contrast checker to see if the colours meet the accessibility regulations. Remember, legally you need to meet the AA standard.  
