@@ -57,11 +57,16 @@ Make sure you add document information in. The accessibility regulations require
 ### Adding document information
 
 Go to ‘File’, then ‘Info’ and fill in the following fields:
-#### Title
+* Title
+
 This should replicate the title on the cover sheet (more information on cover sheets can be found in the relevant section of this guidance). Do not use dashes or underscores here.
-#### Author
+
+* Author
+
 Generally this should be the organisation that published the document – avoid using names of individuals.
-#### Keywords or Tags
+
+* Keywords or Tags
+
 Put in a list of terms that someone might use to search for the document, separated by commas. This helps search engines find the document. They also help with finding your document internally.
 
 ### Setting the document language
