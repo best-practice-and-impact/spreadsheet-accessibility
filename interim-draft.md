@@ -11,9 +11,11 @@ This guidance is based on the following success criterions in the international 
 * Success Criterion 1.4.3 Contrast (Minimum), level AA
 * Success Criterion 1.4.11 Non-text Contrast, level AA
 * Success Criterion 2.1.1 Keyboard, level A
+* Success Criterion 2.4.2 Page Titled, level A
 * Success Criterion 2.4.3 Focus Order, level A
 * Success Criterion 2.4.4 Link Purpose (In Context), level A
 * Success Criterion 2.4.6 Headings and Labels, level AA
+* Success Criterion 3.1.1 Language of Page, level A
 * Success Criterion 3.2.3 Consistent Navigation, level AA
 * Success Criterion 3.2.4 Consistent Identification, level AA
 
@@ -31,7 +33,7 @@ This guidance is based on the following success criterions in the international 
 * Feedback from the Digital Accessibility Centre (DAC) 
 
 ## Interim status 
-This guidance is still under review. We are publishing it in an interim state to give people a heads up on what they may need to implement and to collate feedback. When it is finalised it will be published on the Government Statistical Service webiste.  
+This guidance is still under review. We are publishing it in an interim state to give people information on what they may need to implement and to collate feedback. When it is finalised it will be published on the Government Statistical Service webiste.  
 
 ## Contents 
 
@@ -79,7 +81,7 @@ If you can’t avoid it, make sure all logos, graphics, charts and any other ima
 
 On newer versions of Excel you may just need to right click and select 'Edit Alt Text'. 
 
-If an image is just decorative you should mark it as such by ticking the decorative checkbox (Excel 2013 doesn’t let you do this but later versions do).
+If an image is just decorative you should mark it as such by ticking the 'Decorative' checkbox (Excel 2013 doesn’t let you do this but later versions do).
 
 ## Hyperlink text
 
