@@ -116,51 +116,63 @@ Make sure that links to the same destination have consistent text and that links
 
 ## Colour and formatting
 
-### Pointers:
-* Do not use visual devices such as colour, shading or patterns to divide up data regions. 
-* Do not set text in a vertical or diagonal direction and do not add spaces between letters in a word for visual effect - screen reader and magnification users will find such text difficult or impossible to access.
-* Do not use italic text – if you want to highlight something, use bold
-* Avoid the use of colour to highlight a message whenever possible and never use it as the only way to communicate a message. 
+The following pointers must be followed to pass the accessibility regulations:
+
+* All written content follows the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
+* The minimum font size used is size 12.
+* All fonts used are sans serif (for example, Arial or Calibri).
+* No cells with text have ‘hidden’ spaces at the start or end. 
+* No visual devices such as colour, shading or patterns are used to divide up data regions.
+* No text is set in a vertical or diagonal direction.
+* No text has spaces between letters in a word for visual effect. 
+* Colour is never used as the only way to communicate a message.
+* Indentation is not used to indicate subsections (for example indenting a list of regions under a row for ‘England’).
+
+Other pointers in terms of best practice: 
+* Avoid the use of underline and italic text as this makes content hard to read for people with dyslexia - if you need to highlight text it is best to use bold. 
+* Avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour. 
 * Aim to use the ‘automatic’ colour settings for all text – doing this will ensure the spreadsheet takes on the specialised colour settings a user has set up on their software.
-* Avoid changing the colour of text to draw attention to it - if you do this you have to check the colour contrast of the text against the background colour. 
-* The minimum font size used should be size 12.
-* All fonts used should be sans serif (e.g. Arial or Calibri)
-* We advise against adding a background fill as some users will have settings that change the colour of the background and this can’t happen if you’ve put a fill colour in – even if it is white. 
-* We advise against adding grid lines or cell borders - in general it’s better to keep things simple
-* Ensure all written content follows the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
-* If you have included any charts in your spreadsheet, note that the use of colour in charts is more complicated. Our data visualisation guidance has some tips but this hasn’t yet been updated with regards to the accessibility regulations. 
-* Don’t use indentation to indicate subsections (for example indenting a list of regions under a row for ‘England’) - the extra spaces can be confusing for assistive technology and not best practice for machine readability 
+* Avoid adding a background fill - some users will have settings that change the colour of the background and this can’t happen if you’ve put a fill colour in – even if it is white. 
+* Avoid adding grid lines or cell borders - in general it it better to keep things simple
+* Avoid including charts in your spreadsheet, if you must you should consider the accessibility of any charts carefully, particularly the colour contrast.
 * Left align all text in cells outside the table and all row headings within the table 
 * Right align all data within a table and all column headings
-* Make sure no cells with text have ‘hidden’ spaces at the start or end
 * Use commas after every three decimal places in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation).
 
-Checking colour contrast  
-If colour is used in cells with text, use the WebAIM colour contrast checker to see if the colours meet the accessibility regulations. Remember, legally you need to meet the AA standard.  
-Note on colour codes
-Colours are coded in different ways. To use the WebAIM colour contrast checker you will need to know the hex code of the colours. Excel will give you the Red Green Blue (RGB) codes - you can use this colour code converter to get the hex codes.  
-Dates and time periods 
-Format dates and time periods as advised by ONS and GDS guidance. This means: 
-•	don’t use dashes, use ‘to’, for example, don’t use ‘Jan – Mar 2020’ use ‘Jan to Mar 2020’
-•	it is fine to truncate days and months to save space
-•	don’t truncate years – for example, write: ‘Jan 1931’ not ‘Jan 31’ 
-•	when referring to quarters of the year, write out the months - for example, “Jan to Mar 2020’ not ‘Q1 2020’
-•	If your data needs specific dates e.g. 01/02/10 you can present them like this but be aware screen readers will read this as ‘01 slash 02 slash 10’ which can be annoying, so it is better to write ‘1 Feb 2010’
+### Checking colour contrast  
 
-Tables
-Simplify
+If colour is used in cells with text, use the [WebAIM colour contrast checker](https://webaim.org/resources/contrastchecker/) to see if the colours meet the accessibility regulations. Remember, legally you need to meet the AA standard. 
+
+Be aware that colours are coded in different ways. To use the WebAIM colour contrast checker you will need to know the hex code of the colours. Excel will give you the Red Green Blue (RGB) codes - you can use this [colour code converter](https://www.webfx.com/web-design/hex-to-rgb/) to get the hex codes.  
+
+### Checking colours used in charts 
+
+The use of colours in charts is more complex as you often have to consider contrast between colours as well as the contrast with the background. Our [data visualisation guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-9) and the [style guide from the Office for National Statistics](https://style.ons.gov.uk/category/data-visualisation/using-colours/) both have useful tips but neither have yet been fully updated with regards to the accessibility regulations. We are planning on looking into this in more detail soon. 
+
+### Dates and time periods 
+Format dates and time periods as advised by the [Office for National Statistics style guide](https://style.ons.gov.uk/house-style/dates/) and [Government Digital Service guidance](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style). 
+
+This means: 
+* do not use dashes, use ‘to’, for example, don’t use ‘Jan – Mar 2020’ use ‘Jan to Mar 2020’
+* it is fine to truncate days and months to save space
+* do not truncate years – for example, write: ‘Jan 1931’ not ‘Jan 31’ 
+* when referring to quarters of the year, write out the months, for example, “Jan to Mar 2020’ not ‘Q1 2020’
+* if your data needs specific dates for example: 01/02/10 you can present them like this but be aware screen readers will read this as ‘01 slash 02 slash 10’ which can be annoying, so it is best practice to write ‘1 Feb 2010’
+
+## Tables
+### Simplify
 Simplify your tables as much as possible.
-Merged cells
+### Merged cells
 Restructure your tables so there are no split cells or merged cells. This can seem daunting, but it is one of the crucial issues to address as it is key for both machine readability and accessibility 
-Nested tables
+### Nested tables
 Do not nest tables within other tables.
-Macros, formulas and application code
+### Macros, formulas and application code
 Do not use macros.
 Remove formulas, these can be confusing and pose a security risk. If you have to have them, ensure to hard code formulas to avoid accidental errors in use.
 Remove any application code contained in your spreadsheet.
-Blank rows and columns
+### Blank rows and columns
 Remove all blank rows and blank columns – blank rows and columns in the tables themselves may be perceived as the edge of the data area rather than a divider
-Mark up tables in spreadsheets
+### Mark up tables in spreadsheets
 Ensure your table is ‘marked up’ as a table – this is important because it: 
 •	allows headers and table edges to be identified by assistive technology 
 •	allows you to name your table which aids navigation 
