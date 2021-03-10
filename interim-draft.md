@@ -100,8 +100,8 @@ Pointers in terms of accessibility best practice:
 * All fonts used are sans serif (for example, Arial or Calibri) - people with dyslexia find serif fonts hard to read. 
 * Avoid the use of underline and italic text - people with dyslexia can find italic and underlined tex hard to read, if you need to highlight text it is best to use bold. 
 * Avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour (more information on how to do this can be found in the 'checking text colour contrast' section). 
-* Aim to use the ‘automatic’ colour settings for all text – doing this will ensure the spreadsheet takes on the specialised colour settings a user has set up on their software.
-* Avoid adding a background fill - some users will have settings that change the colour of the background but this doesn't happen automatically if you’ve put a fill colour in – even if it is white. 
+* Aim to use the 'default' or 'automatic' colour settings for all text - doing this will ensure the spreadsheet takes on the specialised colour settings users of assitive technology may have set up on their software.
+* Avoid adding a background fill - some users will have settings that automatically change the colour of the background but this doesn't happen if you’ve put a fill colour in – even if it is white. 
 * Avoid adding grid lines or cell borders - in general it it better to keep things simple.
 * Avoid including images of charts in your spreadsheet, if you do you must carefully consider their accessibility, particularly the colour contrast between chart elements.
 * Left align all text in cells outside the table and all row headings within the table 
@@ -144,42 +144,52 @@ We advise you to avoid publishing spreadsheets with macros in. It is difficult t
 It is also best practice to remove formulas and any application code contained in your spreadsheet. Formulas and code can cause confusion and they can pose a security risk. If you have to include formulas or code, ensure it is hard coded to avoid accidental errors in use.
 
 ### Blank rows and columns
-Remove all blank rows and blank columns. Blank rows and columns within the tables themselves may be perceived as the edge of the data area rather than a divider. Removing them will help you meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics). If blank rows and columns are used to  column width and row height to make visual space in a table. 
+Remove all blank rows and blank columns. Blank rows and columns within the tables themselves may be perceived as the edge of the data area rather than a divider. Removing them will help you meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics). If blank rows and columns are used to create space you can adjust column width and row height instead. 
 
 ### Mark up tables in spreadsheets
-Ensure your table is ‘marked up’ as a table – this is important because it: 
-•	allows headers and table edges to be identified by assistive technology 
-•	allows you to name your table which aids navigation 
-•	means the design ribbon will appear whenever you click within the table which is useful for making other edits 
-•	means a user will be able to tab through the data in a sensible way – for example when a user tabs to the end of the row, the next tab will take them to the start of the row below	
+Ensure your table is ‘marked up’ as a table – this is key to meeting [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships), [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [success criterion 2.4.3 focus order](https://www.w3.org/TR/WCAG21/#focus-order).
+
+Marking up a table:
+* allows a header row and table edges to be identified by assistive technology 
+* allows your table to be named and appear in the 'go to' tool which is a keyboard shortcut that aids navigation (you can test this out by pressing Ctrl + G when in your spreadsheet).
+* means a user will be able to tab through the data in a sensible way – for example when a user tabs to the end of the row, the next tab will take them to the start of the row below	
 Note: if you keep tabbing past the end of the last row it does lead to extra rows being added to the table. However, as the table is marked up correctly, users of assistive technology should know when they get to the end of a table, so this isn’t considered an issue.
-How to mark up a table in Excel: 
 
-•	Select the cells you want to include in the table.
-•	On the ‘Insert’ ribbon, select ‘Table’.
-•	In the ‘Create table’ dialog box, check the ‘My table has headers’ box
-•	Select ‘OK’.
+#### How to manually mark up a table in Excel: 
+Be aware these instructions may differ slightly for different versions of Excel. 
+
+* Select the cells you want to include in the table.
+* On the ‘Insert’ ribbon, select ‘Table’.
+* In the ‘Create table’ dialog box, check the ‘My table has headers’ box
+* Select ‘OK’.
+
 Excel will, by default, give you a table with alternating blue colours. It will also make every column a filter. This is not accessible. 
-Make the Excel default table accessible:
-•	Click somewhere in the table 
-•	Click the ‘Design’ ribbon.  
-•	Select a plain table format in the ‘table styles’ section – scroll right to the top and you’ll see the plainest option with no formatting. 
-•	Uncheck the ‘Filter button’ box in the Table options section. 
-•	Make all the text in the table minimum size 12. 
-•	Set the text in the header row to bold. 
-•	If your first column also contains information about the data, set this text to bold too. 
-•	Remember it is best practice to:
-o	left align all text in cells outside the table and all row headings within the table
-o	right align all data within a table and all column headings
-Example of a table formatted in a plain way
- 
 
-Adding headers to a table that is already marked up
-If the table is already created and you want to add headers:
-•	Place the cursor anywhere in the table.
-•	Click onto the ‘Design’ ribbon 
-•	Check the ‘Header row’ box 
-Column headings
+#### Make the Excel default table accessible:
+* Click somewhere in the table 
+* Click the ‘Design’ ribbon.  
+* Select a plain table format in the ‘table styles’ section – scroll right to the top and you’ll see the plainest option with no formatting (you can make this the default table format Excel chooses). 
+* Uncheck the ‘Filter Button’ box in the 'Table Style Options' section. 
+* Be aware, if you have row labels in the first column, the cell in the header row will automatically be labelled 'Column 1', it is best to replace this with something sensible. 
+
+It is best practice to also:
+
+* highlight column headings and row labels by setting the text to bold
+* choose the 'default' or 'automatic' colour for all text (not black)
+* left align all text in cells outside the table and all row labels within the table
+* right align all data within a table and all column headings
+
+##### Example of a table formatted in a plain way
+ <example to be added>
+
+#### Adding headers to a table that is already marked up
+
+If the table is already created and you want to add a header row:
+* Place the cursor anywhere in the table
+* Click onto the ‘Design’ ribbon 
+* Check the ‘Header Row’ box 
+
+### Column headings
 Excel will only let you tag one row as the header row.
 Consistency is important when it comes to column headings. Clear and consistent headings help usability and machine readability.  
 Follow a consistent naming convention - for example: ‘start_date_time’ and ‘end_date_time’ rather than mixing your naming conventions: ‘startdtTime’ and ‘end_date_time’.
