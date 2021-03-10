@@ -90,8 +90,8 @@ Pointers that must be followed:
 
 * All written content should follow the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
 * No visual devices such as colour, shading or patterns should be used to divide up data regions ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).
-* No text is set in a vertical or diagonal direction ([guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 4. distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable)).
-* No text has spaces between letters in a word for visual effect ([guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)) - screen readers will read letters instead of words if text is presented in this way. 
+* No text is set in a vertical or diagonal direction - this is not mentioned specifically in WCAG but we consider it necessary to pass ([guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 4. distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable)).
+* No text has spaces between letters in a word for visual effect as this can be difficult to read and screen readers will read the letters out one by one - this is not mentioned specifically in WCAG but we consider it necessary to pass ([guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)
 * Colour is never used as the only way to communicate a message ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color)).
 * The minimum font size used is size 12 - in general this will help you meet [success criterion 1.4.4 resize text](https://www.w3.org/TR/WCAG21/#resize-text).
 
@@ -155,8 +155,8 @@ Marking up a table:
 * means a user will be able to tab through the data in a sensible way – for example when a user tabs to the end of the row, the next tab will take them to the start of the row below	
 Note: if you keep tabbing past the end of the last row it does lead to extra rows being added to the table. However, as the table is marked up correctly, users of assistive technology should know when they get to the end of a table, so this isn’t considered an issue.
 
-#### How to manually mark up a table in Excel: 
-Be aware these instructions may differ slightly for different versions of Excel. 
+#### How to mark up a table in Excel: 
+Be aware these instructions may differ slightly for different versions of Excel. At the moment this is a manual process, but we are looking into ways to automate this. 
 
 * Select the cells you want to include in the table.
 * On the ‘Insert’ ribbon, select ‘Table’.
@@ -175,7 +175,7 @@ Excel will, by default, give you a table with alternating blue colours. It will 
 It is best practice to also:
 
 * highlight column headings and row labels by setting the text to bold
-* choose the 'default' or 'automatic' colour for all text (not black)
+* choose the 'default' or 'automatic' colour for all text (see the section on 'Colour and formatting' for more information on why this is important)
 * left align all text in cells outside the table and all row labels within the table
 * right align all data within a table and all column headings
 
@@ -190,36 +190,39 @@ If the table is already created and you want to add a header row:
 * Check the ‘Header Row’ box 
 
 ### Column headings
-Excel will only let you tag one row as the header row.
-Consistency is important when it comes to column headings. Clear and consistent headings help usability and machine readability.  
-Follow a consistent naming convention - for example: ‘start_date_time’ and ‘end_date_time’ rather than mixing your naming conventions: ‘startdtTime’ and ‘end_date_time’.
-If your spreadsheet uses multiple tabs, and the columns in these tabs hold similar or identical data, use the same column names. For example: in a spreadsheet listing employee satisfaction survey results, use ‘department_name’ in all tabs rather than ‘department_name’ in some and ‘name_of_department’ in others - this makes it easier to cross reference, manipulate and merge columns. 
+Every table in your spreadsheet must have a correctly tagged header row, as described in the 'Mark up tables in spreadsheets' section. This is key to pass [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
 
-Units
-If needed, put the units for your data in rounded brackets after the column heading – for example: ‘Number of people in employment (thousands)’. Ensure it is clearly indicated if your columns use different units. 
-It is best to space the information about units so it appears under the column header – you can do this by pressing Alt+Enter when typing in the cell. 
-Displaying units in a consistent way is important for usability and machine readability. 
+Bear in mind that Excel can only tag one row as the header row. It is not necessarily a fail if you have subheading rows but as they can't be tagged as headers it may make the table confusing - so it is best avoided, whenever possible. 
 
-Wrap text 
-Use the ‘wrap text’ function and adjust row height and column width to ensure all text you want to appear in cells within a table is visible and clearly spaced out - this is important because: 
-•	users with dyslexia can find it difficult to read crowded text
-•	a screen reader will repeatedly read out ‘overflowing’ or ‘cropped’ after every cell which contains text that does not fit.
-It is OK for text outside a table to overflow the cell – a screen reader will still read out ‘overflowing’ or ‘cropped’ but as this won’t be repetitive it is not a problem. 
-Symbols and footnotes 
-It is best practise to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in rounded brackets instead of using ‘p’ or ‘r’.
-When needed, using letters to signify notes is generally OK. However, using symbols should be avoided because: 
-•	they can be confusing
-•	screen readers may not recognise them 
-•	users with low vision may not be able to spot them easily
-If you need to use letters to signify notes you must provide a key and this key must be placed on the worksheet in a cell in column A, above the table. This ensures a user is made aware of the key before coming to the table – for example: 
+### Wrap text 
+
+Use the ‘wrap text’ function and adjust row height and column width to ensure all text you want to appear in cells within a table is visible and clearly spaced out - this is important because users with dyslexia can find it difficult to read crowded text. It is also important because a screen reader will repeatedly read out ‘overflowing’ or ‘cropped’ after every cell which contains text that does not fit.
+
+It is OK for text outside a table to overflow the cell – a screen reader will still read out ‘overflowing’ or ‘cropped’ but as this won’t be repetitive it is not a problem.
+
+We consider this to be necessary to passs [guideline 1.4 distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable) but it is not mentioned in the guidelines specifically. 
+
+### Symbols and footnotes 
+
+It is best practise to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in rounded brackets instead of using ‘p’ or ‘r’. When needed, using letters to signify notes is generally OK as long as the key to what these letters mean is clearly presented above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table – for example: 
+ <insert example>
+
+However, you should note use symbols to signify notes because: 
+* they can be confusing
+* screen readers may not recognise them 
+* users with low vision may not be able to spot them easily
+
+Therefore, if you use symbols to signify notes it may lead to a fail of [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
+
+Similar arguments can also be made for the use of superscript numbers and letters. So we also advise against using these. 
+
+When footnotes are needed, an accessible way to signify them is to use the word 'note'. If doing this, we advise you to:
+* write out the word ‘note’ in the cell, with the number of the note, and put it in square brackets (we advise square brackets for notes and rounded brackets for units to differentiate them in a consistent way)
+* put a list of numbers if a cell needs to refer to more than one note – for example, write ‘[note 1,2,3]’ if a cell needs to refer to notes 1, 2 and 3. 
+* try to always put notes in column headings or row labels, putting them in specific cells may not fail accessibility but it does cause problems for machine readability and usability 
+* if a note is in a column heading, space the text so the note marker sits underneath the column header and any information about units – for example: 
+ <insert example>
  
- 
-Avoid using footnotes, if it is unavoidable:
-•	write out the word ‘note’ in the cell, with the number of the note, and put it in square brackets 
-•	put a list of numbers if a cell needs to refer to more than one note – for example, write ‘[note 1,2,3]’ if a cell needs to refer to notes 1, 2 and 3.  
-•	If a note is in a column heading, space the text so the note marker sits underneath the column header and any information about units – for example: 
- 
-•	we advise square brackets for notes and rounded brackets for units to differentiate them in a consistent way
 Other uses for symbols 
 Symbols may be used in other ways. Be aware that some screen readers will skip over symbols completely. Consider how your text reads if you miss out the symbols, for example ‘Some shorthand is used in this spreadsheet, e = estimated, r = revised’ still makes sense if read out as ‘Some shorthand is used in this spreadsheet, e estimated, r revised’.  
 Generally the percentage symbol ‘%’ is well understood by screen readers. We are looking to put together more comprehensive advice for symbols soon.  
