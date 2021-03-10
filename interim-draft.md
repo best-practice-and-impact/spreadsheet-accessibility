@@ -84,18 +84,19 @@ Make sure that links to the same destination have consistent text and that links
 
 ## Colour and formatting
 
-Some of the Web Content Accessibility Guidelines 2.1 are generic in nature. We have put together the following pointers relating to colours and formatting and have used our own knowledge, research and interpretation to split them into things that must be followed in order to meet the legal accessibility regulations and things that are considered best practice. Please bear in mind that this is not set in stone, just a guide.  
+Some of the Web Content Accessibility Guidelines (WCAG) 2.1 are generic in nature. The following pointers on colour and formatting have been split into things that must be done in order to meet the legal accessibility regulations at the AA level and things that are considered best practice. Please bear in mind that this is a guide based on our knowledge, research and interpretation and may be subject to change as we learn more.    
 
-Pointers we feel must be followed in order to meet the WCAG 2.1 accessibility guidelines 2.1 at the AA level: 
+Pointers that must be followed: 
 
 * All written content should follow the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
-* No visual devices such as colour, shading or patterns should be used to divide up data regions. ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) [Success Criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics)
+* No visual devices such as colour, shading or patterns should be used to divide up data regions ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).
 * No text is set in a vertical or diagonal direction ([guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 4. distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable)).
 * No text has spaces between letters in a word for visual effect ([guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)) - screen readers will read letters instead of words if text is presented in this way. 
 * Colour is never used as the only way to communicate a message ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color)).
 * The minimum font size used is size 12 - in general this will help you meet [success criterion 1.4.4 resize text](https://www.w3.org/TR/WCAG21/#resize-text).
 
-Other pointers in terms of accessibility best practice: 
+Pointers in terms of accessibility best practice:
+
 * All fonts used are sans serif (for example, Arial or Calibri) - people with dyslexia find serif fonts hard to read. 
 * Avoid the use of underline and italic text - people with dyslexia can find italic and underlined tex hard to read, if you need to highlight text it is best to use bold. 
 * Avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour (more information on how to do this can be found in the 'checking text colour contrast' section). 
@@ -132,18 +133,19 @@ This means:
 ### Merged and split cells
 Restructure your tables so there are no split cells or merged cells. This can seem daunting, but it is one of the crucial issues to address as it is key for both machine readability and accessibility. 
 
-Merged and split cells make tables hard to understand for users of assistive technology, removing them means you are more likely to meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
+Merged and split cells make tables hard to understand for users of assistive technology, removing them helps you to meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
 
 ### Nested tables
-Do not nest tables within other tables, this kind of structure is difficult to understand for users of assistive technology ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)).
+Do not nest tables within other tables, this kind of structure is difficult to understand for users of assistive technology, removing them helps you meet ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)).
 
 ### Macros, formulas and application code
-Do not use macros.
+We advise you to avoid publishing spreadsheets with macros in. It is difficult to ensure these meet the accessibility regulations and, in general, they are bad for machine readability. 
 
-It is also best practice to remove formulas and any application code contained in your spreadsheet. Formulas and code may be confusing and can pose a security risk. If you have to include formulas or code, ensure it is hard coded to avoid accidental errors in use.
+It is also best practice to remove formulas and any application code contained in your spreadsheet. Formulas and code can cause confusion and they can pose a security risk. If you have to include formulas or code, ensure it is hard coded to avoid accidental errors in use.
 
 ### Blank rows and columns
-Remove all blank rows and blank columns – blank rows and columns in the tables themselves may be perceived as the edge of the data area rather than a divider
+Remove all blank rows and blank columns. Blank rows and columns within the tables themselves may be perceived as the edge of the data area rather than a divider. Removing them will help you meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics). If blank rows and columns are used to  column width and row height to make visual space in a table. 
+
 ### Mark up tables in spreadsheets
 Ensure your table is ‘marked up’ as a table – this is important because it: 
 •	allows headers and table edges to be identified by assistive technology 
