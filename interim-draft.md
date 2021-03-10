@@ -88,23 +88,21 @@ Some of the Web Content Accessibility Guidelines 2.1 are generic in nature. We h
 
 Pointers we feel must be followed in order to meet the WCAG 2.1 accessibility guidelines 2.1 at the AA level: 
 
-* All written content follows the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
-* No visual devices such as colour, shading or patterns are used to divide up data regions. ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) [Success Criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics)
-* No text is set in a vertical or diagonal direction ([guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)).
-* No text has spaces between letters in a word for visual effect ([guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)). 
-* Colour is never used as the only way to communicate a message ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color))
+* All written content should follow the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
+* No visual devices such as colour, shading or patterns should be used to divide up data regions. ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) [Success Criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics)
+* No text is set in a vertical or diagonal direction ([guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 4. distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable)).
+* No text has spaces between letters in a word for visual effect ([guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)) - screen readers will read letters instead of words if text is presented in this way. 
+* Colour is never used as the only way to communicate a message ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color)).
+* The minimum font size used is size 12 - in general this will help you meet [success criterion 1.4.4 resize text](https://www.w3.org/TR/WCAG21/#resize-text).
 
-Other pointers in terms of best practice: 
-* Indentation is not used to indicate subsections (for example indenting a list of regions under a row for ‘England’).
-* No cells with text have ‘hidden’ spaces at the start or end. 
-* The minimum font size used is size 12 - this is important for people with low vision.
+Other pointers in terms of accessibility best practice: 
 * All fonts used are sans serif (for example, Arial or Calibri) - people with dyslexia find serif fonts hard to read. 
 * Avoid the use of underline and italic text - people with dyslexia can find italic and underlined tex hard to read, if you need to highlight text it is best to use bold. 
 * Avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour (more information on how to do this can be found in the 'checking text colour contrast' section). 
 * Aim to use the ‘automatic’ colour settings for all text – doing this will ensure the spreadsheet takes on the specialised colour settings a user has set up on their software.
-* Avoid adding a background fill - some users will have settings that change the colour of the background and this can’t happen if you’ve put a fill colour in – even if it is white. 
+* Avoid adding a background fill - some users will have settings that change the colour of the background but this doesn't happen automatically if you’ve put a fill colour in – even if it is white. 
 * Avoid adding grid lines or cell borders - in general it it better to keep things simple.
-* Avoid including images of charts in your spreadsheet, if you do you must consider the accessibility of any charts carefully, particularly the colour contrast.
+* Avoid including images of charts in your spreadsheet, if you do you must carefully consider their accessibility, particularly the colour contrast between chart elements.
 * Left align all text in cells outside the table and all row headings within the table 
 * Right align all data within a table and all column headings
 * Use commas after every three decimal places in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation).
@@ -117,7 +115,7 @@ Be aware that colours are coded in different ways. To use the WebAIM colour cont
 
 ### Checking colour contrast in charts 
 
-The use of colours in charts is more complex as you often have to consider contrast between different colours as well as the contrast with the background. Our [data visualisation guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-9) and the [style guide from the Office for National Statistics](https://style.ons.gov.uk/category/data-visualisation/using-colours/) both have useful tips but neither have yet been fully updated with regards to the accessibility regulations. We are planning on looking into this in more detail soon. 
+The use of colours in charts is more complex as you often have to consider colour contrast between different chart elements as well as with the background. Our [data visualisation guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-9) and the [style guide from the Office for National Statistics](https://style.ons.gov.uk/category/data-visualisation/using-colours/) both have useful tips on this area but neither have yet been fully updated with regards to the accessibility regulations. We are planning on looking into this in more detail soon. 
 
 ### Dates and time periods 
 It is best practice to format dates and time periods as advised by the [Office for National Statistics style guide](https://style.ons.gov.uk/house-style/dates/) and [Government Digital Service guidance](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style). 
@@ -130,16 +128,20 @@ This means:
 * if your data needs specific dates for example: 01/02/10 you can present them like this but be aware screen readers will read this as ‘01 slash 02 slash 10’ which can be annoying, so it is best practice to write ‘1 Feb 2010’
 
 ## Tables
-### Simplify
-Simplify your tables as much as possible.
-### Merged cells
-Restructure your tables so there are no split cells or merged cells. This can seem daunting, but it is one of the crucial issues to address as it is key for both machine readability and accessibility 
+
+### Merged and split cells
+Restructure your tables so there are no split cells or merged cells. This can seem daunting, but it is one of the crucial issues to address as it is key for both machine readability and accessibility. 
+
+Merged and split cells make tables hard to understand for users of assistive technology, removing them means you are more likely to meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
+
 ### Nested tables
-Do not nest tables within other tables.
+Do not nest tables within other tables, this kind of structure is difficult to understand for users of assistive technology ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)).
+
 ### Macros, formulas and application code
 Do not use macros.
-Remove formulas, these can be confusing and pose a security risk. If you have to have them, ensure to hard code formulas to avoid accidental errors in use.
-Remove any application code contained in your spreadsheet.
+
+It is also best practice to remove formulas and any application code contained in your spreadsheet. Formulas and code may be confusing and can pose a security risk. If you have to include formulas or code, ensure it is hard coded to avoid accidental errors in use.
+
 ### Blank rows and columns
 Remove all blank rows and blank columns – blank rows and columns in the tables themselves may be perceived as the edge of the data area rather than a divider
 ### Mark up tables in spreadsheets
