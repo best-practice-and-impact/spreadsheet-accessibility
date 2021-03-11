@@ -13,11 +13,11 @@ Spreadsheets published online are covered by the Web Content Accessibility Guide
 
 Some of the Web Content Accessibility Guidelines (WCAG) 2.1 are generic in nature. Throughout this guidance, using our knowledge, research and interpretation of WCAG 2.1, we have tried to make a clear distinction between things we feel must be done in order to meet the legal accessibility regulations and things that are considered accessibility best practice.
 
-## Usability 
+### Usability 
 
 Some of our advice is based on best practice for improving the usability of spreadsheets. This often overlaps with our advice for accessibility. We outline when a piece of advice relates to usability but is not covered by the legal accessibility regulations. 
 
-## Machine readability 
+### Machine readability 
 
 Some sections mention best practice for machine readability. Often this overlaps with our advice for accessibility and usability. Sometimes it contradicts it. Depending on the complexity of your spreadsheets and your user needs you may need to publish two separate products, one for users who wish to download, read and analyse your spreadsheet and one for users who need your data to be optimsed for machine readability. 
 
@@ -174,7 +174,7 @@ Ensure your table is ‘marked up’ as a table – this is key to meeting [succ
 
 Marking up a table:
 * allows a header row and table edges to be identified by assistive technology 
-* allows your table to be named and appear in the 'go to' tool which is a keyboard shortcut that aids navigation (you can test this out by pressing Ctrl + G when in your spreadsheet).
+* allows your table to be named and appear in the 'go to' tool which is a keyboard shortcut that aids navigation (more information about this in the 'Naming tables' section)
 * means a user will be able to tab through the data in a sensible way – for example when a user tabs to the end of the row, the next tab will take them to the start of the row below	
 Note: if you keep tabbing past the end of the last row it does lead to extra rows being added to the table. However, as the table is marked up correctly, users of assistive technology should know when they get to the end of a table, so this isn’t considered an issue.
 
@@ -211,6 +211,21 @@ If the table is already created and you want to tag the header row:
 1. Place the cursor anywhere in the table
 2. Click onto the ‘Design’ ribbon 
 3. Check the ‘Header Row’ box 
+
+### Naming tables 
+
+If you have a spreadsheet with lots of worksheets and many tables, you should make sure the tables have meaningful names. This will aid navigation for everyone, but particularly for those who use assistive technology. It will also help you pass [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
+
+#### Name a table in Excel
+1. Click anywhere in the table
+2. Click the ‘Design’ ribbon 
+3. In the properties section there is a box to edit the table name - to be useful this name must be meaningful and describe the table. 
+4. Note that Excel doesn’t allow spaces or dashes in table names, words must be split up with underscores
+
+#### Check navigation with named tables
+
+If you want to see a list of all the tables in your worksheet go to the ‘Formulas’ ribbon and click ‘Name manager’. 
+To test out navigation you can click ‘Ctrl + G’. This brings up a ‘Go to’ tool. You can then click onto one of your tables and select ‘OK’ to be taken directly to that table. 
 
 ### Column headings
 Every table in your spreadsheet must have a correctly tagged header row, as described in the 'Mark up tables in spreadsheets' section. This is key to pass [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
@@ -292,40 +307,32 @@ In terms of usability, machine readability and accessibility ([success criterion
 
 ### Blank cells
 
-#### Accessibility 
+#### Accessibility and usability
 When cells with no data are left blank it can cause confusion for users of assistive technology because it makes it difficult for them to work out where the table starts and ends. Therefore, blank cells could be considered a fail of [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
 However, we are carrying out research into this, it may be the case that as long as a table is marked up correctly, blank cells within a table do not cause a problem for navigation with assistive technology. 
 
+In terms of usability, blank cells do not tell a user why there is no data in the cell - a user might assume the data value is zero when this is not the case.
+
+Therefore our current advice for cells with no data is to give users information about why there is no data, without using symbols like a minus sign (-) or full stops (..). Instead, blank cells should be marked up descriptively. 
+
+Here are some examples of descriptions you may want to use: 
+* If there is no data available, type in ‘no data’.
+* If the data is missing, type in ‘missing’.
+* If the data would be disclosive, type in 'disclosive'.
+
+We advise against using 'NA' as while in statistics this often means Not Available, many users will assume it means Not Applicable. If you want to use NA as shorthand you must clearly define what it means, above the table, in a cell in column A so the information is available before a users comes to the table itself. 
+
+The same advice stands if you want to expand on any of your descriptions of why a cell has no data. 
+
+##### Example of expanding on a description of a cell with no data
+<insert example>
+
+Please note - we are aware that leaving cells with no data blank may make it easier for users to perform further analysis, but this feature of usability has to be balanced against the accessibility regulations and the user need to understand why a cell has no data. As mentioned, our advice on blank cells may change as we do further research. 
+
 #### Machine readability 
 
-Leaving cells with no data blank is optimal for machine readability. 
-
-#### Usability
-
-* do not tell a user why there is no data in the cell - a user might assume the data value is zero when this is not the case
-
-In terms of understanding however, blank cells Give users information about why cells are empty, but do not use symbols like a minus sign (-) or full stops (..). Instead it is best to mark them up descriptively, for example: 
-* if there is no data available, type in ‘no data’
-* if the data is missing, type in ‘missing’
-* if the data is a very small amount (for example a very small percentage change) and you don’t want to publish the exact figure, type in ‘low’ – if you are happy to publish the exact figure it is fine to show a low figure rounded to zero. 
-
-Be aware that sometimes in statistics ‘NA’ can be used to mean Not Available, but many users will assume it means Not Applicable. If you use NA as shorthand you must clearly define what it means, above the table, in a key. 
-
-### Naming tables 
-
-If you have a spreadsheet with lots of worksheets and many tables, you should make sure the tables have meaningful names. This will aid navigation for everyone, but particularly for those who use assistive technology. 
-
-#### Name a table in Excel
-1. Click anywhere in the table
-2. Click the ‘Design’ ribbon 
-3. In the properties section there is a box to edit the table name - to be useful this name must be meaningful and describe the table. 
-4. Note that Excel doesn’t allow spaces or dashes in table names, words must be split up with underscores
-
-#### Check navigation with named tables
-
-If you want to see a list of all the tables in your worksheet go to the ‘Formulas’ ribbon and click ‘Name manager’. 
-To test out navigation you can click ‘Ctrl + G’. This brings up a ‘Go to’ tool. You can then click onto one of your tables and select ‘OK’ to be taken directly to that table. 
+In terms of machine readability leaving cells with no data blank is optimal. Therefore if you are making a spreadsheet solely for machine readability purposes it is best practice to leave cells with no data blank. 
 
 ### Adding alt text to tables 
 
@@ -337,44 +344,45 @@ If you save your spreadsheet in the ODS open format (which we advise you to do) 
 
 ### Adding filters
 
-Filters are not generally accessible as they can obscure data. 
+We advise you to avoid adding filters. They may fail the accessibility regulations if they obscure data. 
 
-If you do need to use filters it is important to provide signposts or comments to indicate which cells contain the drop-down menus and if any data is hidden. You should also give details of how to turn the filters off. For example: "Filters are active in cell C3 and may hide some data. To turn off all filters select the 'Data' ribbon then 'Filters' button or use [Ctrl, Shift, L]". This information should be near cell A1, not underneath a table. The placing of information like this should be consistent across the tabs of your spreadsheet, e.g. always in cell A2.  
+If you do need to use filters it is important to provide signposts or comments to indicate which cells contain the drop-down menus and if any data is hidden. You should also give details of how to turn the filters off. For example: "Filters are active in cell C3 and may hide some data. To turn off all filters select the 'Data' ribbon then 'Filters' button or use [Ctrl, Shift, L]". This information should be in a cell in column A, above the table. 
 
 ### Adding freeze panes
 
-Freeze panes can make it difficult for screen reader users to find the top left edge of a worksheet which is key to navigation.
+We advise you to avoid adding freeze panes. They may fail the accessibility regulations as they can make it difficult for screen reader users to find the top left edge of a worksheet which is key to navigation. 
 
 If you leave freeze panes active it is best practice to inform users and give a instructions for how to turn them off. For example: "Freeze panes are turned on. To turn off freeze panes select the 'View' ribbon then 'Freeze Panes' then 'Unfreeze Panes' or use [Alt W, F]". 
-As with filters, this information should be placed near cell A1 and this placing should be consistent across the tabs of your spreadsheet, e.g. always in cell A2.  
+As with filters, this information should be in a cell in column A, above the table. 
 
 Be aware that if you save your spreadsheet in the ODS open format (which we advise you to do) freeze panes will disappear. 
 
 ## Communicating uncertainty in spreadsheets
 
-When designing a statistical spreadsheet, consider how to appropriately communicate any uncertainty to your users. Bear in mind that the user may not read detailed documents, or they may have copied the spreadsheet to use in another context.
+When designing a statistical spreadsheet, it is best practice to consider how to appropriately communicate any uncertainty to your users. Bear in mind that the user may not read detailed documents, or they may have copied the spreadsheet to use in another context.
 
 Use notes or the cover sheet to: 
-* make it clear if there are any potential sources of bias or uncertainty – users need to know how this impacts on their use of the statistics.
+* make it clear if there are any potential sources of bias or uncertainty – users need to know how this impacts on their use of the statistics
 * highlight relevant information about comparability issues both across time and with equivalent statistics released elsewhere in the UK 
 
-For more information on notes and cover sheets please see the ‘symbols and footnotes’ section and the ‘Metadata worksheets’ section.
+For more information on notes and cover sheets please see the ‘Symbols and footnotes’ section and the ‘Metadata worksheets’ section.
 
 ### Confidence intervals 
 
-When communicating confidence intervals put the higher and lower bounds in separate cells next to the data. Make sure all columns have clearly labelled column headings. 
-Example:
+When communicating confidence intervals it is best practice to put the higher and lower bounds in separate cells next to the data. Make sure all columns have clearly labelled column headings [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
+
+#### Example of how to present confidence intervals:
 <insert example> 
  
 ### Statistical significance
 
 Note that the credibility of assessing statistics using significance levels is currently under debate.
 
-If you are communicating statistical significance show where a change is statistically significant in a separate cell to the data, ideally using words, for example: ‘Significant at 0.001 level’.
+If you are communicating statistical significance it is best practrice to show where a change is statistically significant in a separate cell to the data, ideally using words, for example: ‘Significant at 0.001 level’.
 
-If it is not possible to use words to describe the statistical significance, you can use shorthand as long as you provide a key, above the table, in a cell in column A (see the section on symbols and footnotes for more information about presenting keys). 
+If it is not possible to use words to describe the statistical significance, you can use shorthand as long as you provide a key, above the table, in a cell in column A (see the section on 'Symbols and footnotes' for more information about presenting information in a key). 
 
-In the past the asterisk symbol has traditionally been used to communicate the level of statistical significance. Not all screen readers can understand the asterisk symbol and many users of assistive technology can find them difficult to see and understand. Therefore, if it is not possible to use words to describe the statistical significance it is better to use some form of shorthand using letters rather than the asterisk symbol. 
+In the past the asterisk symbol (*) has traditionally been used to communicate the level of statistical significance. Not all screen readers can understand the asterisk symbol and many users of assistive technology can find them difficult to see and understand. Using them is likely to fail [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable). Therefore, if it is not possible to use words to describe the statistical significance it is better to use some form of shorthand using letters rather than the asterisk symbol. 
 
 
 ## Structure
