@@ -1,4 +1,4 @@
-# Releasing statistics in spreadsheets (interim version)
+# Releasing statistics in spreadsheets (interim version of update)
 
 ## Interim status 
 This guidance is an update to the 'Releasing statistics in spreadsheets' guidance on the [Government Statistical Service (GSS) website](https://gss.civilservice.gov.uk/). It is still under review. We are publishing it in an interim state to give people information on what they may need to implement and to collate feedback. We continue to carry out research and testing. When it is finalised it will be published on the GSS website.  
