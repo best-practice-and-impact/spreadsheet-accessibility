@@ -380,9 +380,9 @@ Note that the credibility of assessing statistics using significance levels is c
 
 If you are communicating statistical significance it is best practrice to show where a change is statistically significant in a separate cell to the data, ideally using words, for example: ‘Significant at 0.001 level’.
 
-If it is not possible to use words to describe the statistical significance, you can use shorthand as long as you provide a key, above the table, in a cell in column A (see the section on 'Symbols and footnotes' for more information about presenting information in a key). 
+If it is not possible to use words to describe the statistical significance, you can use shorthand. To make this accessible you must provide a key, above the table, in a cell in column A (see the section on 'Symbols and footnotes' for more information about presenting information in a key). 
 
-In the past the asterisk symbol (*) has traditionally been used to communicate the level of statistical significance. Not all screen readers can understand the asterisk symbol and many users of assistive technology can find them difficult to see and understand. Using them is likely to fail [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable). Therefore, if it is not possible to use words to describe the statistical significance it is better to use some form of shorthand using letters rather than the asterisk symbol. 
+In the past the asterisk symbol (*) has traditionally been used to communicate the level of statistical significance. Not all screen readers can understand the asterisk symbol and many users of assistive technology can find them difficult to see and understand. Using them is likely to fail [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable). Therefore, if it is not possible to use words to describe the statistical significance you should use some form of shorthand using letters rather than the asterisk symbol. 
 
 
 ## Structure
@@ -393,15 +393,13 @@ Properly structuring your content is important in order to meet [success criteri
 
 #### Provide supporting information 
 
-Statistics should not be completely separated from supporting information. Context and caveats are vital to ensure users have enough information to interpret and make effective use of the data. You should signpost to supporting information if it cannot be easily included within the spreadsheet tabs. 
+From a usability point of view, statistics should not be completely separated from supporting information. Context and caveats are vital to ensure users have enough information to interpret and make effective use of the data. You should signpost to supporting information if it cannot be easily included within the spreadsheet tabs. 
 
-#### Cover sheet
+#### Cover sheet and table of contents 
 
-Label your first worksheet ‘Cover_sheet’ and use it to provide information about what is in the spreadsheet (more information on this in the ‘Metadata worksheets’ section of this guidance).
+Label your first worksheet ‘Cover_sheet’ and use it to provide information about what is in the spreadsheet. If your spreadsheet has many worksheets, create a table of contents that describes the data within each worksheet.
 
-#### Table of contents
-
-If your spreadsheet has many worksheets, create a table of contents that describes the data within each worksheet (more information on this in the ‘Metadata worksheets’ section of this guidance).
+More guidance on cover sheets and the table of contents can be found in the ‘Metadata worksheets’ section of this guidance.
 
 #### Worksheet names
 
@@ -412,12 +410,12 @@ Keep worksheet tab names as consistent as you can between releases, as changing 
 
 #### Blank worksheets
 
-Remove any blank worksheets. Blank worksheets can be confusing as it is not clear if they are meant to be blank or if something is missing. 
+Remove any blank worksheets. Blank worksheets can be confusing as it is not clear if they are meant to be blank or if something is missing. They may also make navigation confusing for users of assistive technology. 
 
 #### Other things to avoid 
-* Headers and footers - do not use headers and footers to convey important information. 
-* Floating elements - do not use floating elements such as text boxes.
-* Floating toolbars - deactivate any floating toolbars as screen reader software may not be able to access populated cells behind them - if you do need to leave a floating toolbar active then attach it to the other Excel toolbars at the top of the window.
+* Do not use headers and footers to convey important information - this will fail accessibility as screen readers often can't find the information displayed in spreadsheet headers and footers.
+* Do not use floating elements such as text boxes - these will fail accessibility as screen readers often can't 'see' inside text boxes
+* Deactivate any floating toolbars - these may fail accessibility as screen reader software may not be able to access populated cells behind them - if you do need to leave a floating toolbar active then attach it to the other Excel toolbars at the top of the window.
 
 ### Pointers for structure within worksheets: 
 
