@@ -585,24 +585,6 @@ File names should:
 
 There isn’t a specific success criterion in the accessibility guidelines for file names but it comes under ensuring content is understandable by making it readable and predictable [guidelines 3.1 and 3.2](https://www.w3.org/TR/WCAG21/#readable).
 
-## Basis for this guidance
-
-This guidance is based on the following success criterions in the international [Web Content Accessibility Guidelines 2.1](https://www.w3.org/TR/WCAG21/):
-* Success Criterion 1.1.1 Non-text Content, level A
-* Success Criterion 1.3.1 Info and Relationships, level A
-* Success Criterion 1.3.2 Meaningful Sequence, level A
-* Success Criterion 1.3.4 Orientation, level AA
-* Success Criterion 1.4.1 Use of Colour, level A
-* Success Criterion 1.4.3 Contrast (Minimum), level AA
-* Success Criterion 1.4.11 Non-text Contrast, level AA
-* Success Criterion 2.1.1 Keyboard, level A
-* Success Criterion 2.4.2 Page Titled, level A
-* Success Criterion 2.4.3 Focus Order, level A
-* Success Criterion 2.4.4 Link Purpose (In Context), level A
-* Success Criterion 2.4.6 Headings and Labels, level AA
-* Success Criterion 3.1.1 Language of Page, level A
-* Success Criterion 3.2.3 Consistent Navigation, level AA
-* Success Criterion 3.2.4 Consistent Identification, level AA
 
 ## Sources for this guidance
 
