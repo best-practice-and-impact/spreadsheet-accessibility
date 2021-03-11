@@ -1,4 +1,4 @@
-# Releasing statistics in spreadsheets 
+# Releasing statistics in spreadsheets (interim version)
 
 ## Interim status 
 This guidance is still under review. We are publishing it in an interim state to give people information on what they may need to implement and to collate feedback. We continue to carry out research and testing. When it is finalised it will be published on the Government Statistical Service webiste.  
