@@ -287,9 +287,9 @@ It is also the case that, in complex spreadsheets, identical notes are often pla
 
 Finally, notes placed underneath a table are bad practice for machine readability. 
 
-For these reasons we advise you to create a worksheet called ‘Notes’ which contains a table that lists all the notes for the spreadsheet. 
+For these reasons we advise you to create a worksheet called ‘Notes’ which contains a table that lists all the detailed notes for the spreadsheet. 
 
-In terms of accessibility, if you use notes it is best practice to mention this above your tables, in a cell in column A and say where the notes can be found. 
+In terms of accessibility, if you use notes it is best practice to mention this above your tables, in a cell in column A and say where the notes can be found (more information about use of cells in column A can be found in the 'Structure' section of this guidance). 
 
 ##### Example of talking about notes above a table
 <insert example>
@@ -368,7 +368,7 @@ For more information on notes and cover sheets please see the ‘Symbols and foo
 
 ### Confidence intervals 
 
-When communicating confidence intervals it is best practice to put the higher and lower bounds in separate cells next to the data. Make sure all columns have clearly labelled column headings [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
+When communicating confidence intervals put the higher and lower bounds in separate cells next to the data. Make sure all columns have clearly labelled column headings [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
 
 #### Example of how to present confidence intervals:
 <insert example> 
@@ -377,7 +377,7 @@ When communicating confidence intervals it is best practice to put the higher an
 
 Note that the credibility of assessing statistics using significance levels is currently under debate.
 
-If you are communicating statistical significance it is best practrice to show where a change is statistically significant in a separate cell to the data, ideally using words, for example: ‘Significant at 0.001 level’.
+If you are communicating statistical significance show where a change is statistically significant in a separate cell to the data. Ideally this should be done using words, for example: ‘Significant at 0.001 level’.
 
 If it is not possible to use words to describe the statistical significance, you can use shorthand. To make this accessible you must provide a key, above the table, in a cell in column A (see the section on 'Symbols and footnotes' for more information about presenting information in a key). 
 
@@ -386,13 +386,13 @@ In the past the asterisk symbol (*) has traditionally been used to communicate t
 
 ## Structure
 
-Properly structuring your content is important in order to meet [success criterion 1.3.1 Info and Relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
+Properly structuring your content is important to meet [success criterion 1.3.1 Info and Relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
 
 ### Pointers for the spreadsheet as a whole
 
 #### Provide supporting information 
 
-From a usability point of view, statistics should not be completely separated from supporting information. Context and caveats are vital to ensure users have enough information to interpret and make effective use of the data. You should signpost to supporting information if it cannot be easily included within the spreadsheet tabs. 
+From a usability point of view, statistics should not be completely separated from supporting information. Context and caveats are vital to ensure users have enough information to interpret and make effective use of the data. You should hyperlink to supporting information if it cannot be easily included within the spreadsheet tabs. 
 
 #### Cover sheet and table of contents 
 
@@ -404,12 +404,14 @@ More guidance on cover sheets and the table of contents can be found in the ‘M
 
 Ideally each worksheet should have a unique name that clearly describes the information found in that sheet. If this is not possible, give each sheet a number and use your table of contents to describe what is in each sheet number. 
 
-To avoid any confusion for users of assistive technology remove extra spaces from the start or end of tab names. 
-Keep worksheet tab names as consistent as you can between releases, as changing them limits usability. 
+To avoid any confusion for users of assistive technology and to improve machine readability you should: 
+
+* remove extra spaces from the start or end of tab names
+* keep worksheet tab names as consistent as you can between releases
 
 #### Blank worksheets
 
-Remove any blank worksheets. Blank worksheets can be confusing as it is not clear if they are meant to be blank or if something is missing. They may also make navigation confusing for users of assistive technology. 
+Remove any blank worksheets. Blank worksheets can be confusing as it is not clear if they are meant to be blank or if something is missing. They may also make navigation confusing for users of assistive technology, failing [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable)
 
 #### Other things to avoid 
 * Do not use headers and footers to convey important information - this will fail accessibility as screen readers often can't find the information displayed in spreadsheet headers and footers.
@@ -418,24 +420,29 @@ Remove any blank worksheets. Blank worksheets can be confusing as it is not clea
 
 ### Pointers for structure within worksheets: 
 
-#### Information that should go in cells in column A
-Column A is very important for users of assistive technology. For example, a screen reader will generally start each tab by reading out the information in cell A1. Similarly, keyboard-only users will also tend to navigate down from cell A1. 
+#### Information in column A
+Column A is very important for users of assistive technology. For example, a screen reader will generally start each worksheet by reading out the information in cell A1. Similarly, keyboard-only users will also tend to navigate down from cell A1. Using column A in the following way will make it easier for you to meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence).
 
-The key thing to ensure is the information a user needs to understand the table is positioned above the table, in a place where users of assistive technology are most likely to see it.    
+The key thing to ensure is that the information a user needs to understand the table is positioned above the table, in a place where users of assistive technology are most likely to read it.    
 
 Cell A1 on each worksheet should tell a user what information is contained on that worksheet. Generally, if there is one table per worksheet, cell A1 contains the title of that table. 
 
-Cell A2 should be used for description – for example: ‘This worksheet contains one table. Some cells refer to notes which can be found on the notes worksheet tab’.  
+Cell A2 should be used for description – for example: ‘This worksheet contains one table. Some cells refer to notes which can be found on the notes worksheet’.  
 
-If relevant, information about frozen panes, filters and any symbols or shorthand used within the table should also be added into a cell in column A. 
+If relevant, information about frozen panes, filters and any symbols or shorthand used within the table should also be presented in column A. 
 
 If you have several worksheet tabs and they use different sources, a cell in column A should contain information about the source(s) for the table on that sheet. However, if each table in the spreadsheet uses the same source(s), the information about source(s) can go on the cover sheet. 
 
+##### Example of presenting information in column A
+<insert example>
+
 #### Positioning tables on worksheets 
-Position tables against the left-hand edges of each sheet. Don’t leave a blank column as a gap. As mentioned users of assistive technology tend to navigate down from cell A1, if they hit blank cells it can be very hard to navigate to where the table is. 
+Position tables against the left-hand edges of each sheet. Don’t leave a blank column as a gap. As mentioned users of assistive technology tend to navigate down from cell A1, if they hit blank cells it can be very hard to navigate to where the table is and your spreadsheet may fail [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
 #### Below the table
-Don’t put any information below the table. You should put all key information above the table and any detailed notes should live in a table on a ‘Notes’ worksheet tab (more information in the ‘Notes’ section of this guidance). 
+It is best practice to avoid putting any information below a table. Ideally you should put all key information above the table and any detailed notes should live in a table on a ‘Notes’ worksheet (more information in the ‘Notes’ section of this guidance). 
+
+Information presented below a table may be missed and can be difficult to navigate to, especially if a table is very long and lots of scrolling is needed. If a user needs to access information in the notes to understand a table, putting them below the table may lead to your spreadsheet failing [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence). 
 
 #### Titles of spreadsheets, worksheets and tables
 Make sure you have a clear spreadsheet title including time period and geographical region.
