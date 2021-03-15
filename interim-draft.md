@@ -32,7 +32,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 * [Tables](#Tables)
 * [Communicating uncertainty in spreadsheets](#Communicating-uncertainty-in-spreadsheets)
 * [Structure](#Structure)
-* [Worksheets providing information about the data (metadata worksheets)](#Worksheets-providing-information-about-the-data-(metadata-worksheets))
+* [Metadata worksheets](#metadata-worksheets)
 * [Worksheets with multiple tables](#Worksheets-with-multiple-tables)
 * [Accessibility checker](#Accessibility-checker)
 * [Saving and publishing spreadsheets](#Saving-and-publishing-spreadsheets)
@@ -479,7 +479,8 @@ To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/W
 
 Note: these instructions may differ for different versions of Excel
 
-## Worksheets providing information about the data (metadata worksheets)
+## Metadata worksheets
+You should include worksheets with information about the data (metadata).
 
 ### Cover sheet
 
