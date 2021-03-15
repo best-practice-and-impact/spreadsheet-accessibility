@@ -445,20 +445,37 @@ It is best practice to avoid putting any information below a table. Ideally you 
 Information presented below a table may be missed and can be difficult to navigate to, especially if a table is very long and lots of scrolling is needed. If a user needs to access information in the notes to understand a table, putting them below the table may lead to your spreadsheet failing [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence). 
 
 #### Titles of spreadsheets, worksheets and tables
+
+Titles and headings will affect data usability. If users cannot find or understand the data this limits their use and your spreadsheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [3.1 readable](https://www.w3.org/TR/WCAG21/#readable). It may also fail [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels)
+
 Make sure you have a clear spreadsheet title including time period and geographical region.
+
 Use standard and consistent title formats.
+
 The title of a table should include: 
 * a description of the data,
 * the geography it applies to 
 * whether or not the data is seasonally adjusted
 Example: ‘Number and percentage of people aged 16 to 64 in each labour market activity group, UK, seasonally adjusted’ 
 
-It is best practice for a worksheet to only have one table. This means the title of the worksheet should be the title of the table. 
+It is best practice to have one table per worksheet. This means the title of the worksheet should be the title of the table. 
 
-In large spreadsheets where worksheets are numbered instead of named you should include the table number in the title. For example: ‘Table 1: Number of people in different age groups, UK, seasonally adjusted’. 
+In large spreadsheets it is a good idea to number your tables, for example: ‘Table 1: Number of people in different age groups, UK, seasonally adjusted’. 
 
 #### Where to place and how to tag titles 
-The worksheet title should always be in Cell A1 and should be marked up as Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. This helps users of assistive technology navigate around the spreadsheet. It is best to simplify the default colour and border settings for text tagged as a heading. Make the text bold, change the colour to black and remove all cell borders. 
+To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) the worksheet title should be in Cell A1 and should be marked up as Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. This 'marks up' the heading and helps users of assistive technology navigate around the spreadsheet. It is best practice to modify the default colour and border settings for text tagged as a heading. 
+
+##### Modify the default formatting for headings
+* Select the cell the heading text is in
+* Select 'Cell Styles' in the 'Styles' section of the 'Home' ribbon 
+* Go to the headings style you want to modify (the title of a worksheet should be 'Headings 1')
+* Right click and select 'Modify'
+* Select 'Format'
+* Make sure you choose a sans serif font and at least size 12 (although for headings we would suggest going a bit larger) 
+* Make sure you select the 'automatic' colour setting (see the section on 'Colour and formatting' for more information on why this is important)
+* We would also suggest you go to 'Borders' and select 'None' as underlined text can be hard to read for people with low vision or dyslexia 
+
+Note: these instructions may differ for different versions of Excel
 
 ## Metadata worksheets
 
@@ -466,26 +483,36 @@ The worksheet title should always be in Cell A1 and should be marked up as Headi
 
 If your data is simple and there is only one table in your spreadsheet, you might not need a cover sheet. However, they are generally useful in most circumstances.  
 
-Use your cover sheet to provide key information about the data in the spreadsheet. But do not put too much information in it. If your cover sheet is starting to look more like a word document, you may need to create a webpage you can link to from the cover sheet instead.
+You should use your cover sheet to provide key information about the data in the spreadsheet. However, do not put too much information in it. If your cover sheet is starting to look more like a text document, it is best practice to create a webpage you can link to from the cover sheet instead.
 
-Use subheadings to break up the information. These subheadings should be tagged using the cell styles tool. First level subheadings should be tagged as Headings 2, second level subheadings as Headings 3 and so on.  
+#### Making cover sheets accessible
 
-Keep all the information in a list in column A and expand this column so the text doesn’t overflow the cells. 
+To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) you should use subheadings to break up the information. These subheadings should be tagged using the cell styles tool. First level subheadings should be tagged as Headings 2, second level subheadings as Headings 3 and so on.  
 
-Make sure all the written content follows the advice in the ‘Making written content accessible’ section of the ‘Making analytical publications accessible’ guidance.
+To meet accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) keep all the information in a list in column A. It is best to expand this column so the text doesn’t overflow the cells. If you don't do this it can be off-putting for users of screen readers as they will read out 'overflowing' each time text in a cell overflows. 
 
-Key things to include are: 
-* Information on what the data tables in this spreadsheet are about (a brief description should be in Cell A1 with a more detailed description below if necessary)
-* The statistical release the data relates to (if applicable) with a hyperlink to that release
+Make sure all the written content follows the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
+
+To meet [success criterion 2.4.2 page titled](https://www.w3.org/TR/WCAG21/#page-titled) the title of the spreadsheet should be in cell A1 of the cover sheet. This title (as mentioned) should give a brief description on what the data tables are about, the time period covered and the geographical region the data tables refer to. 
+
+#### Information to include on your cover sheet to improve usability 
+Decisions on what information should go into a cover sheet will vary from one statistical release to the next. 
+In terms of usability, is best practice to include the following (if applicable to your data): 
+* Information on what the data tables are about (more detailed than what is in the spreadsheet title).
+* The name of the statistical release the data relates to with a hyperlink to that release.
 * The source for the data - if you have a complex spreadsheet with many different tables and sources you can put source information on each individual worksheet (above the table) or have it as a column in your table of contents.  
-* The date the spreadsheet was published 
-* The date the next update to the spreadsheet will be published (if applicable)
-* Where to find more information about the data (if applicable)
-* Where to find related data or supporting publications(if applicable)
-* Links to supporting metadata and methodology documents
+* The date the spreadsheet was published.
+* The date the next update to the spreadsheet will be published.
+* Where to find more information about the data.
+* Where to find related data or supporting publications.
+* Links to supporting metadata and methodology documents.
 * Link to a glossary of essential technical terms and acronyms.
-* Contact details for the statisticians responsible for the data
-* Key information users need to know that relates to all (or nearly all) worksheets in the spreadsheet, for example information on weighting
+* Contact details for the statisticians responsible for the data.
+* Key information users need to know that relates to all (or nearly all) worksheets in the spreadsheet, for example information on weighting.
+
+#### Where to put cover sheet information when optimising for machine readability
+
+If you are publishing a spreadsheet optimised for machine readability it is best to remove the cover sheet. Information presented in the cover sheet should be provided via a CSVW (CSV on the web) file. 
 
 ### Table of contents 
 
