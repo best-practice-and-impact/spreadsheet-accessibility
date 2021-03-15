@@ -620,21 +620,21 @@ In terms of usability it is best practice for file names to:
 * not include a date, unless the date is part of the document title, for example, ‘Business-plan-for-2016-to-2017’
 * be sensible – do not include a version number, names or words like ‘draft’, ‘clean’ or ‘final’, unless those words are part of the document title (for example: ‘guidance-on-making-documents-accessible’ is a more sensible file name than ‘access-guid-final-draft-Han-edit3’)
 
-In terms of accessibility there isn’t a specific success criterion in the accessibility guidelines for file names but following this best practice will help you meet [guidelines 3.1 readable](https://www.w3.org/TR/WCAG21/#readable) and [3.2 predictable](https://www.w3.org/TR/WCAG21/#predictable).
+In terms of accessibility there isn’t a specific success criterion for file names but following this best practice will help you meet [guidelines 3.1 readable](https://www.w3.org/TR/WCAG21/#readable) and [3.2 predictable](https://www.w3.org/TR/WCAG21/#predictable).
 
 
 ## Sources for this guidance
 
-* Royal National Institute for the Blind spreadsheet guidance
-* Microsoft guidance
-* Microsoft video guidance
-* SiteImprove guidance
-* Guidance from Michigan State University
-* Welsh Government guidance
-* Information on making tables accessible from Government Digital Service
-* Making analytical publications accessible (Government Statistical Service guidance)
-* Guidance shared with me by the Northern Irelands Statistics and Research Agency (Nisra).
-* Feedback from the Digital Accessibility Centre (DAC) 
+* [Royal National Institute for the Blind spreadsheet guidance (doc, 191KB)](https://www.rnib.org.uk/sites/default/files/Creating%20accessible%20Excel%20spreadsheets.docx)
+* [Microsoft guidance](https://support.microsoft.com/en-us/office/make-your-excel-documents-accessible-to-people-with-disabilities-6cc05fc5-1314-48b5-8eb3-683e49b3e593?ui=en-us&rs=en-us&ad=us#bkmk_wintableheaders)
+* [Microsoft video guidance](https://support.microsoft.com/en-us/office/video-create-more-accessible-tables-in-excel-86e50f77-0f15-4537-ab1d-62d0e4cd5645)
+* [SiteImprove guidance](https://siteimprove.com/en-us/blog/are-your-excel-spreadsheets-accessible/)
+* [Guidance from Michigan State University](https://webaccess.msu.edu/Tutorials/excel.html)
+* [Welsh Government guidance](https://gov.wales/how-create-accessible-excel-spreadsheets)
+* [Information on making tables accessible from Government Digital Service](https://www.gov.uk/guidance/content-design/tables)
+* [Making analytical publications accessible (Government Statistical Service guidance)](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/)
+* Guidance shared with me by the Northern Irelands Statistics and Research Agency (Nisra)
+* [Feedback from the Digital Accessibility Centre (DAC)](https://digitalaccessibilitycentre.org/)
 
 
 
