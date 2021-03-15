@@ -479,7 +479,7 @@ To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/W
 
 Note: these instructions may differ for different versions of Excel
 
-## Worksheets providing information about the data (metadata)
+## Worksheets providing information about the data (metadata worksheets)
 
 ### Cover sheet
 
