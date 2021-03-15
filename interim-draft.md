@@ -32,7 +32,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 * Tables
 * Communicating uncertainty in spreadsheets
 * Structure
-* Metadata worksheets
+* Worksheets providing information about the data (metadata worksheets)
 * Worksheets with multiple tabs
 * Accessibility checker
 * Saving and publishing your spreadsheet
@@ -281,11 +281,9 @@ In terms of machine readability, the advice on symbols and notes has been to put
 It is common practice for notes to be placed underneath a table. However there are several issues with this. In terms of usability and accessibility: 
 * for some users of assistive technology, it can take lots of scrolling to get to notes placed under very long tables 
 * notes placed under tables may be missed by users of assistive technology who aren't expecting them to be there 
-* notes placed underneath a table need careful (and mostly manual) formatting to be made accessible (see the section on 'Structure' for more information on how written content should be presented)
+* notes placed underneath a table need careful (and mostly manual) formatting to be made accessible (see the section on 'Structure and 'Cover sheets' for more information on how written content should be presented)
 
 It is also the case that, in complex spreadsheets, identical notes are often placed under several tables across many worksheets. This can mean, when certain notes are updated or changed, some are accidentally missed out. 
-
-Finally, notes placed underneath a table are bad practice for machine readability. 
 
 For these reasons we advise you to create a worksheet called ‘Notes’ which contains a table that lists all the detailed notes for the spreadsheet. 
 
@@ -364,7 +362,7 @@ Use notes or the cover sheet to:
 * make it clear if there are any potential sources of bias or uncertainty – users need to know how this impacts on their use of the statistics
 * highlight relevant information about comparability issues both across time and with equivalent statistics released elsewhere in the UK 
 
-For more information on notes and cover sheets please see the ‘Symbols and footnotes’ section and the ‘Metadata worksheets’ section.
+For more information on notes and cover sheets please see the ‘Symbols and footnotes’ section and the ‘Worksheets providing information about the data’ section.
 
 ### Confidence intervals 
 
@@ -398,7 +396,7 @@ From a usability point of view, statistics should not be completely separated fr
 
 Label your first worksheet ‘Cover_sheet’ and use it to provide information about what is in the spreadsheet. If your spreadsheet has many worksheets, create a table of contents that describes the data within each worksheet.
 
-More guidance on cover sheets and the table of contents can be found in the ‘Metadata worksheets’ section of this guidance.
+More guidance on cover sheets and the table of contents can be found in the ‘Worksheets providing information about the data’ section of this guidance.
 
 #### Worksheet names
 
@@ -477,7 +475,7 @@ To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/W
 
 Note: these instructions may differ for different versions of Excel
 
-## Metadata worksheets
+## Worksheets providing information about the data (metadata)
 
 ### Cover sheet
 
@@ -505,40 +503,40 @@ In terms of usability, is best practice to include the following (if applicable 
 * The date the next update to the spreadsheet will be published.
 * Where to find more information about the data.
 * Where to find related data or supporting publications.
-* Links to supporting metadata and methodology documents.
+* Links to supporting information about the data (metadata) and methodology documents.
 * Link to a glossary of essential technical terms and acronyms.
 * Contact details for the statisticians responsible for the data.
 * Key information users need to know that relates to all (or nearly all) worksheets in the spreadsheet, for example information on weighting.
 
-#### Where to put cover sheet information when optimising for machine readability
-
-If you are publishing a spreadsheet optimised for machine readability it is best to remove the cover sheet. Information presented in the cover sheet should be provided via a CSVW (CSV on the web) file. 
-
 ### Table of contents 
 
-If you have many worksheets in your spreadsheet you should create a table of contents that describes the data within each worksheet. 
+If you have a lot of worksheets in your spreadsheet you should create a table of contents that describes the data within each worksheet. This will ensure you meet [accessibility guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
-This can live within the cover sheet or on its own worksheet tab, but make sure it is marked up properly as a table and named ‘Table_of_contents’. If it is on its own tab make sure this is named ‘Table_of_contents’
+This can live within the cover sheet or on its own worksheet, but make sure it is marked up properly as a table and named ‘Table_of_contents’. If it is on its own worksheet make sure this is named ‘Table_of_contents’
 
 This table of contents can also contain other information such as the source of the data (particularly if several different sources are used throughout the spreadsheet), the date the data in each worksheet was last updated and the date it will be next updated. 
 
-Hyperlinking from the table of contents to cell A1 of each worksheet also aids navigation around a large spreadsheet.  
+Hyperlinking from the table of contents to cell A1 of each worksheet also aids navigation around a large spreadsheet but is not strictly necessary if all tables are marked up and named consistently.  
 
 ### Notes worksheet 
 
-If certain cells in your spreadsheet refer to notes, it is better for accessibility and machine readability to create a table of notes on its own ‘Notes’ tab than put information underneath each table. 
+If certain cells in your spreadsheet refer to notes, it is better for usability and accessibility to create a table of notes that lives in a ‘Notes’ worksheet than to put information underneath each table. More information on this can be found in the 'Symbols and footnotes' section of this guidance. 
 
-Remember this table of notes needs to be marked up and named appropriately. 
+Remember this table of notes will need to be marked up and named appropriately. 
+
+### How to supply metadata if optimising for machine readability
+
+If you are publishing a spreadsheet optimised for machine readability it is best to remove all information about the data (metadata) from the spreadsheet file. This includes information in the cover sheet, table of contents and any notes. Metadata should instead be provided via an associated metadata file. For example, metadata for statistics.csv should be provided in the statistics.csv-metadata.json file. See [CSVW (CSV on the web)]( https://www.w3.org/TR/tabular-data-primer/#metadata) for an appropriate metadata file specification.
 
 ## Worksheets with multiple tables 
 
-When multiple tables do need to be placed on a single worksheet there are a few points to bear in mind.
+In general you should avoid publishing worksheets with multiple tables. These worksheets can be difficult to navigate and are bad pratice in terms of machine readability. However, if you have to do this there are a few points to bear in mind to meet [accessibility guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence).
 
 ### Worksheet titles 
 Pointers: 
 * The worksheet title should be in cell A1
 * The worksheet title should describe the data in the tables, for example ‘Number and percentage of population in each labour market activity group by age band, UK, seasonally adjusted’
-* The worksheet title should be marked up as a Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. 
+* The worksheet title should be marked up as a Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon (find out more about marking up headings in the 'Structure' section of this guidance. 
 
 Normally in large spreadsheets where worksheets are numbered instead of named, the title of each worksheet includes the table number, for example ‘Table 1: Number of people resident in each UK country’. When some worksheets have multiple tables, the worksheet titles cannot refer to specific tables. This means it is best to put the worksheet number in the title instead. For example: 
 ‘Worksheet 1: Number and percentage of population in each labour market activity group, UK, seasonally adjusted’
@@ -553,21 +551,24 @@ Each table’s title should be in the leftmost cell directly above the table.
 
 Each table title should be marked up as a ‘Headings 2’ using the ‘Cell Styles’ tool on the ‘Home’ ribbon.
 
-### Structure 
-* Cell A2 should describe the number of tables on the sheet and how they are presented, for example ‘This worksheet contains eight tables presented next to each other horizontally with one blank column in between each table. Each table applies to a different age group.’
-* Each table should be marked up and named (more information on this in the tables section of this guidance) 
-* The first table should border the left hand edge of the worksheet
-* Tables should be separated by a single blank row or column - large gaps between tables could be misunderstood by screen reader users
+### Presentation 
+Cell A2 should describe the number of tables on the sheet and how they are presented, for example ‘This worksheet contains eight tables presented next to each other horizontally with one blank column in between each table. Each table applies to a different age group’.
+
+Each table should be marked up and named (more information on this in the 'Tables' section of this guidance). 
+
+The first table on the worksheet should border the left hand edge of the worksheet (don't leave any gaps).
+
+Tables should be separated by a single blank row or column - large gaps between tables could be misunderstood by screen reader users
 
 ## Accessibility checker
-Newer versions of Excel have a built-in accessibility checker. You can use this to see what issues it flags up. But be aware that it is a bit like using a spelling and grammar check. It can’t check everything and it is likely to miss some things. 
+Newer versions of Excel have a built-in accessibility checker. You can use this to see what issues it flags up. But be aware that it is a bit like using a spelling and grammar check. It is likely to miss some things and it may bring up things that are not relevant.  
 
-The checker will also flag up tables that don’t have alt text (as already mentioned). You do not necessarily need to add this in and bear in mind that it will be removed if you save your spreadsheet in an ODT format. 
+For example, the checker will flag up tables that don’t have alt text. As long as your tables are marked up and named correctly you do not need to add this in. In any case, it will be removed if you save your spreadsheet in an Open Document Spreadsheet (ODS) format (which we recommend you do if the website you publish on supports this file type). 
 
 To run the accessibility checker, go to the ‘Review’ ribbon and select ‘Check Accessibility’.
 
 ## Saving and publishing spreadsheets
-Pointers: 
+Pointers for usability and accessibility: 
 * Generally a spreadsheet will automatically open on the first worksheet, but to ensure this always happens make sure the cursor is in cell A1 of the first worksheet when you save.
 * Zoom should be set to 100% when you save your spreadsheet to ensure no enlargement or reduction is active.
 * Avoid zip files as these can be blocked by organisational policies 
