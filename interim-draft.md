@@ -47,7 +47,7 @@ Make sure you add document information in. The accessibility regulations require
 Go to ‘File’, then ‘Info’ and fill in the following fields:
 * Title
 
-This should replicate the title on the cover sheet (more information on cover sheets can be found in the relevant section of this guidance). Do not use dashes or underscores here.
+This should be the title of the spreadsheets (more information about titles can be found in the 'Structure' section of this guidance). Do not use dashes or underscores here.
 
 * Author
 
