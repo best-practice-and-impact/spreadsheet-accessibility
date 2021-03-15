@@ -27,15 +27,15 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 ## Contents 
 
 * [Document information](#Document-information)
-* Images 
-* Colour and formatting
-* Tables
-* Communicating uncertainty in spreadsheets
-* Structure
-* Worksheets providing information about the data (metadata worksheets)
-* Worksheets with multiple tabs
-* Accessibility checker
-* Saving and publishing spreadsheets
+* [Images](#Images) 
+* [Colour and formatting](#Colour-and-formatting)
+* [Tables](#Tables)
+* [Communicating uncertainty in spreadsheets](#Communicating-uncertainty-in-spreadsheets)
+* [Structure](#Structure)
+* [Worksheets providing information about the data (metadata worksheets)](#Worksheets-providing-information-about-the-data-(metadata-worksheets))
+* [Worksheets with multiple tables](#Worksheets-with-multiple-tables)
+* [Accessibility checker](#Accessibility-checker)
+* [Saving and publishing spreadsheets](#Saving-and-publishing-spreadsheets)
 
 
 ## Document information 
