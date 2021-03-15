@@ -26,7 +26,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 
 ## Contents 
 
-* [create an anchor](#Document-information)
+* [Document information](#Document-information)
 * Images 
 * Colour and formatting
 * Tables
