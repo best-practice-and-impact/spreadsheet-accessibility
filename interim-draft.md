@@ -1,7 +1,7 @@
 # Releasing statistics in spreadsheets (interim version of update)
 
 ## Interim status 
-This guidance is an update to the 'Releasing statistics in spreadsheets' guidance on the [Government Statistical Service (GSS) website](https://gss.civilservice.gov.uk/). It is still under review. We are publishing it in an interim state to give people information on what they may need to implement and to collate feedback. We continue to carry out research and testing. When it is finalised it will be updated on the GSS website.  
+This guidance is an update to the ['Releasing statistics in spreadsheets' guidance](https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/) on the [Government Statistical Service (GSS) website](https://gss.civilservice.gov.uk/). It is still under review. We are publishing it in an interim state to give people information on what they may need to implement and to collate feedback. We continue to carry out research and testing. Once this information is finalised, the guidance will be updated on the GSS website.  
 
 If you have any questions or feedback, please email [gsshelp@statistics.gov.uk](mailto:gsshelp@statistics.gov.uk).  
 
@@ -572,53 +572,55 @@ Pointers for usability and accessibility:
 * Generally a spreadsheet will automatically open on the first worksheet, but to ensure this always happens make sure the cursor is in cell A1 of the first worksheet when you save.
 * Zoom should be set to 100% when you save your spreadsheet to ensure no enlargement or reduction is active.
 * Avoid zip files as these can be blocked by organisational policies 
-* Consider using an Application Programming Interface (API) to aid further analysis.
 
 ### File formats
-Whenever possible you should publish your spreadsheet in an open format.
+Whenever possible you should publish your spreadsheet in an [open format](https://en.wikipedia.org/wiki/Open_format).
 
-This is not explicitly mentioned in the accessibility regulations, but open formats make outputs more accessible because they do not rely on users having access to specific software.
+This is not explicitly mentioned in the accessibility regulations, but generally, open formats make outputs more accessible because they do not rely on users having access to specific software.
 
-Furthermore, in June 2012, the Government Open Data White Paper set out a vision for open data that outlined a ranking scheme from 1 to 5 stars. Government data releases should meet the 3 star measure as a minimum. This means make data available in an open, non-proprietary format.
-Files published in Excel format (such as .xls and .xlsx) are not open because they rely on users having access to specific software.
+Furthermore, in June 2012, the [Government Open Data White Paper](https://www.gov.uk/government/publications/open-data-white-paper-unleashing-the-potential) set out a vision for open data that outlined a ranking scheme from 1 to 5 stars. Government data releases should meet the 3 star measure as a minimum. This means data should be made available in an open, non-proprietary format.
+
+Spreadsheet files published in Excel format (such as .xls and .xlsx) are not open because they rely on users having access to specific software.
 
 #### ODS format
-For spreadsheets you intend users to read and analyse we advise you use the Open Document Spreadsheet (ODS) format. This is an open format very similar to Excel. 
-When you save as an ODS file, Excel will bring up a box to warn you that some features of your spreadsheet may not be compatible with the ODS format. If you want to know more, Microsoft have published information about Excel features that are and aren’t compatible with the ODS format.  
+For spreadsheets you intend users to read and analyse themselves we advise you use the Open Document Spreadsheet (ODS) format. This is an open format very similar to Excel. 
+
+When you save as an ODS file, Excel will bring up a box to warn you that some features of your spreadsheet may not be compatible with the ODS format. If you want to know more, Microsoft have published [information about Excel features that are and aren’t compatible with the ODS format](https://support.microsoft.com/en-us/office/differences-between-the-opendocument-spreadsheet-ods-format-and-the-excel-for-windows-xlsx-format-3db958c8-e0ac-49a5-9965-2c2f8afbd960?ns=excel&version=90&syslcid=1033&uilcid=1033&appver=zxl900&helpid=191589&ui=en-us&rs=en-us&ad=us).  
 
 #### CSV format
 The other commonly used open format is Comma-Separated-Values (CSV). 
 
-If you are publishing a CSV file that you intend users to open and read, it must meet the accessibility regulations. This can be a bit tricky as it only allows one tab and will strip out almost all formatting (such as table tags, headings tags, hyperlinks and cell outlines). 
+If you are publishing a CSV file that you intend users to read and analyse themselves, it must meet the accessibility regulations. it can be a bit tricky to do this with CSV files as they only allow one tab and will strip out almost all formatting (such as table tags, headings tags and hyperlinks). If you have a very simple spreadsheet it may be possible to make a CSV version meet the accessibility regulations, but for anything slightly complex, we advise you to use a different format.  
 
-If you are publishing a CSV file solely for machines to read it does not need to meet the accessibility regulations. CSV is the recommended format for machine-readable spreadsheets. 
+If you are publishing a CSV file solely for machines to read it does not need to meet the accessibility regulations. CSV is the recommended format for spreadsheets optimised for machine readability. 
 
 ### Publishing alternative versions of same spreadsheet
 
 If you need to, you can publish alternative versions of the same document. As long as one of them meets the accessibility regulations you are meeting the requirements of the accessibility legislation. 
 
-For example, you may publish an accessible ODS version of your spreadsheet for users to open and read themselves, alongside a machine-readable CSV version. 
+For example, you may want to publish an accessible ODS version of your spreadsheet for users to read themselves, alongside a machine-readable CSV version. 
 
 ### Software capability 
 
-You should be aware that different spreadsheet tools and software have different capabilities for how they handle data. Check the specifications of your software, particularly around row and column limits, to make sure you are using an appropriate tool. 
+In terms of usability, you should be aware that different spreadsheet tools and software have different capabilities for how they handle data. Check the specifications of your software, particularly around row and column limits, to make sure you are using an appropriate tool. 
 
-For example, older versions of Excel (97-2003) have a row limit of 65,000 rows. You can read more about Excel specifications and limits if you need to. 
+For example, older versions of Excel (97-2003) have a row limit of 65,000 rows. You can read more about [Excel specifications and limits](https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) if you need to. 
+
 If the spreadsheet tool you use cannot hold all your data then you are likely to lose information, which can distort statistics and conclusions.
 
 ### File names
-File names should:
+In terms of usability it is best practice for file names to:
 * be unique, e.g. don’t call all your data downloads ‘Data download’
 * be descriptive and make sense out of context – for example, tell the user what is in a data download, don’t just call it ‘Data download 1’
-* be frontloaded
+* be [frontloaded](https://digitalcommunications.wp.st-andrews.ac.uk/2017/03/15/web-writing-basics-frontloading/)
 * be short – aim for 60 characters including spaces
 * not include acronyms – put these in the document information as keywords or tags
-* be entirely in lowercase
-* use dashes instead of spaces or underscores between words – this makes file names easier to read, for example: ‘a file name.ods’ will end up as: ‘a%20file%20name.ods’ online, which is why it is better to call it  ‘a-file-name.ods’
+* be entirely lowercase
+* [use dashes instead of spaces or underscores between words](https://x-equals.com/dashes-versus-underscores/) – this makes file names easier to read, for example: ‘a file name.ods’ will end up as: ‘a%20file%20name.ods’ online, which is why it is better to call it  ‘a-file-name.ods’
 * not include a date, unless the date is part of the document title, for example, ‘Business-plan-for-2016-to-2017’
-* be sensible – do not include a version number, names or words like ‘draft’, ‘clean’ or ‘final’, unless those words are part of the document title (for example: ‘guidance-on-how-to-make-documents accessible’ is a more sensible file name than ‘access-guid-final-draft-Han-edit3’)
+* be sensible – do not include a version number, names or words like ‘draft’, ‘clean’ or ‘final’, unless those words are part of the document title (for example: ‘guidance-on-making-documents-accessible’ is a more sensible file name than ‘access-guid-final-draft-Han-edit3’)
 
-There isn’t a specific success criterion in the accessibility guidelines for file names but it comes under ensuring content is understandable by making it readable and predictable [guidelines 3.1 and 3.2](https://www.w3.org/TR/WCAG21/#readable).
+In terms of accessibility there isn’t a specific success criterion in the accessibility guidelines for file names but following this best practice will help you meet [guidelines 3.1 readable](https://www.w3.org/TR/WCAG21/#readable) and [3.2 predictable](https://www.w3.org/TR/WCAG21/#predictable).
 
 
 ## Sources for this guidance
