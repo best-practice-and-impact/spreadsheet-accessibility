@@ -35,7 +35,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 * Worksheets providing information about the data (metadata worksheets)
 * Worksheets with multiple tabs
 * Accessibility checker
-* Saving and publishing your spreadsheet
+* Saving and publishing spreadsheets
 
 
 ## Document information 
@@ -55,7 +55,7 @@ Generally this should be the organisation that published the document – avoid 
 
 * Keywords or Tags
 
-Put in a list of terms that someone might use to search for the document, separated by commas. This helps search engines find the document. They also help with finding your document internally.
+Put in a list of terms that someone might use to search for the document, separated by commas. This helps search engines find the document. It also help with finding your document internally.
 
 ### Setting the document language
 
@@ -63,9 +63,12 @@ Go to ‘File’ and then ‘Options’ and then ‘Language’. Make sure the d
 
 ## Images
 
-Avoid the use of any images or charts within a spreadsheet. This includes any departmental logos. 
+Avoid the use of any images or charts within a spreadsheet. 
 
-If you can’t avoid it, make sure all logos, graphics, charts and any other images within the spreadsheet document have alternative text attached to them ([success criterion 1.1.1 non-text content](https://www.w3.org/TR/WCAG21/#non-text-content)) and place them on a separate worksheet to any tables. You also need to ensure charts are accessible – see our ‘[Making analytical publications accessible](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/)’ guidance for more information. 
+This includes any departmental logos. Placing a departmental logo on a cover sheet may fail [accessibility guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as these images can make it difficult for users of assistive technology to work out where they are on a worksheet. 
+
+If you can’t avoid it, make sure all logos, graphics, charts and any other images within the spreadsheet document have alternative text attached to them ([success criterion 1.1.1 non-text content](https://www.w3.org/TR/WCAG21/#non-text-content)) and place them on a separate worksheet to any tables. You will need to ensure charts are accessible – see our ‘[Making analytical publications accessible](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/)’ guidance for more information. 
+
 
 ### How to add alt text for charts and images 
 1. Right click on the image or chart and select 'Format Picture/Chart Area'.
@@ -106,7 +109,7 @@ Make sure that links to the same destination have consistent text and that links
 
 5. Formatting link text
 
-[Link text should be underlined by default](https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF). If it is not underlined the regulations say that you have to consider colour contrast with surrounding text and a 'visual cue' that appears on mouse hover and keyboard focus. Bear in mind that, while not a necessity in terms of the regulations, it is best practice for hyperlink text to be both underlined and have the correct amount of colour contrast with the background and the surrounding text.
+[Link text should be underlined by default](https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF). If it is not underlined the regulations say that you have to consider colour contrast with surrounding text and a 'visual cue' that appears on mouse hover and keyboard focus. Bear in mind that, while not a necessity in terms of the accessibility guidelines, it is best practice for hyperlink text to be both underlined and have the correct amount of colour contrast with the background and the surrounding text.
 
 ### Dates and time periods 
 It is best practice to format dates and time periods as advised by the [Office for National Statistics style guide](https://style.ons.gov.uk/house-style/dates/) and [Government Digital Service guidance](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style). 
@@ -118,7 +121,7 @@ This means:
 * when referring to quarters of the year, write out the months, for example, “Jan to Mar 2020’ not ‘Q1 2020’
 * if your data needs specific dates for example: 01/02/10 you can present them like this but be aware screen readers will read this as ‘01 slash 02 slash 10’ which can be annoying, so it is best practice to write ‘1 Feb 2010’
 
-### Other accessibility pointers that must be followed: 
+### Accessibility pointers that must be followed: 
 
 * No visual devices such as colour, shading or patterns should be used to divide up data regions ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).
 * No text is set in a vertical or diagonal direction - this is not mentioned specifically in WCAG but we consider it necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 4. distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable).
@@ -126,11 +129,11 @@ This means:
 * Colour is never used as the only way to communicate a message ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color)).
 * The minimum font size used is size 12 - in general this will help you meet [success criterion 1.4.4 resize text](https://www.w3.org/TR/WCAG21/#resize-text).
 
-### Accessibility pointers for best practice:
+### Pointers for best practice in terms of usability and accessibility:
 
 * All fonts used are sans serif (for example, Arial or Calibri) - people with dyslexia find serif fonts hard to read. 
 * Avoid the use of underline and italic text - people with dyslexia can find italic and underlined text hard to read, if you need to highlight text it is best to use bold. 
-* Avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour (more information on how to do this can be found in the 'checking text colour contrast' section). 
+* Avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour (more information on how to do this can be found in the 'Checking text colour contrast' section). 
 * Aim to use the 'default' or 'automatic' colour settings for all text - doing this will ensure the spreadsheet takes on the specialised colour settings users of assitive technology may have set up on their software.
 * Avoid adding a background fill - some users will have settings that automatically change the colour of the background but this doesn't happen if you have added a fill colour – even if it is white. 
 * Avoid adding grid lines or cell borders - in general it it better to keep things simple.
@@ -153,7 +156,7 @@ The use of colours in charts is more complex as you often have to consider colou
 ## Tables
 
 ### Merged and split cells
-Restructure your tables so there are no split cells or merged cells. This can seem daunting, but it is one of the crucial issues to address as it is key for both machine readability and accessibility. 
+Restructure your tables so there are no split cells or merged cells. This can seem a bit daunting, but it is one of the crucial issues to address as it is key for both machine readability and accessibility. 
 
 Merged and split cells make tables hard to understand for users of assistive technology, removing them is key to meeting [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
 
@@ -166,7 +169,7 @@ We advise you to avoid publishing spreadsheets with macros in. It is difficult t
 It is also best practice to remove formulas and any application code contained in your spreadsheet. Formulas and code can cause confusion and they can pose a security risk. If you have to include formulas or code, ensure they are hard coded to avoid accidental errors in use.
 
 ### Blank rows and columns
-Remove all blank rows and blank columns. Blank rows and columns within the tables themselves may be perceived as the edge of the data area rather than a divider. Removing them is key to meeting [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics). If blank rows and columns are used to create space you can adjust column width and row height instead. 
+Remove all blank rows and blank columns. Blank rows and columns within the tables themselves may be perceived as the edge of the data area rather than a divider. Removing them is key to meeting accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics). If blank rows and columns are used to create space you can adjust column width and row height instead. 
 
 ### Mark up tables in spreadsheets
 Ensure your table is ‘marked up’ as a table – this is key to meeting [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships), [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [success criterion 2.4.3 focus order](https://www.w3.org/TR/WCAG21/#focus-order).
@@ -213,7 +216,7 @@ If the table is already created and you want to tag the header row:
 
 ### Naming tables 
 
-If you have a spreadsheet with lots of worksheets and many tables, you should make sure the tables have meaningful names. This will aid navigation for everyone, but particularly for those who use assistive technology. It will also help you pass [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
+If you have a spreadsheet with lots of worksheets and many tables, you should make sure the tables have meaningful names. This will aid navigation for everyone, but particularly for those who use assistive technology. It will also help you pass accessibility [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
 #### Name a table in Excel
 1. Click anywhere in the table
@@ -241,7 +244,7 @@ We consider this to be necessary to passs [guideline 1.4 distinguishable](https:
 
 ### Symbols and footnotes 
 
-It is best practise to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in rounded brackets instead of using ‘p’ or ‘r’. When needed, using letters to signify notes is generally OK as long as the key to what these letters mean is clearly presented above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table.
+It is best practise to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in rounded brackets instead of using ‘p’ or ‘r’. When needed, using letters to signify notes is generally OK as long as the key to what these letters mean is clearly laid out above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table.
 
 #### Example of presenting a key above a table 
  <insert example>
@@ -249,7 +252,7 @@ It is best practise to put as much information as possible at the point of need 
 However, you should not use symbols to signify notes because: 
 * they can be confusing
 * screen readers may not recognise them 
-* users with low vision may not be able to spot them easily
+* users with low vision may not be able to see them
 
 Therefore, if you use symbols to signify notes it may lead to a fail of [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
 
@@ -258,7 +261,7 @@ Similar arguments can also be made for the use of superscript. So we also advise
 When footnotes are needed, an accessible way to signify them is to use the word 'note'. If doing this, we advise you to:
 * write out the word ‘note’ in the cell, with the number of the note, and put it in square brackets (we advise square brackets for notes and rounded brackets for units to differentiate them in a consistent way)
 * put a list of numbers if a cell needs to refer to more than one note – for example, write ‘[note 1,2,3]’ if a cell needs to refer to notes 1, 2 and 3. 
-* try to always put notes in table titles, column headings or row labels. Putting them in specific cells may not fail accessibility but it does cause problems for machine readability and usability 
+* try to always put notes in table titles, column headings or row labels - putting them in specific cells may not fail accessibility but it does cause problems for machine readability and usability 
 * if a note is in a column heading, space the text so the note marker sits underneath the column header and any information about units (you can do this by pressing 'Alt + Enter')
 #### Example of presenting units and note marker in column heading
  <insert example>
@@ -274,14 +277,14 @@ Symbols like dashes and slashes can be used in classification and geography code
 We are looking to put together more comprehensive advice for symbols soon.  
 
 #### Past advice on symbols and footnotes 
-In terms of machine readability, the advice on symbols and notes has been to put symbols or footnote markers in separate (very narrow) columns, next to the data. It is OK to do this in terms of accessibility, but you would need to give that column a heading and mark up all the empty cells. This could make a table very wide which is not great for readability. 
+In terms of machine readability, the advice on symbols and notes has been to put symbols or footnote markers in separate (very narrow) columns, next to the data. It is OK to do this in terms of accessibility, but you would need to give that column a heading and you might also need to mark up all the empty cells. This could make a table very wide which is not great for readability. 
 
 #### Where to place detailed notes
 
 It is common practice for notes to be placed underneath a table. However there are several issues with this. In terms of usability and accessibility: 
-* for some users of assistive technology, it can take lots of scrolling to get to notes placed under very long tables 
+* it can take lots of scrolling to get to notes placed under very long tables (particularly for some users of assistive technology)
 * notes placed under tables may be missed by users of assistive technology who aren't expecting them to be there 
-* notes placed underneath a table need careful (and mostly manual) formatting to be made accessible (see the section on 'Structure and 'Cover sheets' for more information on how written content should be presented)
+* notes placed underneath a table need careful (and mostly manual) formatting to be made accessible (see the section on 'Structure and 'Cover sheets' for more information on how written content should be formatted)
 
 It is also the case that, in complex spreadsheets, identical notes are often placed under several tables across many worksheets. This can mean, when certain notes are updated or changed, some are accidentally missed out. 
 
@@ -329,7 +332,7 @@ Please note - we are aware that leaving cells with no data blank may make it eas
 
 #### Machine readability 
 
-In terms of machine readability leaving cells with no data blank is optimal. Therefore if you are making a spreadsheet solely for machine readability purposes it is best practice to leave cells with no data blank. 
+In terms of machine readability leaving cells with no data blank is best practice. Therefore if you are making a spreadsheet solely for machine readability purposes it is best practice to leave cells with no data blank. More information on creating spreadsheets optimised for machine readability can be found in the 'Saving and publishing spreadsheets' section of this guidance.
 
 ### Adding alt text to tables 
 
@@ -463,7 +466,7 @@ In large spreadsheets it is a good idea to number your tables, for example: ‘T
 #### Where to place and how to tag titles 
 To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) the worksheet title should be in Cell A1 and should be marked up as Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. This 'marks up' the heading and helps users of assistive technology navigate around the spreadsheet. It is best practice to modify the default colour and border settings for text tagged as a heading. 
 
-##### Modify the default formatting for headings
+##### Modify the default formatting for cells tagged as headings
 * Select the cell the heading text is in
 * Select 'Cell Styles' in the 'Styles' section of the 'Home' ribbon 
 * Go to the headings style you want to modify (the title of a worksheet should be 'Headings 1')
@@ -479,7 +482,7 @@ Note: these instructions may differ for different versions of Excel
 
 ### Cover sheet
 
-If your data is simple and there is only one table in your spreadsheet, you might not need a cover sheet. However, they are generally useful in most circumstances.  
+If your data is simple and there is only one table in your spreadsheet, you might not need a cover sheet. However, they are generally useful in most circumstances. 
 
 You should use your cover sheet to provide key information about the data in the spreadsheet. However, do not put too much information in it. If your cover sheet is starting to look more like a text document, it is best practice to create a webpage you can link to from the cover sheet instead.
 
