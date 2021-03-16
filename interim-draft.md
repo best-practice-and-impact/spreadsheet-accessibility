@@ -104,7 +104,7 @@ It is best practice to also:
 * left align all text in cells outside the table and all row labels within the table
 * right align all data within a table and all column headings
 
-[Example of a table formatted in an accessible way](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-formatted-in-a-plain-way.ods)
+[Example of a table formatted in an accessible way (ODS, 5.73kb)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-formatted-in-a-plain-way.ods)
 
 ### Adding headers to a table that is already marked up
 If the table is already created and you want to tag the header row:
