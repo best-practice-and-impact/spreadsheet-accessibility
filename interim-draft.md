@@ -25,15 +25,15 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 ## Contents 
 
 * [Document information](#Document-information)
-* [Images](#Images) 
-* [Colour and formatting](#Colour-and-formatting)
-* [Symbols, footnotes and codes](#Symbols-footnotes-and-codes)
 * [Tables](#Tables)
 * [Blank cells](#Blank-cells)
-* [Communicating uncertainty in spreadsheets](#Communicating-uncertainty-in-spreadsheets)
+* [Colour and formatting](#Colour-and-formatting)
+* [Images](#Images) 
+* [Symbols, footnotes and codes](#Symbols-footnotes-and-codes)
 * [Structure](#Structure)
 * [Titles of spreadsheets, worksheets and tables](#Titles-of-spreadsheets-worksheets-and-tables)
 * [Metadata worksheets](#metadata-worksheets)
+* [Communicating uncertainty in spreadsheets](#Communicating-uncertainty-in-spreadsheets)
 * [Worksheets with multiple tables](#Worksheets-with-multiple-tables)
 * [Macros, formulas and application code](#Macros-formulas-and-application-code)
 * [Accessibility checker](#Accessibility-checker)
@@ -59,148 +59,6 @@ Put in a list of terms that someone might use to search for the document, separa
 
 ### Setting the document language
 Go to ‘File’ and then ‘Options’ and then ‘Language’. Make sure the document has the correct language(s) selected.
-
-## Images
-Avoid the use of any images or charts within a spreadsheet. 
-
-This includes any departmental logos. Placing a departmental logo on a cover sheet may fail [accessibility guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as these images can make it difficult for users of assistive technology to work out where they are on a worksheet. 
-
-If you can’t avoid it, make sure all logos, graphics, charts and any other images within the spreadsheet document have alternative text attached to them ([success criterion 1.1.1 non-text content](https://www.w3.org/TR/WCAG21/#non-text-content)) and place them on a separate worksheet to any tables. 
-
-You will also need to ensure charts are accessible – see our ‘[Making analytical publications accessible](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/)’ guidance for more information. 
-
-### How to add alt text for charts and images 
-1. Right click on the image or chart and select 'Format Picture/Chart Area'.
-2. Go to the size and properties box and select ‘Alt text’.
-3. Enter a title and description for your alt text in the boxes and select ‘OK’.
-
-On newer versions of Excel you may just need to right click and select 'Edit Alt Text'. 
-
-If an image is just decorative you should mark it as such by ticking the 'Decorative' checkbox (Excel 2013 doesn’t let you do this but later versions do).
-
-## Colour and formatting 
-
-### Written content
-All written content should follow the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
-
-### Hyperlink text
-Embedding hyperlinks correctly is specifically mentioned in the accessibility guidelines. It comes under [success criterion 2.4.4 link purpose (in context)](https://www.w3.org/TR/WCAG21/#link-purpose-in-context) and [guideline 3.2 predictable](https://www.w3.org/TR/WCAG21/#predictable).
-
-#### Making hyperlinks accessible
-1. Use specific descriptions 
-
-Hyperlink text should be a specific description of the destination, not just ‘blog post’ or ‘report’ for example. The text should never be directional text like ‘click here’. Bear in mind that screen readers can be programmed to read out a list of links within a document. When link text is not specific, the links will be difficult to tell apart so the person cannot easily find a link they may be interested in.
-
-2. Don't use URLs 
-
-Do not use the [URL](https://techterms.com/definition/url) of a webpage as the hyperlink text, unless it is very short (e.g. www.unsplash.com). Long URLs get read out by a screen reader in full which can be very time consuming and annoying. Also, in most circumstances they do not describe the destination page.
-
-3. Linking to documents 
-
-If you are linking to another document the link text should contain the descriptive text, the type of document and its size, for example: ‘[Template to report breaches of the Code of Practice for Statistics (ODT, 23 KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2020/10/Breach-reporting-template.odt)’.
-
-4. Consistency in signposting  
-
-Make sure that links to the same destination have consistent text and that links with different purposes and destinations have different link text. For example, it is bad practice to provide lots of links to different destinations with non-specific link text like ‘Find out more’.
-
-5. Formatting link text
-
-[Link text should be underlined by default](https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF). If it is not underlined the regulations say that you have to consider colour contrast with surrounding text and a 'visual cue' that appears on mouse hover and keyboard focus. Bear in mind that, while not a necessity in terms of the accessibility guidelines, it is best practice for hyperlink text to be both underlined and have the correct amount of colour contrast with the background and the surrounding text.
-
-### Dates and time periods 
-It is best practice to format dates and time periods as advised by the [Office for National Statistics style guide](https://style.ons.gov.uk/house-style/dates/) and [Government Digital Service guidance](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style). 
-
-This means: 
-* do not use dashes, use ‘to’, for example, don’t use ‘Jan – Mar 2020’ use ‘Jan to Mar 2020’
-* it is fine to truncate days and months to save space
-* do not truncate years – for example, write: ‘Jan 1931’ not ‘Jan 31’ 
-* when referring to quarters of the year, write out the months, for example, “Jan to Mar 2020’ not ‘Q1 2020’
-* if your data needs specific dates for example: 01/02/10 you can present them like this but be aware screen readers will read this as ‘01 slash 02 slash 10’ which can be annoying, so it is best practice to write ‘1 Feb 2010’
-
-### Accessibility pointers for formattig that must be followed: 
-* No visual devices such as colour, shading or patterns should be used to divide up data regions ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).
-* No text is set in a vertical or diagonal direction - this is not mentioned specifically in WCAG but we consider it necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 4. distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable).
-* No text has spaces between letters in a word for visual effect as this can be difficult to read and screen readers will read the letters out one by one - this is not mentioned specifically in WCAG but we consider it necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)
-* Colour is never used as the only way to communicate a message ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color)).
-* The minimum font size used is size 12 - in general this will help you meet [success criterion 1.4.4 resize text](https://www.w3.org/TR/WCAG21/#resize-text).
-
-### Best practice pointers for formatting
-In terms of usability and accessibility: 
-
-* all fonts used should be sans serif (for example, Arial or Calibri) - people with dyslexia find serif fonts hard to read
-* avoid the use of underline and italic text - people with dyslexia can find italic and underlined text hard to read, if you need to highlight text it is best to use bold 
-* avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour (more information on how to do this can be found in the 'Checking text colour contrast' sub-section) 
-* aim to use the 'default' or 'automatic' colour settings for all text - doing this will ensure the spreadsheet takes on the specialised colour settings users of assitive technology may have set up on their software
-* avoid adding a background fill - some users will have settings that automatically change the colour of the background but this doesn't happen if you have added a fill colour – even if it is white. 
-* avoid adding grid lines or cell borders - in general it it better to keep things simple
-* avoid including images of charts in your spreadsheet, if you do you must carefully consider their accessibility, particularly the colour contrast between chart elements
-* left align all text in cells outside the table and all row headings within the table 
-* right align all data within a table and all data column headings 
-* use commas after every three decimal places in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation)
-
-### Checking text colour contrast  
-If colour is used in cells with text, use the [WebAIM colour contrast checker](https://webaim.org/resources/contrastchecker/) to see if the colours meet the accessibility regulations. Remember, legally you need to meet the AA standard. 
-
-Be aware that colours are coded in different ways. To use the WebAIM colour contrast checker you will need to know the hex code of the colours. Excel will give you the Red Green Blue (RGB) codes - you can use this [colour code converter](https://www.webfx.com/web-design/hex-to-rgb/) to get the hex codes.  
-
-### Checking colour contrast in charts 
-The use of colours in charts is more complex as you often have to consider colour contrast between different chart elements as well as with the background. Our [data visualisation guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-9) and the [style guide from the Office for National Statistics](https://style.ons.gov.uk/category/data-visualisation/using-colours/) both have useful tips on this area but neither have yet been fully updated with regards to the accessibility regulations. We are planning on looking into this in more detail soon. 
-
-## Symbols, footnotes and codes 
-It is best practise to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in rounded brackets instead of using ‘p’ or ‘r’. When needed, using letters to signify notes is generally OK as long as the key to what these letters mean is clearly laid out above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table.
-
-However, you should not use symbols to signify notes because: 
-* they can be confusing
-* screen readers may not recognise them 
-* users with low vision may not be able to see them
-
-Therefore, if you use symbols to signify notes it may lead to a fail of [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
-
-Similar arguments can also be made for the use of superscript. So we also advise against using this.  
-
-When footnotes are needed, an accessible way to signify them is to use the word 'note'. If doing this, we advise you to:
-* write out the word ‘note’ in the cell, with the number of the note, and put it in square brackets (we advise square brackets for notes and rounded brackets for units to differentiate them in a consistent way)
-* put a list of numbers if a cell needs to refer to more than one note – for example, write ‘[note 1,2,3]’ if a cell needs to refer to notes 1, 2 and 3. 
-* try to always put notes in table titles, column headings or row labels - putting them in specific cells may not fail accessibility but it does cause problems for machine readability and usability 
-* if a note is in a column heading, space the text so the note marker sits underneath the column header and any information about units (you can do this by pressing 'Alt + Enter')
- 
-#### Other uses for symbols 
-
-Symbols may be used in other ways. Be aware that some screen readers will skip over symbols completely. Consider how your text reads if you miss out the symbols, for example ‘Some shorthand is used in this spreadsheet, e = estimated, r = revised’ still makes sense if read out as ‘Some shorthand is used in this spreadsheet, e estimated, r revised’.  
-
-Generally the percentage symbol ‘%’ is well understood by screen readers. 
-
-Symbols like dashes and slashes can be used in classification and geography codes.  
-
-We are looking to put together more comprehensive advice for symbols soon.  
-
-#### Where to place detailed notes
-It is common practice for notes to be placed underneath a table. However there are several issues with this. In terms of usability and accessibility: 
-* it can take lots of scrolling to get to notes placed under very long tables (particularly for some users of assistive technology)
-* notes placed under tables may be missed by users of assistive technology who aren't expecting them to be there 
-* notes placed underneath a table need careful (and mostly manual) formatting to be made accessible (see the section on 'Structure and 'Cover sheets' for more information on how written content should be formatted)
-
-It is also the case that, in complex spreadsheets, identical notes are often placed under several tables across many worksheets. This can mean, when certain notes are updated or changed, some are accidentally missed out. 
-
-For these reasons we advise you to create a worksheet called ‘Notes’ which contains a table that lists all the detailed notes for the spreadsheet. 
-
-In terms of accessibility, if you use notes it is best practice to mention this above your tables, in a cell in column A and say where the notes can be found (more information about use of cells in column A can be found in the 'Structure' section of this guidance). 
-
-#### Example of presenting a key for shorthand and notes
-<insert example>
-
-#### Past advice on symbols and footnotes 
-In terms of machine readability, the advice on symbols and notes has been to put symbols or footnote markers in separate (very narrow) columns, next to the data. It is OK to do this in terms of accessibility, but you would need to give that column a heading and you might also need to mark up all the empty cells. This could make a table very wide which is not great for readability. 
-
-### Classification and geography codes 
-In some instances you may need to use classification or geography codes in your tables. Make sure you are using the correct, nationally recognised codes. These codes are fine in terms of accessibility as they are normally strings of letters and numbers. 
-
-When codes are not just strings of letters and numbers, you should still use codes consistently. It is OK to use symbols such as dashes and slashes here as that is how the code is constructed.
-
-In terms of usability, machine readability and accessibility ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)), codes should be in separate cells to the description of the code and the data. For example, country code AD should be in a separate cell to the country name Andorra, and then another cell for the data linked to this. The row or column containing the codes must be labelled clearly. 
-
-#### Example of presenting country codes
-<insert example>
 
 ## Tables
 
@@ -311,52 +169,167 @@ However, we are carrying out research into this, it may be the case that as long
 
 In terms of usability, blank cells do not tell a user why there is no data in the cell - a user might assume the data value is zero when this is not the case.
 
-Therefore our current advice for cells with no data is to give users information about why there is no data, without using symbols like a minus sign (-) or full stops (..). Instead, blank cells should be marked up descriptively. 
+Therefore our current advice for cells with no data is to give users information about why there is no data, without using symbols like full stops (..) or a dash (-). Instead, blank cells should be marked up descriptively. 
 
 Here are some examples of descriptions you may want to use: 
 * If there is no data available, type in ‘no data’.
 * If the data is missing, type in ‘missing’.
 * If the data would be disclosive, type in 'disclosive'.
 
-We advise against using 'NA' as while in statistics this often means Not Available, many users will assume it means Not Applicable. If you want to use NA as shorthand you must clearly define what it means, above the table, in a cell in column A so the information is available before a users comes to the table itself. 
+If you want to expand on any of your descriptions you should present the information above the table, in a cell in column A so the information is available before a user comes to the table itself. 
 
-The same advice stands if you want to expand on any of your descriptions of why a cell has no data. 
+We advise against using 'NA' to describe blank cells. While in statistics this often means Not Available, many users will assume it means Not Applicable. If you want to use NA as shorthand you must clearly define what it means, above the table, in a cell in column A.  
 
-##### Example of expanding on a description of a cell with no data
+##### Example of blank cells marked up descriptively
 <insert example>
 
-Please note - we are aware that leaving cells with no data blank may make it easier for users to perform further analysis, but this feature of usability has to be balanced against the accessibility regulations and the user need to understand why a cell has no data. As mentioned, our advice on blank cells may change as we do further research. 
+Please note - we are aware that leaving cells with no data blank may make it easier for users to perform further analysis, but this feature of usability has to be balanced against the accessibility guidelines and the importance of a user understanding why a cell has no data. As mentioned, our advice on blank cells may change as we do further research. 
 
 #### Machine readability 
 
 In terms of machine readability leaving cells with no data blank is best practice. Therefore if you are making a spreadsheet solely for machine readability purposes it is best practice to leave cells with no data blank. More information on creating spreadsheets optimised for machine readability can be found in the 'Saving and publishing spreadsheets' section of this guidance.
 
-## Communicating uncertainty in spreadsheets
+## Colour and formatting 
 
-When designing a statistical spreadsheet, it is best practice to consider how to appropriately communicate any uncertainty to your users. Bear in mind that the user may not read detailed documents, or they may have copied the spreadsheet to use in another context.
+### Written content
+All written content should follow the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
 
-Use notes or the cover sheet to: 
-* make it clear if there are any potential sources of bias or uncertainty – users need to know how this impacts on their use of the statistics
-* highlight relevant information about comparability issues both across time and with equivalent statistics released elsewhere in the UK 
+### Hyperlink text
+Embedding hyperlinks correctly is specifically mentioned in the accessibility guidelines. It comes under [success criterion 2.4.4 link purpose (in context)](https://www.w3.org/TR/WCAG21/#link-purpose-in-context) and [guideline 3.2 predictable](https://www.w3.org/TR/WCAG21/#predictable).
 
-For more information on notes and cover sheets please see the ‘Symbols and footnotes’ section and the ‘Worksheets providing information about the data’ section.
+#### Making hyperlinks accessible
+1. Use specific descriptions 
 
-### Confidence intervals 
+Hyperlink text should be a specific description of the destination, not just ‘blog post’ or ‘report’ for example. The text should never be directional text like ‘click here’. Bear in mind that screen readers can be programmed to read out a list of links within a document. When link text is not specific, the links will be difficult to tell apart so the person cannot easily find a link they may be interested in.
 
-When communicating confidence intervals put the higher and lower bounds in separate cells next to the data. Make sure all columns have clearly labelled column headings [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
+2. Don't use URLs 
 
-#### Example of how to present confidence intervals:
-<insert example> 
+Do not use the [URL](https://techterms.com/definition/url) of a webpage as the hyperlink text, unless it is very short (e.g. www.unsplash.com). Long URLs get read out by a screen reader in full which can be very time consuming and annoying. Also, in most circumstances they do not describe the destination page.
+
+3. Linking to documents 
+
+If you are linking to another document the link text should contain the descriptive text, the type of document and its size, for example: ‘[Template to report breaches of the Code of Practice for Statistics (ODT, 23 KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2020/10/Breach-reporting-template.odt)’.
+
+4. Consistency in signposting  
+
+Make sure that links to the same destination have consistent text and that links with different purposes and destinations have different link text. For example, it is bad practice to provide lots of links to different destinations with non-specific link text like ‘Find out more’.
+
+5. Formatting link text
+
+[Link text should be underlined by default](https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF). If it is not underlined the regulations say that you have to consider colour contrast with surrounding text and a 'visual cue' that appears on mouse hover and keyboard focus. Bear in mind that, while not a necessity in terms of the accessibility guidelines, it is best practice for hyperlink text to be both underlined and have the correct amount of colour contrast with the background and the surrounding text.
+
+### Dates and time periods 
+It is best practice to format dates and time periods as advised by the [Office for National Statistics style guide](https://style.ons.gov.uk/house-style/dates/) and [Government Digital Service guidance](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style). 
+
+This means: 
+* do not use dashes, use ‘to’, for example, don’t use ‘Jan – Mar 2020’ use ‘Jan to Mar 2020’
+* it is fine to truncate days and months to save space
+* do not truncate years – for example, write: ‘Jan 1931’ not ‘Jan 31’ 
+* when referring to quarters of the year, write out the months, for example, “Jan to Mar 2020’ not ‘Q1 2020’
+* if your data needs specific dates for example: 01/02/10 you can present them like this but be aware screen readers will read this as ‘01 slash 02 slash 10’ which can be annoying, so it is best practice to write ‘1 Feb 2010’
+
+### Other pointers for formatting that must be followed to meet the accessibility guidelines: 
+* No visual devices such as colour, shading or patterns should be used to divide up data regions ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).
+* No text is set in a vertical or diagonal direction - this is not mentioned specifically in WCAG but we consider it necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 4. distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable).
+* No text has spaces between letters in a word for visual effect as this can be difficult to read and screen readers will read the letters out one by one - this is not mentioned specifically in WCAG but we consider it necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)
+* Colour is never used as the only way to communicate a message ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color)).
+* The minimum font size used is size 12 - in general this will help you meet [success criterion 1.4.4 resize text](https://www.w3.org/TR/WCAG21/#resize-text).
+
+### Other pointers for formatting that should be followed in terms of best practice
+In terms of usability and accessibility: 
+
+* all fonts used should be sans serif (for example, Arial or Calibri) - people with dyslexia find serif fonts hard to read
+* avoid the use of underline and italic text - people with dyslexia can find italic and underlined text hard to read, if you need to highlight text it is best to use bold 
+* avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour (more information on how to do this can be found in the 'Checking text colour contrast' sub-section) 
+* aim to use the 'default' or 'automatic' colour settings for all text - doing this will ensure the spreadsheet takes on the specialised colour settings users of assitive technology may have set up on their software
+* avoid adding a background fill - some users will have settings that automatically change the colour of the background but this doesn't happen if you have added a fill colour – even if it is white. 
+* avoid adding grid lines or cell borders - in general it it better to keep things simple
+* avoid including images of charts in your spreadsheet, if you do you must carefully consider their accessibility, particularly the colour contrast between chart elements
+* left align all text in cells outside the table and all row headings within the table 
+* right align all data within a table and all data column headings 
+* use commas after every three decimal places in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation)
+
+### Checking text colour contrast  
+If colour is used in cells with text, use the [WebAIM colour contrast checker](https://webaim.org/resources/contrastchecker/) to see if the colours meet the accessibility regulations. Remember, legally you need to meet the AA standard. 
+
+Be aware that colours are coded in different ways. To use the WebAIM colour contrast checker you will need to know the hex code of the colours. Excel will give you the Red Green Blue (RGB) codes - you can use this [colour code converter](https://www.webfx.com/web-design/hex-to-rgb/) to get the hex codes.  
+
+### Checking colour contrast in charts 
+The use of colours in charts is more complex as you often have to consider colour contrast between different chart elements as well as with the background. Our [data visualisation guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-9) and the [style guide from the Office for National Statistics](https://style.ons.gov.uk/category/data-visualisation/using-colours/) both have useful tips on this area but neither have yet been fully updated with regards to the accessibility regulations. We are planning on looking into this in more detail soon. 
+
+## Images
+Avoid the use of any images or charts within a spreadsheet. 
+
+This includes any departmental logos. Placing a departmental logo on a cover sheet may fail [accessibility guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as these images can make it difficult for users of assistive technology to work out where they are on a worksheet. 
+
+If you can’t avoid it, make sure all logos, graphics, charts and any other images within the spreadsheet document have alternative text attached to them ([success criterion 1.1.1 non-text content](https://www.w3.org/TR/WCAG21/#non-text-content)) and place them on a separate worksheet to any tables. 
+
+You will also need to ensure charts are accessible – see our ‘[Making analytical publications accessible](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/)’ guidance for more information. 
+
+### How to add alt text for charts and images 
+1. Right click on the image or chart and select 'Format Picture/Chart Area'.
+2. Go to the size and properties box and select ‘Alt text’.
+3. Enter a title and description for your alt text in the boxes and select ‘OK’.
+
+On newer versions of Excel you may just need to right click and select 'Edit Alt Text'. 
+
+If an image is just decorative you should mark it as such by ticking the 'Decorative' checkbox (Excel 2013 doesn’t let you do this but later versions do).
+
+## Symbols, footnotes and codes 
+It is best practise to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in rounded brackets instead of using ‘p’ or ‘r’. When needed, using letters to signify notes is generally OK as long as the key to what these letters mean is clearly laid out above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table.
+
+However, you should not use symbols to signify notes because: 
+* they can be confusing
+* screen readers may not recognise them 
+* users with low vision may not be able to see them
+
+Therefore, if you use symbols to signify notes it may lead to a fail of [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
+
+Similar arguments can also be made for the use of superscript. So we also advise against using this.  
+
+When footnotes are needed, an accessible way to signify them is to use the word 'note'. If doing this, we advise you to:
+* write out the word ‘note’ in the cell, with the number of the note, and put it in square brackets (we advise square brackets for notes and rounded brackets for units to differentiate them in a consistent way)
+* put a list of numbers if a cell needs to refer to more than one note – for example, write ‘[note 1,2,3]’ if a cell needs to refer to notes 1, 2 and 3. 
+* try to always put notes in table titles, column headings or row labels - putting them in specific cells may not fail accessibility but it does cause problems for machine readability and usability 
+* if a note is in a column heading, space the text so the note marker sits underneath the column header and any information about units (you can do this by pressing 'Alt + Enter')
  
-### Statistical significance
+#### Other uses for symbols 
 
-Note that the credibility of assessing statistics using significance levels is currently under debate.
+Symbols may be used in other ways. Be aware that some screen readers will skip over symbols completely. Consider how your text reads if you miss out the symbols, for example ‘Some shorthand is used in this spreadsheet, e = estimated, r = revised’ still makes sense if read out as ‘Some shorthand is used in this spreadsheet, e estimated, r revised’.  
 
-If you are communicating statistical significance show where a change is statistically significant in a separate cell to the data. Ideally this should be done using words, for example: ‘Significant at 0.001 level’.
+Generally the percentage symbol ‘%’ is well understood by screen readers. 
 
-If it is not possible to use words to describe the statistical significance, you can use shorthand. To make this accessible you must provide a key, above the table, in a cell in column A (see the section on 'Symbols and footnotes' for more information about presenting information in a key). 
+Symbols like dashes and slashes can be used in classification and geography codes.  
 
-In the past the asterisk symbol (*) has traditionally been used to communicate the level of statistical significance. Not all screen readers can understand the asterisk symbol and many users of assistive technology can find them difficult to see and understand. Using them is likely to fail [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable). Therefore, if it is not possible to use words to describe the statistical significance you should use some form of shorthand using letters rather than the asterisk symbol. 
+We are looking to put together more comprehensive advice for symbols soon.  
+
+#### Where to place detailed notes
+It is common practice for notes to be placed underneath a table. However there are several issues with this. In terms of usability and accessibility: 
+* it can take lots of scrolling to get to notes placed under very long tables (particularly for some users of assistive technology)
+* notes placed under tables may be missed by users of assistive technology who aren't expecting them to be there 
+* notes placed underneath a table need careful (and mostly manual) formatting to be made accessible (see the section on 'Structure and 'Cover sheets' for more information on how written content should be formatted)
+
+It is also the case that, in complex spreadsheets, identical notes are often placed under several tables across many worksheets. This can mean, when certain notes are updated or changed, some are accidentally missed out. 
+
+For these reasons we advise you to create a worksheet called ‘Notes’ which contains a table that lists all the detailed notes for the spreadsheet. 
+
+In terms of accessibility, if you use notes it is best practice to mention this above your tables, in a cell in column A and say where the notes can be found (more information about use of cells in column A can be found in the 'Structure' section of this guidance). 
+
+#### Example of presenting a key for shorthand and notes
+<insert example>
+
+#### Past advice on symbols and footnotes 
+In terms of machine readability, the advice on symbols and notes has been to put symbols or footnote markers in separate (very narrow) columns, next to the data. It is OK to do this in terms of accessibility, but you would need to give that column a heading and you might also need to mark up all the empty cells. This could make a table very wide which is not great for readability. 
+
+### Classification and geography codes 
+In some instances you may need to use classification or geography codes in your tables. Make sure you are using the correct, nationally recognised codes. These codes are fine in terms of accessibility as they are normally strings of letters and numbers. 
+
+When codes are not just strings of letters and numbers, you should still use codes consistently. It is OK to use symbols such as dashes and slashes here as that is how the code is constructed.
+
+In terms of usability, machine readability and accessibility ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)), codes should be in separate cells to the description of the code and the data. For example, country code AD should be in a separate cell to the country name Andorra, and then another cell for the data linked to this. The row or column containing the codes must be labelled clearly. 
+
+#### Example of presenting country codes
+<insert example>
 
 ## Structure
 Properly structuring your content is important to meet [success criterion 1.3.1 Info and Relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
@@ -499,6 +472,34 @@ Remember this table of notes will need to be marked up and named appropriately.
 ### How to supply metadata if optimising for machine readability
 
 If you are publishing a spreadsheet optimised for machine readability it is best to remove all information about the data (metadata) from the spreadsheet file. This includes information in the cover sheet, table of contents and any notes. Metadata should instead be provided via an associated metadata file. For example, metadata for statistics.csv should be provided in the statistics.csv-metadata.json file. See [CSVW (CSV on the web)]( https://www.w3.org/TR/tabular-data-primer/#metadata) for an appropriate metadata file specification.
+
+## Communicating uncertainty in spreadsheets
+
+When designing a statistical spreadsheet, it is best practice to consider how to appropriately communicate any uncertainty to your users. Bear in mind that the user may not read detailed documents, or they may have copied the spreadsheet to use in another context.
+
+Use notes or the cover sheet to: 
+* make it clear if there are any potential sources of bias or uncertainty – users need to know how this impacts on their use of the statistics
+* highlight relevant information about comparability issues both across time and with equivalent statistics released elsewhere in the UK 
+
+For more information on notes and cover sheets please see the ‘Symbols and footnotes’ section and the ‘Worksheets providing information about the data’ section.
+
+### Confidence intervals 
+
+When communicating confidence intervals put the higher and lower bounds in separate cells next to the data. Make sure all columns have clearly labelled column headings [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
+
+#### Example of how to present confidence intervals:
+<insert example> 
+ 
+### Statistical significance
+
+Note that the credibility of assessing statistics using significance levels is currently under debate.
+
+If you are communicating statistical significance show where a change is statistically significant in a separate cell to the data. Ideally this should be done using words, for example: ‘Significant at 0.001 level’.
+
+If it is not possible to use words to describe the statistical significance, you can use shorthand. To make this accessible you must provide a key, above the table, in a cell in column A (see the section on 'Symbols and footnotes' for more information about presenting information in a key). 
+
+In the past the asterisk symbol (*) has traditionally been used to communicate the level of statistical significance. Not all screen readers can understand the asterisk symbol and many users of assistive technology can find them difficult to see and understand. Using them is likely to fail [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable). Therefore, if it is not possible to use words to describe the statistical significance you should use some form of shorthand using letters rather than the asterisk symbol. 
+
 
 ## Worksheets with multiple tables 
 
