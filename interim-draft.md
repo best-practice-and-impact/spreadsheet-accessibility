@@ -27,8 +27,8 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 * [Document information](#Document-information)
 * [Images](#Images) 
 * [Colour and formatting](#Colour-and-formatting)
-* [Tables](#Tables)
 * [Symbols, footnotes and codes](#Symbols-footnotes-and-codes)
+* [Tables](#Tables)
 * [Blank cells](#Blank-cells)
 * [Communicating uncertainty in spreadsheets](#Communicating-uncertainty-in-spreadsheets)
 * [Structure](#Structure)
@@ -146,6 +146,61 @@ Be aware that colours are coded in different ways. To use the WebAIM colour cont
 ### Checking colour contrast in charts 
 The use of colours in charts is more complex as you often have to consider colour contrast between different chart elements as well as with the background. Our [data visualisation guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-9) and the [style guide from the Office for National Statistics](https://style.ons.gov.uk/category/data-visualisation/using-colours/) both have useful tips on this area but neither have yet been fully updated with regards to the accessibility regulations. We are planning on looking into this in more detail soon. 
 
+## Symbols, footnotes and codes 
+It is best practise to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in rounded brackets instead of using ‘p’ or ‘r’. When needed, using letters to signify notes is generally OK as long as the key to what these letters mean is clearly laid out above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table.
+
+However, you should not use symbols to signify notes because: 
+* they can be confusing
+* screen readers may not recognise them 
+* users with low vision may not be able to see them
+
+Therefore, if you use symbols to signify notes it may lead to a fail of [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
+
+Similar arguments can also be made for the use of superscript. So we also advise against using this.  
+
+When footnotes are needed, an accessible way to signify them is to use the word 'note'. If doing this, we advise you to:
+* write out the word ‘note’ in the cell, with the number of the note, and put it in square brackets (we advise square brackets for notes and rounded brackets for units to differentiate them in a consistent way)
+* put a list of numbers if a cell needs to refer to more than one note – for example, write ‘[note 1,2,3]’ if a cell needs to refer to notes 1, 2 and 3. 
+* try to always put notes in table titles, column headings or row labels - putting them in specific cells may not fail accessibility but it does cause problems for machine readability and usability 
+* if a note is in a column heading, space the text so the note marker sits underneath the column header and any information about units (you can do this by pressing 'Alt + Enter')
+ 
+#### Other uses for symbols 
+
+Symbols may be used in other ways. Be aware that some screen readers will skip over symbols completely. Consider how your text reads if you miss out the symbols, for example ‘Some shorthand is used in this spreadsheet, e = estimated, r = revised’ still makes sense if read out as ‘Some shorthand is used in this spreadsheet, e estimated, r revised’.  
+
+Generally the percentage symbol ‘%’ is well understood by screen readers. 
+
+Symbols like dashes and slashes can be used in classification and geography codes.  
+
+We are looking to put together more comprehensive advice for symbols soon.  
+
+#### Where to place detailed notes
+It is common practice for notes to be placed underneath a table. However there are several issues with this. In terms of usability and accessibility: 
+* it can take lots of scrolling to get to notes placed under very long tables (particularly for some users of assistive technology)
+* notes placed under tables may be missed by users of assistive technology who aren't expecting them to be there 
+* notes placed underneath a table need careful (and mostly manual) formatting to be made accessible (see the section on 'Structure and 'Cover sheets' for more information on how written content should be formatted)
+
+It is also the case that, in complex spreadsheets, identical notes are often placed under several tables across many worksheets. This can mean, when certain notes are updated or changed, some are accidentally missed out. 
+
+For these reasons we advise you to create a worksheet called ‘Notes’ which contains a table that lists all the detailed notes for the spreadsheet. 
+
+In terms of accessibility, if you use notes it is best practice to mention this above your tables, in a cell in column A and say where the notes can be found (more information about use of cells in column A can be found in the 'Structure' section of this guidance). 
+
+#### Example of presenting a key for shorthand and notes
+<insert example>
+
+#### Past advice on symbols and footnotes 
+In terms of machine readability, the advice on symbols and notes has been to put symbols or footnote markers in separate (very narrow) columns, next to the data. It is OK to do this in terms of accessibility, but you would need to give that column a heading and you might also need to mark up all the empty cells. This could make a table very wide which is not great for readability. 
+
+### Classification and geography codes 
+In some instances you may need to use classification or geography codes in your tables. Make sure you are using the correct, nationally recognised codes. These codes are fine in terms of accessibility as they are normally strings of letters and numbers. 
+
+When codes are not just strings of letters and numbers, you should still use codes consistently. It is OK to use symbols such as dashes and slashes here as that is how the code is constructed.
+
+In terms of usability, machine readability and accessibility ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)), codes should be in separate cells to the description of the code and the data. For example, country code AD should be in a separate cell to the country name Andorra, and then another cell for the data linked to this. The row or column containing the codes must be labelled clearly. 
+
+#### Example of presenting country codes
+<insert example>
 
 ## Tables
 
@@ -221,11 +276,11 @@ Every table in your spreadsheet must have a correctly tagged header row, as desc
 Bear in mind that Excel can only tag one row as the header row. It is not necessarily a fail if you have subheading rows but as they can't be tagged as headers it may make the table confusing - so whenever possible, it is best avoided. 
 
 ### Wrap text 
-Use the ‘wrap text’ function and adjust row height and column width to ensure all text you want to appear in cells within a table is visible and clearly spaced out - this is important because users with dyslexia can find it difficult to read crowded text. It is also important because a screen reader will repeatedly read out ‘overflowing’ or ‘cropped’ after every cell which contains text that does not fit.
+It is best practice to use the ‘wrap text’ function and adjust row height and column width to ensure all text you want to appear in cells within a table is visible and clearly spaced out. This is important because users with dyslexia can find it difficult to read crowded text. It is also important because a screen reader will repeatedly read out ‘overflowing’ or ‘cropped’ after every cell which contains text that does not fit.
 
 It is OK for text outside a table to overflow the cell – a screen reader will still read out ‘overflowing’ or ‘cropped’ but as this won’t be repetitive it is not a problem.
 
-We consider this to be necessary to passs [guideline 1.4 distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable) but it is not specifically mentioned in the guidelines.
+This is not specfically mentioned in the accessibility guidelines, but could be considered necessary to passs [guideline 1.4 distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable).
 
 ### Adding filters
 We advise you to avoid adding filters. They may fail the accessibility regulations if they obscure data. 
@@ -241,68 +296,11 @@ As with filters, this information should be in a cell in column A, above the tab
 Be aware that if you save your spreadsheet in the ODS open format (which we advise you to do) freeze panes will disappear. 
 
 ### Adding alt text to tables 
-In Excel, you can add alternative text to your table by right clicking anywhere in the table and selecting ‘Table’ and ‘Alternative text’. However, it is not necessary to do this to pass the accessibility regulations - as long as you have marked your tables up correctly.  
+In Excel, you can add alternative text to your table by right clicking anywhere in the table and selecting ‘Table’ and ‘Alternative text’. However, if your tables are marked up correctly it is not necessary to do this to pass the accessibility guidelines.
 
-Be aware that despite this, newer versions of Excel have a built-in accessibility checker which will bring up tables without alt text as a fail. You don’t need to worry about this. 
+Be aware that despite this, newer versions of Excel have a built-in accessibility checker which may bring up tables without alt text as a fail. You don’t need to worry about this. 
 
-If you save your spreadsheet in the Open Document Spreadsheet (ODS) format (which we advise you to do) alternative text for tables will disappear – but this does not matter as it is not needed to pass the accessibility regulations. Note: alternative text for images and charts does not disappear when you save in the ODS format. 
-
-## Symbols, footnotes and codes 
-It is best practise to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in rounded brackets instead of using ‘p’ or ‘r’. When needed, using letters to signify notes is generally OK as long as the key to what these letters mean is clearly laid out above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table.
-
-However, you should not use symbols to signify notes because: 
-* they can be confusing
-* screen readers may not recognise them 
-* users with low vision may not be able to see them
-
-Therefore, if you use symbols to signify notes it may lead to a fail of [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
-
-Similar arguments can also be made for the use of superscript. So we also advise against using this.  
-
-When footnotes are needed, an accessible way to signify them is to use the word 'note'. If doing this, we advise you to:
-* write out the word ‘note’ in the cell, with the number of the note, and put it in square brackets (we advise square brackets for notes and rounded brackets for units to differentiate them in a consistent way)
-* put a list of numbers if a cell needs to refer to more than one note – for example, write ‘[note 1,2,3]’ if a cell needs to refer to notes 1, 2 and 3. 
-* try to always put notes in table titles, column headings or row labels - putting them in specific cells may not fail accessibility but it does cause problems for machine readability and usability 
-* if a note is in a column heading, space the text so the note marker sits underneath the column header and any information about units (you can do this by pressing 'Alt + Enter')
- 
-#### Other uses for symbols 
-
-Symbols may be used in other ways. Be aware that some screen readers will skip over symbols completely. Consider how your text reads if you miss out the symbols, for example ‘Some shorthand is used in this spreadsheet, e = estimated, r = revised’ still makes sense if read out as ‘Some shorthand is used in this spreadsheet, e estimated, r revised’.  
-
-Generally the percentage symbol ‘%’ is well understood by screen readers. 
-
-Symbols like dashes and slashes can be used in classification and geography codes.  
-
-We are looking to put together more comprehensive advice for symbols soon.  
-
-#### Where to place detailed notes
-
-It is common practice for notes to be placed underneath a table. However there are several issues with this. In terms of usability and accessibility: 
-* it can take lots of scrolling to get to notes placed under very long tables (particularly for some users of assistive technology)
-* notes placed under tables may be missed by users of assistive technology who aren't expecting them to be there 
-* notes placed underneath a table need careful (and mostly manual) formatting to be made accessible (see the section on 'Structure and 'Cover sheets' for more information on how written content should be formatted)
-
-It is also the case that, in complex spreadsheets, identical notes are often placed under several tables across many worksheets. This can mean, when certain notes are updated or changed, some are accidentally missed out. 
-
-For these reasons we advise you to create a worksheet called ‘Notes’ which contains a table that lists all the detailed notes for the spreadsheet. 
-
-In terms of accessibility, if you use notes it is best practice to mention this above your tables, in a cell in column A and say where the notes can be found (more information about use of cells in column A can be found in the 'Structure' section of this guidance). 
-
-#### Example of presenting a key and notes
-<insert example>
-
-#### Past advice on symbols and footnotes 
-In terms of machine readability, the advice on symbols and notes has been to put symbols or footnote markers in separate (very narrow) columns, next to the data. It is OK to do this in terms of accessibility, but you would need to give that column a heading and you might also need to mark up all the empty cells. This could make a table very wide which is not great for readability. 
-
-### Classification and geography codes 
-In some instances you may need to use classification or geography codes in your tables. Make sure you are using the correct, nationally recognised codes. These codes are fine in terms of accessibility as they are normally strings of letters and numbers. 
-
-When codes are not just strings of letters and numbers, you should still use codes consistently. It is OK to use symbols such as dashes and slashes here as that is how the code is constructed.
-
-In terms of usability, machine readability and accessibility ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)), codes should be in separate cells to the description of the code and the data. For example, country code AD should be in a separate cell to the country name Andorra, and then another cell for the data linked to this. The row or column containing the codes must be labelled clearly. 
-
-#### Example of setting out codes
-<insert example>
+If you save your spreadsheet in the Open Document Spreadsheet (ODS) format (which we advise you to do) alternative text for tables will disappear – but this does not matter as it is not needed to pass the accessibility guidelines. Note: alternative text for images and charts does not disappear when you save in the ODS format. 
 
 ## Blank cells
 
