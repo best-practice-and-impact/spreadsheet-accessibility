@@ -31,6 +31,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 * [Colour and formatting](#Colour-and-formatting)
 * [Tables](#Tables)
 * [Symbols, footnotes and codes](#Symbols-footnotes-and-codes)
+* [Blank cells](#Blank-cells)
 * [Communicating uncertainty in spreadsheets](#Communicating-uncertainty-in-spreadsheets)
 * [Structure](#Structure)
 * [Metadata worksheets](#metadata-worksheets)
