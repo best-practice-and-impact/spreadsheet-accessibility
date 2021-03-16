@@ -32,6 +32,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 * [Blank cells](#Blank-cells)
 * [Communicating uncertainty in spreadsheets](#Communicating-uncertainty-in-spreadsheets)
 * [Structure](#Structure)
+* [Titles of spreadsheets, worksheets and tables](#Titles-of-spreadsheets-worksheets-and-tables)
 * [Metadata worksheets](#metadata-worksheets)
 * [Worksheets with multiple tables](#Worksheets-with-multiple-tables)
 * [Macros, formulas and application code](#Macros-formulas-and-application-code)
@@ -359,25 +360,20 @@ If it is not possible to use words to describe the statistical significance, you
 
 In the past the asterisk symbol (*) has traditionally been used to communicate the level of statistical significance. Not all screen readers can understand the asterisk symbol and many users of assistive technology can find them difficult to see and understand. Using them is likely to fail [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable). Therefore, if it is not possible to use words to describe the statistical significance you should use some form of shorthand using letters rather than the asterisk symbol. 
 
-
 ## Structure
-
 Properly structuring your content is important to meet [success criterion 1.3.1 Info and Relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
 
 ### Pointers for the spreadsheet as a whole
 
 #### Provide supporting information 
-
 From a usability point of view, statistics should not be completely separated from supporting information. Context and caveats are vital to ensure users have enough information to interpret and make effective use of the data. You should hyperlink to supporting information if it cannot be easily included within the spreadsheet tabs. 
 
 #### Cover sheet and table of contents 
-
 Label your first worksheet ‘Cover_sheet’ and use it to provide information about what is in the spreadsheet. If your spreadsheet has many worksheets, create a table of contents that describes the data within each worksheet.
 
 More guidance on cover sheets and the table of contents can be found in the ‘Worksheets providing information about the data’ section of this guidance.
 
 #### Worksheet names
-
 Ideally each worksheet should have a unique name that clearly describes the information found in that sheet. If this is not possible, give each sheet a number and use your table of contents to describe what is in each sheet number. 
 
 To avoid any confusion for users of assistive technology and to improve machine readability you should: 
@@ -386,7 +382,6 @@ To avoid any confusion for users of assistive technology and to improve machine 
 * keep worksheet tab names as consistent as you can between releases
 
 #### Blank worksheets
-
 Remove any blank worksheets. Blank worksheets can be confusing as it is not clear if they are meant to be blank or if something is missing. They may also make navigation confusing for users of assistive technology, failing [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable)
 
 #### Other things to avoid 
@@ -420,7 +415,7 @@ It is best practice to avoid putting any information below a table. Ideally you 
 
 Information presented below a table may be missed and can be difficult to navigate to, especially if a table is very long and lots of scrolling is needed. If a user needs to access information in the notes to understand a table, putting them below the table may lead to your spreadsheet failing [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence). 
 
-#### Titles of spreadsheets, worksheets and tables
+## Titles of spreadsheets, worksheets and tables
 
 Titles and headings will affect data usability. If users cannot find or understand the data this limits their use and your spreadsheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [3.1 readable](https://www.w3.org/TR/WCAG21/#readable). It may also fail [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels)
 
@@ -438,10 +433,10 @@ It is best practice to have one table per worksheet. This means the title of the
 
 In large spreadsheets it is a good idea to number your tables, for example: ‘Table 1: Number of people in different age groups, UK, seasonally adjusted’. 
 
-#### Where to place and how to tag titles 
+### Where to place and how to tag titles 
 To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) the worksheet title should be in Cell A1 and should be marked up as Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. This 'marks up' the heading and helps users of assistive technology navigate around the spreadsheet. It is best practice to modify the default colour and border settings for text tagged as a heading. 
 
-##### Modify the default formatting for cells tagged as headings
+### Modify the default formatting for cells tagged as headings
 * Select the cell the heading text is in
 * Select 'Cell Styles' in the 'Styles' section of the 'Home' ribbon 
 * Go to the headings style you want to modify (the title of a worksheet should be 'Headings 1')
