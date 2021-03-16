@@ -22,6 +22,15 @@ We outline when the advice relates to machine readability and when there are pos
 
 We are planning to publish a checklist for making spreadsheets machine readable in the future.
 
+## Example spreadsheet
+
+We have applied our guidance to the Labour Market Summary spreadsheet published in January 2021 by the Office for National Statistics (ONS). We have addressed four of the worksheets in this large and complex spreadsheet. The Disability Accessibility Centre are currently auditing our edited version to ensure it meets all the accessibility guidelines. We will update this guidance when we have their feedback.
+
+We hope this example will help you understand and apply our guidance. 
+
+[Original version published on the ONS website](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics). 
+Our version edited for accessibility best practice. 
+
 ## Contents 
 
 * [Document information](#Document-information)
@@ -375,9 +384,6 @@ If relevant, information about frozen panes, filters and any symbols or shorthan
 
 If you have several worksheet tabs and they use different sources, a cell in column A should contain information about the source(s) for the table on that sheet. However, if each table in the spreadsheet uses the same source(s), the information about source(s) can go on the cover sheet. 
 
-##### Example of presenting information in column A
-<insert example>
-
 #### Positioning tables on worksheets 
 Position tables against the left-hand edges of each sheet. Don’t leave a blank column as a gap. As mentioned users of assistive technology tend to navigate down from cell A1, if they hit blank cells it can be very hard to navigate to where the table is and your spreadsheet may fail [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
@@ -407,7 +413,10 @@ In large spreadsheets it is a good idea to number your tables, for example: ‘T
 ### Where to place and how to tag titles 
 To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) the worksheet title should be in Cell A1 and should be marked up as Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. This 'marks up' the heading and helps users of assistive technology navigate around the spreadsheet. It is best practice to modify the default colour and border settings for text tagged as a heading. 
 
-### Modify the default formatting for cells tagged as headings
+### Formatting cells tagged as headings
+The default formatting for headings is not accessible. We advise you to modify the default formatting rather than to simply edit the text colour and cell borders as this is better for accessibility. See the 'Colour and formatting' section for more information. 
+
+#### How to modify the default formatting of headings
 * Select the cell the heading text is in
 * Select 'Cell Styles' in the 'Styles' section of the 'Home' ribbon 
 * Go to the headings style you want to modify (the title of a worksheet should be 'Headings 1')
@@ -496,9 +505,9 @@ Note that the credibility of assessing statistics using significance levels is c
 
 If you are communicating statistical significance show where a change is statistically significant in a separate cell to the data. Ideally this should be done using words, for example: ‘Significant at 0.001 level’.
 
-If it is not possible to use words to describe the statistical significance, you can use shorthand. To make this accessible you must provide a key, above the table, in a cell in column A (see the section on 'Symbols and footnotes' for more information about presenting information in a key). 
+If it is not possible to use words to describe the statistical significance, you can use letters as shorthand (not symbols). To make this accessible you must provide a key, above the table, in a cell in column A (see the section on 'Symbols and footnotes' for more information). 
 
-In the past the asterisk symbol (*) has traditionally been used to communicate the level of statistical significance. Not all screen readers can understand the asterisk symbol and many users of assistive technology can find them difficult to see and understand. Using them is likely to fail [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable). Therefore, if it is not possible to use words to describe the statistical significance you should use some form of shorthand using letters rather than the asterisk symbol. 
+In the past the asterisk symbol (*) has traditionally been used to communicate the level of statistical significance. Not all screen readers can understand the asterisk symbol and many disabled users can find them difficult to see and understand. Using them is likely to fail [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable). Therefore, if it is not possible to use words to describe the statistical significance you should use some form of shorthand using letters rather than the asterisk symbol. 
 
 
 ## Worksheets with multiple tables 
