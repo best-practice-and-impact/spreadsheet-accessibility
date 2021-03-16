@@ -35,6 +35,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 * [Structure](#Structure)
 * [Metadata worksheets](#metadata-worksheets)
 * [Worksheets with multiple tables](#Worksheets-with-multiple-tables)
+* [Macros, formulas and application code](#Macros-formulas-and-application-code)
 * [Accessibility checker](#Accessibility-checker)
 * [Saving and publishing spreadsheets](#Saving-and-publishing-spreadsheets)
 
@@ -164,11 +165,6 @@ Merged and split cells make tables hard to understand for users of assistive tec
 
 ### Nested tables
 Do not nest tables within other tables, this kind of structure is difficult to understand for users of assistive technology, removing them is key to meeting [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
-
-### Macros, formulas and application code
-We advise you to avoid publishing spreadsheets with macros in. It is difficult to ensure these meet the accessibility regulations and, in general, they are bad for machine readability. 
-
-It is also best practice to remove formulas and any application code contained in your spreadsheet. Formulas and code can cause confusion and they can pose a security risk. If you have to include formulas or code, ensure they are hard coded to avoid accidental errors in use.
 
 ### Blank rows and columns
 Remove all blank rows and blank columns. Blank rows and columns within the tables themselves may be perceived as the edge of the data area rather than a divider. Removing them is key to meeting accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics). If blank rows and columns are used to create space you can adjust column width and row height instead. 
@@ -330,7 +326,7 @@ In terms of usability, machine readability and accessibility ([success criterion
 #### Example of setting out codes
 <insert example>
 
-### Blank cells
+## Blank cells
 
 #### Accessibility and usability
 When cells with no data are left blank it can cause confusion for users of assistive technology because it makes it difficult for them to work out where the table starts and ends. Therefore, blank cells could be considered a fail of [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
@@ -565,6 +561,11 @@ Each table should be marked up and named (more information on this in the 'Table
 The first table on the worksheet should border the left hand edge of the worksheet (don't leave any gaps).
 
 Tables should be separated by a single blank row or column - large gaps between tables could be misunderstood by screen reader users
+
+## Macros, formulas and application code
+We advise you to avoid publishing spreadsheets with macros in. It is difficult to ensure these meet the accessibility regulations and, in general, they are bad for machine readability. 
+
+It is also best practice to remove formulas and any application code contained in your spreadsheet. Formulas and code can cause confusion and they can pose a security risk. If you have to include formulas or code, ensure they are hard coded to avoid accidental errors in use.
 
 ## Accessibility checker
 Newer versions of Excel have a built-in accessibility checker. You can use this to see what issues it flags up. But be aware that it is a bit like using a spelling and grammar check. It is likely to miss some things and it may bring up things that are not relevant.  
