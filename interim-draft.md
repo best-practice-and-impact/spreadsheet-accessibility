@@ -26,7 +26,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 
 * [Document information](#Document-information)
 * [Tables](#Tables)
-* [Empty cells](#Empty-cells)
+* [Cells with no data](#Cells-with-no-data)
 * [Colour and formatting](#Colour-and-formatting)
 * [Images](#Images) 
 * [Symbols, footnotes and codes](#Symbols-footnotes-and-codes)
