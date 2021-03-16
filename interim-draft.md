@@ -480,13 +480,13 @@ To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/W
 Note: these instructions may differ for different versions of Excel
 
 ## Metadata worksheets
-You should include worksheets with information about the data (metadata).
+It is best practice to include worksheets with information about the data (metadata).
 
 ### Cover sheet
 
 If your data is simple and there is only one table in your spreadsheet, you might not need a cover sheet. However, they are generally useful in most circumstances. 
 
-You should use your cover sheet to provide key information about the data in the spreadsheet. However, do not put too much information in it. If your cover sheet is starting to look more like a text document, it is best practice to create a webpage you can link to from the cover sheet instead.
+You should use your cover sheet to provide key information about the data in the spreadsheet. However, if your cover sheet is starting to look more like a text document, it is best practice to create a webpage you can link to from the cover sheet instead.
 
 #### Making cover sheets accessible
 
