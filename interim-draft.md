@@ -176,7 +176,7 @@ Here are some examples of descriptions you may want to use:
 * If the data is missing, type in ‘missing’.
 * If the data would be disclosive, type in 'disclosive'.
 
-If you want to expand on any of your descriptions you should present the information above the table, in a cell in column A so the information is available before a user comes to the table itself. 
+If you wish to expand on any of your descriptions ideally you should present the information above the table, in a cell in column A so the information is available before a user comes to the table itself. If the information is lengthy you can say the full explanation is available on the cover sheet or in the notes table (more information on both of these in the 'Symbols, footnotes and codes' section and the 'Metadata worksheets' section). 
 
 We advise against using 'NA' to describe cells with no data. While in statistics this often means Not Available, many users will assume it means Not Applicable. If you want to use NA as shorthand you must clearly define what it means, above the table, in a cell in column A.  
 
