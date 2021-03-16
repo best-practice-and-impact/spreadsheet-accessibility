@@ -26,7 +26,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 
 * [Document information](#Document-information)
 * [Tables](#Tables)
-* [Blank cells](#Blank-cells)
+* [Empty cells](#Empty-cells)
 * [Colour and formatting](#Colour-and-formatting)
 * [Images](#Images) 
 * [Symbols, footnotes and codes](#Symbols-footnotes-and-codes)
@@ -160,7 +160,7 @@ Be aware that despite this, newer versions of Excel have a built-in accessibilit
 
 If you save your spreadsheet in the Open Document Spreadsheet (ODS) format (which we advise you to do) alternative text for tables will disappear – but this does not matter as it is not needed to pass the accessibility guidelines. Note: alternative text for images and charts does not disappear when you save in the ODS format. 
 
-## Blank cells
+## Cells with no data
 
 #### Accessibility and usability
 When cells with no data are left blank it can cause confusion for users of assistive technology because it makes it difficult for them to work out where the table starts and ends. Therefore, blank cells could be considered a fail of [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
@@ -169,7 +169,7 @@ However, we are carrying out research into this, it may be the case that as long
 
 In terms of usability, blank cells do not tell a user why there is no data in the cell - a user might assume the data value is zero when this is not the case.
 
-Therefore our current advice for cells with no data is to give users information about why there is no data, without using symbols like full stops (..) or a dash (-). Instead, blank cells should be marked up descriptively. 
+Therefore our current advice for cells with no data is to give users information about why there is no data, without using symbols like full stops (..) or a dash (-). Instead, cells with no data should be marked up descriptively. 
 
 Here are some examples of descriptions you may want to use: 
 * If there is no data available, type in ‘no data’.
@@ -178,12 +178,12 @@ Here are some examples of descriptions you may want to use:
 
 If you want to expand on any of your descriptions you should present the information above the table, in a cell in column A so the information is available before a user comes to the table itself. 
 
-We advise against using 'NA' to describe blank cells. While in statistics this often means Not Available, many users will assume it means Not Applicable. If you want to use NA as shorthand you must clearly define what it means, above the table, in a cell in column A.  
+We advise against using 'NA' to describe cells with no data. While in statistics this often means Not Available, many users will assume it means Not Applicable. If you want to use NA as shorthand you must clearly define what it means, above the table, in a cell in column A.  
 
 ##### Example of blank cells marked up descriptively
 <insert example>
 
-Please note - we are aware that leaving cells with no data blank may make it easier for users to perform further analysis, but this feature of usability has to be balanced against the accessibility guidelines and the importance of a user understanding why a cell has no data. As mentioned, our advice on blank cells may change as we do further research. 
+Please note - we are aware that leaving cells with no data blank may make it easier for users to perform further analysis, but this feature of usability has to be balanced against the accessibility guidelines and the importance of a user understanding why a cell has no data. As mentioned, our advice on cells with no data may change as we do further research. 
 
 #### Machine readability 
 
