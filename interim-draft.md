@@ -188,8 +188,7 @@ If you wish to expand on any of your descriptions ideally you should present the
 
 We advise against using 'NA' to describe cells with no data. While in statistics this often means Not Available, many users will assume it means Not Applicable. If you want to use NA as shorthand you must clearly define what it means, above the table, in a cell in column A.  
 
-##### Example of blank cells marked up descriptively
-<insert example>
+[Example of blank cells marked up descriptively (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-with-empty-cells.ods)
 
 Please note - we are aware that leaving cells with no data blank may make it easier for users to perform further analysis, but this feature of usability has to be balanced against the accessibility guidelines and the importance of a user understanding why a cell has no data. As mentioned, our advice on cells with no data may change as we do further research. 
 
@@ -323,8 +322,7 @@ For these reasons we advise you to create a worksheet called ‘Notes’ which c
 
 In terms of accessibility, if you use notes it is best practice to mention this above your tables, in a cell in column A and say where the notes can be found (more information about use of cells in column A can be found in the 'Structure' section of this guidance). 
 
-#### Example of presenting a key for shorthand and notes
-<insert example>
+[Example of presenting a key for shorthand and notes (ODS, 4.4KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-with-notes-and-a-key.ods)
 
 #### Past advice on symbols and footnotes 
 In terms of machine readability, the advice on symbols and notes has been to put symbols or footnote markers in separate (very narrow) columns, next to the data. It is OK to do this in terms of accessibility, but you would need to give that column a heading and you might also need to mark up all the empty cells. This could make a table very wide which is not great for readability. 
@@ -336,8 +334,7 @@ When codes are not just strings of letters and numbers, you should still use cod
 
 In terms of usability, machine readability and accessibility ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)), codes should be in separate cells to the description of the code and the data. For example, country code AD should be in a separate cell to the country name Andorra, and then another cell for the data linked to this. The row or column containing the codes must be labelled clearly. 
 
-#### Example of presenting country codes
-<insert example>
+[Example of presenting country codes (ODS, 6.31KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-presenting-country-codes.ods)
 
 ## Structure
 Properly structuring your content is important to meet [success criterion 1.3.1 Info and Relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
@@ -495,9 +492,8 @@ For more information on notes and cover sheets please see the ‘Symbols and foo
 
 When communicating confidence intervals put the higher and lower bounds in separate cells next to the data. Make sure all columns have clearly labelled column headings [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
 
-#### Example of how to present confidence intervals:
-<insert example> 
- 
+[Example of how to present confidence intervals (ODS, 4.19KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-how-to-present-confidence-intervals.ods)
+
 ### Statistical significance
 
 Note that the credibility of assessing statistics using significance levels is currently under debate.
