@@ -30,6 +30,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 * [Images](#Images) 
 * [Colour and formatting](#Colour-and-formatting)
 * [Tables](#Tables)
+* [Symbols, footnotes and codes](#Symbols,-footnotes-and-codes)
 * [Communicating uncertainty in spreadsheets](#Communicating-uncertainty-in-spreadsheets)
 * [Structure](#Structure)
 * [Metadata worksheets](#metadata-worksheets)
@@ -243,7 +244,30 @@ It is OK for text outside a table to overflow the cell – a screen reader will 
 
 We consider this to be necessary to passs [guideline 1.4 distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable) but it is not specifically mentioned in the guidelines.
 
-### Symbols and footnotes 
+### Adding alt text to tables 
+
+In Excel, you can add alternative text to your table by right clicking anywhere in the table and selecting ‘Table’ and ‘Alternative text’. However, it is not necessary to do this to pass the accessibility regulations - as long as you have marked your tables up correctly.  
+
+Be aware that despite this, newer versions of Excel have a built-in accessibility checker which will bring up tables without alt text as a fail. You don’t need to worry about this. 
+
+If you save your spreadsheet in the Open Document Spreadsheet (ODS) format (which we advise you to do) alternative text for tables will disappear – but this does not matter as it is not needed to pass the accessibility regulations. Note: alternative text for images and charts does not disappear when you save in the ODS format. 
+
+### Adding filters
+
+We advise you to avoid adding filters. They may fail the accessibility regulations if they obscure data. 
+
+If you do need to use filters it is important to provide signposts or comments to indicate which cells contain the drop-down menus and if any data is hidden. You should also give details of how to turn the filters off. For example: "Filters are active in cell C3 and may hide some data. To turn off all filters select the 'Data' ribbon then 'Filters' button or use [Ctrl, Shift, L]". This information should be in a cell in column A, above the table. 
+
+### Adding freeze panes
+
+We advise you to avoid adding freeze panes. They may fail the accessibility regulations as they can make it difficult for screen reader users to find the top left edge of a worksheet which is key to navigation. 
+
+If you leave freeze panes active it is best practice to inform users and give a instructions for how to turn them off. For example: "Freeze panes are turned on. To turn off freeze panes select the 'View' ribbon then 'Freeze Panes' then 'Unfreeze Panes' or use [Alt W, F]". 
+As with filters, this information should be in a cell in column A, above the table. 
+
+Be aware that if you save your spreadsheet in the ODS open format (which we advise you to do) freeze panes will disappear. 
+
+## Symbols, footnotes and codes 
 
 It is best practise to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in rounded brackets instead of using ‘p’ or ‘r’. When needed, using letters to signify notes is generally OK as long as the key to what these letters mean is clearly laid out above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table.
 
@@ -334,29 +358,6 @@ Please note - we are aware that leaving cells with no data blank may make it eas
 #### Machine readability 
 
 In terms of machine readability leaving cells with no data blank is best practice. Therefore if you are making a spreadsheet solely for machine readability purposes it is best practice to leave cells with no data blank. More information on creating spreadsheets optimised for machine readability can be found in the 'Saving and publishing spreadsheets' section of this guidance.
-
-### Adding alt text to tables 
-
-In Excel, you can add alternative text to your table by right clicking anywhere in the table and selecting ‘Table’ and ‘Alternative text’. However, it is not necessary to do this to pass the accessibility regulations - as long as you have marked your tables up correctly.  
-
-Be aware that despite this, newer versions of Excel have a built-in accessibility checker which will bring up tables without alt text as a fail. You don’t need to worry about this. 
-
-If you save your spreadsheet in the Open Document Spreadsheet (ODS) format (which we advise you to do) alternative text for tables will disappear – but this does not matter as it is not needed to pass the accessibility regulations. Note: alternative text for images and charts does not disappear when you save in the ODS format. 
-
-### Adding filters
-
-We advise you to avoid adding filters. They may fail the accessibility regulations if they obscure data. 
-
-If you do need to use filters it is important to provide signposts or comments to indicate which cells contain the drop-down menus and if any data is hidden. You should also give details of how to turn the filters off. For example: "Filters are active in cell C3 and may hide some data. To turn off all filters select the 'Data' ribbon then 'Filters' button or use [Ctrl, Shift, L]". This information should be in a cell in column A, above the table. 
-
-### Adding freeze panes
-
-We advise you to avoid adding freeze panes. They may fail the accessibility regulations as they can make it difficult for screen reader users to find the top left edge of a worksheet which is key to navigation. 
-
-If you leave freeze panes active it is best practice to inform users and give a instructions for how to turn them off. For example: "Freeze panes are turned on. To turn off freeze panes select the 'View' ribbon then 'Freeze Panes' then 'Unfreeze Panes' or use [Alt W, F]". 
-As with filters, this information should be in a cell in column A, above the table. 
-
-Be aware that if you save your spreadsheet in the ODS open format (which we advise you to do) freeze panes will disappear. 
 
 ## Communicating uncertainty in spreadsheets
 
