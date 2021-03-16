@@ -467,7 +467,7 @@ Make sure all the written content follows the advice in the [‘Making written c
 
 To meet [success criterion 2.4.2 page titled](https://www.w3.org/TR/WCAG21/#page-titled) the title of the spreadsheet should be in cell A1 of the cover sheet. This title (as mentioned) should give a brief description on what the data tables are about, the time period covered and the geographical region the data tables refer to. 
 
-#### Information to include on your cover sheet to improve usability 
+#### Information to include on your cover sheet 
 Decisions on what information should go into a cover sheet will vary from one statistical release to the next. 
 In terms of usability, is best practice to include the following (if applicable to your data): 
 * Information on what the data tables are about (more detailed than what is in the spreadsheet title).
