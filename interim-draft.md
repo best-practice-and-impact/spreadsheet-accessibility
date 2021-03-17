@@ -392,7 +392,7 @@ Symbols may be used in other ways. Be aware that some screen readers will skip o
 
 Generally the percentage symbol ‘%’ is well understood by screen readers. 
 
-Symbols like dashes and slashes can be used in classification and geography codes.  
+Symbols like dashes and slashes can be used in classification and geography codes. 
 
 We are looking to put together more comprehensive advice for symbols soon.  
 
@@ -414,9 +414,9 @@ In terms of accessibility, if you use notes it is best practice to mention this 
 In terms of machine readability, the advice on symbols and notes has been to put symbols or footnote markers in separate (very narrow) columns, next to the data. It is OK to do this in terms of accessibility, but you would need to give that column a heading and you might also need to mark up all the empty cells. This could make a table very wide which is not great for readability. 
 
 ### Classification and geography codes 
-In some instances you may need to use classification or geography codes in your tables. Make sure you are using the correct, nationally recognised codes. These codes are fine in terms of accessibility as they are normally strings of letters and numbers. 
+In some instances you may need to use classification or geography codes in your tables. Make sure you are using the correct, nationally recognised codes. If you need any help in this area the harmonisation leads in the [Best Practice and Impact team](https://gss.civilservice.gov.uk/about-us/support-for-the-gss/) can provide advice.
 
-When codes are not just strings of letters and numbers, you should still use them consistently. It is OK to use symbols such as dashes and slashes here as that is how the code is constructed.
+Classification and geography codes are generally fine in terms of accessibility as they are usually strings of letters and numbers. When codes are not just strings of letters and numbers, you should still use them consistently. It is OK to use symbols such as dashes and slashes here as that is how the code is constructed.
 
 You should help users understand any changes in classifications whenever possible – for example, the [Geography Code History Database](https://www.ons.gov.uk/methodology/geography/geographicalproducts/namescodesandlookups/codehistorydatabasechd) helps users track changes in area codes.
 
@@ -523,32 +523,39 @@ It is best practice to include worksheets with information about the data (metad
 
 If your data is simple and there is only one table in your spreadsheet, you might not need a cover sheet. However, they are generally useful in most circumstances. 
 
-You should use your cover sheet to provide key information about the data in the spreadsheet. However, if your cover sheet is starting to look more like a text document, it is best practice to create a webpage you can link to from the cover sheet instead.
+You should use your cover sheet to provide key information about the data in the spreadsheet. 
+
+#### Information to include on your cover sheet 
+Decisions on what information should go into a cover sheet will vary from one statistical release to the next. 
+It is best practice to include the following information (if applicable to your data): 
+* The title of the spreadsheet which should give a brief description on what the data tables are about, the time period covered and the geographical region the data tables refer to. 
+* Information on what the data tables are about (more detailed than what is in the spreadsheet title).
+* The name of the statistical release the data relates to with a hyperlink to that release.
+* The source for the data - if you have a complex spreadsheet with many different tables and sources you can put source information on each individual worksheet (above the table) or have it as a column in your table of contents.  
+* The date the spreadsheet was published.
+* The date the next update to the spreadsheet will be published.
+* Information on whether data are provisional or revised. 
+* Key information users need to know that relates to all (or nearly all) worksheets in the spreadsheet, for example information on weighting.
+* Contact details for the statisticians responsible for the data and for media enquiries 
+
+You might also want to include: 
+
+* information on where to find related data or supporting publications.
+* links to a wider data series
+* links to supporting information about the data (metadata) and methodology documents.
+* information on the quality of the statistics
+* link to a glossary of essential technical terms and acronyms.
+
+However, if your cover sheet is starting to look like a text document it is best practice to publish this extra information on a webpage instead and link to it. Ideally this will be the webpage where the link to the spreadsheet lives. 
 
 #### Making cover sheets accessible
+To meet [success criterion 2.4.2 page titled](https://www.w3.org/TR/WCAG21/#page-titled) the title of the spreadsheet should be in cell A1 of the cover sheet. This title should be tagged as 'Headings 1' using the cell styles tool (more information on tagging headings can be found in the 'Titles of spreadsheets, worksheets and tables' section of this guidance).
 
 To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) you should use subheadings to break up the information. These subheadings should be tagged using the cell styles tool. First level subheadings should be tagged as Headings 2, second level subheadings as Headings 3 and so on.  
 
 To meet accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) keep all the information in a list in column A. It is best to expand this column so the text doesn’t overflow the cells. If you don't do this it can be off-putting for users of screen readers as they will read out 'overflowing' each time text in a cell overflows. 
 
 Make sure all the written content follows the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
-
-To meet [success criterion 2.4.2 page titled](https://www.w3.org/TR/WCAG21/#page-titled) the title of the spreadsheet should be in cell A1 of the cover sheet. This title (as mentioned) should give a brief description on what the data tables are about, the time period covered and the geographical region the data tables refer to. 
-
-#### Information to include on your cover sheet 
-Decisions on what information should go into a cover sheet will vary from one statistical release to the next. 
-In terms of usability, is best practice to include the following (if applicable to your data): 
-* Information on what the data tables are about (more detailed than what is in the spreadsheet title).
-* The name of the statistical release the data relates to with a hyperlink to that release.
-* The source for the data - if you have a complex spreadsheet with many different tables and sources you can put source information on each individual worksheet (above the table) or have it as a column in your table of contents.  
-* The date the spreadsheet was published.
-* The date the next update to the spreadsheet will be published.
-* Where to find more information about the data.
-* Where to find related data or supporting publications.
-* Links to supporting information about the data (metadata) and methodology documents.
-* Link to a glossary of essential technical terms and acronyms.
-* Contact details for the statisticians responsible for the data.
-* Key information users need to know that relates to all (or nearly all) worksheets in the spreadsheet, for example information on weighting.
 
 ### Table of contents 
 
@@ -647,6 +654,21 @@ Pointers for usability and accessibility:
 * Zoom should be set to 100% when you save your spreadsheet to ensure no enlargement or reduction is active.
 * Avoid zip files as these can be blocked by organisational policies 
 
+### Information to put on the webpage where the link to the spreadsheet lives
+It helps users find, understand and use your data if the webpage that houses the link to your spreadsheet contains a clear description of your data and has clear signposts to supporting information.
+
+The landing page for [Conception statistics, England and Wales](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/conceptionandfertilityrates/datasets/conceptionstatisticsenglandandwalesreferencetables) is a good example of a webpage that hosts links to spreadsheets. It contains: 
+
+* a summary of the data 
+* contact details for the responsible statistician 
+* a link to the publication that uses this data 
+* links to methodology information
+* a list of spreadsheets split by year 
+
+Also, at the bottom of the page it has a section for 'Important notes and usage information' which contains related statistics, a user guide and links to statistics for other UK countries. 
+
+You may repeat some of this information on the cover sheet of your spreadsheet. This is OK as people may find their way to your spreadsheet in different ways. Some may be sent the document directly, some may go to the webpage and download it from there. For more information on what to put in your cover sheet and how to format it, see the 'Cover sheet' section of this guidance. 
+
 ### File formats
 Whenever possible you should publish your spreadsheet in an [open format](https://en.wikipedia.org/wiki/Open_format).
 
@@ -667,6 +689,8 @@ The other commonly used open format is Comma-Separated-Values (CSV).
 If you are publishing a CSV file that you intend users to read and analyse themselves, it must meet the accessibility regulations. it can be a bit tricky to do this with CSV files as they only allow one tab and will strip out almost all formatting (such as table tags, headings tags and hyperlinks). If you have a very simple spreadsheet it may be possible to make a CSV version meet the accessibility regulations, but for anything slightly complex, we advise you to use a different format.  
 
 If you are publishing a CSV file solely for machines to read it does not need to meet the accessibility regulations. CSV is the recommended format for spreadsheets optimised for machine readability. 
+
+You should be aware of government data standards that may relate to your CSV files. The [tabular data standard](https://www.gov.uk/government/publications/recommended-open-standards-for-government/tabular-data-standard) published by the Government Digital Service in June 2018 was updated in August 2020. 
 
 ### Publishing alternative versions of same spreadsheet
 
