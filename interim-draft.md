@@ -179,6 +179,16 @@ Every table in your spreadsheet must have a correctly tagged header row, as desc
 
 Bear in mind that Excel can only tag one row as the header row. It is not necessarily a fail if you have subheading rows but as they can't be tagged as headers it may make the table confusing - so whenever possible, it is best avoided. 
 
+Consistency is important when it comes to column headings. Clear and consistent headings help accessibility, usability and machine readability. We advise you to follow a consistent naming convention - for example: ‘start_date_time’ and ‘end_date_time’ rather than mixing your naming conventions: ‘startdtTime’ and ‘end_date_time’.
+
+If your spreadsheet uses multiple tabs, and the columns in these tabs hold similar or identical data, use the same column names. For example: in a spreadsheet listing employee satisfaction survey results, use ‘department_name’ in all tabs rather than ‘department_name’ in some and ‘name_of_department’ in others - this makes it easier to cross reference and understand your tables and how they relate to one another. It also helps with machine readability and further analysis.
+
+### Units
+If needed, put the units for your data in rounded brackets after the column heading – for example: ‘Number of people in employment (thousands)’. Ensure it is clearly indicated if your columns use different units. 
+
+It is best to space the information about units so it appears under the column header – you can do this by pressing 'Alt + Enter' when typing in the cell. 
+Displaying units in a consistent way is important for usability and machine readability.
+
 ### Wrap text 
 It is best practice to use the ‘wrap text’ function and adjust row height and column width to ensure all text you want to appear in cells within a table is visible and clearly spaced out. This is important because users with dyslexia can find it difficult to read crowded text. It is also important because a screen reader will repeatedly read out ‘overflowing’ or ‘cropped’ after every cell which contains text that does not fit.
 
@@ -414,12 +424,20 @@ In terms of accessibility, if you use notes it is best practice to mention this 
 In terms of machine readability, the advice on symbols and notes has been to put symbols or footnote markers in separate (very narrow) columns, next to the data. It is OK to do this in terms of accessibility, but you would need to give that column a heading and you might also need to mark up all the empty cells. This could make a table very wide which is not great for readability. 
 
 ### Classification and geography codes 
-In some instances you may need to use classification or geography codes in your tables. Make sure you are using the correct, nationally recognised codes. If you need any help in this area the harmonisation leads in the [Best Practice and Impact team](https://gss.civilservice.gov.uk/about-us/support-for-the-gss/) can provide advice.
+In some instances you may need to use classification or geography codes in your tables. 
 
+#### Use the right codes
+Make sure you are using the correct, nationally recognised codes. If you need any help in this area the harmonisation leads in the [Best Practice and Impact team](https://gss.civilservice.gov.uk/about-us/support-for-the-gss/) can provide advice.
+
+#### Codes and accessibility 
 Classification and geography codes are generally fine in terms of accessibility as they are usually strings of letters and numbers. When codes are not just strings of letters and numbers, you should still use them consistently. It is OK to use symbols such as dashes and slashes here as that is how the code is constructed.
 
-You should help users understand any changes in classifications whenever possible – for example, the [Geography Code History Database](https://www.ons.gov.uk/methodology/geography/geographicalproducts/namescodesandlookups/codehistorydatabasechd) helps users track changes in area codes.
+#### Help users understand codes
+It is best practice to link to supporting information for any codes used, either as a note or on the cover sheet (more information on cover sheets can be found in the 'Metadata worksheets' section of this guidance). 
 
+You should also help users understand any changes in classifications whenever possible – for example, the [Geography Code History Database](https://www.ons.gov.uk/methodology/geography/geographicalproducts/namescodesandlookups/codehistorydatabasechd) helps users track changes in area codes.
+
+#### How to present codes in tables
 In terms of usability, machine readability and accessibility ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)), codes should be in separate cells to the description of the code and the data. For example, country code AD should be in a separate cell to the country name Andorra, and then another cell for the data linked to this. The row or column containing the codes must be labelled clearly. 
 
 [Example of presenting country codes (ODS, 6.31KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-presenting-country-codes.ods)
@@ -546,7 +564,7 @@ You might also want to include:
 * information on the quality of the statistics
 * link to a glossary of essential technical terms and acronyms.
 
-However, if your cover sheet is starting to look like a text document it is best practice to publish this extra information on a webpage instead and link to it. Ideally this will be the webpage where the link to the spreadsheet lives. 
+However, if your cover sheet is starting to look like a text document it is best practice to publish this extra information on a webpage instead and link to it. Ideally this will be the webpage where the link to the spreadsheet lives. For more information on this see the 'Saving and publishing your spreadsheet' section of this guidance. 
 
 #### Making cover sheets accessible
 To meet [success criterion 2.4.2 page titled](https://www.w3.org/TR/WCAG21/#page-titled) the title of the spreadsheet should be in cell A1 of the cover sheet. This title should be tagged as 'Headings 1' using the cell styles tool (more information on tagging headings can be found in the 'Titles of spreadsheets, worksheets and tables' section of this guidance).
