@@ -1,5 +1,7 @@
 # Releasing statistics in spreadsheets (interim version of update)
 
+This guidance aims to help you improve the usability, accessibility and machine readability of any statistics you publish in spreadsheet format. 
+
 ## Interim status 
 This guidance is an update to the ['Releasing statistics in spreadsheets' guidance](https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/) on the [Government Statistical Service (GSS) website](https://gss.civilservice.gov.uk/). It is still under review. We are publishing it in an interim state to give people information on what they may need to implement and to collate feedback. We continue to carry out research and testing. Once this information is finalised, the guidance will be updated on the GSS website.  
 
@@ -35,7 +37,7 @@ The 'Summary of labour market statistics' spreadsheet as it was published by ONS
 
 ## Contents 
 
-* [Table, spreadsheet or graph?](#Table-spreadsheet-or-graph)
+* [Engage with users before making changes](#Engage-with-users-before-making-changes)
 * [Document information](#Document-information)
 * [Tables](#Tables)
 * [Cells with no data](#Cells-with-no-data)
@@ -50,6 +52,25 @@ The 'Summary of labour market statistics' spreadsheet as it was published by ONS
 * [Macros, formulas and application code](#Macros-formulas-and-application-code)
 * [Accessibility checker](#Accessibility-checker)
 * [Saving and publishing spreadsheets](#Saving-and-publishing-spreadsheets)
+
+
+## Engage with users before making changes
+Before making any big changes to your spreadsheets you should consult with your users, to warn them of any changes and to find out more about their needs. 
+
+Some questions you might want to ask: 
+* What are the statistics used for?
+* What questions do they answer? 
+* What problem is this solving?
+* How do users access and view the statistics?
+* What questions do users ask about the statistics?
+* What information do users need to make use of the statistics?
+* What tools do your users use?
+* Are the statistics re-used in other analysis and outputs?
+* Do your statistics meet the needs of your users?
+* Do your users have new requirements or suggestions about how to present the statistics differently?
+* Are all of your statistics still needed and used?
+* What additional information is needed to support your users in their use and re-use of the statistics?
+* Are your statistics presented in ways which are simple and convenient for your users?
 
 
 ## Document information 
@@ -250,7 +271,7 @@ Ordering the categories in a table can make it easier for users to see patterns 
 
 For some categorical variables, like month of the year or age group, there is a natural order for presentation. Other variables may have harmonised ordering, such as regions of the UK.
 
-Use natural or harmonised principles whenever possible. An appropriate order may also be obvious from knowledge of the subject matter.
+Use natural or [harmonisation standards](https://gss.civilservice.gov.uk/policy-store/?keyword=&area=harmonisation&doctype=&submit=Go) whenever possible. An appropriate order may also be obvious from knowledge of the subject matter.
 
 Alternatively, consider ordering categories according to the statistics in one of the columns, for example the largest value at the top. This shows the rankings of the categories on that statistic. Ranking the categories in this way emphasises the relative positions of the categories. It may also show where some statistics differ from the overall pattern. Be aware that in some cases, the relative positions may be determined by random variation.
 
@@ -258,7 +279,7 @@ Alternatively, consider ordering categories according to the statistics in one o
 Summary rows and columns, for example for totals, are traditionally placed at the bottom or right of the table. If it’s important for users to see totals first, it may be helpful to place the totals at the top or left.
 
 ### Written content
-Written content in your spreadsheets should be treated in the same way as written content in a statistical report. 
+Written content in your spreadsheets should be treated in the same way as written content in a statistical report. For example, if you use a style guide for your reports, you should use this for any written content in your spreadsheets.  
 
 In terms of accessibility, all written content in your spreadsheet should follow the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
 
@@ -304,6 +325,7 @@ This means:
 * No text has spaces between letters in a word for visual effect as this can be difficult to read and screen readers will read the letters out one by one - this is not mentioned specifically in WCAG but we consider it necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)
 * Colour is never used as the only way to communicate a message ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color)).
 * The minimum font size used is size 12 - in general this will help you meet [success criterion 1.4.4 resize text](https://www.w3.org/TR/WCAG21/#resize-text).
+* Make sure there are no spelling or grammatical mistakes – it is possible to run a spelling and grammar check in Excel – in newer versions it can be found on the ‘Review’ ribbon - this will ensure you meet accessibility [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable)
 
 ### Other pointers for formatting that should be followed in terms of best practice
 In terms of usability and accessibility: 
