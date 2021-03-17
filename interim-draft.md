@@ -386,7 +386,7 @@ However, you should not use symbols to signify notes because:
 * screen readers may not recognise them 
 * users with low vision may not be able to see them
 
-Therefore, if you use symbols to signify notes it may lead to a fail of [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
+Therefore, if you use symbols to signify notes it may lead to a fail of accessibility [guideline 1 perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
 
 Similar arguments can also be made for the use of superscript. So we also advise against using this.  
 
@@ -420,14 +420,11 @@ In terms of accessibility, if you use notes it is best practice to mention this 
 
 [Example of presenting a key for shorthand and notes (ODS, 4.4KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-with-notes-and-a-key.ods)
 
-#### Past advice on symbols and footnotes 
-In terms of machine readability, the advice on symbols and notes has been to put symbols or footnote markers in separate (very narrow) columns, next to the data. It is OK to do this in terms of accessibility, but you would need to give that column a heading and you might also need to mark up all the empty cells. This could make a table very wide which is not great for readability. 
-
-### Classification and geography codes 
-In some instances you may need to use classification or geography codes in your tables. 
+### Classifications and geography codes 
+In some instances you may need to use classifications or geography codes in your tables. 
 
 #### Use the right codes
-Make sure you are using the correct, nationally recognised codes. If you need any help in this area the harmonisation leads in the [Best Practice and Impact team](https://gss.civilservice.gov.uk/about-us/support-for-the-gss/) can provide advice.
+Make sure you are using the correct, nationally recognised codes. If you need any help in this area the harmonisation leads in the [Best Practice and Impact team](https://gss.civilservice.gov.uk/about-us/support-for-the-gss/) can provide advice. This is important for usability and machine readability. 
 
 #### Codes and accessibility 
 Classification and geography codes are generally fine in terms of accessibility as they are usually strings of letters and numbers. When codes are not just strings of letters and numbers, you should still use them consistently. It is OK to use symbols such as dashes and slashes here as that is how the code is constructed.
@@ -441,6 +438,11 @@ You should also help users understand any changes in classifications whenever po
 In terms of usability, machine readability and accessibility ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)), codes should be in separate cells to the description of the code and the data. For example, country code AD should be in a separate cell to the country name Andorra, and then another cell for the data linked to this. The row or column containing the codes must be labelled clearly. 
 
 [Example of presenting country codes (ODS, 6.31KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-presenting-country-codes.ods)
+
+### Machine readability - differences in best practice for symbols, footnote markers and codes
+If you are making a spreadsheet solely for machines to read you can use symbols but you must provide information on what those symbols mean via the metadata (more information on how to best supply metadata for machine readability can be found in the 'Metadata worksheets' section of this guidance). 
+
+In terms of presenting symbols and footnote markers it is best practice for machine readability to put symbols or footnote markers in separate (very narrow) columns, next to the data. This approach does not fail any accessibility guidelines in itself, but you would need to give that column a heading and you might also need to mark up all the empty cells. This could make a table very wide which is not great for readability. 
 
 ## Structure
 Properly structuring your content is important to meet [success criterion 1.3.1 Info and Relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
