@@ -35,10 +35,11 @@ The 'Summary of labour market statistics' spreadsheet as it was published by ONS
 
 ## Contents 
 
+* [Table, spreadsheet or graph?](#Table-spreadsheet-or-graph)
 * [Document information](#Document-information)
 * [Tables](#Tables)
 * [Cells with no data](#Cells-with-no-data)
-* [Colour and formatting](#Colour-and-formatting)
+* [Formatting, table layout and use of colour](#Formatting-table-layout-and-use-of-colour)
 * [Images](#Images) 
 * [Symbols, footnotes and codes](#Symbols-footnotes-and-codes)
 * [Structure](#Structure)
@@ -73,8 +74,22 @@ Go to ‘File’ and then ‘Options’ and then ‘Language’. Make sure the d
 
 ## Tables
 
-### Mark up tables in spreadsheets
-Ensure your table is ‘marked up’ as a table – this is key to meeting [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships), [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [success criterion 2.4.3 focus order](https://www.w3.org/TR/WCAG21/#focus-order).
+In statistics we generally deal with two types of tables - demonstration tables and reference tables. 
+
+### Demonstration tables
+If we are using a table to demonstrate a point that we are making in the text, we create a demonstration table. These lay out statistics to quickly reinforce the point.
+
+Generally these should be published within the statistical report, ideally in the HTML of the webpage the report sits on. You should not publish images of tables as these are likely to fail accessibility [success criterion 1.4.5 images of text](https://www.w3.org/TR/WCAG21/#images-of-text). 
+
+You can find out more about best practice for demonstration tables in our ['Introduction to data visualisation' guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-7) and our [‘Making analytical publications accessible’ guidance](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-6).
+
+### Reference tables 
+Reference tables usually have lots of rows and columns of data and are aimed at users who need or want detailed data. There may be a wide variety of statistics broken down into different categories.
+
+Reference tables are generally supplied in an spreadsheet document. It is these types of tables this guidance focuses on. 
+
+### Marking up tables in spreadsheets
+Ensure all tables in your spreadsheet are ‘marked up’ as a table – this is key to meeting [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships), [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [success criterion 2.4.3 focus order](https://www.w3.org/TR/WCAG21/#focus-order).
 
 Marking up a table:
 * allows a header row and table edges to be identified by assistive technology 
@@ -198,7 +213,74 @@ Please note - we are aware that leaving cells with no data blank may make it eas
 
 In terms of machine readability leaving cells with no data blank is best practice. Therefore if you are making a spreadsheet solely for machine readability purposes it is best practice to leave cells with no data blank. More information on creating spreadsheets optimised for machine readability can be found in the 'Saving and publishing spreadsheets' section of this guidance.
 
-## Colour and formatting 
+## Formatting, table layout and use of colour
+
+#### Comparing numbers
+If you are inviting users to compare numbers, it is best practice to ensure those numbers are presented close together. 
+
+It is easier to make comparisons and determine patterns when numbers are arranged in a column instead of a row.
+
+To help the reader make comparisons:
+
+* use the same level of precision in each column
+* use commas to separate thousands
+* right align the figures and the column headings
+* start numbers of less than one with a zero, not a point
+
+## Rounding
+Presenting too much detail can make things harder for users. Simplifying numbers by rounding makes numbers easier to read and remember.
+
+The extent of rounding will depend on the intended use. A journalist may be happy to report that the population of the UK is 66 million, or that the population has changed from 64.1 million to 66.4 million. An analyst performing further calculations will want to work with more precise figures. Think about what your users may need. 
+
+Rounding does reduce precision. This usually means that the reported totals no longer equal the sum of the component parts. This should be communicated clearly. 
+
+Making a decision on rounding can be difficult when the values show a variety of magnitudes. Consider rounding to a fixed number of significant figures or effective digits.
+
+## Grouping
+Objects grouped together are assumed to be associated. We advise that you group different measures in rows and different types of estimate in columns.
+
+White space can be used to separate the data into groups.
+
+The best way to provide white space is to adjust column width and row height. Do not use blank rows or columns or indentation as this may fail accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).  
+
+[Example of using white space to split data into groups (ODS, 5KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/02/Labour-market-rates-by-UK-region-Aug-to-Oct-2019.ods) 
+
+## Ordering categories
+Ordering the categories in a table can make it easier for users to see patterns and groups in the data.
+
+For some categorical variables, like month of the year or age group, there is a natural order for presentation. Other variables may have harmonised ordering, such as regions of the UK.
+
+Use natural or harmonised principles whenever possible. An appropriate order may also be obvious from knowledge of the subject matter.
+
+Alternatively, consider ordering categories according to the statistics in one of the columns, for example the largest value at the top. This shows the rankings of the categories on that statistic.
+
+Ranking the categories in this way emphasises the relative positions of the categories. It may also show where some statistics differ from the overall pattern. Be aware that in some cases, the relative positions may be determined by random variation.
+
+## Summary rows and columns
+Summary rows and columns, for example for totals, are traditionally placed at the bottom or right of the table. If it’s important for users to see totals first, it may be helpful to place the totals at the top or left.
+
+## Titles and labelling
+Titles and labels are important parts of the table design. They help ensure users understand the statistics presented even if the user does not read the accompanying commentary. This is particularly important if the table is copied and placed in another context.
+
+Consider including the following information in the titles, labels, headings and notes that accompany the table:
+
+* analysis units (such as: people, households, enterprises)
+* types of statistics (such as: totals, rates, means)
+* units (such as: thousands, km, £)
+* classifications used to categorise the data
+* geographical coverage
+* sector coverage
+* time periods
+* source of data
+* key quality information
+* where to find further guidance
+
+## Fonts
+Use a single, accessible font. Sans serif fonts are accessible, for example Open Sans, Arial, Helvetica, Tahoma or Verdana. Only use bold font for headings and don’t use italics.
+
+Keep changes in font size to a minimum and don’t use very small fonts. In general, we recommend a minimum font size of 12.
+
+Avoid the use of superscript fonts when referring to notes.
 
 ### Written content
 All written content should follow the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
@@ -392,7 +474,9 @@ Information presented below a table may be missed and can be difficult to naviga
 
 ## Titles of spreadsheets, worksheets and tables
 
-Titles and headings will affect data usability. If users cannot find or understand the data this limits their use and your spreadsheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [3.1 readable](https://www.w3.org/TR/WCAG21/#readable). It may also fail [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels)
+Titles and headings will affect data usability and accessibility. 
+
+If users cannot find or understand the data this limits their use and your spreadsheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [3.1 readable](https://www.w3.org/TR/WCAG21/#readable). It may also fail accessibility [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels).
 
 Make sure you have a clear spreadsheet title including time period and geographical region.
 
