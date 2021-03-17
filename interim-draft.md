@@ -209,14 +209,14 @@ We advise against using 'NA' to describe cells with no data. While in statistics
 
 Please note - we are aware that leaving cells with no data blank may make it easier for users to perform further analysis, but this feature of usability has to be balanced against the accessibility guidelines and the importance of a user understanding why a cell has no data. As mentioned, our advice on cells with no data may change as we do further research. 
 
-#### Machine readability 
+#### Machine readability for cells with no data  
 
 In terms of machine readability leaving cells with no data blank is best practice. Therefore if you are making a spreadsheet solely for machine readability purposes it is best practice to leave cells with no data blank. More information on creating spreadsheets optimised for machine readability can be found in the 'Saving and publishing spreadsheets' section of this guidance.
 
 ## Formatting, table layout and use of colour
 
-#### Comparing numbers
-If you are inviting users to compare numbers, it is best practice to ensure those numbers are presented close together. 
+### Comparing numbers
+If you are inviting users to compare numbers, it is best practice for usability to ensure those numbers are presented close together. 
 
 It is easier to make comparisons and determine patterns when numbers are arranged in a column instead of a row.
 
@@ -227,8 +227,8 @@ To help the reader make comparisons:
 * right align the figures and the column headings
 * start numbers of less than one with a zero, not a point
 
-## Rounding
-Presenting too much detail can make things harder for users. Simplifying numbers by rounding makes numbers easier to read and remember.
+### Rounding
+Presenting too much detail can make things harder for users. Simplifying numbers by rounding makes numbers easier to read and remember. This helps improve usability. 
 
 The extent of rounding will depend on the intended use. A journalist may be happy to report that the population of the UK is 66 million, or that the population has changed from 64.1 million to 66.4 million. An analyst performing further calculations will want to work with more precise figures. Think about what your users may need. 
 
@@ -236,8 +236,8 @@ Rounding does reduce precision. This usually means that the reported totals no l
 
 Making a decision on rounding can be difficult when the values show a variety of magnitudes. Consider rounding to a fixed number of significant figures or effective digits.
 
-## Grouping
-Objects grouped together are assumed to be associated. We advise that you group different measures in rows and different types of estimate in columns.
+### Grouping
+Objects grouped together are assumed to be associated. When used appropriately grouping may help users understand the data better. We advise that you group different measures in rows and different types of estimate in columns.
 
 White space can be used to separate the data into groups.
 
@@ -245,48 +245,27 @@ The best way to provide white space is to adjust column width and row height. Do
 
 [Example of using white space to split data into groups (ODS, 5KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/02/Labour-market-rates-by-UK-region-Aug-to-Oct-2019.ods) 
 
-## Ordering categories
-Ordering the categories in a table can make it easier for users to see patterns and groups in the data.
+### Ordering categories
+Ordering the categories in a table can make it easier for users to see patterns and groups in the data. This improves usability. 
 
 For some categorical variables, like month of the year or age group, there is a natural order for presentation. Other variables may have harmonised ordering, such as regions of the UK.
 
 Use natural or harmonised principles whenever possible. An appropriate order may also be obvious from knowledge of the subject matter.
 
-Alternatively, consider ordering categories according to the statistics in one of the columns, for example the largest value at the top. This shows the rankings of the categories on that statistic.
+Alternatively, consider ordering categories according to the statistics in one of the columns, for example the largest value at the top. This shows the rankings of the categories on that statistic. Ranking the categories in this way emphasises the relative positions of the categories. It may also show where some statistics differ from the overall pattern. Be aware that in some cases, the relative positions may be determined by random variation.
 
-Ranking the categories in this way emphasises the relative positions of the categories. It may also show where some statistics differ from the overall pattern. Be aware that in some cases, the relative positions may be determined by random variation.
-
-## Summary rows and columns
+### Summary rows and columns
 Summary rows and columns, for example for totals, are traditionally placed at the bottom or right of the table. If it’s important for users to see totals first, it may be helpful to place the totals at the top or left.
 
-## Titles and labelling
-Titles and labels are important parts of the table design. They help ensure users understand the statistics presented even if the user does not read the accompanying commentary. This is particularly important if the table is copied and placed in another context.
-
-Consider including the following information in the titles, labels, headings and notes that accompany the table:
-
-* analysis units (such as: people, households, enterprises)
-* types of statistics (such as: totals, rates, means)
-* units (such as: thousands, km, £)
-* classifications used to categorise the data
-* geographical coverage
-* sector coverage
-* time periods
-* source of data
-* key quality information
-* where to find further guidance
-
-## Fonts
-Use a single, accessible font. Sans serif fonts are accessible, for example Open Sans, Arial, Helvetica, Tahoma or Verdana. Only use bold font for headings and don’t use italics.
-
-Keep changes in font size to a minimum and don’t use very small fonts. In general, we recommend a minimum font size of 12.
-
-Avoid the use of superscript fonts when referring to notes.
-
 ### Written content
-All written content should follow the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
+Written content in your spreadsheets should be treated in the same way as written content in a statistical report. 
+
+In terms of accessibility, all written content in your spreadsheet should follow the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
 
 ### Hyperlink text
-Embedding hyperlinks correctly is specifically mentioned in the accessibility guidelines. It comes under [success criterion 2.4.4 link purpose (in context)](https://www.w3.org/TR/WCAG21/#link-purpose-in-context) and [guideline 3.2 predictable](https://www.w3.org/TR/WCAG21/#predictable).
+It is often helpful to link to extra information or related statistics. 
+
+When it comes to accessibility, embedding hyperlinks correctly is specifically mentioned in the accessibility guidelines. It comes under accessibility [success criterion 2.4.4 link purpose (in context)](https://www.w3.org/TR/WCAG21/#link-purpose-in-context) and [guideline 3.2 predictable](https://www.w3.org/TR/WCAG21/#predictable).
 
 #### Making hyperlinks accessible
 1. Use specific descriptions 
@@ -474,23 +453,25 @@ Information presented below a table may be missed and can be difficult to naviga
 
 ## Titles of spreadsheets, worksheets and tables
 
-Titles and headings will affect data usability and accessibility. 
+Titles and headings affect data usability and accessibility. 
 
-If users cannot find or understand the data this limits their use and your spreadsheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [3.1 readable](https://www.w3.org/TR/WCAG21/#readable). It may also fail accessibility [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels).
+Titles and labels are important parts of table design. They help users understand the data. They are particularly important if the table is copied and placed into another context.
 
-Make sure you have a clear spreadsheet title including time period and geographical region.
+In terms of accessibility, if users cannot find or understand the data they need your spreadsheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [3.1 readable](https://www.w3.org/TR/WCAG21/#readable). It may also fail accessibility [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels).
 
-Use standard and consistent title formats.
+Make sure the overall title for your spreadsheet gives a clear description of the data and includes the time period and geographical region the data applies to.
 
-The title of a table should include: 
-* a description of the data,
-* the geography it applies to 
-* whether or not the data is seasonally adjusted
-Example: ‘Number and percentage of people aged 16 to 64 in each labour market activity group, UK, seasonally adjusted’ 
+Use standard and consistent title formats throughout your publications and within your spreadsheets. 
 
 It is best practice to have one table per worksheet. This means the title of the worksheet should be the title of the table. 
 
 In large spreadsheets it is a good idea to number your tables, for example: ‘Table 1: Number of people in different age groups, UK, seasonally adjusted’. 
+
+In general the titles of tables should include: 
+* a description of the data,
+* the geography it applies to 
+
+Example: ‘Number and percentage of people aged 16 to 64 in each labour market activity group, UK'
 
 ### Where to place and how to tag titles 
 To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) the worksheet title should be in Cell A1 and should be marked up as Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. This 'marks up' the heading and helps users of assistive technology navigate around the spreadsheet. It is best practice to modify the default colour and border settings for text tagged as a heading. 
