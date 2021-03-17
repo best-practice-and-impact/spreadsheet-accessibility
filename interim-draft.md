@@ -336,6 +336,7 @@ This means:
 * Colour is never used as the only way to communicate a message ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color)).
 * The minimum font size used is size 12 - in general this will help you meet [success criterion 1.4.4 resize text](https://www.w3.org/TR/WCAG21/#resize-text).
 * Make sure there are no spelling or grammatical mistakes – it is possible to run a spelling and grammar check in Excel – in newer versions it can be found on the ‘Review’ ribbon - this will ensure you meet accessibility [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable)
+* No columns or rows are hidden from view 
 
 ### Other pointers for formatting that should be followed in terms of best practice
 In terms of usability and accessibility: 
@@ -343,14 +344,28 @@ In terms of usability and accessibility:
 * all fonts used should be sans serif (for example, Arial or Calibri) - people with dyslexia find serif fonts hard to read
 * avoid the use of underline and italic text - people with dyslexia can find italic and underlined text hard to read, if you need to highlight text it is best to use bold 
 * avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour (more information on how to do this can be found in the 'Checking text colour contrast' sub-section) 
-* aim to use the 'default' or 'automatic' colour settings for all text - doing this will ensure the spreadsheet takes on the specialised colour settings users of assitive technology may have set up on their software
+* use the 'default' or 'automatic' colour settings for all text - doing this will ensure the spreadsheet takes on the specialised colour settings users of assitive technology may have set up on their software
 * avoid adding a background fill - some users will have settings that automatically change the colour of the background but this doesn't happen if you have added a fill colour – even if it is white. 
 * avoid adding grid lines or cell borders - in general it it better to keep things simple
 * avoid including images of charts in your spreadsheet, if you do you must carefully consider their accessibility, particularly the colour contrast between chart elements
 * left align all text in cells outside the table and all row headings within the table 
 * right align all data within a table and all data column headings 
 * use commas after every three decimal places in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation)
-* be consistent - for users to be able to use and re-use your data, consistency is key -ensure that titles, headings and table structures are consistent across your publication portfolios and within spreadsheets. 
+* set sensible zoom levels
+* be consistent - for users to be able to use and re-use your data, consistency is key -ensure that titles, headings, worksheet names and table structures are consistent across your publication portfolios and within spreadsheets. 
+
+
+In terms of machine readability you should also: 
+
+* avoid using indentation to indicate subsections (for example indenting a list of regions under a row for ‘England’) or hierarchies
+* ensure no cells with text have ‘hidden’ spaces at the start or end
+* ensure all worksheets have sensible names and open in the correct place on the sheet.
+* check there are no spaces at the start or end of worksheet names.
+* keep time series or historical data in the same spreadsheet wherever possible.
+* ensure underlying values are unrounded.
+•	Consider using an Application Programming Interface (API) to aid further analysis.
+* don't add summaries like averages in the body of the table as this causes difficulties for machine-reading – put them at the edge
+
 
 ### Checking text colour contrast  
 If colour is used in cells with text, use the [WebAIM colour contrast checker](https://webaim.org/resources/contrastchecker/) to see if the colours meet the accessibility regulations. Remember, legally you need to meet the AA standard. 
@@ -443,6 +458,8 @@ In terms of usability, machine readability and accessibility ([success criterion
 If you are making a spreadsheet solely for machines to read you can use symbols but you must provide information on what those symbols mean via the metadata (more information on how to best supply metadata for machine readability can be found in the 'Metadata worksheets' section of this guidance). 
 
 In terms of presenting symbols and footnote markers it is best practice for machine readability to put symbols or footnote markers in separate (very narrow) columns, next to the data. This approach does not fail any accessibility guidelines in itself, but you would need to give that column a heading and you might also need to mark up all the empty cells. This could make a table very wide which is not great for readability. 
+
+* Put footnotes and annotations in brackets for machine-reading purposes  - is this better than separate columns????
 
 ## Structure
 Properly structuring your content is important to meet [success criterion 1.3.1 Info and Relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
@@ -609,7 +626,7 @@ For more information on notes and cover sheets please see the ‘Symbols and foo
 
 ### Confidence intervals 
 
-When communicating confidence intervals put the higher and lower bounds in separate cells next to the data. Make sure all columns have clearly labelled column headings [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
+When communicating confidence intervals it is best practice in terms of usability, accessibility and machine readability to put the higher and lower bounds in separate cells next to the data. Make sure all columns have clearly labelled column headings - this is good for usability and essential to meet accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
 
 [Example of how to present confidence intervals (ODS, 4.19KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-how-to-present-confidence-intervals.ods)
 
@@ -617,11 +634,11 @@ When communicating confidence intervals put the higher and lower bounds in separ
 
 Note that the credibility of assessing statistics using significance levels is currently under debate.
 
-If you are communicating statistical significance show where a change is statistically significant in a separate cell to the data. Ideally this should be done using words, for example: ‘Significant at 0.001 level’.
+If you are communicating statistical significance show where a change is statistically significant in a separate cell to the data. In terms of accessibility it is best to do this using words, for example: ‘Significant at 0.001 level’. You must also give the column or row holding the significance information a clear heading.  
 
-If it is not possible to use words to describe the statistical significance, you can use letters as shorthand (not symbols). To make this accessible you must provide a key, above the table, in a cell in column A (see the section on 'Symbols and footnotes' for more information). 
+If it is not possible to use words (for example, if it would take up too much room), you can use letters as shorthand (do not use symbols). To make this accessible you must also provide a key, above the table, in a cell in column A (see the section on 'Symbols and footnotes' for more information). 
 
-In the past the asterisk symbol (*) has traditionally been used to communicate the level of statistical significance. Not all screen readers can understand the asterisk symbol and many disabled users can find them difficult to see and understand. Using them is likely to fail [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable). Therefore, if it is not possible to use words to describe the statistical significance you should use some form of shorthand using letters rather than the asterisk symbol. 
+The asterisk symbol (*) has traditionally been used to communicate the level of statistical significance. Not all screen readers can understand the asterisk symbol and many disabled users can find them difficult to see and understand. Using them is likely to fail accessibility [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable). However, if you a creating a spreadsheet solely for machines to read it is OK to use the asterisk symbol, but you should still communicate what this means in a metadata file accompanying the spreadsheet. 
 
 
 ## Worksheets with multiple tables 
