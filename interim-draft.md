@@ -340,6 +340,7 @@ In terms of usability and accessibility:
 * left align all text in cells outside the table and all row headings within the table 
 * right align all data within a table and all data column headings 
 * use commas after every three decimal places in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation)
+* be consistent - for users to be able to use and re-use your data, consistency is key -ensure that titles, headings and table structures are consistent across your publication portfolios and within spreadsheets. 
 
 ### Checking text colour contrast  
 If colour is used in cells with text, use the [WebAIM colour contrast checker](https://webaim.org/resources/contrastchecker/) to see if the colours meet the accessibility regulations. Remember, legally you need to meet the AA standard. 
@@ -415,7 +416,9 @@ In terms of machine readability, the advice on symbols and notes has been to put
 ### Classification and geography codes 
 In some instances you may need to use classification or geography codes in your tables. Make sure you are using the correct, nationally recognised codes. These codes are fine in terms of accessibility as they are normally strings of letters and numbers. 
 
-When codes are not just strings of letters and numbers, you should still use codes consistently. It is OK to use symbols such as dashes and slashes here as that is how the code is constructed.
+When codes are not just strings of letters and numbers, you should still use them consistently. It is OK to use symbols such as dashes and slashes here as that is how the code is constructed.
+
+You should help users understand any changes in classifications whenever possible – for example, the [Geography Code History Database](https://www.ons.gov.uk/methodology/geography/geographicalproducts/namescodesandlookups/codehistorydatabasechd) helps users track changes in area codes.
 
 In terms of usability, machine readability and accessibility ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)), codes should be in separate cells to the description of the code and the data. For example, country code AD should be in a separate cell to the country name Andorra, and then another cell for the data linked to this. The row or column containing the codes must be labelled clearly. 
 
@@ -483,7 +486,7 @@ In terms of accessibility, if users cannot find or understand the data they need
 
 Make sure the overall title for your spreadsheet gives a clear description of the data and includes the time period and geographical region the data applies to.
 
-Use standard and consistent title formats throughout your publications and within your spreadsheets. 
+Use standard and consistent title formats across your publication porfolios and within your spreadsheets.
 
 It is best practice to have one table per worksheet. This means the title of the worksheet should be the title of the table. 
 
