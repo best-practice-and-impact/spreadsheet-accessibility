@@ -41,7 +41,7 @@ The 'Summary of labour market statistics' spreadsheet as it was published by ONS
 * [Document information](#Document-information)
 * [Tables](#Tables)
 * [Cells with no data](#Cells-with-no-data)
-* [Formatting, table layout and use of colour](#Formatting-table-layout-and-use-of-colour)
+* [Formatting and use of colour](#Formatting-and-use-of-colour)
 * [Images](#Images) 
 * [Symbols, footnotes and codes](#Symbols-footnotes-and-codes)
 * [Structure](#Structure)
@@ -299,7 +299,7 @@ Please note - we are aware that leaving cells with no data blank may make it eas
 
 In terms of machine readability, leaving cells with no data blank is best practice. Therefore if you are making a spreadsheet solely for machine readability purposes it is best practice to leave cells with no data blank. 
 
-## Formatting, table layout and use of colour
+## Formatting and use of colour
 
 ### Written content
 Written content in your spreadsheets should be treated in the same way as written content in a statistical report. For example, if you use a style guide for your reports, you should use this for any written content in your spreadsheets.  
