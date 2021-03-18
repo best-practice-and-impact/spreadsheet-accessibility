@@ -211,6 +211,43 @@ It is OK for text outside a table to overflow the cell – a screen reader will 
 
 This will help you to pass [guideline 1.4 distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable).
 
+### Comparing numbers
+If you are inviting users to compare numbers, it is best practice to:
+
+* present the numbers close together, in columns - it is easier to make comparisons and determine patterns when numbers are arranged near each other and in columns instead of rows
+* use the same level of precision in each column
+* use commas to separate thousands
+* right align the figures and the column headings
+* start numbers of less than one with a zero, not a point
+
+### Rounding
+Presenting too much detail can make things harder for users. Simplifying numbers by rounding makes numbers easier to read and remember. This improves usability. 
+
+The extent of rounding will depend on the intended use. A journalist may be happy to report that the population of the UK is 66 million, or that the population has changed from 64.1 million to 66.4 million. An analyst performing further calculations will want to work with more precise figures. Think about what your users may need. 
+
+Making a decision on rounding can be difficult when the values show a variety of magnitudes. Consider rounding to a fixed number of significant figures or effective digits. 
+
+Rounding does reduce precision. This usually means that the reported totals no longer equal the sum of the component parts. If this is the case it should be communicated clearly. Alternatively, leave the underlying figures unrounded.  
+
+### Grouping
+Objects grouped together are assumed to be associated. When used appropriately grouping may help users understand the data better. We advise that you group different measures in rows and different types of estimate in columns.
+
+White space can be used to separate the data into groups. The best way to provide white space is to adjust column width and row height. Do not use blank rows or columns or indentation as this may fail accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).  
+
+[Example of using white space to split data into groups (ODS, 5KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/02/Labour-market-rates-by-UK-region-Aug-to-Oct-2019.ods) 
+
+### Ordering categories
+Ordering the categories in a table can make it easier for users to see patterns and groups in the data. This improves usability. 
+
+For some categorical variables, like month of the year or age group, there is a natural order for presentation. Other variables may have harmonised ordering, such as regions of the UK. More information on how to order regions can be found on the [Open Geography Portal](https://geoportal.statistics.gov.uk/) under 'General principles'.
+
+We have published several [harmonisation standards](https://gss.civilservice.gov.uk/policy-store/?keyword=&area=harmonisation&doctype=&submit=Go) which may help you when ordering categories. An appropriate order may also be obvious from knowledge of the subject matter.
+
+Alternatively, consider ordering categories according to the statistics in one of the columns, for example the largest value at the top. This shows the rankings of the categories on that statistic. Ranking the categories in this way emphasises the relative positions of the categories. It may also show where some statistics differ from the overall pattern. Be aware that in some cases, the relative positions may be determined by random variation.
+
+### Summary rows and columns
+Summary rows and columns, for example for totals, are traditionally placed at the bottom or right of the table. If it’s important for users to see totals first, it may be helpful to place the totals at the top or left.
+
 ### Adding filters
 We advise you to avoid adding filters. They may fail the accessibility guidelines if they obscure data. 
 
@@ -261,43 +298,6 @@ Please note - we are aware that leaving cells with no data blank may make it eas
 ### Machine readability for cells with no data  
 
 In terms of machine readability, leaving cells with no data blank is best practice. Therefore if you are making a spreadsheet solely for machine readability purposes it is best practice to leave cells with no data blank. 
-
-### Comparing numbers
-If you are inviting users to compare numbers, it is best practice to:
-
-* present the numbers close together, in columns - it is easier to make comparisons and determine patterns when numbers are arranged near each other and in columns instead of rows
-* use the same level of precision in each column
-* use commas to separate thousands
-* right align the figures and the column headings
-* start numbers of less than one with a zero, not a point
-
-### Rounding
-Presenting too much detail can make things harder for users. Simplifying numbers by rounding makes numbers easier to read and remember. This improves usability. 
-
-The extent of rounding will depend on the intended use. A journalist may be happy to report that the population of the UK is 66 million, or that the population has changed from 64.1 million to 66.4 million. An analyst performing further calculations will want to work with more precise figures. Think about what your users may need. 
-
-Making a decision on rounding can be difficult when the values show a variety of magnitudes. Consider rounding to a fixed number of significant figures or effective digits. 
-
-Rounding does reduce precision. This usually means that the reported totals no longer equal the sum of the component parts. If this is the case it should be communicated clearly. Alternatively, leave the underlying figures unrounded.  
-
-### Grouping
-Objects grouped together are assumed to be associated. When used appropriately grouping may help users understand the data better. We advise that you group different measures in rows and different types of estimate in columns.
-
-White space can be used to separate the data into groups. The best way to provide white space is to adjust column width and row height. Do not use blank rows or columns or indentation as this may fail accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).  
-
-[Example of using white space to split data into groups (ODS, 5KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/02/Labour-market-rates-by-UK-region-Aug-to-Oct-2019.ods) 
-
-### Ordering categories
-Ordering the categories in a table can make it easier for users to see patterns and groups in the data. This improves usability. 
-
-For some categorical variables, like month of the year or age group, there is a natural order for presentation. Other variables may have harmonised ordering, such as regions of the UK. More information on how to order regions can be found on the [Open Geography Portal](https://geoportal.statistics.gov.uk/) under 'General principles'.
-
-We have published several [harmonisation standards](https://gss.civilservice.gov.uk/policy-store/?keyword=&area=harmonisation&doctype=&submit=Go) which may help you when ordering categories. An appropriate order may also be obvious from knowledge of the subject matter.
-
-Alternatively, consider ordering categories according to the statistics in one of the columns, for example the largest value at the top. This shows the rankings of the categories on that statistic. Ranking the categories in this way emphasises the relative positions of the categories. It may also show where some statistics differ from the overall pattern. Be aware that in some cases, the relative positions may be determined by random variation.
-
-### Summary rows and columns
-Summary rows and columns, for example for totals, are traditionally placed at the bottom or right of the table. If it’s important for users to see totals first, it may be helpful to place the totals at the top or left.
 
 ## Formatting, table layout and use of colour
 
