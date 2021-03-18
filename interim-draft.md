@@ -74,13 +74,17 @@ Some questions you might want to ask:
 
 
 ## Document information 
-Make sure you add document information in. The accessibility regulations require the title field and information about document language to be complete ([success criterion 2.4.2 page titled](https://www.w3.org/TR/WCAG21/#page-titled) and [3.1.1 language of page](https://www.w3.org/TR/WCAG21/language-of-page)). It is best practice to also fill in the author and keyword fields, but optional with regards to accessibility regulations.
+Providing clear and useful document information improves usability. 
+
+The accessibility regulations require the title field and information about document language to be complete ([success criterion 2.4.2 page titled](https://www.w3.org/TR/WCAG21/#page-titled) and [3.1.1 language of page](https://www.w3.org/TR/WCAG21/language-of-page)). It is best practice to also fill in the author and keyword fields. 
 
 ### Adding document information
 Go to ‘File’, then ‘Info’ and fill in the following fields:
 * Title
 
-Type in the title of the spreadsheet (more information about titles can be found in the 'Structure' section of this guidance). Do not use dashes or underscores here.
+Type in the title of the spreadsheet (more information about titles can be found in the 'Titles of spreadsheets, worksheets and tables' section of this guidance). 
+
+Do not use dashes or underscores here.
 
 * Author
 
@@ -88,7 +92,7 @@ Generally this should be the organisation that published the document – avoid 
 
 * Keywords or Tags
 
-Put in a list of terms that someone might use to search for the document, separated by commas. This helps search engines find the document. It also help with finding your document internally.
+Put in a list of terms that someone might use to search for the document, separated by commas. This helps search engines find the document. It also helps with finding your document internally.
 
 ### Setting the document language
 Go to ‘File’ and then ‘Options’ and then ‘Language’. Make sure the document has the correct language(s) selected.
@@ -110,7 +114,7 @@ Reference tables usually have lots of rows and columns of data and are aimed at 
 Reference tables are generally supplied in an spreadsheet document. It is these types of tables this guidance focuses on. 
 
 ### Marking up tables in spreadsheets
-Ensure all tables in your spreadsheet are ‘marked up’ as a table – this is key to meeting [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships), [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [success criterion 2.4.3 focus order](https://www.w3.org/TR/WCAG21/#focus-order).
+Ensure all tables in your spreadsheet are ‘marked up’ as a table – this is key to meeting accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships), [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [success criterion 2.4.3 focus order](https://www.w3.org/TR/WCAG21/#focus-order).
 
 Marking up a table:
 * allows a header row and table edges to be identified by assistive technology 
@@ -119,7 +123,9 @@ Marking up a table:
 Note: if you keep tabbing past the end of the last row it does lead to extra rows being added to the table. However, as the table is marked up correctly, users of assistive technology should know when they get to the end of a table, so this isn’t considered an issue.
 
 #### How to mark up a table in Excel: 
-Be aware these instructions may differ slightly for different versions of Excel. At the moment this is a manual process, but we are researching ways to automate this. 
+Be aware these instructions may differ slightly for different versions of Excel. 
+
+At the moment this is a manual process, but we are researching ways to automate it. 
 
 1. Select the cells you want to include in the table.
 2. On the ‘Insert’ ribbon, select ‘Table’.
@@ -140,9 +146,9 @@ It is best practice to also:
 * highlight column headings and row labels by setting the text to bold
 * ensure the 'default' or 'automatic' colour is selected for all text (see the section on 'Colour and formatting' for more information on why this is important)
 * left align all text in cells outside the table and all row labels within the table
-* right align all data within a table and all column headings
+* right align all data within a table and all column headings 
 
-[Example of a table formatted in an accessible way (ODS, 5.73kb)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-formatted-in-a-plain-way.ods)
+[Example of a table with accessible formatting (ODS, 5.73kb)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-formatted-in-a-plain-way.ods)
 
 ### Adding headers to a table that is already marked up
 If the table is already created and you want to tag the header row:
@@ -156,15 +162,16 @@ If you have a spreadsheet with lots of worksheets and many tables, you should ma
 #### Name a table in Excel
 1. Click anywhere in the table
 2. Click the ‘Design’ ribbon 
-3. In the properties section there is a box to edit the table name - to be useful this name must be meaningful and describe the table. 
+3. In the 'Properties' section there is a box to edit the table name 
 4. Note that Excel doesn’t allow spaces or dashes in table names, words must be split up with underscores
 
 #### Check navigation with named tables
 If you want to see a list of all the tables in your worksheet go to the ‘Formulas’ ribbon and click ‘Name manager’. 
+
 To test out navigation you can click ‘Ctrl + G’. This brings up a ‘Go to’ tool. You can then click onto one of your tables and select ‘OK’ to be taken directly to that table. 
 
 ### Merged and split cells
-Restructure your tables so there are no split cells or merged cells. This can seem a bit daunting, but it is one of the crucial issues to address as it is key for both machine readability and accessibility. 
+Restructure your tables so there are no split cells or merged cells. This may seem daunting, but it is one of the crucial issues to address as it is key for both machine readability and accessibility. 
 
 Merged and split cells make tables hard to understand for users of assistive technology, removing them is key to meeting [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
 
@@ -172,40 +179,49 @@ Merged and split cells make tables hard to understand for users of assistive tec
 Do not nest tables within other tables, this kind of structure is difficult to understand for users of assistive technology, removing them is key to meeting [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
 
 ### Blank rows and columns within tables
-Remove all blank rows and blank columns within tables.These may be perceived as the edge of the data area rather than a divider. Removing them is key to meeting accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics). If blank rows and columns are used to create space you can do this by adjusting column width and row height instead. 
+Remove all blank rows and blank columns within tables. These may be perceived as the edge of the data area rather than a divider. Removing them is key to meeting accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics). 
+
+If blank rows and columns are used to create space you can do this by adjusting column width and row height instead. 
 
 ### Column headings
 Every table in your spreadsheet must have a correctly tagged header row, as described in the 'Mark up tables in spreadsheets' section. This is key to pass [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
 
 Bear in mind that Excel can only tag one row as the header row. It is not necessarily a fail if you have subheading rows but as they can't be tagged as headers it may make the table confusing - so whenever possible, it is best avoided. 
 
-Consistency is important when it comes to column headings. Clear and consistent headings help accessibility, usability and machine readability. We advise you to follow a consistent naming convention - for example: ‘start_date_time’ and ‘end_date_time’ rather than mixing your naming conventions: ‘startdtTime’ and ‘end_date_time’.
+You can put information about units or notes in the column heading cell (more information on how to do this in the 'Units' section).
+
+#### Consistency in column headings
+Consistency is important when it comes to column headings. Clear and consistent headings help accessibility, usability and machine readability. We advise you to follow a consistent naming convention within your spreadsheets and across your publications. 
 
 If your spreadsheet uses multiple tabs, and the columns in these tabs hold similar or identical data, use the same column names. For example: in a spreadsheet listing employee satisfaction survey results, use ‘department_name’ in all tabs rather than ‘department_name’ in some and ‘name_of_department’ in others - this makes it easier to cross reference and understand your tables and how they relate to one another. It also helps with machine readability and further analysis.
 
 ### Units
-If needed, put the units for your data in rounded brackets after the column heading – for example: ‘Number of people in employment (thousands)’. Ensure it is clearly indicated if your columns use different units. 
-
-It is best to space the information about units so it appears under the column header – you can do this by pressing 'Alt + Enter' when typing in the cell. 
 Displaying units in a consistent way is important for usability and machine readability.
 
+Ensure it is clearly indicated if your columns use different units. If needed, put the units for your data in rounded brackets after the column heading – for example: ‘Number of people in employment (thousands)’. 
+
+It is best to space the information about units so it appears under the column heading text – you can do this by pressing 'Alt + Enter' when typing in the cell. 
+
 ### Wrap text 
-It is best practice to use the ‘wrap text’ function and adjust row height and column width to ensure all text you want to appear in cells within a table is visible and clearly spaced out. This is important because users with dyslexia can find it difficult to read crowded text. It is also important because a screen reader will repeatedly read out ‘overflowing’ or ‘cropped’ after every cell which contains text that does not fit.
+It is best practice to use the ‘wrap text’ function and adjust row height and column width to ensure all text you want to appear in cells within a table is visible and clearly spaced out. 
+
+This is important because users with dyslexia can find it difficult to read crowded text. It is also important because a screen reader will repeatedly read out ‘overflowing’ or ‘cropped’ after every cell which contains text that does not fit.
 
 It is OK for text outside a table to overflow the cell – a screen reader will still read out ‘overflowing’ or ‘cropped’ but as this won’t be repetitive it is not a problem.
 
-This is not specfically mentioned in the accessibility guidelines, but could be considered necessary to passs [guideline 1.4 distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable).
+This will help you to pass [guideline 1.4 distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable).
 
 ### Adding filters
-We advise you to avoid adding filters. They may fail the accessibility regulations if they obscure data. 
+We advise you to avoid adding filters. They may fail the accessibility guidelines if they obscure data. 
 
-If you do need to use filters it is important to provide signposts or comments to indicate which cells contain the drop-down menus and if any data is hidden. You should also give details of how to turn the filters off. For example: "Filters are active in cell C3 and may hide some data. To turn off all filters select the 'Data' ribbon then 'Filters' button or use [Ctrl, Shift, L]". This information should be in a cell in column A, above the table. 
+If you do need to use filters it is important to provide signposts or comments to indicate which cells contain the drop-down menus and if any data is hidden. You should also give details of how to turn the filters off. For example: "Filters are active in cell C3 and may hide some data. To turn off all filters select the 'Data' ribbon then 'Filters' button or use [Ctrl, Shift, L]". 
+
+This information should be in a cell in column A, above the table so users come across it before getting to the data. 
 
 ### Adding freeze panes
-We advise you to avoid adding freeze panes. They may fail the accessibility regulations as they can make it difficult for screen reader users to find the top left edge of a worksheet which is key to navigation. 
+We advise you to avoid adding freeze panes. They may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as they can make it difficult for screen reader users to find the top left edge of a worksheet which is key to navigation. 
 
-If you leave freeze panes active it is best practice to inform users and give a instructions for how to turn them off. For example: "Freeze panes are turned on. To turn off freeze panes select the 'View' ribbon then 'Freeze Panes' then 'Unfreeze Panes' or use [Alt W, F]". 
-As with filters, this information should be in a cell in column A, above the table. 
+If you do leave freeze panes active it is best practice to inform users and give a instructions for how to turn them off. For example: "Freeze panes are turned on. To turn off freeze panes select the 'View' ribbon then 'Freeze Panes' then 'Unfreeze Panes' or use [Alt W, F]". As with filters, this information should be in a cell in column A, above the table so users come across it before getting to the data. 
 
 Be aware that if you save your spreadsheet in the ODS open format (which we advise you to do) freeze panes will disappear. 
 
@@ -214,25 +230,27 @@ In Excel, you can add alternative text to your table by right clicking anywhere 
 
 Be aware that despite this, newer versions of Excel have a built-in accessibility checker which may bring up tables without alt text as a fail. You don’t need to worry about this. 
 
-If you save your spreadsheet in the Open Document Spreadsheet (ODS) format (which we advise you to do) alternative text for tables will disappear – but this does not matter as it is not needed to pass the accessibility guidelines. Note: alternative text for images and charts does not disappear when you save in the ODS format. 
+If you save your spreadsheet in the Open Document Spreadsheet (ODS) format (which we advise you to do) alternative text for tables will disappear – but this does not matter as it is not needed to pass the accessibility guidelines. 
+
+Note: it is necessary to provide alternative text for images and charts and this does not disappear when you save in the ODS format. 
 
 ## Cells with no data
 
-#### Accessibility and usability
-When cells with no data are left blank it can cause confusion for users of assistive technology because it makes it difficult for them to work out where the table starts and ends. Therefore, blank cells could be considered a fail of [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
+### Accessibility and usability
+When cells with no data are left blank it can cause confusion for users of assistive technology because it makes it difficult for them to work out where the table starts and ends. Therefore, blank cells could be considered a fail of accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
 However, we are carrying out research into this, it may be the case that as long as a table is marked up correctly, blank cells within a table do not cause a problem for navigation with assistive technology. 
 
 In terms of usability, blank cells do not tell a user why there is no data in the cell - a user might assume the data value is zero when this is not the case.
 
-Therefore our current advice for cells with no data is to give users information about why there is no data, without using symbols like full stops (..) or a dash (-). Instead, cells with no data should be marked up descriptively. 
+Therefore our current advice for cells with no data is to give users information about why there is no data, without using symbols like full stops (..) or dashes (-). Instead, cells with no data should be marked up descriptively (more information on the use of symbols can be found in the 'Symbols, footnotes and codes' section).  
 
 Here are some examples of descriptions you may want to use: 
 * If there is no data available, type in ‘no data’.
 * If the data is missing, type in ‘missing’.
 * If the data would be disclosive, type in 'disclosive'.
 
-If you wish to expand on any of your descriptions ideally you should present the information above the table, in a cell in column A so the information is available before a user comes to the table itself. If the information is lengthy you can say the full explanation is available on the cover sheet or in the notes table (more information on both of these in the 'Symbols, footnotes and codes' section and the 'Metadata worksheets' section). 
+If you wish to expand on any of your descriptions ideally you should present the information above the table, in a cell in column A so the information is available before a user comes to the table itself. If the information is lengthy you can say the full explanation is available on the cover sheet or in the notes table (more information on both of these in the 'Symbols, footnotes and codes' and the 'Metadata worksheets' sections). 
 
 We advise against using 'NA' to describe cells with no data. While in statistics this often means Not Available, many users will assume it means Not Applicable. If you want to use NA as shorthand you must clearly define what it means, above the table, in a cell in column A.  
 
@@ -240,53 +258,48 @@ We advise against using 'NA' to describe cells with no data. While in statistics
 
 Please note - we are aware that leaving cells with no data blank may make it easier for users to perform further analysis, but this feature of usability has to be balanced against the accessibility guidelines and the importance of a user understanding why a cell has no data. As mentioned, our advice on cells with no data may change as we do further research. 
 
-#### Machine readability for cells with no data  
+### Machine readability for cells with no data  
 
-In terms of machine readability leaving cells with no data blank is best practice. Therefore if you are making a spreadsheet solely for machine readability purposes it is best practice to leave cells with no data blank. More information on creating spreadsheets optimised for machine readability can be found in the 'Saving and publishing spreadsheets' section of this guidance.
-
-## Formatting, table layout and use of colour
+In terms of machine readability, leaving cells with no data blank is best practice. Therefore if you are making a spreadsheet solely for machine readability purposes it is best practice to leave cells with no data blank. 
 
 ### Comparing numbers
-If you are inviting users to compare numbers, it is best practice for usability to ensure those numbers are presented close together. 
+If you are inviting users to compare numbers, it is best practice to:
 
-It is easier to make comparisons and determine patterns when numbers are arranged in a column instead of a row.
-
-To help the reader make comparisons:
-
+* present the numbers close together, in columns - it is easier to make comparisons and determine patterns when numbers are arranged near each other and in columns instead of rows
 * use the same level of precision in each column
 * use commas to separate thousands
 * right align the figures and the column headings
 * start numbers of less than one with a zero, not a point
 
 ### Rounding
-Presenting too much detail can make things harder for users. Simplifying numbers by rounding makes numbers easier to read and remember. This helps improve usability. 
+Presenting too much detail can make things harder for users. Simplifying numbers by rounding makes numbers easier to read and remember. This improves usability. 
 
 The extent of rounding will depend on the intended use. A journalist may be happy to report that the population of the UK is 66 million, or that the population has changed from 64.1 million to 66.4 million. An analyst performing further calculations will want to work with more precise figures. Think about what your users may need. 
 
-Rounding does reduce precision. This usually means that the reported totals no longer equal the sum of the component parts. This should be communicated clearly. 
+Making a decision on rounding can be difficult when the values show a variety of magnitudes. Consider rounding to a fixed number of significant figures or effective digits. 
 
-Making a decision on rounding can be difficult when the values show a variety of magnitudes. Consider rounding to a fixed number of significant figures or effective digits.
+Rounding does reduce precision. This usually means that the reported totals no longer equal the sum of the component parts. If this is the case it should be communicated clearly. Alternatively, leave the underlying figures unrounded.  
 
 ### Grouping
 Objects grouped together are assumed to be associated. When used appropriately grouping may help users understand the data better. We advise that you group different measures in rows and different types of estimate in columns.
 
-White space can be used to separate the data into groups.
-
-The best way to provide white space is to adjust column width and row height. Do not use blank rows or columns or indentation as this may fail accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).  
+White space can be used to separate the data into groups. The best way to provide white space is to adjust column width and row height. Do not use blank rows or columns or indentation as this may fail accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).  
 
 [Example of using white space to split data into groups (ODS, 5KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/02/Labour-market-rates-by-UK-region-Aug-to-Oct-2019.ods) 
 
 ### Ordering categories
 Ordering the categories in a table can make it easier for users to see patterns and groups in the data. This improves usability. 
 
-For some categorical variables, like month of the year or age group, there is a natural order for presentation. Other variables may have harmonised ordering, such as regions of the UK.
+For some categorical variables, like month of the year or age group, there is a natural order for presentation. Other variables may have harmonised ordering, such as regions of the UK. More information on how to order regions can be found on the [Open Geography Portal](https://geoportal.statistics.gov.uk/) under 'General principles'.
 
-Use natural or [harmonisation standards](https://gss.civilservice.gov.uk/policy-store/?keyword=&area=harmonisation&doctype=&submit=Go) whenever possible. An appropriate order may also be obvious from knowledge of the subject matter.
+We have published several [harmonisation standards](https://gss.civilservice.gov.uk/policy-store/?keyword=&area=harmonisation&doctype=&submit=Go) which may help you when ordering categories. An appropriate order may also be obvious from knowledge of the subject matter.
 
 Alternatively, consider ordering categories according to the statistics in one of the columns, for example the largest value at the top. This shows the rankings of the categories on that statistic. Ranking the categories in this way emphasises the relative positions of the categories. It may also show where some statistics differ from the overall pattern. Be aware that in some cases, the relative positions may be determined by random variation.
 
 ### Summary rows and columns
 Summary rows and columns, for example for totals, are traditionally placed at the bottom or right of the table. If it’s important for users to see totals first, it may be helpful to place the totals at the top or left.
+
+## Formatting, table layout and use of colour
 
 ### Written content
 Written content in your spreadsheets should be treated in the same way as written content in a statistical report. For example, if you use a style guide for your reports, you should use this for any written content in your spreadsheets.  
