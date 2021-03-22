@@ -26,13 +26,13 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 
 ## Example spreadsheet
 
-We have applied our guidance to the Summary of labour market statistics spreadsheet published in December 2020 by the Office for National Statistics (ONS). We have addressed four of the worksheets in this large and complex spreadsheet. The Disability Accessibility Centre are currently auditing our edited version to ensure it meets all the accessibility guidelines. We will update this guidance when we have their feedback.
+We have applied our guidance to the summary of labour market statistics spreadsheet published in December 2020 by the Office for National Statistics (ONS). We have addressed four of the worksheets in this large and complex spreadsheet. The Disability Accessibility Centre (DAC) are currently auditing our edited version to ensure it meets all the accessibility guidelines. We will update this guidance when we have their feedback.
 
 We hope this example will help you understand and apply our guidance. 
 
-[A selection of four worksheets from the 'Summary of labour market statsitics' spreadsheet edited for accessibility best practice](insert link)
+[A selection of four worksheets from the 'Summary of labour market statsitics' spreadsheet edited for accessibility best practice](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Labour-market-oerview-data-tables-UK-December-2020-accessibility-example.ods)
 
-The 'Summary of labour market statistics' spreadsheet as it was published by ONS in December 2020 can be found on the [ONS labour market summary datasets webpage](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics/current).
+The summary of labour market statistics spreadsheet as it was published by ONS in December 2020, can be found on the [ONS labour market summary datasets webpage](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics/current).
 
 
 ## Contents 
