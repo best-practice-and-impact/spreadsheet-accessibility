@@ -365,7 +365,6 @@ In terms of usability and accessibility:
 * right align all data within a table and all data column headings 
 * use commas after every three decimal places in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation)
 * set sensible zoom levels
-* be consistent - for users to be able to use and re-use your data, consistency is key -ensure that titles, headings, worksheet names and table structures are consistent across your publication portfolios and within spreadsheets. 
 
 
 In terms of machine readability you should also: 
