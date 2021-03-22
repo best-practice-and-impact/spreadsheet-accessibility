@@ -223,11 +223,11 @@ If you are inviting users to compare numbers, it is best practice to:
 ### Rounding
 Presenting too much detail can make things harder for users. Simplifying numbers by rounding makes numbers easier to read and remember. This improves usability. 
 
-The extent of rounding will depend on the intended use. A journalist may be happy to report that the population of the UK is 66 million, or that the population has changed from 64.1 million to 66.4 million. An analyst performing further calculations will want to work with more precise figures. Think about what your users may need. 
+The extent of rounding will depend on the intended use. A journalist may be happy to report that the population of the UK is 66 million, or that the population has changed from 64.1 million to 66.4 million. An analyst performing further calculations will want to work with more precise figures. Think about what your users may need. You can leave the underlying figures unrounded as a compromise. 
 
-Making a decision on rounding can be difficult when the values show a variety of magnitudes. Consider rounding to a fixed number of significant figures or effective digits. 
+Rounding does reduce precision. This usually means that the reported totals no longer equal the sum of the component parts. If this is the case it should be communicated clearly. 
 
-Rounding does reduce precision. This usually means that the reported totals no longer equal the sum of the component parts. If this is the case it should be communicated clearly. Alternatively, leave the underlying figures unrounded.  
+When rounding you should ensure all figures in a column or row are rounded to the same level of precision, for example one decimal point.  
 
 ### Grouping
 Objects grouped together are assumed to be associated. When used appropriately grouping may help users understand the data better. We advise that you group different measures in rows and different types of estimate in columns.
@@ -371,12 +371,8 @@ In terms of machine readability you should also:
 
 * avoid using indentation to indicate subsections (for example indenting a list of regions under a row for ‘England’) or hierarchies 
 * ensure no cells with text have ‘hidden’ spaces at the start or end
-* give all worksheets sensible names 
 * check there are no spaces at the start or end of worksheet names
-* keep time series or historical data in the same spreadsheet wherever possible.
-* ensure underlying values are unrounded.
-•	Consider using an Application Programming Interface (API) to aid further analysis.
-* don't add summaries like averages in the body of the table as this causes difficulties for machine-reading – put them at the edge
+* consider using an Application Programming Interface (API) to aid further analysis
 
 
 ### Checking text colour contrast  
@@ -543,7 +539,7 @@ Pointers:
 * In general the titles of tables should include a description of the data and the geography it applies to, for example: ‘Number and percentage of people aged 16 to 64 in each labour market activity group, UK'
 
 ### Where to place and how to tag titles 
-To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) the worksheet title should be in Cell A1 and should be marked up as Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. This 'marks up' the heading and helps users of assistive technology navigate around the spreadsheet. It is best practice to modify the default colour and border settings for text tagged as a heading. 
+To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) the worksheet title should be in Cell A1 and should be marked up as Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. This 'marks up' the heading and helps users of assistive technology navigate around the spreadsheet. 
 
 ### Formatting cells tagged as headings
 The default formatting for headings is not accessible. We advise you to modify the default formatting rather than to simply edit the text colour and cell borders as this is better for accessibility. See the 'Colour and formatting' section for more information. 
