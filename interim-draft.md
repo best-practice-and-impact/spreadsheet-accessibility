@@ -180,7 +180,7 @@ Remove all blank rows and blank columns within tables. These may be perceived as
 If blank rows and columns are used to create space you can do this by adjusting column width and row height instead. 
 
 ### Column headings
-Every table in your spreadsheet must have a correctly tagged header row, as described in the 'Mark up tables in spreadsheets' section. This is key to pass [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
+Every table in your spreadsheet must have a correctly tagged header row, as described in the 'Mark up tables in spreadsheets' section. This is key to passing accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
 
 Bear in mind that Excel can only tag one row as the header row. It is not necessarily a fail if you have subheading rows but as they can't be tagged as headers it may make the table confusing - so whenever possible, it is best avoided. 
 
@@ -189,23 +189,21 @@ You can put information about units or notes in the column heading cell (more in
 #### Consistency in column headings
 Consistency is important when it comes to column headings. Clear and consistent headings help accessibility, usability and machine readability. We advise you to follow a consistent naming convention within your spreadsheets and across your publications. 
 
-If your spreadsheet uses multiple tabs, and the columns in these tabs hold similar or identical data, use the same column names. For example: in a spreadsheet listing employee satisfaction survey results, use ‘department_name’ in all tabs rather than ‘department_name’ in some and ‘name_of_department’ in others - this makes it easier to cross reference and understand your tables and how they relate to one another. It also helps with machine readability and further analysis.
+If your spreadsheet uses multiple worksheets and the columns in these worksheets hold similar or identical data, use the same column names. For example: in a spreadsheet listing employee satisfaction survey results, use ‘department name’ in all tabs rather than ‘department name’ in some and ‘name of department’ in others. This makes it easier to cross reference and understand your tables and how they relate to one another. It also helps with machine readability and further analysis.
 
 ### Units
 Displaying units in a consistent way is important for usability and machine readability.
 
 Ensure it is clearly indicated if your columns use different units. If needed, put the units for your data in rounded brackets after the column heading – for example: ‘Number of people in employment (thousands)’. 
 
-It is best to space the information about units so it appears under the column heading text – you can do this by pressing 'Alt + Enter' when typing in the cell. 
+It is best to space the information about units so it appears under the column heading text – you can do this by pressing 'Alt + Enter' when typing in a cell. 
 
 ### Wrap text 
-It is best practice to use the ‘wrap text’ function and adjust row height and column width to ensure all text you want to appear in cells within a table is visible and clearly spaced out. 
+It is important to ensure all text in cells within a table is visible and clearly spaced out. This  will help you to pass accessibility [guideline 1.4 distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable). You can do this by using the wrap text function and adjusting row height and column width. 
 
-This is important because users with dyslexia can find it difficult to read crowded text. It is also important because a screen reader will repeatedly read out ‘overflowing’ or ‘cropped’ after every cell which contains text that does not fit.
+This is important because users with dyslexia can find it difficult to read crowded text. It is also important because a screen reader will repeatedly read out ‘overflowing’ or ‘cropped’ after every cell which contains text that does not fit. This causes 'auditory clutter' and can make tables difficult to understand. 
 
-It is OK for text outside a table to overflow the cell – a screen reader will still read out ‘overflowing’ or ‘cropped’ but as this won’t be repetitive it is not a problem.
-
-This will help you to pass [guideline 1.4 distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable).
+It is OK if there are a few sentences outside a table that overflow their cells – a screen reader will still read out ‘overflowing’ or ‘cropped’ but as this won’t be repetitive it is not a problem.
 
 ### Comparing numbers
 If you are inviting users to compare numbers, it is best practice to:
@@ -219,27 +217,27 @@ If you are inviting users to compare numbers, it is best practice to:
 ### Rounding
 Presenting too much detail can make things harder for users. Simplifying numbers by rounding makes numbers easier to read and remember. This improves usability. 
 
-The extent of rounding will depend on the intended use. A journalist may be happy to report that the population of the UK is 66 million, or that the population has changed from 64.1 million to 66.4 million. An analyst performing further calculations will want to work with more precise figures. Think about what your users may need. You can leave the underlying figures unrounded as a compromise. 
+The extent of rounding will depend on the intended use. A journalist may be happy to report that the population of the UK is 66 million, or that the population has changed from 64.1 million to 66.4 million. An analyst performing further calculations will want to work with more precise figures. Think about what your users may need. Consider leaving the underlying figures unrounded.
 
 Rounding does reduce precision. This usually means that the reported totals no longer equal the sum of the component parts. If this is the case it should be communicated clearly. 
 
-When rounding you should ensure all figures in a column or row are rounded to the same level of precision, for example one decimal point.  
+When rounding you should ensure all figures in a category are rounded to the same level of precision (for example one decimal point) and that any numbers less than one start with a zero, not a point (for example, 0.56 not .56). 
 
 ### Grouping
 Objects grouped together are assumed to be associated. When used appropriately grouping may help users understand the data better. We advise that you group different measures in rows and different types of estimate in columns.
 
-White space can be used to separate the data into groups. The best way to provide white space is to adjust column width and row height. Do not use blank rows or columns as this may fail accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).  
+White space can be used to separate the data into groups. You can do this by adjusting column width and row height. Do not use blank rows or columns as this may fail accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).  
 
-[Example of using white space to split data into groups (ODS, 5KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/02/Labour-market-rates-by-UK-region-Aug-to-Oct-2019.ods) 
+> [Example of using white space to split data into groups (ODS, 5KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/02/Labour-market-rates-by-UK-region-Aug-to-Oct-2019.ods) 
 
 ### Ordering categories
 Ordering the categories in a table can make it easier for users to see patterns and groups in the data. This improves usability. 
 
-For some categorical variables, like month of the year or age group, there is a natural order for presentation. Other variables may have harmonised ordering, such as regions of the UK. More information on how to order regions can be found on the [Open Geography Portal](https://geoportal.statistics.gov.uk/) under 'General principles'.
+For some categorical variables, like month of the year or age group, there is a natural order for presentation. Other variables may have harmonised ordering, such as areas of the UK. More information on how to order UK areas can be found on the [Open Geography Portal](https://geoportal.statistics.gov.uk/) under 'General principles'.
 
 We have published several [harmonisation standards](https://gss.civilservice.gov.uk/policy-store/?keyword=&area=harmonisation&doctype=&submit=Go) which may help you when ordering categories. An appropriate order may also be obvious from knowledge of the subject matter.
 
-Alternatively, consider ordering categories according to the statistics in one of the columns, for example the largest value at the top. This shows the rankings of the categories on that statistic. Ranking the categories in this way emphasises the relative positions of the categories. It may also show where some statistics differ from the overall pattern. Be aware that in some cases, the relative positions may be determined by random variation.
+Alternatively, consider ordering categories according to the statistics in one of the columns, for example put the largest value at the top. This shows the rankings of the categories on that statistic. Ranking the categories in this way emphasises the relative positions of the categories. It may also show where some statistics differ from the overall pattern. Be aware that in some cases, the relative positions may be determined by random variation.
 
 ### Summary rows and columns
 Summary rows and columns, for example for totals, should always be at the edge of a table. Traditionally they are placed at the bottom or right. If it’s important for users to see the summaries first, it may be helpful to place the them at the top or left. 
@@ -252,29 +250,29 @@ If you do need to use filters it is important to provide signposts or comments t
 This information should be in a cell in column A, above the table so users come across it before getting to the data. 
 
 ### Adding freeze panes
-We advise you to avoid adding freeze panes. They may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as they can make it difficult for screen reader users to find the top left edge of a worksheet which is key to navigation. 
+We advise you to avoid adding freeze panes. They may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as they can make it difficult for screen reader users to find the top left edge of a worksheet, which is key to navigation. 
 
 If you do leave freeze panes active it is best practice to inform users and give a instructions for how to turn them off. For example: "Freeze panes are turned on. To turn off freeze panes select the 'View' ribbon then 'Freeze Panes' then 'Unfreeze Panes' or use [Alt W, F]". As with filters, this information should be in a cell in column A, above the table so users come across it before getting to the data. 
 
-Be aware that if you save your spreadsheet in the ODS open format (which we advise you to do) freeze panes will disappear. 
+Be aware that if you save your spreadsheet in the Open Document Spreadsheet (ODS) format (which we advise you to do) freeze panes will disappear. 
 
 ### Adding alt text to tables 
 In Excel, you can add alternative text to your table by right clicking anywhere in the table and selecting ‘Table’ and ‘Alternative text’. However, if your tables are marked up correctly it is not necessary to do this to pass the accessibility guidelines.
 
 Be aware that despite this, newer versions of Excel have a built-in accessibility checker which may bring up tables without alt text as a fail. You don’t need to worry about this. 
 
-If you save your spreadsheet in the Open Document Spreadsheet (ODS) format (which we advise you to do) alternative text for tables will disappear – but this does not matter as it is not needed to pass the accessibility guidelines. 
+If you save your spreadsheet in the ODS format (which we advise you to do) alternative text for tables will disappear – but this does not matter as it is not needed to pass the accessibility guidelines. 
 
 Note: it is necessary to provide alternative text for images and charts and this does not disappear when you save in the ODS format. 
 
 ## Cells with no data
 
-### Accessibility and usability
+### Accessibility and usability for cells with no data
 When cells with no data are left blank it can cause confusion for users of assistive technology because it makes it difficult for them to work out where the table starts and ends. Therefore, blank cells could be considered a fail of accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
 However, we are carrying out research into this, it may be the case that as long as a table is marked up correctly, blank cells within a table do not cause a problem for navigation with assistive technology. 
 
-In terms of usability, blank cells do not tell a user why there is no data in the cell - a user might assume the data value is zero when this is not the case.
+In terms of usability, blank cells do not tell a user why there is no data in the cell - a user might incorrectly assume the data value is zero or that there has been a mistake and data is missing. 
 
 Therefore our current advice for cells with no data is to give users information about why there is no data, without using symbols like full stops (..) or dashes (-). Instead, cells with no data should be marked up descriptively (more information on the use of symbols can be found in the 'Symbols, footnotes and codes' section).  
 
@@ -283,24 +281,25 @@ Here are some examples of descriptions you may want to use:
 * If the data is missing, type in ‘missing’.
 * If the data would be disclosive, type in 'disclosive'.
 
-If you wish to expand on any of your descriptions ideally you should present the information above the table, in a cell in column A so the information is available before a user comes to the table itself. If the information is lengthy you can say the full explanation is available on the cover sheet or in the notes table (more information on both of these in the 'Symbols, footnotes and codes' and the 'Metadata worksheets' sections). 
+If you wish to expand on any of your descriptions you should present the information above the table, in a cell in column A so the information is available before a user comes to the table itself. If the information is lengthy, you can say the full explanation is available on the cover sheet or in the notes table (more information on both of these areas can be found in the [Structure](#Structure) and [Metadata worksheets](#Metadata-worksheets) sections). 
 
 We advise against using 'NA' to describe cells with no data. While in statistics this often means Not Available, many users will assume it means Not Applicable. If you want to use NA as shorthand you must clearly define what it means, above the table, in a cell in column A.  
 
-[Example of blank cells marked up descriptively (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-with-empty-cells.ods)
+> [Example of blank cells marked up descriptively (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-with-empty-cells.ods)
 
 Please note - we are aware that leaving cells with no data blank may make it easier for users to perform further analysis, but this feature of usability has to be balanced against the accessibility guidelines and the importance of a user understanding why a cell has no data. As mentioned, our advice on cells with no data may change as we do further research. 
 
 ### Machine readability for cells with no data  
-
-In terms of machine readability, leaving cells with no data blank is best practice. Therefore if you are making a spreadsheet solely for machine readability purposes it is best practice to leave cells with no data blank. 
+In terms of machine readability, leaving cells with no data blank is best practice. Therefore if you are making a spreadsheet solely for machine reading purposes, it is best practice to leave cells with no data blank. 
 
 ## Formatting and use of colour
 
 ### Written content
 Written content in your spreadsheets should be treated in the same way as written content in a statistical report. For example, if you use a style guide for your reports, you should use this for any written content in your spreadsheets.  
 
-In terms of accessibility, all written content in your spreadsheet should follow the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
+In terms of accessibility, all written content in your spreadsheet should follow the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance. 
+
+This includes tagging headings and subheadings correctly (more information on doing this in spreadsheets can be found in the [Titles of spreadsheets, worksheets and tables](#Titles-of-spreadsheets-worksheets-and-tables) and the [Metadata worksheets](#Metadata-worksheets) sections). 
 
 ### Hyperlink text
 It is often helpful to link to extra information or related statistics. 
@@ -310,11 +309,11 @@ When it comes to accessibility, embedding hyperlinks correctly is specifically m
 #### Making hyperlinks accessible
 1. Use specific descriptions 
 
-Hyperlink text should be a specific description of the destination, not just ‘blog post’ or ‘report’ for example. The text should never be directional text like ‘click here’. Bear in mind that screen readers can be programmed to read out a list of links within a document. When link text is not specific, the links will be difficult to tell apart so the person cannot easily find a link they may be interested in.
+Hyperlink text should be a specific description of the destination, not just ‘blog post’ or ‘report’ and never directional text like ‘click here’. Bear in mind that screen readers can be programmed to read out a list of links within a document (much like a sighted user would scan a page for links). When link text is not specific, a sighted user can read the surrounding text, a screen reader cannot. This means the links will be difficult to tell apart so the screen reader user will not be able to easily find a link they may be interested in.
 
 2. Don't use URLs 
 
-Do not use the [URL](https://techterms.com/definition/url) of a webpage as the hyperlink text, unless it is very short (e.g. www.unsplash.com). Long URLs get read out by a screen reader in full which can be very time consuming and annoying. Also, in most circumstances they do not describe the destination page.
+Do not use the [URL](https://techterms.com/definition/url) of a webpage as the hyperlink text, unless it is very short (e.g. www.unsplash.com). Screen readers read out long URLs in full, letter by letter. This can be very time consuming and annoying. Also, in most circumstances they do not describe the destination page.
 
 3. Linking to documents 
 
@@ -326,7 +325,7 @@ Make sure that links to the same destination have consistent text and that links
 
 5. Formatting link text
 
-[Link text should be underlined by default](https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF). If it is not underlined the regulations say that you have to consider colour contrast with surrounding text and a 'visual cue' that appears on mouse hover and keyboard focus. Bear in mind that, while not a necessity in terms of the accessibility guidelines, it is best practice for hyperlink text to be both underlined and have the correct amount of colour contrast with the background and the surrounding text.
+[Link text should be underlined by default](https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF). If it is not underlined the accessibility guidelines say that you have to consider colour contrast with surrounding text and a 'visual cue' that appears on mouse hover and keyboard focus. Bear in mind that, while not a necessity in terms of the accessibility guidelines, it is best practice for hyperlink text to be both underlined and have the correct amount of colour contrast with the background and the surrounding text.
 
 ### Dates and time periods 
 It is best practice to format dates and time periods as advised by the [Office for National Statistics style guide](https://style.ons.gov.uk/house-style/dates/) and [Government Digital Service guidance](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style). 
@@ -335,8 +334,8 @@ This means:
 * do not use dashes, use ‘to’, for example, don’t use ‘Jan – Mar 2020’ use ‘Jan to Mar 2020’
 * it is fine to truncate days and months to save space
 * do not truncate years – for example, write: ‘Jan 1931’ not ‘Jan 31’ 
-* when referring to quarters of the year, write out the months, for example, “Jan to Mar 2020’ not ‘Q1 2020’
-* if your data needs specific dates for example: 01/02/10 you can present them like this but be aware screen readers will read this as ‘01 slash 02 slash 10’ which can be annoying, so it is best practice to write ‘1 Feb 2010’
+* when referring to quarters of the year, write out the months, for example, 'Jan to Mar 2020’ not ‘Q1 2020’
+* if your data needs specific dates for example: 01/02/10 you can present them like this but be aware screen readers will read this as ‘01 slash 02 slash 10’ which can be annoying and cause auditory clutter, so it is best practice to write ‘1 Feb 2010’
 
 ### Other pointers for formatting that must be followed to meet the accessibility guidelines: 
 * No visual devices such as colour, shading or patterns should be used to divide up data regions ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).
