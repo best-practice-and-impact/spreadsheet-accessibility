@@ -3,14 +3,14 @@
 This guidance aims to help you improve the usability, accessibility and machine readability of any statistics you publish in spreadsheet format. 
 
 ## Interim status 
-This guidance is an update to the ['Releasing statistics in spreadsheets' guidance](https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/) on the [Government Statistical Service (GSS) website](https://gss.civilservice.gov.uk/). It is still under review. We are publishing it in an interim state to give people information on what they may need to implement and to collate feedback. We continue to carry out research and testing. Once this information is finalised, the guidance will be updated on the GSS website.  
+This guidance is an update to the ['Releasing statistics in spreadsheets' guidance](https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/) on the [Government Statistical Service (GSS) website](https://gss.civilservice.gov.uk/). It is still under review. We are publishing it in an interim state to give people information on what they need to implement and to collate feedback. We continue to carry out research and testing. Once this information is finalised, the guidance will be updated on the GSS website.  
 
 If you have any questions or feedback, please email [gsshelp@statistics.gov.uk](mailto:gsshelp@statistics.gov.uk).  
 
 ## Accessibility, usability and machine readability 
 
 ### Accessibility 
-Spreadsheets published online are covered by the Web Content Accessibility Guidelines (WCAG) 2.1. The AA level of the WCAG 2.1 has to be met by law. 
+Spreadsheets published online are covered by the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/). Spreadsheets published online by the public sector must meet the AA level of the WCAG 2.1 by law ([The Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018](https://www.legislation.gov.uk/uksi/2018/852/contents/made)). 
 
 Some of the Web Content Accessibility Guidelines (WCAG) 2.1 are generic in nature. Throughout this guidance, using our knowledge, research and interpretation of WCAG 2.1, we have tried to make a clear distinction between things we feel must be done in order to meet the legal accessibility regulations and things that are considered accessibility best practice.
 
@@ -26,13 +26,11 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 
 ## Example spreadsheet
 
-We have applied our guidance to the summary of labour market statistics spreadsheet published in December 2020 by the Office for National Statistics (ONS). We have addressed four of the worksheets in this large and complex spreadsheet. The Disability Accessibility Centre (DAC) are currently auditing our edited version to ensure it meets all the accessibility guidelines. We will update this guidance when we have their feedback.
-
-We hope this example will help you understand and apply our guidance. 
+We have applied our guidance to the summary of labour market statistics spreadsheet published in December 2020 by the Office for National Statistics (ONS). We hope this example will help you understand and apply our guidance. We have addressed four of the worksheets in this large and complex spreadsheet. The Digital Accessibility Centre (DAC) are currently auditing our edited version to ensure it meets all the accessibility guidelines. We will update this guidance when we have their feedback.
 
 [Labour market overview data tables, UK, December 2020: accessibility example (ODS, 664KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Labour-market-overview-data-tables-UK-December-2020-accessibility-example.ods)
 
-The summary of labour market statistics spreadsheet as it was published by ONS in December 2020, can be found on the [ONS labour market summary datasets webpage](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics/current).
+The [ONS labour market summary datasets webpage](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics/current) has a link to the summary of labour market statistics spreadsheet as it was published by ONS in December 2020. 
 
 
 ## Contents 
@@ -76,7 +74,7 @@ Some questions you might want to ask:
 ## Document information 
 Providing clear and useful document information improves usability. 
 
-The accessibility regulations require the title field and information about document language to be complete ([success criterion 2.4.2 page titled](https://www.w3.org/TR/WCAG21/#page-titled) and [3.1.1 language of page](https://www.w3.org/TR/WCAG21/language-of-page)). It is best practice to also fill in the author and keyword fields. 
+The accessibility guidelines require the title field and information about document language to be complete ([success criterion 2.4.2 page titled](https://www.w3.org/TR/WCAG21/#page-titled) and [3.1.1 language of page](https://www.w3.org/TR/WCAG21/language-of-page)). It is usability best practice to also fill in the author and keyword fields. 
 
 ### Adding document information
 Go to ‘File’, then ‘Info’ and fill in the following fields:
@@ -95,20 +93,18 @@ Generally this should be the organisation that published the document – avoid 
 Put in a list of terms that someone might use to search for the document, separated by commas. This helps search engines find the document. It also helps with finding your document internally.
 
 ### Setting the document language
-Go to ‘File’ and then ‘Options’ and then ‘Language’. Make sure the document has the correct language(s) selected.
+Go to ‘File’, then ‘Options’, then ‘Language’. Make sure the document has the correct language(s) selected.
 
 ## Tables
 
 In statistics we generally deal with two types of tables - demonstration tables and reference tables. 
 
-### Demonstration tables
 If we are using a table to demonstrate a point that we are making in the text, we create a demonstration table. These lay out statistics to quickly reinforce the point.
 
 Generally these should be published within the statistical report, ideally in the HTML of the webpage the report sits on. You should not publish images of tables as these are likely to fail accessibility [success criterion 1.4.5 images of text](https://www.w3.org/TR/WCAG21/#images-of-text). 
 
 You can find out more about best practice for demonstration tables in our ['Introduction to data visualisation' guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-7) and our [‘Making analytical publications accessible’ guidance](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-6).
 
-### Reference tables 
 Reference tables usually have lots of rows and columns of data and are aimed at users who need or want detailed data. There may be a wide variety of statistics broken down into different categories.
 
 Reference tables are generally supplied in an spreadsheet document. It is these types of tables this guidance focuses on. 
@@ -137,18 +133,18 @@ Excel will, by default, give you a table with alternating blue colours. It will 
 #### Make the Excel default table accessible:
 1. Click somewhere in the table 
 2. Click the ‘Design’ ribbon.  
-3. Select a plain table format in the ‘table styles’ section – scroll right to the top and you’ll see the plainest option with no formatting (you can make this the default table format Excel chooses). 
+3. Select a plain table format in the ‘table styles’ section – go right to the top and you’ll see the plainest option with no formatting (you can make this the default table format by right clicking on it and selecting 'Set As Default'). 
 4. Uncheck the ‘Filter Button’ box in the 'Table Style Options' section. 
-5. If you have row labels in the first column, the cell in the header row will automatically be labelled 'Column 1' - you need to replace this with something sensible. 
+5. If you have row labels in the first column, the cell in the header row will automatically be labelled 'Column 1' - you need to replace this with something sensible, it cannot be left blank. 
 
 It is best practice to also:
 
 * highlight column headings and row labels by setting the text to bold
 * ensure the 'default' or 'automatic' colour is selected for all text (see the section on 'Colour and formatting' for more information on why this is important)
 * left align all text in cells outside the table and all row labels within the table
-* right align all data within a table and all column headings 
+* right align all data within a table and all column headings (except the one above the row labels - this should be left aligned)
 
-[Example of a table with accessible formatting (ODS, 5.73kb)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-formatted-in-a-plain-way.ods)
+> [Example of a table with accessible formatting (ODS, 5.73KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-formatted-in-a-plain-way.ods)
 
 ### Adding headers to a table that is already marked up
 If the table is already created and you want to tag the header row:
