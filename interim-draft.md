@@ -232,7 +232,7 @@ Rounding does reduce precision. This usually means that the reported totals no l
 ### Grouping
 Objects grouped together are assumed to be associated. When used appropriately grouping may help users understand the data better. We advise that you group different measures in rows and different types of estimate in columns.
 
-White space can be used to separate the data into groups. The best way to provide white space is to adjust column width and row height. Do not use blank rows or columns or indentation as this may fail accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).  
+White space can be used to separate the data into groups. The best way to provide white space is to adjust column width and row height. Do not use blank rows or columns as this may fail accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).  
 
 [Example of using white space to split data into groups (ODS, 5KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/02/Labour-market-rates-by-UK-region-Aug-to-Oct-2019.ods) 
 
@@ -370,10 +370,10 @@ In terms of usability and accessibility:
 
 In terms of machine readability you should also: 
 
-* avoid using indentation to indicate subsections (for example indenting a list of regions under a row for ‘England’) or hierarchies
+* avoid using indentation to indicate subsections (for example indenting a list of regions under a row for ‘England’) or hierarchies 
 * ensure no cells with text have ‘hidden’ spaces at the start or end
-* ensure all worksheets have sensible names and open in the correct place on the sheet.
-* check there are no spaces at the start or end of worksheet names.
+* give all worksheets sensible names 
+* check there are no spaces at the start or end of worksheet names
 * keep time series or historical data in the same spreadsheet wherever possible.
 * ensure underlying values are unrounded.
 •	Consider using an Application Programming Interface (API) to aid further analysis.
@@ -528,25 +528,20 @@ Information presented below a table may be missed and can be difficult to naviga
 
 ## Titles of spreadsheets, worksheets and tables
 
-Titles and headings affect data usability and accessibility. 
+Titles and headings affect usability, accessibility and machine readability. 
 
 Titles and labels are important parts of table design. They help users understand the data. They are particularly important if the table is copied and placed into another context.
 
 In terms of accessibility, if users cannot find or understand the data they need your spreadsheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [3.1 readable](https://www.w3.org/TR/WCAG21/#readable). It may also fail accessibility [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels).
 
-Make sure the overall title for your spreadsheet gives a clear description of the data and includes the time period and geographical region the data applies to.
+Be consistent when writing titles for spreadsheets, worksheets, tables and column headings. A lack of consistency within a publication and between different releases limits machine readability. 
 
-Use standard and consistent title formats across your publication porfolios and within your spreadsheets.
-
-It is best practice to have one table per worksheet. This means the title of the worksheet should be the title of the table. 
-
-In large spreadsheets it is a good idea to number your tables, for example: ‘Table 1: Number of people in different age groups, UK, seasonally adjusted’. 
-
-In general the titles of tables should include: 
-* a description of the data,
-* the geography it applies to 
-
-Example: ‘Number and percentage of people aged 16 to 64 in each labour market activity group, UK'
+Pointers: 
+* Make sure the overall title for your spreadsheet gives a clear description of the data and includes the time period and geographical region the data applies to.
+* Use standard and consistent title formats across your publication porfolios and within your spreadsheets.
+* It is best practice to have one table per worksheet - this means the title of the worksheet should be the title of the table. 
+* In large spreadsheets it is a good idea to number your tables, for example: ‘Table 1: Number of people in different age groups, UK, seasonally adjusted’. 
+* In general the titles of tables should include a description of the data and the geography it applies to, for example: ‘Number and percentage of people aged 16 to 64 in each labour market activity group, UK'
 
 ### Where to place and how to tag titles 
 To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) the worksheet title should be in Cell A1 and should be marked up as Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. This 'marks up' the heading and helps users of assistive technology navigate around the spreadsheet. It is best practice to modify the default colour and border settings for text tagged as a heading. 
@@ -603,7 +598,6 @@ To meet [success criterion 2.4.2 page titled](https://www.w3.org/TR/WCAG21/#page
 
 To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) you should use subheadings to break up the information. These subheadings should be tagged using the cell styles tool. First level subheadings should be tagged as Headings 2, second level subheadings as Headings 3 and so on.  
 
-To meet accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) keep all the information in a list in column A. It is best to expand this column so the text doesn’t overflow the cells. If you don't do this it can be off-putting for users of screen readers as they will read out 'overflowing' each time text in a cell overflows. 
 
 Make sure all the written content follows the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
 
@@ -700,7 +694,7 @@ To run the accessibility checker, go to the ‘Review’ ribbon and select ‘Ch
 
 ## Saving and publishing spreadsheets
 Pointers for usability and accessibility: 
-* Generally a spreadsheet will automatically open on the first worksheet, but to ensure this always happens make sure the cursor is in cell A1 of the first worksheet when you save.
+* Ensure the spreadsheet itself and all worksheets within it, open in a sensible place by placing the cursor in cell A1 on each of the worksheets before you hit save.
 * Zoom should be set to 100% when you save your spreadsheet to ensure no enlargement or reduction is active.
 * Avoid zip files as these can be blocked by organisational policies 
 
