@@ -28,7 +28,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 
 We have applied our guidance to the summary of labour market statistics spreadsheet published in December 2020 by the Office for National Statistics (ONS). We hope this example will help you understand and apply our guidance. We have addressed four of the worksheets in this large and complex spreadsheet. The Digital Accessibility Centre (DAC) are currently auditing our edited version to ensure it meets all the accessibility guidelines. We will update this guidance when we have their feedback.
 
-[Labour market overview data tables, UK, December 2020: accessibility example (ODS, 664KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Labour-market-overview-data-tables-UK-December-2020-accessibility-example.ods)
+> [Labour market overview data tables, UK, December 2020: accessibility example (ODS, 664KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Labour-market-overview-data-tables-UK-December-2020-accessibility-example.ods)
 
 The [ONS labour market summary datasets webpage](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics/current) has a link to the summary of labour market statistics spreadsheet as it was published by ONS in December 2020. 
 
@@ -153,13 +153,13 @@ If the table is already created and you want to tag the header row:
 3. Check the ‘Header Row’ box 
 
 ### Naming tables 
-If you have a spreadsheet with lots of worksheets and many tables, you should make sure the tables have meaningful names. This will aid navigation for everyone, but particularly for those who use assistive technology. It will also help you pass accessibility [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
+If you have a spreadsheet with tables, you should make sure they have meaningful names. This will aid navigation for everyone, but particularly for those who use assistive technology. It will also help you pass accessibility [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
 #### Name a table in Excel
-1. Click anywhere in the table
+1. Click anywhere in a marked-up table
 2. Click the ‘Design’ ribbon 
 3. In the 'Properties' section there is a box to edit the table name 
-4. Note that Excel doesn’t allow spaces or dashes in table names, words must be split up with underscores
+4. Type the table name in - note that Excel doesn’t allow spaces or dashes in table names, words must be split up with underscores
 
 #### Check navigation with named tables
 If you want to see a list of all the tables in your worksheet go to the ‘Formulas’ ribbon and click ‘Name manager’. 
@@ -167,9 +167,9 @@ If you want to see a list of all the tables in your worksheet go to the ‘Formu
 To test out navigation you can click ‘Ctrl + G’. This brings up a ‘Go to’ tool. You can then click onto one of your tables and select ‘OK’ to be taken directly to that table. 
 
 ### Merged and split cells
-Restructure your tables so there are no split cells or merged cells. This may seem daunting, but it is one of the crucial issues to address as it is key for both machine readability and accessibility. 
+Restructure your tables so there are no split cells or merged cells. This is a crucial issue to address as it is key for both machine readability and accessibility. 
 
-Merged and split cells make tables hard to understand for users of assistive technology, removing them is key to meeting [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
+Merged and split cells make tables hard to understand for users of assistive technology, removing them is key to meeting accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
 
 ### Nested tables
 Do not nest tables within other tables, this kind of structure is difficult to understand for users of assistive technology, removing them is key to meeting [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
