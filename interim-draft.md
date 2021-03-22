@@ -246,7 +246,7 @@ We have published several [harmonisation standards](https://gss.civilservice.gov
 Alternatively, consider ordering categories according to the statistics in one of the columns, for example the largest value at the top. This shows the rankings of the categories on that statistic. Ranking the categories in this way emphasises the relative positions of the categories. It may also show where some statistics differ from the overall pattern. Be aware that in some cases, the relative positions may be determined by random variation.
 
 ### Summary rows and columns
-Summary rows and columns, for example for totals, are traditionally placed at the bottom or right of the table. If it’s important for users to see totals first, it may be helpful to place the totals at the top or left.
+Summary rows and columns, for example for totals, should always be at the edge of a table. Traditionally they are placed at the bottom or right. If it’s important for users to see the summaries first, it may be helpful to place the them at the top or left. 
 
 ### Adding filters
 We advise you to avoid adding filters. They may fail the accessibility guidelines if they obscure data. 
@@ -354,6 +354,7 @@ This means:
 ### Other pointers for formatting that should be followed in terms of best practice
 In terms of usability and accessibility: 
 
+* consider how your tables are structured - remember it is easier to read down a list than across a table so you may want to think about transposing your data
 * all fonts used should be sans serif (for example, Arial or Calibri) - people with dyslexia find serif fonts hard to read
 * avoid the use of underline and italic text - people with dyslexia can find italic and underlined text hard to read, if you need to highlight text it is best to use bold 
 * avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour (more information on how to do this can be found in the 'Checking text colour contrast' sub-section) 
@@ -569,7 +570,7 @@ You should use your cover sheet to provide key information about the data in the
 Decisions on what information should go into a cover sheet will vary from one statistical release to the next. 
 It is best practice to include the following information (if applicable to your data): 
 * The title of the spreadsheet which should give a brief description on what the data tables are about, the time period covered and the geographical region the data tables refer to. 
-* Information on what the data tables are about (more detailed than what is in the spreadsheet title).
+* A brief summary of what the data tables are about.
 * The name of the statistical release the data relates to with a hyperlink to that release.
 * The source for the data - if you have a complex spreadsheet with many different tables and sources you can put source information on each individual worksheet (above the table) or have it as a column in your table of contents.  
 * The date the spreadsheet was published.
@@ -581,7 +582,7 @@ It is best practice to include the following information (if applicable to your 
 You might also want to include: 
 
 * information on where to find related data or supporting publications.
-* links to a wider data series
+* links to a wider data series - although we would advise, wherever possible, to keep time series or historical data in the same spreadsheet
 * links to supporting information about the data (metadata) and methodology documents.
 * information on the quality of the statistics
 * link to a glossary of essential technical terms and acronyms.
