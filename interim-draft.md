@@ -30,7 +30,7 @@ We have applied our guidance to the summary of labour market statistics spreadsh
 
 We hope this example will help you understand and apply our guidance. 
 
-[A selection of four worksheets from the 'Summary of labour market statsitics' spreadsheet edited for accessibility best practice](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Labour-market-oerview-data-tables-UK-December-2020-accessibility-example.ods)
+[Labour market overview data tables, UK, December 2020: accessibility example](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Labour-market-oerview-data-tables-UK-December-2020-accessibility-example.ods)
 
 The summary of labour market statistics spreadsheet as it was published by ONS in December 2020, can be found on the [ONS labour market summary datasets webpage](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics/current).
 
