@@ -346,7 +346,7 @@ This means:
 * No visual devices such as colour, shading or patterns should be used to divide up data regions ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).
 * No text is set in a vertical or diagonal direction - this is not mentioned specifically in WCAG but we consider it necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 4. distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable).
 * No text has spaces between letters in a word for visual effect as this can be difficult to read and screen readers will read the letters out one by one - this is not mentioned specifically in WCAG but we consider it necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)
-* Colour is never used as the only way to communicate a message ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color)).
+* Colour is never used as the only way to communicate a message - this fails accessibility [success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) and complicates machine readability.
 * The minimum font size used is size 12 - in general this will help you meet [success criterion 1.4.4 resize text](https://www.w3.org/TR/WCAG21/#resize-text).
 * Make sure there are no spelling or grammatical mistakes – it is possible to run a spelling and grammar check in Excel – in newer versions it can be found on the ‘Review’ ribbon - this will ensure you meet accessibility [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable)
 * No columns or rows are hidden from view 
@@ -635,7 +635,7 @@ When communicating confidence intervals it is best practice in terms of usabilit
 
 ### Statistical significance
 
-Note that the credibility of assessing statistics using significance levels is currently under debate.
+Note that the [credibility of assessing statistics using significance levels is currently under debate](https://www.nature.com/articles/d41586-019-00874-8).
 
 If you are communicating statistical significance show where a change is statistically significant in a separate cell to the data. In terms of accessibility it is best to do this using words, for example: ‘Significant at 0.001 level’. You must also give the column or row holding the significance information a clear heading.  
 
@@ -695,7 +695,7 @@ Pointers for usability and accessibility:
 * Avoid zip files as these can be blocked by organisational policies 
 
 ### Information to put on the webpage where the link to the spreadsheet lives
-It helps users find, understand and use your data if the webpage that houses the link to your spreadsheet contains a clear description of your data and has clear signposts to supporting information.
+Ensure the webpage that houses the link to your spreadsheet contains a clear description of your data and has clear signposts to supporting information. This will help users find, understand and use your data.
 
 The landing page for [Conception statistics, England and Wales](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/conceptionandfertilityrates/datasets/conceptionstatisticsenglandandwalesreferencetables) is a good example of a webpage that hosts links to spreadsheets. It contains: 
 
