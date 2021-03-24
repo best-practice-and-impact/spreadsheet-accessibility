@@ -378,17 +378,17 @@ Be aware that colours are coded in different ways. To use the WebAIM colour cont
 The use of colours in charts is more complex as you often have to consider colour contrast between different chart elements as well as with the background. Our [data visualisation guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-9) and the [style guide from the Office for National Statistics](https://style.ons.gov.uk/category/data-visualisation/using-colours/) both have useful tips on this area but neither have yet been fully updated with regards to the accessibility guidelines. We are planning on looking into this in more detail soon. 
 
 ## Images
-Images within spreadsheets should be avoided. However, be sure to check your specific departmental guidance on this. Some government departments may not allow you to publish any images in spreadsheets at all, some may have different guidance. 
+Images within spreadsheets should be avoided. 
 
-This includes any departmental logos. Placing a departmental logo on a cover sheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as these images can make it difficult for users of assistive technology to work out where they are on a worksheet. 
+This includes any departmental logos. Placing a departmental logo on a cover sheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as these images can make it difficult for users of assistive technology to work out where they are on a worksheet. It is much better to write out the name of the government department rather than have it in a logo. 
 
 If you can’t avoid it, make sure all logos, graphics, charts and any other images within the spreadsheet document have alternative text attached to them (accessibility [success criterion 1.1.1 non-text content](https://www.w3.org/TR/WCAG21/#non-text-content)). Ideally you should place any images on a separate worksheet to any tables. 
 
-You will also need to ensure any charts are accessible. You will need to consider: 
-* colour contrast of chart elements with each other and the background
-* text on the chart - ideally it should be minimum size 12, a sans serif font and italics and underline should be avoided 
+If you include images of charts, you will need to ensure they are accessible. You will need to consider the colour contrast of chart elements with each other and the background (see the sub section called 'Checking colour contrast in charts'). You will also need to consider any text on the chart. Ideally this will be minimum size 12, in a sans serif font with no use of italics or underline.
 
-You should also follow best practice guidance for charts. See our [guidance on data visualisation](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/) and the [Office for National Statistics' style guide](https://style.ons.gov.uk/).
+Wherever you publish charts, you should aim to follow best practice guidance. See our [guidance on data visualisation](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/) and the [Office for National Statistics' style guide](https://style.ons.gov.uk/).
+
+You should also check your specific departmental guidance on including images in spreadsheets. Some departments may not allow you to publish any images within a spreadsheet document. 
 
 ### How to add alt text for charts and images 
 1. Right click on the image or chart and select 'Format Picture/Chart Area'.
@@ -403,28 +403,28 @@ If an image is just decorative you should mark it as such by ticking the 'Decora
 ### Short footnotes 
 It is best practise in terms of accessibility (and arguably, usability) to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in rounded brackets instead of using ‘p’ or ‘r’. 
 
-However, when needed, using letters to signify notes is generally OK as long as the key to what these letters mean is clearly laid out above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table. However, you should not use superscript text as this can be difficult to see for users with low vision and screen readers do not differentiate superscript text from non-superscript text. You should also avoid using symbols (see the section on 'Use of symbols'). 
+However, when needed, using letters to signify notes is generally OK as long as the key to what these letters mean is clearly laid out above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table. However, you should not use superscript text as this can be difficult to see for users with low vision and screen reader software does not differentiate superscript text from non-superscript text. You should also avoid using symbols to signpost to notes (see the sub section 'Use of symbols'). 
 
 ### Detailed footnotes
 When signposting to detailed footnotes we advise you to: 
 * write out the word ‘note’ in the cell, with the number of the note you need to refer to, and put it in square brackets (we advise square brackets for notes and rounded brackets for units to differentiate them in a consistent way), for example 'Number of people in employment [note 1]'
 * put a list of numbers if a cell needs to refer to more than one note – for example, write ‘[note 1,2,3]’ if a cell needs to refer to notes 1, 2 and 3. 
 * try to always put notes in table titles, column headings or row labels - putting them in specific cells may not fail accessibility but it does cause problems for machine readability and usability 
-* if a note is in a column heading, space the text so the note marker sits underneath the column header and any information about units (you can do this by pressing 'Alt + Enter')
+* if a note is in a column heading, space the text so the note marker sits underneath the column header text and any information about units (you can do this by pressing 'Alt and Enter')
 * mention that notes are used, in a cell in column A above the table and say where the notes can be found (more information about use of cells in column A can be found in the [Structure](#Structure) section)
 
 When displaying the content of detailed notes it is common practice for them to be placed underneath the table. However there are several issues with this: 
-1. it can take lots of scrolling to get to notes placed under very long tables, particularly for some users of assistive technology - this is bad practice for usability and accessibility 
-2. notes placed under tables may be missed by users of assistive technology who aren't expecting them to be there - however, it is possible to combat this by mentioning that notes sit underneath the table, in a cell in column A above the table (more information about use of cells in column A can be found in the [Structure](#Structure) section)
-3. notes placed underneath a table need careful (and mostly manual) formatting to be made accessible (see the section on 'Structure and 'Cover sheets' for more information on how written content should be formatted) - without this you may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable)
-4. long detailed notes may result in a need for horizontal scrolling which is bad practice for usability or accessibility (this is because you shouldn't use merged cells to present long notes as merged cells fail accessibility guidelines)
-5. in complex spreadsheets, identical notes are often placed under several tables across many worksheets - this can mean, when certain notes are updated or changed, some are accidentally missed out
+1. It can take lots of scrolling to get to notes placed under very long tables, particularly for some users of assistive technology - this is bad practice for usability and accessibility. 
+2. Notes placed under tables may be missed by users of assistive technology who aren't expecting them to be there. It is possible to combat this by mentioning that notes sit underneath the table, in a cell in column A above the table (more information about use of cells in column A can be found in the [Structure](#Structure) section).
+3. Notes placed underneath a table need careful (and mostly manual) formatting to be made accessible (see the section on [Structure](#Structure) and [Metadata worksheets](#metadata-worksheets) for more information on how written content should be formatted). Without this formatting you may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
+4. Long detailed notes may result in a need for horizontal scrolling which is bad practice for usability and accessibility. This may happen because the note will need to be displayed in one cell - you shouldn't use merged cells to present long notes as merged cells fail accessibility guidelines (see the section on [Tables](#tables)).
+5. In complex spreadsheets, identical notes are often placed under several tables across many worksheets - this can mean, when certain notes are updated or changed, some are accidentally missed out.
 
 For these reasons we advise you to create a worksheet called ‘Notes’ which contains a table that lists all the detailed notes for the spreadsheet. 
 Notes placed underneath a table will not necessarily fail the accessibility guidelines but they will need careful consideration and, depending on the size of the table and how they are laid out, they may be considered bad practice. 
 
 > [Example of presenting a key for shorthand and notes (ODS, 4.4KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-with-notes-and-a-key.ods)
-> See the overall [example spreadsheet](#example-spreadsheet) also. 
+> See the labour market [example spreadsheet](#example-spreadsheet) also. 
 
 ### Use of symbols 
 You should not use symbols to signpost footnotes because: 
@@ -462,11 +462,9 @@ In terms of usability, machine readability and accessibility ([success criterion
 > [Example of presenting country codes (ODS, 6.31KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-presenting-country-codes.ods)
 
 ### Machine readability - differences in best practice for symbols, footnotes and codes
-If you are making a spreadsheet solely for machines to read you can use symbols but you must provide information on what those symbols mean via the metadata (more information on how to best supply metadata for machine readability can be found in the 'Metadata worksheets' section of this guidance). 
+If you are making a spreadsheet solely for machines to read you can use symbols but you must provide information on what those symbols mean via the metadata. More information on how to best supply metadata for machine readability can be found in the [Metadata worksheets](#metadata-worksheets) section. 
 
-In terms of presenting symbols and footnote markers it is best practice for machine readability to put symbols or footnote markers in separate (very narrow) columns, next to the data. This approach does not fail any accessibility guidelines in itself, but you would need to give that column a heading and you might also need to mark up all the empty cells. This could make a table very wide which is not great for readability. 
-
-* Put footnotes and annotations in brackets for machine-reading purposes  - is this better than separate columns????
+In terms of presenting symbols and footnote markers it is best practice for machine readability to put the symbols or footnote markers in separate (very narrow) columns, next to the data. This approach does not fail any accessibility guidelines in itself, but you would need to give that column a heading and you might also need to mark up all the empty cells (we are still researching what needs to be done to make empty cells accessible). This could make a table very wide which is not great for readability. 
 
 ## Structure
 Properly structuring your content is important to meet [success criterion 1.3.1 Info and Relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
