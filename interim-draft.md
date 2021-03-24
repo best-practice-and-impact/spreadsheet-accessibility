@@ -434,28 +434,29 @@ You should not use symbols to signpost footnotes because:
 
 Therefore, if you use symbols to signify notes it may lead to a fail of accessibility [guideline 1 perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
  
-However, use of symbols is not always a fail of the accessibility guidelines. You just need to be aware that some screen readers will skip over symbols completely. This means you should consider how your text reads if you miss out the symbols. For example ‘Some shorthand is used in this spreadsheet, e = estimated, r = revised’ - this sentence still makes sense if read out as ‘Some shorthand is used in this spreadsheet, e estimated, r revised’.  
+However, use of symbols is not always a fail of the accessibility guidelines. You just need to be aware that some screen reader software will not recognise symbols and some screen reader users may have changed their settings to ignore symbols to avoid auditory clutter. This means you should consider how your text reads if you miss out the symbols. For example the sentence ‘Some shorthand is used in this spreadsheet, e = estimated, r = revised' still makes sense if read out as ‘Some shorthand is used in this spreadsheet, e estimated, r revised’.  
 
-Generally the percentage symbol ‘%’ is well understood by screen readers and symbols like dashes and slashes can be used in classifications and geography codes as these are needed for consistency. 
+Deque (a company that helps businesses make their websites and mobile applications accessible) has published [research into how different screen reader software deals with symbols](https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/) when using their default settings. They list 17 characters considered 'safe' to use. These include £, %, & and /. But, as mentioned, some users may have changed their settings from the default so in general it is best to use words instead of symbols wherever possible. 
 
-We are looking to put together more comprehensive advice for accessibility of symbols soon.  
+It is OK to use dashes and slashes in classifications and geography codes as these are needed for consistency.  
 
 ### Classifications and geography codes 
-You may need to use classifications or geography codes in your tables.
+You may need to use classifications or [geography codes](https://www.ons.gov.uk/methodology/geography/geographicalproducts/namescodesandlookups/namesandcodeslistings/namesandcodesforadministrativegeography) in your tables.
+
 Some pointers:
 
 1. Use the right codes
 Make sure you are using the correct, nationally recognised codes. If you need any help in this area the harmonisation leads in the [Best Practice and Impact team](https://gss.civilservice.gov.uk/about-us/support-for-the-gss/) can provide advice. This is important for usability and machine readability. 
 
-2. codes and accessibility 
+2. Classifications, codes and accessibility 
 Classifications and geography codes are generally fine in terms of accessibility as they are usually strings of letters and numbers. When codes are not just strings of letters and numbers, you should still use them consistently. It is OK to use symbols such as dashes and slashes here as that is how the code is constructed.
 
-3. help users understand codes
-It is best practice to link to supporting information for any codes used, either as a note or on the cover sheet (more information on cover sheets can be found in the [metadata worksheets](#metadata-worksheets) section of this guidance). 
+3. Help users understand codes
+It is best practice to link to supporting information for any codes used, either as a note or on the cover sheet (more information on notes and cover sheets can be found in the [metadata worksheets](#metadata-worksheets) section). 
 
 You should also help users understand any changes in codes or classifications – for example, the [Geography Code History Database](https://www.ons.gov.uk/methodology/geography/geographicalproducts/namescodesandlookups/codehistorydatabasechd) helps users track changes in area codes.
 
-4. presenting codes in tables
+4. Presenting codes in tables
 In terms of usability, machine readability and accessibility ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)), codes should be in separate cells to the description of the code and the data. For example, country code AD should be in a separate cell to the country name Andorra, and then there should be another cell for the data linked to this country. The row or column containing the codes must be labelled clearly. 
 
 > [Example of presenting country codes (ODS, 6.31KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-presenting-country-codes.ods)
