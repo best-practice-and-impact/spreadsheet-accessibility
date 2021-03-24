@@ -377,13 +377,17 @@ Be aware that colours are coded in different ways. To use the WebAIM colour cont
 The use of colours in charts is more complex as you often have to consider colour contrast between different chart elements as well as with the background. Our [data visualisation guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-9) and the [style guide from the Office for National Statistics](https://style.ons.gov.uk/category/data-visualisation/using-colours/) both have useful tips on this area but neither have yet been fully updated with regards to the accessibility guidelines. We are planning on looking into this in more detail soon. 
 
 ## Images
-Avoid the use of any images within a spreadsheet. 
+Images within spreadsheets should be avoided. However, be sure to check your specific departmental guidance on this. Some government departments may not allow you to publish any images in spreadsheets at all, some may have different guidance. 
 
 This includes any departmental logos. Placing a departmental logo on a cover sheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as these images can make it difficult for users of assistive technology to work out where they are on a worksheet. 
 
-If you can’t avoid it, make sure all logos, graphics, charts and any other images within the spreadsheet document have alternative text attached to them ([success criterion 1.1.1 non-text content](https://www.w3.org/TR/WCAG21/#non-text-content)) and place them on a separate worksheet to any tables. 
+If you can’t avoid it, make sure all logos, graphics, charts and any other images within the spreadsheet document have alternative text attached to them (accessibility [success criterion 1.1.1 non-text content](https://www.w3.org/TR/WCAG21/#non-text-content)). Ideally you should place any images on a separate worksheet to any tables. 
 
-You will also need to ensure charts are accessible – see our ‘[Making analytical publications accessible](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/)’ guidance for more information. 
+You will also need to ensure any charts are accessible. You will need to consider: 
+* colour contrast of chart elements with each other and the background
+* text on the chart - ideally it should be minimum size 12, a sans serif font and italics and underline should be avoided 
+
+You should also follow best practice guidance for charts. See our [guidance on data visualisation](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/) and the [Office for National Statistics' style guide](https://style.ons.gov.uk/).
 
 ### How to add alt text for charts and images 
 1. Right click on the image or chart and select 'Format Picture/Chart Area'.
