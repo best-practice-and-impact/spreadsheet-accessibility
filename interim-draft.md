@@ -299,7 +299,7 @@ Written content in your spreadsheets should be treated in the same way as writte
 
 In terms of accessibility, all written content in your spreadsheet should follow the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance. 
 
-This includes tagging headings and subheadings correctly (more information on doing this in spreadsheets can be found in the [Titles of spreadsheets, worksheets and tables](#Titles-of-spreadsheets-worksheets-and-tables) and the [Metadata worksheets](#Metadata-worksheets) sections). 
+A key part of this is tagging headings and subheadings correctly (more information on doing this in spreadsheets can be found in the [Titles of spreadsheets, worksheets and tables](#Titles-of-spreadsheets-worksheets-and-tables) and the [Metadata worksheets](#Metadata-worksheets) sections). 
 
 ### Hyperlink text
 It is often helpful to link to extra information or related statistics. 
@@ -333,35 +333,33 @@ It is best practice to format dates and time periods as advised by the [Office f
 This means: 
 * do not use dashes, use ‘to’, for example, don’t use ‘Jan – Mar 2020’ use ‘Jan to Mar 2020’
 * it is fine to truncate days and months to save space
-* do not truncate years – for example, write: ‘Jan 1931’ not ‘Jan 31’ 
+* do not truncate years, for example, write: ‘Jan 1931’ not ‘Jan 31’ 
 * when referring to quarters of the year, write out the months, for example, 'Jan to Mar 2020’ not ‘Q1 2020’
 * if your data needs specific dates for example: 01/02/10 you can present them like this but be aware screen readers will read this as ‘01 slash 02 slash 10’ which can be annoying and cause auditory clutter, so it is best practice to write ‘1 Feb 2010’
 
 ### Other pointers for formatting that must be followed to meet the accessibility guidelines: 
 * No visual devices such as colour, shading or patterns should be used to divide up data regions ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).
-* No text is set in a vertical or diagonal direction - this is not mentioned specifically in WCAG but we consider it necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 4. distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable).
-* No text has spaces between letters in a word for visual effect as this can be difficult to read and screen readers will read the letters out one by one - this is not mentioned specifically in WCAG but we consider it necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)
+* No text is set in a vertical or diagonal direction - this is not mentioned specifically in the accessibility guidelines but it may be considered necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 4. distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable).
+* No text has spaces between letters in a word for visual effect as this can be difficult to read and screen readers will read the letters out one by one - this is not mentioned specifically in the accessibility guidelines but it may be considered necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)
 * Colour is never used as the only way to communicate a message - this fails accessibility [success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) and complicates machine readability.
 * The minimum font size used is size 12 - in general this will help you meet [success criterion 1.4.4 resize text](https://www.w3.org/TR/WCAG21/#resize-text).
-* Make sure there are no spelling or grammatical mistakes – it is possible to run a spelling and grammar check in Excel – in newer versions it can be found on the ‘Review’ ribbon - this will ensure you meet accessibility [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable)
-* No columns or rows are hidden from view 
+* Make sure there are no spelling or grammatical mistakes - this will ensure you meet accessibility [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable) - you can run a spelling and grammar check in Excel – in newer versions it is on the ‘Review’ ribbon. 
+* No columns or rows are hidden from view ([guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)) - if this is needed you will need to give guidance in a cell in column A, above any tables, on what rows or columns are hidden and how to unhide them. 
 
-### Other pointers for formatting that should be followed in terms of best practice
-In terms of usability and accessibility: 
+### Other pointers for formatting that should be followed in terms of best practice 
 
-* consider how your tables are structured - remember it is easier to read down a list than across a table so you may want to think about transposing your data
-* all fonts used should be sans serif (for example, Arial or Calibri) - people with dyslexia find serif fonts hard to read
-* avoid the use of underline and italic text - people with dyslexia can find italic and underlined text hard to read, if you need to highlight text it is best to use bold 
-* avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour (more information on how to do this can be found in the 'Checking text colour contrast' sub-section) 
-* use the 'default' or 'automatic' colour settings for all text - doing this will ensure the spreadsheet takes on the specialised colour settings users of assitive technology may have set up on their software
-* avoid adding a background fill - some users will have settings that automatically change the colour of the background but this doesn't happen if you have added a fill colour – even if it is white. 
-* avoid adding grid lines or cell borders - in general it it better to keep things simple
-* avoid including images of charts in your spreadsheet, if you do you must carefully consider their accessibility, particularly the colour contrast between chart elements
-* left align all text in cells outside the table and all row headings within the table 
-* right align all data within a table and all data column headings 
-* use commas after every three decimal places in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation)
-* set sensible zoom levels
-
+* Consider how your tables are structured - remember it is easier to read down a list than across a table so you may want to think about transposing your data.
+* Only use sans serif fonts like Arial or Calibri as people with dyslexia find serif fonts hard to read.
+* Avoid the use of underline and italic text - people with dyslexia can find italic and underlined text hard to read, if you need to highlight text it is best to use bold.
+* Avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour (more information on how to do this can be found in the 'Checking text colour contrast' sub-section). 
+* Use the 'default' or 'automatic' colour settings for all text - doing this will ensure the spreadsheet takes on the specialised colour settings users of assitive technology may have set up on their software
+* Don't add a background fill - some users will have settings that automatically change the colour of the background to make the content easier for them to read, but this doesn't happen if you have added a fill colour – even if it is white. 
+* Avoid adding grid lines or cell borders - in general it it better to keep things simple.
+* Avoid including images of charts in your spreadsheet, if you do you must carefully consider their accessibility, particularly the colour contrast between chart elements (more information on how to do this can be found in the 'Checking colour contrast in charts' sub-section). .
+* Left align all text in cells outside the table and all row labels within the table.
+* Right align all data within a table and all column headings (except the column of row labels). 
+* Use commas after every three decimal places in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation)
+* Set sensible zoom levels before you save your spreadsheet. 
 
 In terms of machine readability you should also: 
 
@@ -370,19 +368,18 @@ In terms of machine readability you should also:
 * check there are no spaces at the start or end of worksheet names
 * consider using an Application Programming Interface (API) to aid further analysis
 
-
 ### Checking text colour contrast  
 If colour is used in cells with text, use the [WebAIM colour contrast checker](https://webaim.org/resources/contrastchecker/) to see if the colours meet the accessibility regulations. Remember, legally you need to meet the AA standard. 
 
 Be aware that colours are coded in different ways. To use the WebAIM colour contrast checker you will need to know the hex code of the colours. Excel will give you the Red Green Blue (RGB) codes - you can use this [colour code converter](https://www.webfx.com/web-design/hex-to-rgb/) to get the hex codes.  
 
 ### Checking colour contrast in charts 
-The use of colours in charts is more complex as you often have to consider colour contrast between different chart elements as well as with the background. Our [data visualisation guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-9) and the [style guide from the Office for National Statistics](https://style.ons.gov.uk/category/data-visualisation/using-colours/) both have useful tips on this area but neither have yet been fully updated with regards to the accessibility regulations. We are planning on looking into this in more detail soon. 
+The use of colours in charts is more complex as you often have to consider colour contrast between different chart elements as well as with the background. Our [data visualisation guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-9) and the [style guide from the Office for National Statistics](https://style.ons.gov.uk/category/data-visualisation/using-colours/) both have useful tips on this area but neither have yet been fully updated with regards to the accessibility guidelines. We are planning on looking into this in more detail soon. 
 
 ## Images
-Avoid the use of any images or charts within a spreadsheet. 
+Avoid the use of any images within a spreadsheet. 
 
-This includes any departmental logos. Placing a departmental logo on a cover sheet may fail [accessibility guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as these images can make it difficult for users of assistive technology to work out where they are on a worksheet. 
+This includes any departmental logos. Placing a departmental logo on a cover sheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as these images can make it difficult for users of assistive technology to work out where they are on a worksheet. 
 
 If you can’t avoid it, make sure all logos, graphics, charts and any other images within the spreadsheet document have alternative text attached to them ([success criterion 1.1.1 non-text content](https://www.w3.org/TR/WCAG21/#non-text-content)) and place them on a separate worksheet to any tables. 
 
