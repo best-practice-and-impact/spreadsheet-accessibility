@@ -24,14 +24,15 @@ We outline when the advice relates to machine readability and when there are pos
 
 We are planning to publish a checklist for making spreadsheets machine readable in the future.
 
-## Example spreadsheet
-
-We have applied our guidance to the summary of labour market statistics spreadsheet published in December 2020 by the Office for National Statistics (ONS). We hope this example will help you understand and apply our guidance. We have addressed four of the worksheets in this large and complex spreadsheet. The Digital Accessibility Centre (DAC) are currently auditing our edited version to ensure it meets all the accessibility guidelines. We will update this guidance when we have their feedback.
+## Example of an accessible spreadsheet
 
 > [Labour market overview data tables, UK, December 2020: accessibility example (ODS, 664KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Labour-market-overview-data-tables-UK-December-2020-accessibility-example.ods)
 
-The [ONS labour market summary datasets webpage](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics/current) has a link to the summary of labour market statistics spreadsheet as it was published by ONS in December 2020. 
+We have applied our accessibility guidance to the summary of labour market statistics spreadsheet published in December 2020 by the Office for National Statistics (ONS). We hope this example will help you understand and apply this guidance. We have addressed four of the worksheets in this large and complex spreadsheet. The Digital Accessibility Centre (DAC) have audited this edited version and are happy that it meets all the accessibility guidelines. The feedback on this example illustrates the frustrations users of assistive technology have with spreadsheets in general: 
 
+> “When using the spreadsheet with [screen reader software] JAWS and NVDA I found it to be a pleasant experience. In the past I have found spreadsheets to be extremely confusing, disorientating and stressful. In part this stress came from having to make the document partially accessible for my own needs. If all spreadsheets were created with as much care and attention to detail, I may not be as reluctant to work with them as I am today."
+
+The [ONS labour market summary datasets webpage](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics/current) has a link to the summary of labour market statistics spreadsheet as it was published by ONS in December 2020. 
 
 ## Contents 
 
