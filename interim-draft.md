@@ -544,39 +544,37 @@ Pointers:
 * In general the titles of tables should include a description of the data and the geography it applies to, for example: ‘Number and percentage of people aged 16 to 64 in each labour market activity group, UK'
 
 ### Where to place and how to tag titles 
-To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) the worksheet title should be in Cell A1 and should be marked up as Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. This 'marks up' the heading and helps users of assistive technology navigate around the spreadsheet. 
+To meet accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) the worksheet title should be in Cell A1 and should be marked up as Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. This 'marks up' the heading which helps users of assistive technology navigate around the spreadsheet. 
 
 ### Formatting cells tagged as headings
-The default formatting for headings is not accessible. We advise you to modify the default formatting rather than to simply edit the text colour and cell borders as this is better for accessibility. See the 'Colour and formatting' section for more information. 
+The Excel default formatting for headings is not accessible. We advise you to modify the default formatting rather than to simply edit the text colour and cell borders as this is better for accessibility. See the [Formatting and use of colour](#formatting-and-use-of-colour) section for more information. 
 
 #### How to modify the default formatting of headings
-* Select the cell the heading text is in
-* Select 'Cell Styles' in the 'Styles' section of the 'Home' ribbon 
-* Go to the headings style you want to modify (the title of a worksheet should be 'Headings 1')
-* Right click and select 'Modify'
-* Select 'Format'
-* Make sure you choose a sans serif font and at least size 12 (although for headings we would suggest going a bit larger) 
-* Make sure you select the 'automatic' colour setting (see the section on 'Colour and formatting' for more information on why this is important)
-* We would also suggest you go to 'Borders' and select 'None' as underlined text can be hard to read for people with low vision or dyslexia 
+1. Select the cell the heading text is in
+2. Select 'Cell Styles' in the 'Styles' section of the 'Home' ribbon 
+3. Go to the headings style you want to modify (the title of a worksheet should be 'Headings 1')
+4. Right click and select 'Modify'
+5. Select 'Format'
+6. Make sure you choose a sans serif font and at least size 12 (although for headings we would suggest a slightly larger font) 
+7. Make sure you select the 'automatic' colour setting (see the [Formatting and use of colour](#formatting-and-use-of-colour) section for more information on why this is important)
+8. We would also suggest you go to 'Borders' and select 'None' as underlined text can be hard to read for people with low vision or dyslexia 
 
 Note: these instructions may differ for different versions of Excel
 
 ## Metadata worksheets
-It is best practice to include worksheets with information about the data (metadata).
+It is best practice for spreadsheets inteded for people to open, read and analyse, to include worksheets with information about the data (metadata).
 
 ### Cover sheet
 
 If your data is simple and there is only one table in your spreadsheet, you might not need a cover sheet. However, they are generally useful in most circumstances. 
 
-You should use your cover sheet to provide key information about the data in the spreadsheet. 
-
 #### Information to include on your cover sheet 
 Decisions on what information should go into a cover sheet will vary from one statistical release to the next. 
 It is best practice to include the following information (if applicable to your data): 
-* The title of the spreadsheet which should give a brief description on what the data tables are about, the time period covered and the geographical region the data tables refer to. 
+* The title of the spreadsheet - this should briefly describe the data, the time period covered and the geographical region the data tables refer to. 
 * A brief summary of what the data tables are about.
 * The name of the statistical release the data relates to with a hyperlink to that release.
-* The source for the data - if you have a complex spreadsheet with many different tables and sources you can put source information on each individual worksheet (above the table) or have it as a column in your table of contents.  
+* The source for the data - if you have a complex spreadsheet with many different tables and sources you can put source information on each individual worksheet (above the table) or have it in a column in your table of contents.  
 * The date the spreadsheet was published.
 * The date the next update to the spreadsheet will be published.
 * Information on whether data are provisional or revised. 
@@ -587,35 +585,34 @@ You might also want to include:
 
 * information on where to find related data or supporting publications.
 * links to a wider data series - although we would advise, wherever possible, to keep time series or historical data in the same spreadsheet
-* links to supporting information about the data (metadata) and methodology documents.
+* links to supporting information about the data and methodology documents.
 * information on the quality of the statistics
 * link to a glossary of essential technical terms and acronyms.
 
-However, if your cover sheet is starting to look like a text document it is best practice to publish this extra information on a webpage instead and link to it. Ideally this will be the webpage where the link to the spreadsheet lives. For more information on this see the 'Saving and publishing your spreadsheet' section of this guidance. 
+However, if your cover sheet is starting to look like a text document it is best practice to publish this extra information on a webpage instead and link to it. Ideally this will be the webpage where the spreadsheet lives. For more information on this see the [Saving and publishing spreadsheets](#saving-and-publishing-spreadsheets) section.
 
 #### Making cover sheets accessible
-To meet [success criterion 2.4.2 page titled](https://www.w3.org/TR/WCAG21/#page-titled) the title of the spreadsheet should be in cell A1 of the cover sheet. This title should be tagged as 'Headings 1' using the cell styles tool (more information on tagging headings can be found in the 'Titles of spreadsheets, worksheets and tables' section of this guidance).
+To meet accessibility [success criterion 2.4.2 page titled](https://www.w3.org/TR/WCAG21/#page-titled) the title of the spreadsheet should be in cell A1 of the cover sheet. This title should be tagged as 'Headings 1' using the cell styles tool (more information on tagging headings can be found in the [Titles of spreadsheets, worksheets and tables](#titles-of-spreadsheets-worksheets-and-tables) section).
 
-To meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) you should use subheadings to break up the information. These subheadings should be tagged using the cell styles tool. First level subheadings should be tagged as Headings 2, second level subheadings as Headings 3 and so on.  
-
+To meet accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) you should use subheadings to break up the information. These subheadings should be tagged using the cell styles tool. First level subheadings should be tagged as Headings 2, second level subheadings as Headings 3 and so on.  
 
 Make sure all the written content follows the advice in the [‘Making written content accessible’ section](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-4) of our ‘Making analytical publications accessible’ guidance.
 
 ### Table of contents 
 
-If you have a lot of worksheets in your spreadsheet you should create a table of contents that describes the data within each worksheet. This will ensure you meet [accessibility guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
+If you have a lot of worksheets in your spreadsheet you should create a table of contents that describes the data within each worksheet. This will ensure you meet accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
-This can live within the cover sheet or on its own worksheet, but make sure it is marked up properly as a table and named ‘Table_of_contents’. If it is on its own worksheet make sure this is named ‘Table_of_contents’
+This can live within the cover sheet or on its own worksheet, but make sure it is marked up properly as a table and named ‘Table_of_contents’ (more information on marking up and naming tables can be found in the [Tables](#tables) section. If it is on its own worksheet make sure this is named ‘Table of contents’.
 
-This table of contents can also contain other information such as the source of the data (particularly if several different sources are used throughout the spreadsheet), the date the data in each worksheet was last updated and the date it will be next updated. 
+This table of contents can also contain other information such as the source of the data (particularly if several different sources are used throughout the spreadsheet), the date of the last update and the date of the next update. 
 
-Hyperlinking from the table of contents to cell A1 of each worksheet also aids navigation around a large spreadsheet but is not strictly necessary if all tables are marked up and named consistently.  
+Hyperlinking from the table of contents to cell A1 of each worksheet also aids navigation around a large spreadsheet but is not strictly necessary if all tables are marked up and named consistently. We wouldn't suggest linking to the tables directly as this may mean users will miss information presented above the table that they need to understand. 
 
 ### Notes worksheet 
 
-If certain cells in your spreadsheet refer to notes, it is better for usability and accessibility to create a table of notes that lives in a ‘Notes’ worksheet than to put information underneath each table. More information on this can be found in the 'Symbols and footnotes' section of this guidance. 
+If certain cells in your spreadsheet refer to notes, it is better for usability and accessibility to create a table of notes that lives in a ‘Notes’ worksheet than to put information underneath each table. More information on this can be found in the [Symbols, footnotes and codes](#symbols-footnotes-and-code)' section of this guidance. 
 
-Remember this table of notes will need to be marked up and named appropriately. 
+Remember that the table of notes will need to be marked up and named appropriately. 
 
 ### How to supply metadata if optimising for machine readability
 
