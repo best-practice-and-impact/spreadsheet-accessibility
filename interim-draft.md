@@ -626,11 +626,11 @@ If you are publishing a spreadsheet optimised for machine readability it is best
 
 When designing a statistical spreadsheet, it is best practice to consider how to appropriately communicate any uncertainty to your users. Bear in mind that the user may not read detailed documents, or they may have copied the spreadsheet to use in another context.
 
-Use notes worksheet or the cover sheet to: 
+Use the notes worksheet or the cover sheet to: 
 * make it clear if there are any potential sources of bias or uncertainty – users need to know how this impacts on their use of the statistics
 * highlight relevant information about comparability issues both across time and with equivalent statistics released elsewhere in the UK 
 
-For more information on notes worksheet and cover sheets please see the [Symbols footnotes and codes](#symbols-footnotes-and-codes) and the [Metadata worksheets](#metadata-worksheets) sections.
+For more information on the notes worksheet and cover sheet please see the [Symbols footnotes and codes](#symbols-footnotes-and-codes) and the [Metadata worksheets](#metadata-worksheets) sections.
 
 ### Confidence intervals 
 
@@ -644,27 +644,26 @@ Note that the [credibility of assessing statistics using significance levels is 
 
 If you are communicating statistical significance show where a change is statistically significant in a separate cell to the data. In terms of accessibility it is best to do this using words, for example: ‘Significant at 0.001 level’. You must also give the column or row holding the significance information a clear heading.  
 
-If it is not possible to use words (for example, if it would take up too much room), you can use letters as shorthand (do not use symbols). To make this accessible you must also provide a key, above the table, in a cell in column A (see the section on 'Symbols and footnotes' for more information). 
+If it is not possible to use words (for example, if it would take up too much room), you can use letters as shorthand (do not use symbols). To make this accessible you must also provide a key, above the table, in a cell in column A so the user sees this information before getting to the table. See the section on [Symbols, footnotes and codes](#symbols-footnotes-and-codes)' for more information. 
 
 The asterisk symbol (*) has traditionally been used to communicate the level of statistical significance. Not all screen readers can understand the asterisk symbol and many disabled users can find them difficult to see and understand. Using them is likely to fail accessibility [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable). However, if you a creating a spreadsheet solely for machines to read it is OK to use the asterisk symbol, but you should still communicate what this means in a metadata file accompanying the spreadsheet. 
 
-
 ## Worksheets with multiple tables 
 
-In general you should avoid publishing worksheets with multiple tables. These worksheets can be difficult to navigate and are bad pratice in terms of machine readability. However, if you have to do this there are a few points to bear in mind to meet [accessibility guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence).
+In general you should avoid publishing worksheets with multiple tables. These worksheets can be difficult to navigate and are bad pratice in terms of machine readability. However, if you have to do this there are a few points to bear in mind to meet accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence).
 
-### Worksheet titles 
+### Worksheet titles when there are multiple tables
 Pointers: 
 * The worksheet title should be in cell A1
 * The worksheet title should describe the data in the tables, for example ‘Number and percentage of population in each labour market activity group by age band, UK, seasonally adjusted’
-* The worksheet title should be marked up as a Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon (find out more about marking up headings in the 'Structure' section of this guidance. 
+* The worksheet title should be marked up as a Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. Find out more about marking up headings in the [Titles of spreadsheets, worksheets and tables](titles-of-spreadsheets-worksheets-and-tables) section of this guidance.  
 
 Normally in large spreadsheets where worksheets are numbered instead of named, the title of each worksheet includes the table number, for example ‘Table 1: Number of people resident in each UK country’. When some worksheets have multiple tables, the worksheet titles cannot refer to specific tables. This means it is best to put the worksheet number in the title instead. For example: 
 ‘Worksheet 1: Number and percentage of population in each labour market activity group, UK, seasonally adjusted’
 ‘Worksheet 2: Number and percentage of population in each labour market activity group by age band, UK, seasonally adjusted’ 
-etc. 
+and so on. 
 
-### Table titles
+### Table titles when there are multiple tables
 Each table within the worksheet should have a unique title, for example ‘Table 2a: Number and percentage of people aged 16 and over in each labour market activity group’. 
 It is best to have a clear numbering or labelling structure. For example linking the table numbers to the worksheet number, so all the tables on worksheet 2 are table 2a, table 2b, table 2c and so on. 
 
@@ -672,22 +671,24 @@ Each table’s title should be in the leftmost cell directly above the table.
 
 Each table title should be marked up as a ‘Headings 2’ using the ‘Cell Styles’ tool on the ‘Home’ ribbon.
 
-### Presentation 
+### Presentation in worksheets with multiple tables 
 Cell A2 should describe the number of tables on the sheet and how they are presented, for example ‘This worksheet contains eight tables presented next to each other horizontally with one blank column in between each table. Each table applies to a different age group’.
 
-Each table should be marked up and named (more information on this in the 'Tables' section of this guidance). 
+Each table should be marked up and named (more information on this in the [Tables](#Tables) section). 
 
-The first table on the worksheet should border the left hand edge of the worksheet (don't leave any gaps).
+The first table on the worksheet should border the left hand edge of the worksheet.
 
-Tables should be separated by a single blank row or column - large gaps between tables could be misunderstood by screen reader users
+Tables should be separated by a single blank row or column - large gaps between tables could be misunderstood by screen reader users.
 
 ## Macros, formulas and application code
 We advise you to avoid publishing spreadsheets with macros in. It is difficult to ensure these meet the accessibility regulations and, in general, they are bad for machine readability. 
 
-It is also best practice to remove formulas and any application code contained in your spreadsheet. Formulas and code can cause confusion and they can pose a security risk. If you have to include formulas or code, ensure they are hard coded to avoid accidental errors in use.
+It is also best practice to remove formulas and any application code contained in your spreadsheet. Formulas and code can cause confusion and they can pose a security risk. 
+
+If you have to include formulas or code, ensure they are hard coded to avoid accidental errors in use.
 
 ## Accessibility checker
-Newer versions of Excel have a built-in accessibility checker. You can use this to see what issues it flags up. But be aware that it is a bit like using a spelling and grammar check. It is likely to miss some things and it may bring up things that are not relevant.  
+Newer versions of Excel have a built-in accessibility checker. You can use this to see what issues it flags up. But remember it is a bit like using a spelling and grammar check. It is likely to miss some things and it may bring up things that are not relevant.  
 
 For example, the checker will flag up tables that don’t have alt text. As long as your tables are marked up and named correctly you do not need to add this in. In any case, it will be removed if you save your spreadsheet in an Open Document Spreadsheet (ODS) format (which we recommend you do if the website you publish on supports this file type). 
 
@@ -695,7 +696,7 @@ To run the accessibility checker, go to the ‘Review’ ribbon and select ‘Ch
 
 ## Saving and publishing spreadsheets
 Pointers for usability and accessibility: 
-* Ensure the spreadsheet itself and all worksheets within it, open in a sensible place by placing the cursor in cell A1 on each of the worksheets before you hit save.
+* Ensure the spreadsheet itself and all worksheets within it, open in a sensible place by placing the cursor in cell A1 on each of the worksheets before you save.
 * Zoom should be set to 100% when you save your spreadsheet to ensure no enlargement or reduction is active.
 * Avoid zip files as these can be blocked by organisational policies 
 
@@ -712,7 +713,7 @@ The landing page for [Conception statistics, England and Wales](https://www.ons.
 
 Also, at the bottom of the page it has a section for 'Important notes and usage information' which contains related statistics, a user guide and links to statistics for other UK countries. 
 
-You may repeat some of this information on the cover sheet of your spreadsheet. This is OK as people may find their way to your spreadsheet in different ways. Some may be sent the document directly, some may go to the webpage and download it from there. For more information on what to put in your cover sheet and how to format it, see the 'Cover sheet' section of this guidance. 
+You may repeat some of this information on the cover sheet of your spreadsheet. This is OK as people may find their way to your spreadsheet in different ways. Some may be sent the document directly, some may go to the webpage and download it from there. For more information on what to put in your cover sheet and how to format it, see the [Metadata worksheets](#metadata-worksheets) section. 
 
 ### File formats
 Whenever possible you should publish your spreadsheet in an [open format](https://en.wikipedia.org/wiki/Open_format).
@@ -731,7 +732,7 @@ When you save as an ODS file, Excel will bring up a box to warn you that some fe
 #### CSV format
 The other commonly used open format is Comma-Separated-Values (CSV). 
 
-If you are publishing a CSV file that you intend users to read and analyse themselves, it must meet the accessibility regulations. it can be a bit tricky to do this with CSV files as they only allow one tab and will strip out almost all formatting (such as table tags, headings tags and hyperlinks). If you have a very simple spreadsheet it may be possible to make a CSV version meet the accessibility regulations, but for anything slightly complex, we advise you to use a different format.  
+If you are publishing a CSV file that you intend users to read and analyse themselves, it must meet the accessibility regulations. It can be a bit tricky to do this with CSV files as they only allow one tab and will strip out almost all formatting (such as table tags, headings tags and hyperlinks). If you have a very simple spreadsheet it may be possible to make a CSV version meet the accessibility regulations, but for anything slightly complex, we advise you to use a different format.  
 
 If you are publishing a CSV file solely for machines to read it does not need to meet the accessibility regulations. CSV is the recommended format for spreadsheets optimised for machine readability. 
 
@@ -753,7 +754,7 @@ If the spreadsheet tool you use cannot hold all your data then you are likely to
 
 ### File names
 In terms of usability it is best practice for file names to:
-* be unique, e.g. don’t call all your data downloads ‘Data download’
+* be unique, for example don’t call all your data downloads ‘Data download’
 * be descriptive and make sense out of context – for example, tell the user what is in a data download, don’t just call it ‘Data download 1’
 * be [frontloaded](https://digitalcommunications.wp.st-andrews.ac.uk/2017/03/15/web-writing-basics-frontloading/)
 * be short – aim for 60 characters including spaces
@@ -763,7 +764,7 @@ In terms of usability it is best practice for file names to:
 * not include a date, unless the date is part of the document title, for example, ‘Business-plan-for-2016-to-2017’
 * be sensible – do not include a version number, names or words like ‘draft’, ‘clean’ or ‘final’, unless those words are part of the document title (for example: ‘guidance-on-making-documents-accessible’ is a more sensible file name than ‘access-guid-final-draft-Han-edit3’)
 
-In terms of accessibility there isn’t a specific success criterion for file names but following this best practice will help you meet [guidelines 3.1 readable](https://www.w3.org/TR/WCAG21/#readable) and [3.2 predictable](https://www.w3.org/TR/WCAG21/#predictable).
+In terms of accessibility there isn’t a specific success criterion for file names but following this best practice will help you meet accessibility [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable) and [3.2 predictable](https://www.w3.org/TR/WCAG21/#predictable).
 
 
 ## Sources for this guidance
