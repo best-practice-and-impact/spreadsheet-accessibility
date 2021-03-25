@@ -622,11 +622,11 @@ If you are publishing a spreadsheet optimised for machine readability it is best
 
 When designing a statistical spreadsheet, it is best practice to consider how to appropriately communicate any uncertainty to your users. Bear in mind that the user may not read detailed documents, or they may have copied the spreadsheet to use in another context.
 
-Use notes or the cover sheet to: 
+Use notes worksheet or the cover sheet to: 
 * make it clear if there are any potential sources of bias or uncertainty – users need to know how this impacts on their use of the statistics
 * highlight relevant information about comparability issues both across time and with equivalent statistics released elsewhere in the UK 
 
-For more information on notes and cover sheets please see the ‘Symbols and footnotes’ section and the ‘Worksheets providing information about the data’ section.
+For more information on notes worksheet and cover sheets please see the [Symbols footnotes and codes](#symbols-footnotes-and-codes) and the [Metadata worksheets](#metadata-worksheets) sections.
 
 ### Confidence intervals 
 
