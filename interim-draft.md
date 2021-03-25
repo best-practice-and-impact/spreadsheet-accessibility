@@ -467,40 +467,44 @@ If you are making a spreadsheet solely for machines to read you can use symbols 
 In terms of presenting symbols and footnote markers it is best practice for machine readability to put the symbols or footnote markers in separate (very narrow) columns, next to the data. This approach does not fail any accessibility guidelines in itself, but you would need to give that column a heading and you might also need to mark up all the empty cells (we are still researching what needs to be done to make empty cells accessible). This could make a table very wide which is not great for readability. 
 
 ## Structure
-Properly structuring your content is important to meet [success criterion 1.3.1 Info and Relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
+Properly structuring your content is important to meet accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
 
 ### Pointers for the spreadsheet as a whole
 
 #### Provide supporting information 
-From a usability point of view, statistics should not be completely separated from supporting information. Context and caveats are vital to ensure users have enough information to interpret and make effective use of the data. You should hyperlink to supporting information if it cannot be easily included within the spreadsheet tabs. 
+From a usability point of view, statistics should not be completely separated from supporting information. Context and caveats are vital to ensure users have enough information to interpret and make effective use of the data. You should hyperlink to supporting information if it cannot be easily included within the spreadsheet tabs (more information on how to use hyperlinks can be found in the [Formatting and use of colour](#formatting-and-use-of-colour) section). 
 
 #### Cover sheet and table of contents 
-Label your first worksheet ‘Cover_sheet’ and use it to provide information about what is in the spreadsheet. If your spreadsheet has many worksheets, create a table of contents that describes the data within each worksheet.
+For most spreadsheets it is useful if the first worksheet is a cover sheet which provides information about the data. If your spreadsheet has many worksheets, it is also a good idea to create a table of contents that describes the data within each worksheet. 
 
-More guidance on cover sheets and the table of contents can be found in the ‘Worksheets providing information about the data’ section of this guidance.
+Simpler spreadsheets may not need a cover sheet or table of contents. 
+
+Including a cover sheet and table of contents in  more complex spreadsheets will help you to pass accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence).
+
+More guidance on cover sheets and the table of contents can be found in the [Metadata worksheets](#metadata-worksheets) section.
 
 #### Worksheet names
-Ideally each worksheet should have a unique name that clearly describes the information found in that sheet. If this is not possible, give each sheet a number and use your table of contents to describe what is in each sheet number. 
+Ideally each worksheet should have a unique name that clearly describes the information found in that sheet. If this is not possible, give each sheet a number and use your table of contents to describe what is in each worksheet. 
 
-To avoid any confusion for users of assistive technology and to improve machine readability you should: 
+To avoid any confusion for users of assistive technology and to improve usability and machine readability you should: 
 
-* remove extra spaces from the start or end of tab names
-* keep worksheet tab names as consistent as you can between releases
+* remove extra spaces from the start or end of worksheet names
+* keep worksheet names as consistent as you can between releases
 
 #### Blank worksheets
-Remove any blank worksheets. Blank worksheets can be confusing as it is not clear if they are meant to be blank or if something is missing. They may also make navigation confusing for users of assistive technology, failing [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable)
+Remove any blank worksheets. Blank worksheets can be confusing as it is not clear if they are meant to be blank or if something is missing. They may also make navigation confusing for users of assistive technology leading to a fail of accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
 #### Other things to avoid 
 * Do not use headers and footers to convey important information - this will fail accessibility as screen readers often can't find the information displayed in spreadsheet headers and footers.
-* Do not use floating elements such as text boxes - these will fail accessibility as screen readers often can't 'see' inside text boxes
+* Do not use floating elements such as text boxes - these will fail accessibility as screen readers often can't 'see' inside text boxes.
 * Deactivate any floating toolbars - these may fail accessibility as screen reader software may not be able to access populated cells behind them - if you do need to leave a floating toolbar active then attach it to the other Excel toolbars at the top of the window.
 
 ### Pointers for structure within worksheets: 
 
 #### Information in column A
-Column A is very important for users of assistive technology. For example, a screen reader will generally start each worksheet by reading out the information in cell A1. Similarly, keyboard-only users will also tend to navigate down from cell A1. Using column A in the following way will make it easier for you to meet [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence).
+Column A is very important for users of assistive technology. For example, a screen reader will generally start each worksheet by reading out the information in cell A1. Similarly, keyboard-only users will also tend to navigate down from cell A1. Using column A in the following way will make it easier for you to meet accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence).
 
-The key thing to ensure is that the information a user needs to understand the table is positioned above the table, in a place where users of assistive technology are most likely to read it.    
+The key thing to ensure is that the information a user needs to understand the table is positioned above the table, in a place where users of assistive technology are most likely to read it. It is useful to remember that users of assistive technology are not usually able to scan content in the way other users can.     
 
 Cell A1 on each worksheet should tell a user what information is contained on that worksheet. Generally, if there is one table per worksheet, cell A1 contains the title of that table. 
 
@@ -508,15 +512,19 @@ Cell A2 should be used for description – for example: ‘This worksheet contai
 
 If relevant, information about frozen panes, filters and any symbols or shorthand used within the table should also be presented in column A. 
 
-If you have several worksheet tabs and they use different sources, a cell in column A should contain information about the source(s) for the table on that sheet. However, if each table in the spreadsheet uses the same source(s), the information about source(s) can go on the cover sheet. 
+If you have several worksheets and they use different sources, a cell in column A should contain information about the source for the table on that sheet. However, if each table in the spreadsheet uses the same source, the information about sources can go on the cover sheet. 
 
 #### Positioning tables on worksheets 
-Position tables against the left-hand edges of each sheet. Don’t leave a blank column as a gap. As mentioned users of assistive technology tend to navigate down from cell A1, if they hit blank cells it can be very hard to navigate to where the table is and your spreadsheet may fail [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
+Position tables against the left-hand edges of each sheet. Don’t leave a blank column as a gap. As mentioned users of assistive technology tend to navigate down from cell A1, if they hit blank cells it can be very hard to navigate to where the table is and your spreadsheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
 #### Below the table
-It is best practice to avoid putting any information below a table. Ideally you should put all key information above the table and any detailed notes should live in a table on a ‘Notes’ worksheet (more information in the ‘Notes’ section of this guidance). 
+It is best practice to avoid putting any information below a table. It can be difficult to navigate to and may be missed by users of assistive technology. It will also require mostly manual formatting to ensure it meets accessibility guidelines, which can be time consuming. More information on formatting text in spreadsheets can be found in the [Titles of spreadsheets, worksheets and tables](#titles-of-spreadsheets-worksheets-and-tables) and the [Metadata worksheets](#metadata-worksheets) sections. 
 
-Information presented below a table may be missed and can be difficult to navigate to, especially if a table is very long and lots of scrolling is needed. If a user needs to access information in the notes to understand a table, putting them below the table may lead to your spreadsheet failing [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence). 
+If a user needs to access information below the table in order to understand the data within the table, it may lead to a fail of accessibility [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence). For example, if you have used some shorthand in your table such as 'e' for 'estimated' and you only mention what 'e' signifies below the table, this could be considered a fail.
+
+Therefore, you should put all information a person needs to know in order to understand the table, in column A, above the table. 
+
+When it comes to more detailed notes referring to context and caveats we advise that these should live in a table on a ‘Notes’ worksheet (more information on how to present notes can be found in the [Symbols, footnotes and codes](#Symbols-footnotes-and-codes) section). 
 
 ## Titles of spreadsheets, worksheets and tables
 
@@ -524,9 +532,9 @@ Titles and headings affect usability, accessibility and machine readability.
 
 Titles and labels are important parts of table design. They help users understand the data. They are particularly important if the table is copied and placed into another context.
 
-In terms of accessibility, if users cannot find or understand the data they need your spreadsheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [3.1 readable](https://www.w3.org/TR/WCAG21/#readable). It may also fail accessibility [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels).
+In terms of accessibility, if users cannot find or understand the data they need, your spreadsheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [3.1 readable](https://www.w3.org/TR/WCAG21/#readable). It may also fail accessibility [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels).
 
-Be consistent when writing titles for spreadsheets, worksheets, tables and column headings. A lack of consistency within a publication and between different releases limits machine readability. 
+It is also important to be consistent when writing titles for spreadsheets, worksheets, tables and column headings. A lack of consistency within a publication and between different releases, limits machine readability. 
 
 Pointers: 
 * Make sure the overall title for your spreadsheet gives a clear description of the data and includes the time period and geographical region the data applies to.
