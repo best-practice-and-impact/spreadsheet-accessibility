@@ -28,7 +28,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 
 > [Labour market overview data tables, UK, December 2020: accessibility example (ODS, 664KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Labour-market-overview-data-tables-UK-December-2020-accessibility-example.ods)
 
-We have applied our accessibility guidance to the summary of labour market statistics spreadsheet published in December 2020 by the Office for National Statistics (ONS). We hope this example will help you understand and apply this guidance. We have addressed four of the worksheets in this large and complex spreadsheet. The Digital Accessibility Centre (DAC) have audited this edited version and are happy that it meets all the accessibility guidelines. The feedback from DAC's accessibility tester illustrates the frustrations users of assistive technology normally have with spreadsheets: 
+We have applied our accessibility guidance to the summary of labour market statistics spreadsheet published in December 2020 by the Office for National Statistics (ONS). We hope this example will help you understand and apply this guidance. We have addressed four of the worksheets in this large and complex spreadsheet. The Digital Accessibility Centre (DAC) have audited this edited version and are happy that it meets all the accessibility guidelines. The feedback from DAC's accessibility tester illustrates the frustrations many users of assistive technology normally have with spreadsheets: 
 
 > “When using the spreadsheet with [screen reader software] JAWS and NVDA I found it to be a pleasant experience. In the past I have found spreadsheets to be extremely confusing, disorientating and stressful. In part this stress came from having to make the document partially accessible for my own needs. If all spreadsheets were created with as much care and attention to detail, I may not be as reluctant to work with them as I am today."
 
@@ -154,7 +154,7 @@ If the table is already created and you want to tag the header row:
 3. Check the ‘Header Row’ box 
 
 ### Naming tables 
-If you have a spreadsheet with tables, you should make sure they have meaningful names. This will aid navigation for everyone, but particularly for those who use assistive technology. It will also help you pass accessibility [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
+Make sure all tables in your spreadsheets have meaningful names. This will aid navigation for everyone. It will also help you pass accessibility [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
 #### Name a table in Excel
 1. Click anywhere in a marked-up table
@@ -167,13 +167,10 @@ If you want to see a list of all the tables in your worksheet go to the ‘Formu
 
 To test out navigation you can click ‘Ctrl + G’. This brings up a ‘Go to’ tool. You can then click onto one of your tables and select ‘OK’ to be taken directly to that table. 
 
-### Merged and split cells
-Restructure your tables so there are no split cells or merged cells. This is a crucial issue to address as it is key for both machine readability and accessibility. 
+### Merged and split cells and nested tables
+Restructure your tables so there are no split cells or merged cells or nested tables. This is a crucial issue to address as it is key for both machine readability and accessibility. 
 
-Merged and split cells make tables hard to understand for users of assistive technology, removing them is key to meeting accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
-
-### Nested tables
-Do not nest tables within other tables, this kind of structure is difficult to understand for users of assistive technology, removing them is key to meeting [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
+Merged cells, split cells and nested tables make table structure hard to understand for assistive technology like screen reader software. Removing these elements is key to meeting accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
 
 ### Blank rows and columns within tables
 Remove all blank rows and blank columns within tables. These may be perceived as the edge of the data area rather than a divider. Removing them is key to meeting accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics). 
@@ -269,7 +266,7 @@ Note: it is necessary to provide alternative text for images and charts and this
 ## Cells with no data
 
 ### Accessibility and usability for cells with no data
-When cells with no data are left blank it can cause confusion for users of assistive technology because it makes it difficult for them to work out where the table starts and ends. Therefore, blank cells could be considered a fail of accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
+When cells with no data are left blank it can cause confusion for users of assistive technology because it makes it difficult for their technology to work out where the table starts and ends. Therefore, blank cells could be considered a fail of accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
 However, we are carrying out research into this, it may be the case that as long as a table is marked up correctly, blank cells within a table do not cause a problem for navigation with assistive technology. 
 
@@ -418,8 +415,8 @@ When signposting to detailed footnotes we advise you to:
 * mention that notes are used, in a cell in column A above the table and say where the notes can be found (more information about use of cells in column A can be found in the [Structure](#Structure) section)
 
 When displaying the content of detailed notes it is common practice for them to be placed underneath the table. However there are several issues with this: 
-1. It can take lots of scrolling to get to notes placed under very long tables, particularly for some users of assistive technology - this is bad practice for usability and accessibility. 
-2. Notes placed under tables may be missed by users of assistive technology who aren't expecting them to be there. It is possible to combat this by mentioning that notes sit underneath the table, in a cell in column A above the table (more information about use of cells in column A can be found in the [Structure](#Structure) section).
+1. It can take lots of scrolling to get to notes placed under very long tables, particularly for some disabled users - this is bad practice for usability and accessibility. 
+2. Notes placed under tables may be missed by some disabled users who aren't expecting them to be there. It is possible to combat this by mentioning that notes sit underneath the table, in a cell in column A above the table (more information about use of cells in column A can be found in the [Structure](#Structure) section).
 3. Notes placed underneath a table need careful (and mostly manual) formatting to be made accessible (see the section on [Structure](#Structure) and [Metadata worksheets](#metadata-worksheets) for more information on how written content should be formatted). Without this formatting you may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 4. Long detailed notes may result in a need for horizontal scrolling which is bad practice for usability and accessibility. This may happen because the note will need to be displayed in one cell - you shouldn't use merged cells to present long notes as merged cells fail accessibility guidelines (see the section on [Tables](#tables)).
 5. In complex spreadsheets, identical notes are often placed under several tables across many worksheets - this can mean, when certain notes are updated or changed, some are accidentally missed out.
@@ -490,13 +487,13 @@ More guidance on cover sheets and the table of contents can be found in the [Met
 #### Worksheet names
 Ideally each worksheet should have a unique name that clearly describes the information found in that sheet. If this is not possible, give each sheet a number and use your table of contents to describe what is in each worksheet. 
 
-To avoid any confusion for users of assistive technology and to improve usability and machine readability you should: 
+To avoid any confusion for assistive technology and to improve usability and machine readability you should: 
 
 * remove extra spaces from the start or end of worksheet names
 * keep worksheet names as consistent as you can between releases
 
 #### Blank worksheets
-Remove any blank worksheets. Blank worksheets can be confusing as it is not clear if they are meant to be blank or if something is missing. They may also make navigation confusing for users of assistive technology leading to a fail of accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
+Remove any blank worksheets. Blank worksheets can be confusing as it is not clear if they are meant to be blank or if something is missing. They may also make navigation confusing for disabled users leading to a fail of accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
 #### Other things to avoid 
 * Do not use headers and footers to convey important information - this will fail accessibility as screen readers often can't find the information displayed in spreadsheet headers and footers.
@@ -506,9 +503,9 @@ Remove any blank worksheets. Blank worksheets can be confusing as it is not clea
 ### Pointers for structure within worksheets: 
 
 #### Information in column A
-Column A is very important for users of assistive technology. For example, a screen reader will generally start each worksheet by reading out the information in cell A1. Similarly, keyboard-only users will also tend to navigate down from cell A1. Using column A in the following way will make it easier for you to meet accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence).
+Column A is very important for disabled users. For example, a screen reader will generally start each worksheet by reading out the information in cell A1. Similarly, keyboard-only users will also tend to navigate down from cell A1. Using column A in the following way will make it easier for you to meet accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence).
 
-The key thing to ensure is that the information a user needs to understand the table is positioned above the table, in a place where users of assistive technology are most likely to read it. It is useful to remember that users of assistive technology are not usually able to scan content in the way other users can.     
+The key thing to ensure is that the information a user needs to understand the table is positioned above the table, in a place where disabled users are most likely to read it. It is useful to remember that many disabled users cannot scan content in the way other users can.     
 
 Cell A1 on each worksheet should tell a user what information is contained on that worksheet. Generally, if there is one table per worksheet, cell A1 contains the title of that table. 
 
@@ -519,10 +516,10 @@ If relevant, information about frozen panes, filters and any symbols or shorthan
 If you have several worksheets and they use different sources, a cell in column A should contain information about the source for the table on that sheet. However, if each table in the spreadsheet uses the same source, the information about sources can go on the cover sheet. 
 
 #### Positioning tables on worksheets 
-Position tables against the left-hand edges of each sheet. Don’t leave a blank column as a gap. As mentioned users of assistive technology tend to navigate down from cell A1, if they hit blank cells it can be very hard to navigate to where the table is and your spreadsheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
+Position tables against the left-hand edges of each sheet. Don’t leave a blank column as a gap. As mentioned disabled users tend to navigate down from cell A1, if they hit blank cells it can be very hard to navigate to where the table is and your spreadsheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
 #### Below the table
-It is best practice to avoid putting any information below a table. It can be difficult to navigate to and may be missed by users of assistive technology. It will also require mostly manual formatting to ensure it meets accessibility guidelines, which can be time consuming. More information on formatting text in spreadsheets can be found in the [Titles of spreadsheets, worksheets and tables](#titles-of-spreadsheets-worksheets-and-tables) and the [Metadata worksheets](#metadata-worksheets) sections. 
+It is best practice to avoid putting any information below a table. It can be difficult to navigate to and may be missed by disabled users. It will also require mostly manual formatting to ensure it meets accessibility guidelines, which can be time consuming. More information on formatting text in spreadsheets can be found in the [Titles of spreadsheets, worksheets and tables](#titles-of-spreadsheets-worksheets-and-tables) and the [Metadata worksheets](#metadata-worksheets) sections. 
 
 If a user needs to access information below the table in order to understand the data within the table, it may lead to a fail of accessibility [success criterion 1.3.2 meaningful sequence](https://www.w3.org/TR/WCAG21/#meaningful-sequence). For example, if you have used some shorthand in your table such as 'e' for 'estimated' and you only mention what 'e' signifies below the table, this could be considered a fail.
 
@@ -548,7 +545,7 @@ Pointers:
 * In general the titles of tables should include a description of the data and the geography it applies to, for example: ‘Number and percentage of people aged 16 to 64 in each labour market activity group, UK'
 
 ### Where to place and how to tag titles 
-To meet accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) the worksheet title should be in Cell A1 and should be marked up as Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. This 'marks up' the heading which helps users of assistive technology navigate around the spreadsheet. 
+To meet accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) the worksheet title should be in Cell A1 and should be marked up as Headings 1 using the ‘Cell Styles’ tool on the ‘Home’ ribbon. This 'marks up' the heading which helps assistive technology navigate around the spreadsheet. 
 
 ### Formatting cells tagged as headings
 The Excel default formatting for headings is not accessible. We advise you to modify the default formatting rather than to simply edit the text colour and cell borders as this is better for accessibility. See the [Formatting and use of colour](#formatting-and-use-of-colour) section for more information. 
