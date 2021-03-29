@@ -726,6 +726,8 @@ For spreadsheets you intend users to read and analyse themselves we advise you u
 
 When you save as an ODS file, Excel will bring up a box to warn you that some features of your spreadsheet may not be compatible with the ODS format. If you want to know more, Microsoft have published [information about Excel features that are and aren’t compatible with the ODS format](https://support.microsoft.com/en-us/office/differences-between-the-opendocument-spreadsheet-ods-format-and-the-excel-for-windows-xlsx-format-3db958c8-e0ac-49a5-9965-2c2f8afbd960?ns=excel&version=90&syslcid=1033&uilcid=1033&appver=zxl900&helpid=191589&ui=en-us&rs=en-us&ad=us).  
 
+Make sure you are aware of the formats the website you publish on allows you to upload. Some websites do not yet support the ODS format. However, GOV.UK does support the ODS format and the Government Digital Service recommends it. 
+
 #### CSV format
 The other commonly used open format is Comma-Separated-Values (CSV). 
 
