@@ -3,14 +3,14 @@
 This guidance aims to help you improve the usability, accessibility and machine readability of any statistics you publish in spreadsheet format. 
 
 ## Draft status 
-This guidance is an update to the ['Releasing statistics in spreadsheets' guidance](https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/) on the [Government Statistical Service (GSS) website](https://gss.civilservice.gov.uk/). It is still under review. We are publishing it in a draft state to give people information on what they need to implement and to collate feedback. We continue to carry out research and testing. Once this information is finalised, the guidance will be updated on the GSS website.  
+This guidance is an update to the ['Releasing statistics in spreadsheets' guidance](https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/) on the [Government Statistical Service (GSS) website](https://gss.civilservice.gov.uk/). It is still under review. We are publishing a draft version to give civil servants early information on what they need to implement and to gather feedback. We continue to carry out research and testing. Once this is complete, the guidance will be updated on the GSS website.  
 
 If you have any questions or feedback, please email [gsshelp@statistics.gov.uk](mailto:gsshelp@statistics.gov.uk).  
 
 ## Accessibility, usability and machine readability 
 
 ### Accessibility 
-Spreadsheets published online are covered by the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/). Spreadsheets published online by the public sector must meet the AA level of the WCAG 2.1 by law ([The Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018](https://www.legislation.gov.uk/uksi/2018/852/contents/made)). 
+Spreadsheets published online by the public sector must meet the AA level of the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/). This is a legal requirement set out in ([The Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018](https://www.legislation.gov.uk/uksi/2018/852/contents/made)). 
 
 Some of the Web Content Accessibility Guidelines (WCAG) 2.1 are generic in nature. Throughout this guidance, using our knowledge, research and interpretation of WCAG 2.1, we have tried to make a clear distinction between things we feel must be done in order to meet the legal accessibility regulations and things that are considered accessibility best practice.
 
@@ -108,7 +108,7 @@ You can find out more about best practice for demonstration tables in our ['Intr
 
 Reference tables usually have lots of rows and columns of data and are aimed at users who need or want detailed data. There may be a wide variety of statistics broken down into different categories.
 
-Reference tables are generally supplied in an spreadsheet document. It is these types of tables this guidance focuses on. 
+Reference tables are generally supplied in a spreadsheet document. It is these types of tables this guidance focuses on. 
 
 ### Marking up tables in spreadsheets
 Ensure all tables in your spreadsheet are ‘marked up’ as a table – this is key to meeting accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships), [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) and [success criterion 2.4.3 focus order](https://www.w3.org/TR/WCAG21/#focus-order).
@@ -149,9 +149,9 @@ It is best practice to also:
 
 ### Adding headers to a table that is already marked up
 If the table is already created and you want to tag the header row:
-1. Place the cursor anywhere in the table
-2. Click onto the ‘Design’ ribbon 
-3. Check the ‘Header Row’ box 
+1. Place the cursor anywhere in the table.
+2. Click onto the ‘Design’ ribbon.
+3. Check the ‘Header Row’ box.
 
 ### Naming tables 
 Make sure all tables in your spreadsheets have meaningful names. This will aid navigation for everyone. It will also help you pass accessibility [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
@@ -210,7 +210,7 @@ If you are inviting users to compare numbers, it is best practice to:
 * use the same level of precision in each column
 * use commas to separate thousands
 * right align the figures and the column headings
-* start numbers of less than one with a zero, not a point
+* start numbers of less than one with a zero, not a decimal point
 
 ### Rounding
 Presenting too much detail can make things harder for users. Simplifying numbers by rounding makes numbers easier to read and remember. This improves usability. 
@@ -219,7 +219,7 @@ The extent of rounding will depend on the intended use. A journalist may be happ
 
 Rounding does reduce precision. This usually means that the reported totals no longer equal the sum of the component parts. If this is the case it should be communicated clearly. 
 
-When rounding you should ensure all figures in a category are rounded to the same level of precision (for example one decimal point) and that any numbers less than one start with a zero, not a point (for example, 0.56 not .56). 
+When rounding you should ensure all figures in a category are rounded to the same level of precision (for example one decimal point) and that any numbers less than one start with a zero, not a decimal point (for example, 0.56 not .56). 
 
 ### Grouping
 Objects grouped together are assumed to be associated. When used appropriately grouping may help users understand the data better. We advise that you group different measures in rows and different types of estimate in columns.
@@ -231,11 +231,13 @@ White space can be used to separate the data into groups. You can do this by adj
 ### Ordering categories
 Ordering the categories in a table can make it easier for users to see patterns and groups in the data. This improves usability. 
 
-For some categorical variables, like month of the year or age group, there is a natural order for presentation. Other variables may have harmonised ordering, such as areas of the UK. More information on how to order UK areas can be found on the [Open Geography Portal](https://geoportal.statistics.gov.uk/) under 'General principles'.
+For some categorical variables, such as months of the year, there is a natural order for presentation. Other variables may have harmonised ordering, such as areas of the UK. More information on how to order UK areas can be found on the [Open Geography Portal](https://geoportal.statistics.gov.uk/) under 'General principles'.
 
-We have published several [harmonisation standards](https://gss.civilservice.gov.uk/policy-store/?keyword=&area=harmonisation&doctype=&submit=Go) which may help you when ordering categories. An appropriate order may also be obvious from knowledge of the subject matter.
+We have also published several [harmonisation standards](https://gss.civilservice.gov.uk/policy-store/?keyword=&area=harmonisation&doctype=&submit=Go) which may help you when ordering categories. An appropriate order may also be obvious from knowledge of the subject matter.
 
-Alternatively, consider ordering categories according to the statistics in one of the columns, for example put the largest value at the top. This shows the rankings of the categories on that statistic. Ranking the categories in this way emphasises the relative positions of the categories. It may also show where some statistics differ from the overall pattern. Be aware that in some cases, the relative positions may be determined by random variation.
+Alternatively, consider ordering categories according to the statistics in one of the columns, for example put the largest value at the top. This shows the rankings of the categories on that statistic. 
+
+Ranking the categories in this way emphasises the relative positions of the categories. It may also show where some statistics differ from the overall pattern. Be aware that in some cases, the relative positions may be determined by random variation. Also be aware that ordering categories in this way may be controversial and you should carefully consider the message that is being communicated. 
 
 ### Summary rows and columns
 Summary rows and columns, for example for totals, should always be at the edge of a table. Traditionally they are placed at the bottom or right. If it’s important for users to see the summaries first, it may be helpful to place the them at the top or left. 
@@ -250,16 +252,16 @@ This information should be in a cell in column A, above the table so users come 
 ### Adding freeze panes
 We advise you to avoid adding freeze panes. They may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as they can make it difficult for screen reader users to find the top left edge of a worksheet, which is key to navigation. 
 
-If you do leave freeze panes active it is best practice to inform users and give a instructions for how to turn them off. For example: "Freeze panes are turned on. To turn off freeze panes select the 'View' ribbon then 'Freeze Panes' then 'Unfreeze Panes' or use [Alt W, F]". As with filters, this information should be in a cell in column A, above the table so users come across it before getting to the data. 
+If you do leave freeze panes active it is best practice to inform users and give instructions on how to turn them off. For example: "Freeze panes are turned on. To turn off freeze panes select the 'View' ribbon then 'Freeze Panes' then 'Unfreeze Panes' or use [Alt W, F]". As with filters, this information should be in a cell in column A, above the table so users come across it before getting to the data. 
 
 Be aware that if you save your spreadsheet in the Open Document Spreadsheet (ODS) format (which we advise you to do) freeze panes will disappear. 
 
 ### Adding alt text to tables 
-In Excel, you can add alternative text to your table by right clicking anywhere in the table and selecting ‘Table’ and ‘Alternative text’. However, if your tables are marked up correctly it is not necessary to do this to pass the accessibility guidelines.
+Newer versions of Excel have a built-in accessibility checker which may bring up tables without alt text as a fail. 
 
-Be aware that despite this, newer versions of Excel have a built-in accessibility checker which may bring up tables without alt text as a fail. You don’t need to worry about this. 
+However, tables that are marked up correctly do not need alt text to pass the accessibility guidelines. It is much more important to mark your tables up correctly than to add alt text to them.
 
-If you save your spreadsheet in the ODS format (which we advise you to do) alternative text for tables will disappear – but this does not matter as it is not needed to pass the accessibility guidelines. 
+Be aware that if you do add alt text and then you save your spreadsheet in the ODS format (which we advise you to do) your alt text will disappear – but this does not matter as it is not needed to pass the accessibility guidelines. 
 
 Note: it is necessary to provide alternative text for images and charts and this does not disappear when you save in the ODS format. 
 
@@ -268,7 +270,7 @@ Note: it is necessary to provide alternative text for images and charts and this
 ### Accessibility and usability for cells with no data
 When cells with no data are left blank it can cause confusion for users of assistive technology because it makes it difficult for their technology to work out where the table starts and ends. Therefore, blank cells could be considered a fail of accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
-However, we are carrying out research into this, it may be the case that as long as a table is marked up correctly, blank cells within a table do not cause a problem for navigation with assistive technology. 
+However, we are carrying out research into this. It may be the case that if a table is marked up correctly, blank cells within a table do not cause a problem for navigation with assistive technology. 
 
 In terms of usability, blank cells may be considered bad practice as they do not tell a user why there is no data in the cell - a user might incorrectly assume the data value is zero or that there has been a mistake and data is missing. 
 
@@ -292,7 +294,7 @@ We are looking into drafting guidance on what words or letters to use for differ
 Please note - we are aware that leaving cells with no data blank may make it easier for users to perform further analysis, but this feature of usability has to be balanced against the accessibility guidelines and the importance of a user understanding why a cell has no data. As mentioned, our advice on cells with no data may change as we do further research.
 
 ### Machine readability for cells with no data  
-In terms of machine readability, leaving cells with no data blank is best practice. Therefore if you are making a spreadsheet solely for machine reading purposes, it is best practice to leave cells with no data blank. 
+If you are making a spreadsheet solely for machine reading purposes, it is best practice to leave cells with no data blank. 
 
 ## Formatting and use of colour
 
@@ -354,13 +356,13 @@ This means:
 * Only use sans serif fonts like Arial or Calibri as people with dyslexia find serif fonts hard to read.
 * Avoid the use of underline and italic text - people with dyslexia can find italic and underlined text hard to read, if you need to highlight text it is best to use bold.
 * Avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour (more information on how to do this can be found in the 'Checking text colour contrast' sub-section). 
-* Use the 'default' or 'automatic' colour settings for all text - doing this will ensure the spreadsheet takes on the specialised colour settings users of assitive technology may have set up on their software
+* Use the 'default' or 'automatic' colour settings for all text - doing this will ensure the spreadsheet takes on the specialised colour settings users of assistive technology may have set up on their software
 * Don't add a background fill - some users will have settings that automatically change the colour of the background to make the content easier for them to read, but this doesn't happen if you have added a fill colour – even if it is white. 
-* Avoid adding grid lines or cell borders - in general it it better to keep things simple.
+* Avoid adding grid lines or cell borders - in general it is better to keep things simple.
 * Avoid including images of charts in your spreadsheet, if you do you must carefully consider their accessibility, particularly the colour contrast between chart elements (more information on how to do this can be found in the 'Checking colour contrast in charts' sub-section). .
 * Left align all text in cells outside the table and all row labels within the table.
 * Right align all data within a table and all column headings (except the column of row labels). 
-* Use commas after every three decimal places in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation)
+* Use commas to separate thousands in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation)
 * Set sensible zoom levels before you save your spreadsheet. 
 
 In terms of machine readability you should also: 
@@ -553,19 +555,19 @@ To meet accessibility [success criterion 1.3.1 info and relationships](https://w
 The Excel default formatting for headings is not accessible. We advise you to modify the default formatting rather than to simply edit the text colour and cell borders as this is better for accessibility. See the [Formatting and use of colour](#formatting-and-use-of-colour) section for more information. 
 
 #### How to modify the default formatting of headings
-1. Select the cell the heading text is in
-2. Select 'Cell Styles' in the 'Styles' section of the 'Home' ribbon 
-3. Go to the headings style you want to modify (the title of a worksheet should be 'Headings 1')
-4. Right click and select 'Modify'
-5. Select 'Format'
-6. Make sure you choose a sans serif font and at least size 12 (although for headings we would suggest a slightly larger font) 
-7. Make sure you select the 'automatic' colour setting (see the [Formatting and use of colour](#formatting-and-use-of-colour) section for more information on why this is important)
-8. We would also suggest you go to 'Borders' and select 'None' as underlined text can be hard to read for people with low vision or dyslexia 
+1. Select the cell the heading text is in.
+2. Select 'Cell Styles' in the 'Styles' section of the 'Home' ribbon. 
+3. Go to the headings style you want to modify (the title of a worksheet should be 'Headings 1').
+4. Right click and select 'Modify'.
+5. Select 'Format'.
+6. Make sure you choose a sans serif font and at least size 12 (although for headings we would suggest a slightly larger font).
+7. Make sure you select the 'automatic' colour setting (see the [Formatting and use of colour](#formatting-and-use-of-colour) section for more information on why this is important).
+8. We would also suggest you go to 'Borders' and select 'None' as underlined text can be hard to read for people with low vision or dyslexia.
 
 Note: these instructions may differ for different versions of Excel
 
 ## Metadata worksheets
-It is best practice for spreadsheets inteded for people to open, read and analyse, to include worksheets with information about the data (metadata).
+It is best practice for spreadsheets intended for people to open, read and analyse, to include worksheets with information about the data (metadata).
 
 ### Cover sheet
 
@@ -605,7 +607,7 @@ Make sure all the written content follows the advice in the [‘Making written c
 
 If you have a lot of worksheets in your spreadsheet you should create a table of contents that describes the data within each worksheet. This will ensure you meet accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
-This can live within the cover sheet or on its own worksheet, but make sure it is marked up properly as a table and named ‘Table_of_contents’ (more information on marking up and naming tables can be found in the [Tables](#tables) section. If it is on its own worksheet make sure this is named ‘Table of contents’.
+This can live within the cover sheet or on its own worksheet, but make sure it is marked up properly as a table and named ‘Table of contents’ (more information on marking up and naming tables can be found in the [Tables](#tables) section. If it is on its own worksheet make sure this is named ‘Table of contents’.
 
 This table of contents can also contain other information such as the source of the data (particularly if several different sources are used throughout the spreadsheet), the date of the last update and the date of the next update. 
 
@@ -759,7 +761,7 @@ In terms of usability it is best practice for file names to:
 * be descriptive and make sense out of context – for example, tell the user what is in a data download, don’t just call it ‘Data download 1’
 * be [frontloaded](https://digitalcommunications.wp.st-andrews.ac.uk/2017/03/15/web-writing-basics-frontloading/)
 * be short – aim for 60 characters including spaces
-* not include acronyms – put these in the document information as keywords or tags
+* avoid acronyms – put these in the document information as keywords or tags
 * be entirely lowercase
 * [use dashes instead of spaces or underscores between words](https://x-equals.com/dashes-versus-underscores/) – this makes file names easier to read, for example: ‘a file name.ods’ will end up as: ‘a%20file%20name.ods’ online, which is why it is better to call it  ‘a-file-name.ods’
 * not include a date, unless the date is part of the document title, for example, ‘Business-plan-for-2016-to-2017’
