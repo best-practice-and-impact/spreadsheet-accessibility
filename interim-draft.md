@@ -381,11 +381,13 @@ The use of colours in charts is more complex as you often have to consider colou
 ## Images
 Images within spreadsheets should be avoided. 
 
-This includes any departmental logos. Placing a departmental logo on a cover sheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as these images can make it difficult for users of assistive technology to work out where they are on a worksheet. It is much better to write out the name of the government department rather than have it in a logo. 
+This includes any departmental logos. Placing a departmental logo on a cover sheet may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as these images can make it difficult for users of assistive technology to work out where they are on a worksheet. It is better to write out the name of the government department rather than have it in a logo. 
 
-If you can’t avoid it, make sure all logos, graphics, charts and any other images within the spreadsheet document have alternative text attached to them (accessibility [success criterion 1.1.1 non-text content](https://www.w3.org/TR/WCAG21/#non-text-content)). Ideally you should place any images on a separate worksheet to any tables. 
+If you can’t avoid it, make sure all logos, graphics, charts and any other images within the spreadsheet document have alternative text attached to them (accessibility [success criterion 1.1.1 non-text content](https://www.w3.org/TR/WCAG21/#non-text-content)). 
 
-If you include images of charts, you will need to ensure they are accessible. You will need to consider the colour contrast of chart elements with each other and the background (see the sub section called 'Checking colour contrast in charts'). You will also need to consider any text on the chart. Ideally this will be minimum size 12, in a sans serif font with no use of italics or underline.
+On a cover sheet, all the text should be in column A (as disabled users normally navigate down from cell A1). Any images of logos should be placed to the right of this text so they don't disrupt navigation. More information on what a cover sheet should look like can be found in the in the [Metadata worksheets](## Metadata worksheets) section.
+
+If you include images of charts, you will need to ensure they are accessible. You will need to consider the colour contrast of chart elements with each other and the background (see the sub section called 'Checking colour contrast in charts'). You will also need to consider any text on the chart. Ideally this will be minimum size 12, in a sans serif font with no use of italics or underline. Images of charts should be placed on a separate worksheet to any tables. 
 
 Wherever you publish charts, you should aim to follow best practice guidance. See our [guidance on data visualisation](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/) and the [Office for National Statistics' style guide](https://style.ons.gov.uk/).
 
