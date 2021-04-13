@@ -721,16 +721,15 @@ Whenever possible you should publish your spreadsheet in an [open format](https:
 
 This is not explicitly mentioned in the accessibility regulations, but generally, open formats make outputs more accessible because they do not rely on users having access to specific software.
 
-Furthermore, in June 2012, the [Government Open Data White Paper](https://www.gov.uk/government/publications/open-data-white-paper-unleashing-the-potential) set out a vision for open data that outlined a ranking scheme from 1 to 5 stars. Government data releases should meet the 3 star measure as a minimum. This means data should be made available in an open, non-proprietary format.
+Furthermore, the [Government Digital Service (GDS) recommend using the ODF 1.2 Open Document Format (ODF) standard](https://www.gov.uk/government/publications/open-standards-for-government/sharing-or-collaborating-with-government-documents) for sharing and collaborating on documents in government.
 
-Spreadsheet files published in Excel format (such as .xls and .xlsx) are not open because they rely on users having access to specific software.
+#### Excel formats 
+Excel files (such as .xls and .xlsx) are not considered to be open formats. 
 
 #### ODS format
-For spreadsheets you intend users to read and analyse themselves we advise you use the Open Document Spreadsheet (ODS) format. This is an open format very similar to Excel. 
+For spreadsheets you intend users to read and analyse themselves we advise you use the Open Document Spreadsheet (ODS) format. This is an open format very similar to Excel which GDS recommends. 
 
 When you save as an ODS file, Excel will bring up a box to warn you that some features of your spreadsheet may not be compatible with the ODS format. If you want to know more, Microsoft have published [information about Excel features that are and aren’t compatible with the ODS format](https://support.microsoft.com/en-us/office/differences-between-the-opendocument-spreadsheet-ods-format-and-the-excel-for-windows-xlsx-format-3db958c8-e0ac-49a5-9965-2c2f8afbd960?ns=excel&version=90&syslcid=1033&uilcid=1033&appver=zxl900&helpid=191589&ui=en-us&rs=en-us&ad=us).  
-
-Make sure you are aware of the formats the website you publish on allows you to upload. Some websites do not yet support the ODS format. However, GOV.UK does support the ODS format and the Government Digital Service recommends it. 
 
 #### CSV format
 The other commonly used open format is Comma-Separated-Values (CSV). 
@@ -741,11 +740,16 @@ If you are publishing a CSV file solely for machines to read it does not need to
 
 You should be aware of government data standards that may relate to your CSV files. The [tabular data standard](https://www.gov.uk/government/publications/recommended-open-standards-for-government/tabular-data-standard) published by the Government Digital Service in June 2018 was updated in August 2020. 
 
+#### Website support 
+Be aware that the website you publish on may have restrictions on the type of file formats it supports. Some websites do not yet support the ODS format which may mean you have to publish your spreadsheets in an Excel format for now. 
+
+Note that GOV.UK does support the ODS format and the Government Digital Service recommends it. 
+
 ### Publishing alternative versions of same spreadsheet
 
 If you need to, you can publish alternative versions of the same document. As long as one of them meets the accessibility regulations you are meeting the requirements of the accessibility legislation. 
 
-For example, you may want to publish an accessible ODS version of your spreadsheet for users to read themselves, alongside a machine-readable CSV version. 
+For example, you may want to publish an accessible ODS version of your spreadsheet for users to read themselves, alongside a machine-readable CSV version. You may also wish to publish an ODS version alongside an Excel format if that would best meet your user needs. 
 
 ### Software capability 
 
