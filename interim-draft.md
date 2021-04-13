@@ -268,11 +268,11 @@ Note: it is necessary to provide alternative text for images and charts and this
 ## Cells with no data
 
 ### Accessibility and usability for cells with no data
-When cells with no data are left blank it can cause confusion for users of assistive technology because it makes it difficult for their technology to work out where the table starts and ends. Therefore, blank cells could be considered a fail of accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
+When cells within a table that contain no data are left blank, it can cause confusion for users of assistive technology because it makes it difficult for their technology to work out where the table starts and ends. Therefore, blank cells could be considered a fail of accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
 However, we are carrying out research into this. It may be the case that if a table is marked up correctly, blank cells within a table do not cause a problem for navigation with assistive technology. 
 
-In terms of usability, blank cells may be considered bad practice as they do not tell a user why there is no data in the cell - a user might incorrectly assume the data value is zero or that there has been a mistake and data is missing. 
+In terms of usability, blank cells in a table may be considered bad practice as they do not tell a user why there is no data in the cell - a user might incorrectly assume the data value is zero or that there has been a mistake and data is missing. 
 
 Therefore our current advice for cells with no data is to give users information about why there is no data, without using symbols like full stops (..) or dashes (-). Instead, cells with no data should be marked up descriptively (more information on the use of symbols can be found in the [Symbols, footnotes and codes](#symbols-footnotes-and-codes) section).  
 
