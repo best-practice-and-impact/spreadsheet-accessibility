@@ -98,7 +98,7 @@ Go to ‘File’, then ‘Options’, then ‘Language’. Make sure the documen
 
 ## Tables
 
-In statistics we generally deal with two types of tables - demonstration tables and reference tables. 
+In statistics we generally deal with two types of tables - demonstration tables and reference tables.
 
 If we are using a table to demonstrate a point that we are making in the text, we create a demonstration table. These lay out statistics to quickly reinforce the point.
 
