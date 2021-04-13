@@ -10,7 +10,7 @@ If you have any questions or feedback, please email [gsshelp@statistics.gov.uk](
 ## Accessibility, usability and machine readability 
 
 ### Accessibility 
-Spreadsheets published online by the public sector must meet the AA level of the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/). This is a legal requirement set out in ([The Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018](https://www.legislation.gov.uk/uksi/2018/852/contents/made)). 
+Spreadsheets published online by the public sector must meet the AA level of the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/). This is a legal requirement set out in [The Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018](https://www.legislation.gov.uk/uksi/2018/852/contents/made). 
 
 Some of the Web Content Accessibility Guidelines (WCAG) 2.1 are generic in nature. Throughout this guidance, using our knowledge, research and interpretation of WCAG 2.1, we have tried to make a clear distinction between things we feel must be done in order to meet the legal accessibility regulations and things that are considered accessibility best practice.
 
