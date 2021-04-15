@@ -208,7 +208,7 @@ If you are inviting users to compare numbers, it is best practice to:
 
 * present the numbers close together, in columns - it is easier to make comparisons and determine patterns when numbers are arranged near each other and in columns instead of rows
 * use the same level of precision in each column
-* use commas to separate thousands
+* use commas to separate thousands (for example '32,401' not '32 401')
 * right align the figures and the column headings
 * start numbers of less than one with a zero, not a decimal point
 
@@ -362,7 +362,7 @@ This means:
 * Avoid including images of charts in your spreadsheet, if you do you must carefully consider their accessibility, particularly the colour contrast between chart elements (more information on how to do this can be found in the 'Checking colour contrast in charts' sub-section). .
 * Left align all text in cells outside the table and all row labels within the table.
 * Right align all data within a table and all column headings (except the column of row labels). 
-* Use commas to separate thousands in numbers of four digits or more, and never spaces (except when writing years - these should have no punctuation)
+* Use commas to separate thousands in numbers of four digits or more, and never spaces (for example '32,401' not '32 401') - except when writing years - these should have no punctuation.
 * Set sensible zoom levels before you save your spreadsheet. 
 
 In terms of machine readability you should also: 
