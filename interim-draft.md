@@ -295,7 +295,7 @@ We are looking into drafting guidance on what words or letters to use for differ
 
 If your spreadsheet contains cells with no data for many different reasons - for example some are empty becuase the data was missing, some because the variable wasn't applicable - it is good practice for accessibility and machine readability to outline the possible reasons for empty cells on the cover sheet. You can say something like 'Some tables in this spreadsheet have cells with no data. When this is the case the cells are marked up descriptively as either "[missing]", "[disclosive]" or "[not available]"'. This means users know what to expect and programmers are better able to write code that matches what is in your tables. 
 
-> [Example of blank cells marked up descriptively (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-with-empty-cells.ods)
+> [Example of blank cells marked up descriptively (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/04/Example-of-table-with-empty-cells.ods)
 
 Please note - we are aware that leaving cells with no data blank may make it easier for users to perform further analysis, but this feature of usability has to be balanced against the accessibility guidelines and the importance of a user understanding why a cell has no data. As mentioned, our advice on cells with no data may change as we do further research.
 
