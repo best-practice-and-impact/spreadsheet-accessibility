@@ -412,17 +412,18 @@ If an image is just decorative you should mark it as such by ticking the 'Decora
 
 ## Symbols, footnotes and codes 
 ### Short footnotes 
-It is best practise in terms of accessibility (and arguably, usability) to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in rounded brackets instead of using ‘p’ or ‘r’. 
+It is best practise in terms of accessibility (and arguably, usability) to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in square brackets instead of using ‘[p]’ or ‘[r]’. 
 
 However, when needed, using letters to signify notes is generally OK as long as the key to what these letters mean is clearly laid out above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table. However, you should not use superscript text as this can be difficult to see for users with low vision and screen reader software does not differentiate superscript text from non-superscript text. You should also avoid using symbols to signpost to notes (see the sub section 'Use of symbols'). 
 
 ### Detailed footnotes
 When signposting to detailed footnotes we advise you to: 
 * write out the word ‘note’ in the cell, with the number of the note you need to refer to, and put it in square brackets (we advise square brackets for notes and rounded brackets for units to differentiate them in a consistent way), for example 'Number of people in employment [note 1]'
-* put a list of numbers if a cell needs to refer to more than one note – for example, write ‘[note 1,2,3]’ if a cell needs to refer to notes 1, 2 and 3. 
+* present a list of notes if a cell needs to refer to more than one note – for example, write ‘[note 1],[note 2],[note 3]’ if a cell needs to refer to notes 1, 2 and 3. 
 * try to always put notes in table titles, column headings or row labels - putting them in specific cells may not fail accessibility but it does cause problems for machine readability and usability 
 * if a note is in a column heading, space the text so the note marker sits underneath the column header text and any information about units (you can do this by pressing 'Alt and Enter')
-* mention that notes are used, in a cell in column A above the table and say where the notes can be found (more information about use of cells in column A can be found in the [Structure](#Structure) section)
+* for each table that uses notes, mention that notes are used, in a cell in column A above the table and say where the note text can be found (more information about use of cells in column A can be found in the [Structure](#Structure) section) 
+* it is good practice to mention notes, where they can be found and how note markers are presented on the cover sheet -  for example: 'Some tables refer to notes. When notes are mentioned the note marker is presented in square brackets. The note text can be found in the notes table' - this tells users what to expect and helps programmers write code that matches what is in your tables (more information on cover sheets can be found in the [Metadata worksheets](#metadata-worksheets) section).  
 
 When displaying the content of detailed notes it is common practice for them to be placed underneath the table. However there are several issues with this: 
 1. It can take lots of scrolling to get to notes placed under very long tables, particularly for some disabled users - this is bad practice for usability and accessibility. 
@@ -436,6 +437,9 @@ Notes placed underneath a table will not necessarily fail the accessibility guid
 
 > [Example of presenting a key for shorthand and notes (ODS, 4.4KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-with-notes-and-a-key.ods)
 > See the labour market [example spreadsheet](#example-spreadsheet) also. 
+
+### Footnotes and machine readability 
+If optimising a spreadsheet to be solely read by machines, you should have no cover sheet, notes worksheet or any note markers. All footnotes and other information contained in the cover sheet should be in a metadata file which specifies which cells refer to which notes. More information on this can be found in the [Metadata worksheets](#metadata-worksheets) section. 
 
 ### Use of symbols 
 You should not use symbols to signpost footnotes because: 
