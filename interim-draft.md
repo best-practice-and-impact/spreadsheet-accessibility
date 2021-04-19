@@ -376,7 +376,7 @@ In terms of machine readability you should also:
 * avoid using indentation to indicate subsections (for example indenting a list of regions under a row for ‘England’) or hierarchies 
 * ensure no cells with text have ‘hidden’ spaces at the start or end
 * check there are no spaces at the start or end of worksheet names
-* consider using an Application Programming Interface (API) to aid further analysis
+* consider providing a data Application Programming Interface (API) to aid further analysis
 
 ### Checking text colour contrast  
 If colour is used in cells with text, use the [WebAIM colour contrast checker](https://webaim.org/resources/contrastchecker/) to see if the colours meet the accessibility regulations. Remember, legally you need to meet the AA standard. 
@@ -438,6 +438,15 @@ Notes placed underneath a table will not necessarily fail the accessibility guid
 > [Example of presenting a key for shorthand and notes (ODS, 4.4KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-with-notes-and-a-key.ods)
 > See the labour market [example spreadsheet](#example-spreadsheet) also. 
 
+### Footnotes for specific cells 
+Sometimes it is not possible to put a note marker in a title, column heading or row label. When this is the case we have previously advised to put the marker in separate (very narrow) columns, next to the data. 
+
+However, we no longer advise this approach. Firstly because in terms of accessibility all these columns would need headers and it is likely that all the blank cells in the column would need to be marked up in an accessible way. This would make the table very wide and difficult to read.
+
+Secondly because in terms of machine readability taking this approach often means note columns get added in and taken out of tables fairly often. This means the size and layout of tables changes quite a lot which is no good for programmers or Reproducible Analytical Pipelines. 
+
+We now advise that you add a notes column to the table. On the right. [More information to be added soon].
+
 ### Footnotes and machine readability 
 If optimising a spreadsheet to be solely read by machines, you should have no cover sheet, notes worksheet or any note markers. All footnotes and other information contained in the cover sheet should be in a metadata file which specifies which cells refer to which notes. More information on this can be found in the [Metadata worksheets](#metadata-worksheets) section. 
 
@@ -449,7 +458,7 @@ You should not use symbols to signpost footnotes because:
 
 Therefore, if you use symbols to signify notes it may lead to a fail of accessibility [guideline 1 perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
  
-However, use of symbols is not always a fail of the accessibility guidelines. You just need to be aware that some screen reader software will not recognise symbols and some screen reader users may have changed their settings to ignore symbols to avoid auditory clutter. This means you should consider how your text reads if you miss out the symbols. For example the sentence ‘Some shorthand is used in this spreadsheet, e = estimated, r = revised' still makes sense if read out as ‘Some shorthand is used in this spreadsheet, e estimated, r revised’.  
+However, use of symbols is not always a fail of the accessibility guidelines. You just need to be aware that some screen reader software will not recognise symbols and some screen reader users may have changed their settings to ignore symbols to avoid auditory clutter. This means you should consider how your text reads if you miss out the symbols. For example the sentence ‘Some shorthand is used in this spreadsheet, e = estimated, r = revised' still makes sense if read out as ‘Some shorthand is used in this spreadsheet, e estimated, r revised’. 
 
 Deque (a company that helps businesses make their websites and mobile applications accessible) has published [research into how different screen reader software deals with symbols](https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/) when using their default settings. They list 17 characters considered 'safe' to use. These include £, %, & and /. But, as mentioned, some users may have changed their settings from the default so in general it is best to use words instead of symbols wherever possible. 
 
@@ -478,8 +487,6 @@ In terms of usability, machine readability and accessibility ([success criterion
 
 ### Machine readability - differences in best practice for symbols, footnotes and codes
 If you are making a spreadsheet solely for machines to read you can use symbols but you must provide information on what those symbols mean via the metadata. More information on how to best supply metadata for machine readability can be found in the [Metadata worksheets](#metadata-worksheets) section. 
-
-In terms of presenting symbols and footnote markers it is best practice for machine readability to put the symbols or footnote markers in separate (very narrow) columns, next to the data. This approach does not fail any accessibility guidelines in itself, but you would need to give that column a heading and you might also need to mark up all the empty cells (we are still researching what needs to be done to make empty cells accessible). This could make a table very wide which is not great for readability. 
 
 ## Structure
 Properly structuring your content is important to meet accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
@@ -631,7 +638,9 @@ Remember that the table of notes will need to be marked up and named appropriate
 
 ### How to supply metadata if optimising for machine readability
 
-If you are publishing a spreadsheet optimised for machine readability it is best to remove all information about the data (metadata) from the spreadsheet file. This includes information in the cover sheet, table of contents and any notes. Metadata should instead be provided via an associated metadata file. For example, metadata for statistics.csv should be provided in the statistics.csv-metadata.json file. See [CSVW (CSV on the web)]( https://www.w3.org/TR/tabular-data-primer/#metadata) for an appropriate metadata file specification.
+If you are publishing a spreadsheet optimised for machine readability it is best to remove all information about the data (metadata) from the spreadsheet file. This includes information in the cover sheet, table of contents and any notes. Metadata should instead be provided via an associated metadata file. For example, metadata for 'statistics.csv' should be provided in the 'statistics.csv-metadata.json' file. See [CSVW (CSV on the web)]( https://www.w3.org/TR/tabular-data-primer/#metadata) for an appropriate metadata file specification.
+
+We are developing guidance on how to best provide metadata for datasets optimised solely for machine readability. 
 
 ## Communicating uncertainty in spreadsheets
 
