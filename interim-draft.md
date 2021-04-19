@@ -180,7 +180,9 @@ If blank rows and columns are used to create space you can do this by adjusting 
 ### Column headings
 Every table in your spreadsheet must have a correctly tagged header row, as described in the 'Mark up tables in spreadsheets' section. This is key to passing accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
 
-Bear in mind that Excel can only tag one row as the header row. It is not necessarily a fail if you have subheading rows but as they can't be tagged as headers it may make the table confusing - so whenever possible, it is best avoided. 
+Bear in mind that Excel can only tag one row as the header row. It is not necessarily a fail of the accessibility guidelines if you have subheading rows but as they can't be tagged as headers it may make the table confusing - so whenever possible, it is best avoided. 
+
+Sticking to one header row is also good for machine readability as some programming languages cannot interpret subheading rows.  
 
 You can put information about units or notes in the column heading cell (more information on how to do this in the 'Units' section).
 
@@ -222,7 +224,7 @@ Rounding does reduce precision. This usually means that the reported totals no l
 When rounding you should ensure all figures in a category are rounded to the same level of precision (for example one decimal point) and that any numbers less than one start with a zero, not a decimal point (for example, 0.56 not .56). 
 
 ### Grouping
-Objects grouped together are assumed to be associated. When used appropriately grouping may help users understand the data better. We advise that you group different measures in rows and different types of estimate in columns.
+Objects grouped together are assumed to be associated. When used appropriately grouping may help users understand the data better.
 
 White space can be used to separate the data into groups. You can do this by adjusting column width and row height. Do not use blank rows or columns as this may fail accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).  
 
@@ -294,7 +296,7 @@ We are looking into drafting guidance on what words or letters to use for differ
 Please note - we are aware that leaving cells with no data blank may make it easier for users to perform further analysis, but this feature of usability has to be balanced against the accessibility guidelines and the importance of a user understanding why a cell has no data. As mentioned, our advice on cells with no data may change as we do further research.
 
 ### Machine readability for cells with no data  
-If you are making a spreadsheet solely for machine reading purposes, it is best practice to leave cells with no data blank. 
+If you are making a spreadsheet solely for machine reading purposes, it is best practice to leave cells with no data blank. However your metadata file should specify why the cells are blank. 
 
 ## Formatting and use of colour
 
