@@ -279,24 +279,28 @@ In terms of usability, blank cells in a table may be considered bad practice as 
 Therefore our current advice for cells with no data is to give users information about why there is no data, without using symbols like full stops (..) or dashes (-). Instead, cells with no data should be marked up descriptively (more information on the use of symbols can be found in the [Symbols, footnotes and codes](#symbols-footnotes-and-codes) section).  
 
 Here are some examples of descriptions you may want to use: 
-* If there is no data available, type in ‘no data’.
-* If the data is missing, type in ‘missing’.
-* If the data would be disclosive, type in 'disclosive'.
+* If there is no data available, type in ‘[no data]’.
+* If the data is missing, type in ‘[missing]’.
+* If the data would be disclosive, type in '[disclosive]'.
 
-If you wish to expand on any of your descriptions you should present the information above the table, in a cell in column A so the information is available before a user comes to the table itself. If the information is lengthy, you can say the full explanation is available on the cover sheet or in the notes table (more information on the cover sheet and notes table can be found in the [Structure](#Structure) and [Metadata worksheets](#Metadata-worksheets) sections). 
+Note: we advise putting any sort of note marker or descriptive wording in square brackets because this makes things easier for programmers to adapt spreadsheets for machines to read. Square brackets are advised because we advise round brackets for descriptions of units - it is consistency in the type of brackets used that is important.  
 
-You can also use shorthand such as 'm' for missing or 'd' for disclosive. As long as you outline what this shorthand means above the table in a cell in column A. This will ensure a user comes across this guidance before they get to the table itself.  
+If you wish to expand on any of your descriptions (for example to explain why some data is missing) you should present the information above the table, in a cell in column A so the information is available before a user comes to the table itself. If the information is lengthy, you can say the full explanation is available on the cover sheet or in the notes table (more information on the cover sheet and notes table can be found in the [Structure](#Structure) and [Metadata worksheets](#Metadata-worksheets) sections). 
+
+You can also use shorthand such as '[m]' for missing or '[d]' for disclosive. As long as you outline what this shorthand means above the table in a cell in column A. This will ensure a user comes across this guidance before they get to the table itself.  
 
 We advise against using 'NA' to describe cells with no data. While in statistics this often means Not Available, many users will assume it means Not Applicable. If you want to use NA as shorthand you must clearly define what it means, above the table, in a cell in column A.  
 
 We are looking into drafting guidance on what words or letters to use for different circumstances so that empty cells are marked up in a consistent way across government statistics and analysis. 
+
+If your spreadsheet contains cells with no data for many different reasons - for example some are empty becuase the data was missing, some because the variable wasn't applicable - it is good practice for accessibility and machine readability to outline the possible reasons for empty cells on the cover sheet. You can say something like 'Some tables in this spreadsheet have cells with no data. When this is the case the cells are marked up descriptively as either "[missing]", "[disclosive]" or "[not available]"'. This means users know what to expect and programmers are better able to write code that matches what is in your tables. 
 
 > [Example of blank cells marked up descriptively (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-with-empty-cells.ods)
 
 Please note - we are aware that leaving cells with no data blank may make it easier for users to perform further analysis, but this feature of usability has to be balanced against the accessibility guidelines and the importance of a user understanding why a cell has no data. As mentioned, our advice on cells with no data may change as we do further research.
 
 ### Machine readability for cells with no data  
-If you are making a spreadsheet solely for machine reading purposes, it is best practice to leave cells with no data blank. However your metadata file should specify why the cells are blank. 
+If you are making a spreadsheet solely for machine reading purposes, it is best practice to leave cells with no data blank and use your metadata file to specify why the cells are blank. 
 
 ## Formatting and use of colour
 
