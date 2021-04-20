@@ -373,7 +373,7 @@ This means:
 
 In terms of machine readability you should also: 
 
-* avoid using indentation to indicate subsections (for example indenting a list of regions under a row for ‘England’) or hierarchies 
+* avoid using Excel's indentation tool to indicate subsections or hierarchies (for example indenting a list of regions under a row for ‘England’) 
 * ensure no cells with text have ‘hidden’ spaces at the start or end
 * check there are no spaces at the start or end of worksheet names
 * consider providing a data Application Programming Interface (API) to aid further analysis
