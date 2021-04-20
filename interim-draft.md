@@ -447,7 +447,7 @@ Secondly because in terms of machine readability taking this approach often mean
 
 We now advise that you add a notes column to the table, on the right. Then you can use the note text to specify which cell the note refers to. 
 
-Communicating the note in this way means you can use colour to emphasise the cell that has the note. This is OK in this instance because while the rules about colour state it cannot be used as the only way to communicate a message, it can be used for extra emphasis. However, you would still need to check the colour contrast of the text against the background colour met the AA level in the WCAG guidelines. More information on checking colour contrast can be found in the [Formatting and use of colour](#Formatting and use of colour) section.  
+Communicating the note in this way means you can use colour to emphasise the cell that has the note. This is OK in this instance because while the rules about colour state it cannot be used as the only way to communicate a message, it can be used for extra emphasis. However, you would still need to check the colour contrast of the text against the background colour met the AA level in the WCAG guidelines. More information on checking colour contrast can be found in the [Formatting and use of colour](#Formatting-and-use-of-colour) section.  
 
 An example of notes for specific cells is coming soon. 
 
