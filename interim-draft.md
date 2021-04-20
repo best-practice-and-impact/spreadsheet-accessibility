@@ -300,7 +300,7 @@ If your spreadsheet contains cells with no data for many different reasons - for
 Please note - we are aware that leaving cells with no data blank may make it easier for users to perform further analysis, but this feature of usability has to be balanced against the accessibility guidelines and the importance of a user understanding why a cell has no data. As mentioned, our advice on cells with no data may change as we do further research.
 
 ### Machine readability for cells with no data  
-If you are making a spreadsheet solely for machine reading purposes, it is best practice to leave cells with no data blank and use your metadata file to specify why the cells are blank. 
+If you are making a spreadsheet solely for machines to read, it is best practice to leave cells with no data blank and use your metadata file to specify why the cells are blank. More information on how to provide metadata when optimising for machine readability is in the [Metadata worksheets](#Metadata-worksheets) section.
 
 ## Formatting and use of colour
 
@@ -439,13 +439,17 @@ Notes placed underneath a table will not necessarily fail the accessibility guid
 > See the labour market [example spreadsheet](#example-spreadsheet) also. 
 
 ### Footnotes for specific cells 
-Sometimes it is not possible to put a note marker in a title, column heading or row label. When this is the case we have previously advised to put the marker in separate (very narrow) columns, next to the data. 
+Sometimes it is not possible to put a note marker in a title, column heading or row label because it needs to sit within a specific cell. When this is the case we have previously advised to put the marker in separate (very narrow) columns, next to the data. 
 
-However, we no longer advise this approach. Firstly because in terms of accessibility all these columns would need headers and it is likely that all the blank cells in the column would need to be marked up in an accessible way. This would make the table very wide and difficult to read.
+However, we no longer advise this approach. Firstly because in terms of accessibility all these columns would need headers and all the blank cells would need to be marked up. This would make the table very wide and difficult to read.
 
-Secondly because in terms of machine readability taking this approach often means note columns get added in and taken out of tables fairly often. This means the size and layout of tables changes quite a lot which is no good for programmers or Reproducible Analytical Pipelines. 
+Secondly because in terms of machine readability taking this approach often means note columns get added in and taken out fairly often. This means the size and layout of tables changes quite a lot which is no good for programmers or Reproducible Analytical Pipelines. 
 
-We now advise that you add a notes column to the table. On the right. [More information to be added soon].
+We now advise that you add a notes column to the table, on the right. Then you can use the note text to specify which cell the note refers to. 
+
+Communicating the note in this way means you can use colour to emphasise the cell that has the note. This is OK in this instance because while the rules about colour state it cannot be used as the only way to communicate a message, it can be used for extra emphasis. However, you would still need to check the colour contrast of the text against the background colour met the AA level in the WCAG guidelines. More information on checking colour contrast can be found in the [Formatting and use of colour](#Formatting and use of colour) section.  
+
+An example of notes for specific cells is coming soon. 
 
 ### Footnotes and machine readability 
 If optimising a spreadsheet to be solely read by machines, you should have no cover sheet, notes worksheet or any note markers. All footnotes and other information contained in the cover sheet should be in a metadata file which specifies which cells refer to which notes. More information on this can be found in the [Metadata worksheets](#metadata-worksheets) section. 
