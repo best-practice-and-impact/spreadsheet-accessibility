@@ -1,7 +1,7 @@
 # Releasing statistics in spreadsheets (draft version of update)
 
 ## Who is this guidance for and what is its aim? 
-This guidance has been created for producers of official statistics who need to publish data tables in spreadsheet documents. Its aim is to help you improve the usability, accessibility and machine readability of your spreadsheets. 
+This guidance has been created for producers of official statistics who need to publish data tables in spreadsheet documents. Its aim is to help improve the usability, accessibility and machine readability of spreadsheets. 
 
 ## Draft status 
 This guidance is an update to the ['Releasing statistics in spreadsheets' guidance](https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/) on the [Government Statistical Service (GSS) website](https://gss.civilservice.gov.uk/). It is still under review. We are publishing a draft version to give civil servants early information on what they need to implement and to gather feedback. We continue to carry out research and testing. Once this is complete, the guidance will be updated on the GSS website.  
