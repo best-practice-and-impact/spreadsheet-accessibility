@@ -788,7 +788,7 @@ In terms of usability it is best practice for file names to:
 * be unique, for example don’t call all your data downloads ‘Data download’
 * be descriptive and make sense out of context – for example, tell the user what is in a data download, don’t just call it ‘Data download 1’
 * be [frontloaded](https://digitalcommunications.wp.st-andrews.ac.uk/2017/03/15/web-writing-basics-frontloading/)
-* be short – aim for 60 characters including spaces
+* be short – aim for 60 characters or fewer, including spaces
 * avoid acronyms – put these in the document information as keywords or tags
 * be entirely lowercase
 * [use dashes instead of spaces or underscores between words](https://x-equals.com/dashes-versus-underscores/) – this makes file names easier to read, for example: ‘a file name.ods’ will end up as: ‘a%20file%20name.ods’ online, which is why it is better to call it  ‘a-file-name.ods’
