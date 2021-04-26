@@ -438,7 +438,7 @@ When displaying the content of detailed notes it is common practice for them to 
 For these reasons we advise you to create a worksheet called ‘Notes’ which contains a table that lists all the detailed notes for the spreadsheet. 
 Notes placed underneath a table will not necessarily fail the accessibility guidelines but they will need careful consideration and, depending on the size of the table and how they are laid out, they may be considered bad practice. 
 
-> [Example of presenting a key for shorthand and notes (ODS, 4.4KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-of-a-table-with-notes-and-a-key.ods)
+> [Example of presenting a key for shorthand and notes (ODS, 4.4KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/04/Example-table-with-notes-and-a-key.ods)
 > See the labour market [example spreadsheet](#example-spreadsheet) also. 
 
 ### Footnotes for specific cells 
