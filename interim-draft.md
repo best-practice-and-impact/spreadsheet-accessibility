@@ -11,6 +11,8 @@ If you have any questions or feedback, please email [gsshelp@statistics.gov.uk](
 ## Accessibility, usability and machine readability 
 
 ### Accessibility 
+Accessibility is about making online content that as many people as possible can access, understand and use. 
+
 Spreadsheets published online by the public sector must meet the AA level of the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/). This is a legal requirement set out in [The Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018](https://www.legislation.gov.uk/uksi/2018/852/contents/made). 
 
 Some of the Web Content Accessibility Guidelines (WCAG) 2.1 are generic in nature. Throughout this guidance, using our knowledge, research and interpretation of WCAG 2.1, we have tried to make a clear distinction between things we feel must be done in order to meet the legal accessibility regulations and things that are considered accessibility best practice.
@@ -27,7 +29,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 
 ## Example of an accessible spreadsheet
 
-> [Labour market overview data tables, UK, December 2020: accessibility example (ODS, 664KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Labour-market-overview-data-tables-UK-December-2020-accessibility-example.ods)
+> [Labour market overview data tables, UK, December 2020: accessibility example (ODS, 664KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/04/Labour-market-overview-data-tables-UK-December-2020-accessible-example.ods)
 
 We have applied our accessibility guidance to the summary of labour market statistics spreadsheet published in December 2020 by the Office for National Statistics (ONS). We hope this example will help you understand and apply this guidance. We have addressed four of the worksheets in this large and complex spreadsheet. The Digital Accessibility Centre (DAC) have audited this edited version and are happy that it meets all the accessibility guidelines. The feedback from DAC's accessibility tester illustrates the frustrations many users of assistive technology normally have with spreadsheets: 
 
