@@ -120,7 +120,7 @@ Marking up a table:
 * allows a header row and table edges to be identified by assistive technology 
 * allows your table to be named and appear in the 'go to' tool which is a keyboard shortcut that aids navigation (more information about this in the 'Naming tables' section)
 * means a user will be able to tab through the data in a sensible way – for example when a user tabs to the end of the row, the next tab will take them to the start of the row below	
-Note: if you keep tabbing past the end of the last row it does lead to extra rows being added to the table. However, as the table is marked up correctly, users of assistive technology should know when they get to the end of a table, so this isn’t considered an issue.
+Note: if you keep tabbing past the end of the last row it does lead to extra rows being added to the table. However, as the table is marked up correctly, users of assistive technology should know when they get to the end of a table, so this is not considered an issue.
 
 #### How to mark up a table in Excel: 
 Be aware these instructions may differ slightly for different versions of Excel. 
@@ -163,7 +163,7 @@ Make sure all tables in your spreadsheets have meaningful names. This will aid n
 1. Click anywhere in a marked-up table
 2. Click the ‘Design’ ribbon 
 3. In the 'Properties' section there is a box to edit the table name 
-4. Type the table name in - note that Excel doesn’t allow spaces or dashes in table names, words must be split up with underscores
+4. Type the table name in - note that Excel does not allow spaces or dashes in table names, words must be split up with underscores
 
 #### Check navigation with named tables
 If you want to see a list of all the tables in your worksheet go to the ‘Formulas’ ribbon and click ‘Name manager’. 
@@ -411,7 +411,7 @@ You should also check your specific departmental guidance on including images in
 
 On newer versions of Excel you may just need to right click and select 'Edit Alt Text'. 
 
-If an image is just decorative you should mark it as such by ticking the 'Decorative' checkbox (Excel 2013 doesn’t let you do this but later versions do).
+If an image is just decorative you should mark it as such by ticking the 'Decorative' checkbox (Excel 2013 does not let you do this but later versions do).
 
 ## Symbols, footnotes and codes 
 ### Short footnotes 
@@ -797,7 +797,7 @@ In terms of usability it is best practice for file names to:
 * not include a date, unless the date is part of the document title, for example, ‘Business-plan-for-2016-to-2017’
 * be sensible – do not include a version number, names or words like ‘draft’, ‘clean’ or ‘final’, unless those words are part of the document title (for example: ‘guidance-on-making-documents-accessible’ is a more sensible file name than ‘access-guid-final-draft-Han-edit3’)
 
-In terms of accessibility there isn’t a specific success criterion for file names but following this best practice will help you meet accessibility [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable) and [3.2 predictable](https://www.w3.org/TR/WCAG21/#predictable).
+In terms of accessibility there is not a specific success criterion for file names but following this best practice will help you meet accessibility [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable) and [3.2 predictable](https://www.w3.org/TR/WCAG21/#predictable).
 
 
 ## Sources for this guidance
