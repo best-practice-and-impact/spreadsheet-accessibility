@@ -183,7 +183,7 @@ If blank rows and columns are used to create space you can do this by adjusting 
 ### Column headings
 Every table in your spreadsheet must have a correctly tagged header row, as described in the 'Mark up tables in spreadsheets' section. This is key to passing accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
 
-Bear in mind that Excel can only tag one row as the header row. It is not necessarily a fail of the accessibility guidelines if you have subheading rows but as they can't be tagged as headers it may make the table confusing - so whenever possible, it is best avoided. 
+Bear in mind that Excel can only tag one row as the header row. It is not necessarily a fail of the accessibility guidelines if you have subheading rows but as they cannot be tagged as headers it may make the table confusing - so whenever possible, it is best avoided. 
 
 Sticking to one header row is also good for machine readability as some programming languages cannot interpret subheading rows.  
 
@@ -296,7 +296,7 @@ We advise against using 'NA' to describe cells with no data. While in statistics
 
 We are looking into drafting guidance on what words or letters to use for different circumstances so that empty cells are marked up in a consistent way across government statistics and analysis. 
 
-If your spreadsheet contains cells with no data for many different reasons - for example some are empty becuase the data was missing, some because the variable wasn't applicable - it is good practice for accessibility and machine readability to outline the possible reasons for empty cells on the cover sheet. You can say something like 'Some tables in this spreadsheet have cells with no data. When this is the case the cells are marked up descriptively as either "[missing]", "[disclosive]" or "[not available]"'. This means users know what to expect and programmers are better able to write code that matches what is in your tables. 
+If your spreadsheet contains cells with no data for many different reasons - for example some are empty becuase the data was missing, some because the variable was not applicable - it is good practice for accessibility and machine readability to outline the possible reasons for empty cells on the cover sheet. You can say something like 'Some tables in this spreadsheet have cells with no data. When this is the case the cells are marked up descriptively as either "[missing]", "[disclosive]" or "[not available]"'. This means users know what to expect and programmers are better able to write code that matches what is in your tables. 
 
 > [Example of blank cells marked up descriptively (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/04/Example-table-with-empty-cells.ods)
 
@@ -324,7 +324,7 @@ When it comes to accessibility, embedding hyperlinks correctly is specifically m
 
 Hyperlink text should be a specific description of the destination, not just ‘blog post’ or ‘report’ and never directional text like ‘click here’. Bear in mind that screen readers can be programmed to read out a list of links within a document (much like a sighted user would scan a page for links). When link text is not specific, a sighted user can read the surrounding text, a screen reader cannot. This means the links will be difficult to tell apart so the screen reader user will not be able to easily find a link they may be interested in.
 
-2. Don't use URLs 
+2. Do not use URLs 
 
 Do not use the [URL](https://techterms.com/definition/url) of a webpage as the hyperlink text, unless it is very short (e.g. www.unsplash.com). Screen readers read out long URLs in full, letter by letter. This can be very time consuming and annoying. Also, in most circumstances they do not describe the destination page.
 
@@ -360,13 +360,13 @@ This means:
 
 ### Other pointers for formatting that should be followed in terms of best practice 
 
-* The minimum font size used is size 12 - this isn't specifically mentioned in the accessibility guidelines but it is best practice. 
+* The minimum font size used is size 12 - this is not specifically mentioned in the accessibility guidelines but it is best practice. 
 * Consider how your tables are structured - remember it is easier to read down a list than across a table so you may want to think about transposing your data.
 * Only use sans serif fonts like Arial or Calibri as people with dyslexia find serif fonts hard to read.
 * Avoid the use of underline and italic text - people with dyslexia can find italic and underlined text hard to read, if you need to highlight text it is best to use bold.
 * Avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour (more information on how to do this can be found in the 'Checking text colour contrast' sub-section). 
 * Use the 'default' or 'automatic' colour settings for all text - doing this will ensure the spreadsheet takes on the specialised colour settings users of assistive technology may have set up on their software
-* Don't add a background fill - some users will have settings that automatically change the colour of the background to make the content easier for them to read, but this doesn't happen if you have added a fill colour – even if it is white. 
+* Do not add a background fill - some users will have settings that automatically change the colour of the background to make the content easier for them to read, but this does not happen if you have added a fill colour – even if it is white. 
 * Avoid adding grid lines or cell borders - in general it is better to keep things simple.
 * Avoid including images of charts in your spreadsheet, if you do you must carefully consider their accessibility, particularly the colour contrast between chart elements (more information on how to do this can be found in the 'Checking colour contrast in charts' sub-section). 
 * Left align all text in cells outside the table and all row labels within the table.
@@ -396,7 +396,7 @@ This includes any departmental logos. Placing a departmental logo on a cover she
 
 If you can’t avoid it, make sure all logos, graphics, charts and any other images within the spreadsheet document have alternative text attached to them (accessibility [success criterion 1.1.1 non-text content](https://www.w3.org/TR/WCAG21/#non-text-content)). 
 
-On a cover sheet, all the text should be in column A (as disabled users normally navigate down from cell A1). Any images of logos should be placed to the right of this text so they don't disrupt navigation. More information on what a cover sheet should look like can be found in the in the [Metadata worksheets](## Metadata worksheets) section.
+On a cover sheet, all the text should be in column A (as disabled users normally navigate down from cell A1). Any images of logos should be placed to the right of this text so they do not disrupt navigation. More information on what a cover sheet should look like can be found in the in the [Metadata worksheets](## Metadata worksheets) section.
 
 If you include images of charts, you will need to ensure they are accessible. You will need to consider the colour contrast of chart elements with each other and the background (see the sub section called 'Checking colour contrast in charts'). You will also need to consider any text on the chart. Ideally this will be minimum size 12, in a sans serif font with no use of italics or underline. Images of charts should be placed on a separate worksheet to any tables. 
 
@@ -430,9 +430,9 @@ When signposting to detailed footnotes we advise you to:
 
 When displaying the content of detailed notes it is common practice for them to be placed underneath the table. However there are several issues with this: 
 1. It can take lots of scrolling to get to notes placed under very long tables, particularly for some disabled users - this is bad practice for usability and accessibility. 
-2. Notes placed under tables may be missed by some disabled users who aren't expecting them to be there. It is possible to combat this by mentioning that notes sit underneath the table, in a cell in column A above the table (more information about use of cells in column A can be found in the [Structure](#Structure) section).
+2. Notes placed under tables may be missed by some disabled users who are not expecting them to be there. It is possible to combat this by mentioning that notes sit underneath the table, in a cell in column A above the table (more information about use of cells in column A can be found in the [Structure](#Structure) section).
 3. Notes placed underneath a table need careful (and mostly manual) formatting to be made accessible (see the section on [Structure](#Structure) and [Metadata worksheets](#metadata-worksheets) for more information on how written content should be formatted). Without this formatting you may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
-4. Long detailed notes may result in a need for horizontal scrolling which is bad practice for usability and accessibility. This may happen because the note will need to be displayed in one cell - you shouldn't use merged cells to present long notes as merged cells fail accessibility guidelines (see the section on [Tables](#tables)).
+4. Long detailed notes may result in a need for horizontal scrolling which is bad practice for usability and accessibility. This may happen because the note will need to be displayed in one cell - you should not use merged cells to present long notes as merged cells fail accessibility guidelines (see the section on [Tables](#tables)).
 5. In complex spreadsheets, identical notes are often placed under several tables across many worksheets - this can mean, when certain notes are updated or changed, some are accidentally missed out.
 
 For these reasons we advise you to create a worksheet called ‘Notes’ which contains a table that lists all the detailed notes for the spreadsheet. 
@@ -524,8 +524,8 @@ To avoid any confusion for assistive technology and to improve usability and mac
 Remove any blank worksheets. Blank worksheets can be confusing as it is not clear if they are meant to be blank or if something is missing. They may also make navigation confusing for disabled users leading to a fail of accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
 #### Other things to avoid 
-* Do not use headers and footers to convey important information - this will fail accessibility as screen readers often can't find the information displayed in spreadsheet headers and footers.
-* Do not use floating elements such as text boxes - these will fail accessibility as screen readers often can't 'see' inside text boxes.
+* Do not use headers and footers to convey important information - this will fail accessibility as screen readers often cannot find the information displayed in spreadsheet headers and footers.
+* Do not use floating elements such as text boxes - these will fail accessibility as screen readers often cannot 'see' inside text boxes.
 * Deactivate any floating toolbars - these may fail accessibility as screen reader software may not be able to access populated cells behind them - if you do need to leave a floating toolbar active then attach it to the other Excel toolbars at the top of the window.
 
 ### Pointers for structure within worksheets: 
@@ -635,7 +635,7 @@ This can live within the cover sheet or on its own worksheet, but make sure it i
 
 This table of contents can also contain other information such as the source of the data (particularly if several different sources are used throughout the spreadsheet), the date of the last update and the date of the next update. 
 
-Hyperlinking from the table of contents to cell A1 of each worksheet also aids navigation around a large spreadsheet but is not strictly necessary if all tables are marked up and named consistently. We wouldn't suggest linking to the tables directly as this may mean users will miss information presented above the table that they need to understand. 
+Hyperlinking from the table of contents to cell A1 of each worksheet also aids navigation around a large spreadsheet but is not strictly necessary if all tables are marked up and named consistently. We would not suggest linking to the tables directly as this may mean users will miss information presented above the table that they need to understand. 
 
 ### Notes worksheet 
 
