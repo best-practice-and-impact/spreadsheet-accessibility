@@ -353,14 +353,14 @@ This means:
 ### Other pointers for formatting that must be followed to meet the accessibility guidelines: 
 * No visual devices such as colour, shading or patterns should be used to divide up data regions ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).
 * No text is set in a vertical or diagonal direction - this is not mentioned specifically in the accessibility guidelines but it may be considered necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 4. distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable).
-* No text has spaces between letters in a word for visual effect as this can be difficult to read and screen readers will read the letters out one by one - this is not mentioned specifically in the accessibility guidelines but it may be considered necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)
+* No text has spaces between letters in a word for visual effect as this can be difficult to read and screen readers will read the letters out one by one - this is not mentioned specifically in the accessibility guidelines but it may be considered necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable).
 * Colour is never used as the only way to communicate a message - this fails accessibility [success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) and complicates machine readability.
-* The minimum font size used is size 12 - in general this will help you meet [success criterion 1.4.4 resize text](https://www.w3.org/TR/WCAG21/#resize-text).
 * Make sure there are no spelling or grammatical mistakes - this will ensure you meet accessibility [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable) - you can run a spelling and grammar check in Excel – in newer versions it is on the ‘Review’ ribbon. 
 * No columns or rows are hidden from view ([guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable)) - if this is needed you will need to give guidance in a cell in column A, above any tables, on what rows or columns are hidden and how to unhide them. 
 
 ### Other pointers for formatting that should be followed in terms of best practice 
 
+* The minimum font size used is size 12 - this isn't specifically mentioned in the accessibility guidelines but it is best practice. 
 * Consider how your tables are structured - remember it is easier to read down a list than across a table so you may want to think about transposing your data.
 * Only use sans serif fonts like Arial or Calibri as people with dyslexia find serif fonts hard to read.
 * Avoid the use of underline and italic text - people with dyslexia can find italic and underlined text hard to read, if you need to highlight text it is best to use bold.
@@ -368,7 +368,7 @@ This means:
 * Use the 'default' or 'automatic' colour settings for all text - doing this will ensure the spreadsheet takes on the specialised colour settings users of assistive technology may have set up on their software
 * Don't add a background fill - some users will have settings that automatically change the colour of the background to make the content easier for them to read, but this doesn't happen if you have added a fill colour – even if it is white. 
 * Avoid adding grid lines or cell borders - in general it is better to keep things simple.
-* Avoid including images of charts in your spreadsheet, if you do you must carefully consider their accessibility, particularly the colour contrast between chart elements (more information on how to do this can be found in the 'Checking colour contrast in charts' sub-section). .
+* Avoid including images of charts in your spreadsheet, if you do you must carefully consider their accessibility, particularly the colour contrast between chart elements (more information on how to do this can be found in the 'Checking colour contrast in charts' sub-section). 
 * Left align all text in cells outside the table and all row labels within the table.
 * Right align all data within a table and all column headings (except the column of row labels). 
 * Use commas to separate thousands in numbers of four digits or more, and never spaces (for example '32,401' not '32 401') - except when writing years - these should have no punctuation.
@@ -476,18 +476,18 @@ You may need to use classifications or [geography codes](https://www.ons.gov.uk/
 
 Some pointers:
 
-1. Use the right codes
+#### 1. Use the right codes
 Make sure you are using the correct, nationally recognised codes. If you need any help in this area the harmonisation leads in the [Best Practice and Impact team](https://gss.civilservice.gov.uk/about-us/support-for-the-gss/) can provide advice. This is important for usability and machine readability. 
 
-2. Classifications, codes and accessibility 
+#### 2. Classifications, codes and accessibility 
 Classifications and geography codes are generally fine in terms of accessibility as they are usually strings of letters and numbers. When codes are not just strings of letters and numbers, you should still use them consistently. It is OK to use symbols such as dashes and slashes here as that is how the code is constructed.
 
-3. Help users understand codes
+#### 3. Help users understand codes
 It is best practice to link to supporting information for any codes used, either as a note or on the cover sheet (more information on notes and cover sheets can be found in the [metadata worksheets](#metadata-worksheets) section). 
 
 You should also help users understand any changes in codes or classifications – for example, the [Geography Code History Database](https://www.ons.gov.uk/methodology/geography/geographicalproducts/namescodesandlookups/codehistorydatabasechd) helps users track changes in area codes.
 
-4. Presenting codes in tables
+#### 4. Presenting codes in tables
 In terms of usability, machine readability and accessibility ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)), codes should be in separate cells to the description of the code and the data. For example, country code AD should be in a separate cell to the country name Andorra, and then there should be another cell for the data linked to this country. The row or column containing the codes must be labelled clearly. 
 
 > [Example of presenting country codes (ODS, 6.31KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-presenting-country-codes.ods)
@@ -810,7 +810,7 @@ In terms of accessibility there isn’t a specific success criterion for file na
 * [Welsh Government guidance](https://gov.wales/how-create-accessible-excel-spreadsheets)
 * [Information on making tables accessible from Government Digital Service](https://www.gov.uk/guidance/content-design/tables)
 * [Making analytical publications accessible (Government Statistical Service guidance)](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/)
-* Guidance shared with me by the Northern Irelands Statistics and Research Agency (Nisra)
+* Guidance shared with me by the Northern Ireland Statistics and Research Agency (Nisra)
 * [Feedback from the Digital Accessibility Centre (DAC)](https://digitalaccessibilitycentre.org/)
 
 
