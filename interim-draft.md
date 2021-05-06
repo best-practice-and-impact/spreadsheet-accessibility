@@ -386,6 +386,13 @@ If colour is used in cells with text, use the [WebAIM colour contrast checker](h
 
 Be aware that colours are coded in different ways. To use the WebAIM colour contrast checker you will need to know the hex code of the colours. Excel will give you the Red Green Blue (RGB) codes - you can use this [colour code converter](https://www.webfx.com/web-design/hex-to-rgb/) to get the hex codes.  
 
+Assuming you have left the background of your spreadsheet to "No fill" (which we advise you to do) setting text to the following colour codes is accessible at the AA and AAA level: 
+
+Blue text with RGB code: rgb(0,0,255) and hex code: #0000FF
+Red text with RGB code: rgb(179,0,0) and hex code: #B30000
+Green text with RGB code: rgb(50,100,5) and hex code: #326405
+
+
 ### Checking colour contrast in charts 
 The use of colours in charts is more complex as you often have to consider colour contrast between different chart elements as well as with the background. Our [data visualisation guidance](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-9) and the [style guide from the Office for National Statistics](https://style.ons.gov.uk/category/data-visualisation/using-colours/) both have useful tips on this area but neither have yet been fully updated with regards to the accessibility guidelines. We are planning on looking into this in more detail soon. 
 
@@ -448,11 +455,11 @@ However, we no longer advise this approach. Firstly because in terms of accessib
 
 Secondly because in terms of machine readability taking this approach often means note columns get added in and taken out fairly often. This means the size and layout of tables changes quite a lot which is no good for programmers or Reproducible Analytical Pipelines. 
 
-We now advise that you add a notes column to the table, on the right. Then you can use the note text to specify which cell the note refers to. 
+We now advise that you add a notes column to the table, on the right. You can either use the note text in the notes table to specify which cell the note refers to or you cam write it into the notes column itself (remember all text should be in square brackets, for example: "[note 1] [This note refers to cells B10, B11 and B12]"  
 
 Communicating the note in this way means you can use colour to emphasise the cell that has the note. This is OK in this instance because while the rules about colour state it cannot be used as the only way to communicate a message, it can be used for extra emphasis. However, you would still need to check the colour contrast of the text against the background colour met the AA level in the WCAG guidelines. More information on checking colour contrast can be found in the [Formatting and use of colour](#Formatting-and-use-of-colour) section.  
 
-An example of notes for specific cells is coming soon. 
+An example of using a notes column to refer to specific cells is coming soon. 
 
 ### Footnotes and machine readability 
 If optimising a spreadsheet to be solely read by machines, you should have no cover sheet, notes worksheet or any note markers. All footnotes and other information contained in the cover sheet should be in a metadata file which specifies which cells refer to which notes. More information on this can be found in the [Metadata worksheets](#metadata-worksheets) section. 
@@ -470,6 +477,8 @@ However, use of symbols is not always a fail of the accessibility guidelines. Yo
 Deque (a company that helps businesses make their websites and mobile applications accessible) has published [research into how different screen reader software deals with symbols](https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/) when using their default settings. They list 17 characters considered 'safe' to use. These include £, %, & and /. But, as mentioned, some users may have changed their settings from the default so in general it is best to use words instead of symbols wherever possible. 
 
 It is OK to use dashes and slashes in classifications and geography codes as these are needed for consistency.  
+
+We are aware that this advice goes against our previously published guidance["Using symbols in tables"](https://gss.civilservice.gov.uk/policy-store/symbols-in-tables-definitions-and-help/). We are looking to update this guidance very soon. 
 
 ### Classifications and geography codes 
 You may need to use classifications or [geography codes](https://www.ons.gov.uk/methodology/geography/geographicalproducts/namescodesandlookups/namesandcodeslistings/namesandcodesforadministrativegeography) in your tables.
