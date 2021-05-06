@@ -389,9 +389,9 @@ Be aware that colours are coded in different ways. To use the WebAIM colour cont
 #### Accessible colours
 Assuming you have left the background of your spreadsheet to "No fill" (which we advise you to do), setting text to the following colour codes is accessible at both the AA and AAA level: 
 
-* Blue text with RGB code: rgb(0,0,255) and hex code: #0000FF
-* Red text with RGB code: rgb(179,0,0) and hex code: #B30000
-* Green text with RGB code: rgb(50,100,5) and hex code: #326405
+* Blue text with RGB code:(0,0,255) and hex code: #0000FF
+* Red text with RGB code:(179,0,0) and hex code: #B30000
+* Green text with RGB code:(50,100,5) and hex code: #326405
 
 
 ### Checking colour contrast in charts 
