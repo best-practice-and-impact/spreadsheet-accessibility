@@ -347,7 +347,7 @@ This means:
 * do not use dashes, use 'to', for example, do not use 'Jan – Mar 2020' use 'Jan to Mar 2020'
 * it is fine to truncate days and months to save space
 * do not truncate years, for example, write: 'Jan 1931' not 'Jan 31' 
-* when referring to quarters of the year, write out the months, for example, 'Jan to Mar 2020' not 'Q1 2020'
+* when referring to quarters of the year, write out the months, for example, 'Jan to Mar 2020' not 'Q1 2020' - if your users need Q1, Q2, Q3, Q4 to aid calculations or coding then you must define what this shorthand means in a cell in column A, above the table so a user comes to this information before getting to the table itself. 
 * if your data needs specific dates for example: 01/02/10 you can present them like this but be aware screen readers will read this as '01 slash 02 slash 10' which can be annoying and cause auditory clutter, so it is best practice to write '1 Feb 2010'
 
 ### Other pointers for formatting that must be followed to meet the accessibility guidelines: 
