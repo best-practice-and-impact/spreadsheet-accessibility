@@ -718,11 +718,11 @@ The first table on the worksheet should border the left hand edge of the workshe
 Tables should be separated by a single blank row or column - large gaps between tables could be misunderstood by screen reader users.
 
 ## Macros, formulas and application code
-We advise you to avoid publishing spreadsheets with macros in. It is difficult to ensure these meet the accessibility regulations and, in general, they are bad for machine readability. 
+We advise you to avoid publishing spreadsheets with macros in. It is difficult to ensure these meet the accessibility regulations and, in general, they are bad for machine readability. They may also be a security risk.
 
-It is also best practice to remove formulas and any application code contained in your spreadsheet. Formulas and code can cause confusion and they can pose a security risk. 
+It is also best practice to remove any other formulas or application code contained in your spreadsheet. Formulas and code can cause confusion and they can pose a security risk. 
 
-If you have to include formulas or code, ensure they are hard coded to avoid accidental errors in use.
+If you have to include formulas or code, ensure they are hard coded to avoid accidental errors in use and check with your IT or security team about the associated risks. 
 
 ## Accessibility checker
 Newer versions of Excel have a built-in accessibility checker. You can use this to see what issues it flags up. But remember it is a bit like using a spelling and grammar check. It is likely to miss some things and it may bring up things that are not relevant.  
