@@ -255,7 +255,7 @@ If you do need to use filters it is important to provide signposts or comments t
 This information should be in a cell in column A, above the table so users come across it before getting to the data. 
 
 ### Adding freeze panes
-We advise you to avoid adding freeze panes. They may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable) as they can make it difficult for screen reader users to find the top left edge of a worksheet, which is key to navigation. 
+We advise you to avoid adding freeze panes as they may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable). This is because they make it difficult for screen reader users to find the top left edge of a worksheet and they limit how much space a user has to navigate (this is particularly important for users who are using an increased zoom level).
 
 If you do leave freeze panes active it is best practice to inform users and give instructions on how to turn them off. For example: "Freeze panes are turned on. To turn off freeze panes select the 'View' ribbon then 'Freeze Panes' then 'Unfreeze Panes' or use [Alt W, F]". As with filters, this information should be in a cell in column A, above the table so users come across it before getting to the data. 
 
