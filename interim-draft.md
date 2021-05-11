@@ -290,7 +290,7 @@ More information on the use of symbols can be found in the [Symbols, footnotes a
 ### Shorthand for cells with no data
 When it is not possible to present a full word within a data table, shorthand can be used. We have a draft update to our [Using symbols in tables](https://github.com/best-practice-and-impact/using-symbols-in-tables-draft-update/blob/main/draft-one.md) guidance that outlines harmonised shorthand to use in common situations. Using this guidance ensures cells with no data are marked up in a consistent way across government statistics and analysis. 
 
-If you use shorthand you should make sure to outline what this shorthand means above the table in a cell in column A. This will ensure a user comes across this information before they get to the table itself.
+If you use shorthand you should make sure to outline what this shorthand means above the table in a cell in column A. This will ensure a user comes across this information before they get to the table itself. Also make sure to put the shorthand in square brackets as this makes it easier to spot and helps with machine readability.  
 
 > [Example of presenting a key for shorthand and notes (ODS, 4.4KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/04/Example-table-with-notes-and-a-key.ods)
 
