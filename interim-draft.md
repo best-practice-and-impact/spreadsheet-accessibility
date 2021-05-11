@@ -281,8 +281,6 @@ In terms of usability, blank cells in a table may be considered bad practice as 
 
 Therefore our advice for cells with no data is to give users information about why there is no data, without using symbols like full stops (..) or dashes (-). Instead, cells with no data should be marked up descriptively, using a word to describe why a cell has no data  for example: '[missing]' or '[disclosive]'. This word should be displayed in brackets because this makes things easier for programmers to adapt spreadsheets for machines to read. We advise the use of square brackets for all descriptions or note markers because we advise round brackets for descriptions of units - it is consistency in the type of brackets used that is important.
 
-> [Example of blank cells marked up descriptively (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/04/Example-table-with-empty-cells.ods)
-
 If you wish to expand on any of your descriptions (for example to explain why some data is missing) you should present the information above the table, in a cell in column A so the information is available before a user comes to the table itself. If the information is lengthy, you can say the full explanation is available on the cover sheet or in the notes table (more information on the cover sheet and notes table can be found in the [Structure](#Structure) and [Metadata worksheets](#Metadata-worksheets) sections). 
 
 More information on the use of symbols can be found in the [Symbols, footnotes and codes](#symbols-footnotes-and-codes) section). 
@@ -292,7 +290,7 @@ When it is not possible to present a full word within a data table, shorthand ca
 
 If you use shorthand you should make sure to outline what this shorthand means above the table in a cell in column A. This will ensure a user comes across this information before they get to the table itself. Also make sure to put the shorthand in square brackets as this makes it easier to spot and helps with machine readability.  
 
-> [Example of presenting a key for shorthand and notes (ODS, 4.4KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/04/Example-table-with-notes-and-a-key.ods)
+> [Example of cells with no data marked up descriptively and with shorthand (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/05/Example-table-with-marked-up-empty-cells.ods)
 
 ### No to NA
 Note that in our draft update to 'Using symbols in tables' we do not advise using 'NA' to describe cells with no data. While in statistics this often means Not Available, many users will assume it means Not Applicable. 
