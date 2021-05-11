@@ -423,7 +423,9 @@ If an image is just decorative you should mark it as such by ticking the 'Decora
 ### Short footnotes 
 It is best practise in terms of accessibility (and arguably, usability) to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in square brackets instead of using '[p]' or '[r]'. 
 
-However, when needed, using letters to signify notes is generally OK as long as the key to what these letters mean is clearly laid out above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table. However, you should not use superscript text as this can be difficult to see for users with low vision and screen reader software does not differentiate superscript text from non-superscript text. You should also avoid using symbols to signpost to notes (see the sub section 'Use of symbols'). 
+However, using letters to signify notes is fine as long as the key to what these letters mean is clearly laid out above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table. However, you should not use superscript text as this can be difficult to see for users with low vision and screen reader software does not differentiate superscript text from non-superscript text. 
+
+You should not use symbols to signpost to notes (see the sub section 'Use of symbols'). We have a draft update to our guidance on [Using symbols in tables](https://github.com/best-practice-and-impact/using-symbols-in-tables-draft-update/blob/main/draft-one.md) which outlines harmonsed shorthand to use in common situations, for exmaple using e for estimated, x for not available. Using this guidance ensures consistent shorthand is used across government which is good for accessibility, usability and machine readability. 
 
 ### Detailed footnotes
 When signposting to detailed footnotes we advise you to: 
@@ -448,13 +450,13 @@ Notes placed underneath a table will not necessarily fail the accessibility guid
 > See the labour market [example spreadsheet](#example-spreadsheet) also. 
 
 ### Footnotes for specific cells 
-Sometimes it is not possible to put a note marker in a title, column heading or row label because it needs to sit within a specific cell. When this is the case we have previously advised to put the marker in separate (very narrow) columns, next to the data. 
+Sometimes it is not possible to put a note marker in a title, column heading or row label because it refers to a specific cell. When this is the case we have previously advised to put the marker in separate (very narrow) columns, next to the data. 
 
 However, we no longer advise this approach. Firstly because in terms of accessibility all these columns would need headers and all the blank cells would need to be marked up. This would make the table very wide and difficult to read.
 
 Secondly because in terms of machine readability taking this approach often means note columns get added in and taken out fairly often. This means the size and layout of tables changes quite a lot which is no good for programmers or Reproducible Analytical Pipelines. 
 
-We now advise that you add a notes column to the table, on the right. You can either use the note text in the notes table to specify which cell the note refers to or you cam write it into the notes column itself (remember all text should be in square brackets, for example: "[note 1] [This note refers to cells B10, B11 and B12]"  
+We now advise that you add a notes column to the table, on the right. You can either use the note text in the notes table to specify which cell the note refers to or you can write it into the notes column itself (remember all text should be in square brackets, for example: '[note 1] [This note refers to cells B10, B11 and B12]'.  
 
 Communicating the note in this way means you can use colour to emphasise the cell that has the note. This is OK in this instance because while the rules about colour state it cannot be used as the only way to communicate a message, it can be used for extra emphasis. However, you would still need to check the colour contrast of the text against the background colour met the AA level in the WCAG guidelines. More information on checking colour contrast can be found in the [Formatting and use of colour](#Formatting-and-use-of-colour) section.  
 
@@ -471,13 +473,13 @@ You should not use symbols to signpost footnotes because:
 
 Therefore, if you use symbols to signify notes it may lead to a fail of accessibility [guideline 1 perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
  
-However, use of symbols is not always a fail of the accessibility guidelines. You just need to be aware that some screen reader software will not recognise symbols and some screen reader users may have changed their settings to ignore symbols to avoid auditory clutter. This means you should consider how your text reads if you miss out the symbols. For example the sentence 'Some shorthand is used in this spreadsheet, e = estimated, r = revised' still makes sense if read out as 'Some shorthand is used in this spreadsheet, e estimated, r revised'. 
+However, use of symbols is not always a fail of the accessibility guidelines in all circumstances. You just need to be aware that some screen reader software will not recognise symbols and some screen reader users may have changed their settings to ignore symbols to avoid auditory clutter. This means you should consider how your text reads if you miss out the symbols. For example the sentence 'Some shorthand is used in this spreadsheet, e = estimated, r = revised' still makes sense if read out as 'Some shorthand is used in this spreadsheet, e estimated, r revised'. 
 
-Deque (a company that helps businesses make their websites and mobile applications accessible) has published [research into how different screen reader software deals with symbols](https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/) when using their default settings. They list 17 characters considered 'safe' to use. These include £, %, & and /. But, as mentioned, some users may have changed their settings from the default so in general it is best to use words instead of symbols wherever possible. 
+Deque (a company that helps businesses make their websites and mobile applications accessible) has published [research into how different screen reader software deals with symbols](https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/) when using their default settings. They list 17 characters considered 'safe' to use. These include £, %, & and /. But, as mentioned, some users may have changed their settings from the default so in general it is best to use letters or words instead of symbols wherever possible. 
 
 It is OK to use dashes and slashes in classifications and geography codes as these are needed for consistency.  
 
-We are aware that this advice goes against our previously published guidance["Using symbols in tables"](https://gss.civilservice.gov.uk/policy-store/symbols-in-tables-definitions-and-help/). We are looking to update this guidance very soon. 
+We are aware that this advice goes against our previously published guidance["Using symbols in tables"](https://gss.civilservice.gov.uk/policy-store/symbols-in-tables-definitions-and-help/). We have developed a [draft update](https://github.com/best-practice-and-impact/using-symbols-in-tables-draft-update/blob/main/draft-one.md) to this guidance which we hope to publish soon. 
 
 ### Classifications and geography codes 
 You may need to use classifications or [geography codes](https://www.ons.gov.uk/methodology/geography/geographicalproducts/namescodesandlookups/namesandcodeslistings/namesandcodesforadministrativegeography) in your tables.
