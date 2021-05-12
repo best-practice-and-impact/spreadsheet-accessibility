@@ -398,7 +398,7 @@ It is best practise in terms of accessibility (and arguably, usability) to put a
 
 If you do need to use letters as a shorthand because of visual clutter, make sure to present a key to what these letters mean above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table. 
 
-You should not use superscript text or symbols as these can be difficult to for users with low vision to see. Furthermore, screen reader software does not differentiate superscript text from non-superscript text and often ignores symbols compeletly becuase it does not recognise them. Therefore symbols and superscript text could fail accessibility [guideline 3.1 Readable](https://www.w3.org/TR/WCAG21/#readable) and accessibility [success criterion 1.1.1 non text content](https://www.w3.org/TR/WCAG21/#non-text-content). 
+You should not use superscript text or symbols as these can be difficult to for users with low vision to see. Furthermore, screen reader software does not differentiate superscript text from non-superscript text and often ignores symbols compeletly becuase it does not recognise them. Therefore symbols and superscript text could fail accessibility [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable) and accessibility [success criterion 1.1.1 non text content](https://www.w3.org/TR/WCAG21/#non-text-content). 
 
 We have a draft update to our guidance on [Using symbols in tables](https://github.com/best-practice-and-impact/using-symbols-in-tables-draft-update/blob/main/draft-one.md) which outlines harmonised shorthand to use in common situations, for exmaple using e for estimated, x for not available. Using this guidance will help to ensure consistent shorthand is used across government which is good for accessibility, usability and machine readability. 
 
@@ -448,7 +448,7 @@ You should not use symbols to signpost footnotes because:
 * screen readers may not recognise them 
 * users with low vision may not be able to see them
 
-Therefore, if you use symbols to signify notes it may lead to a fail of accessibility [guideline 1 perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
+Therefore, if you use symbols to signify notes it may lead to a fail of a number of accessibility guidelines and success criterion, including [guideline 1 perceivable](https://www.w3.org/TR/WCAG21/#perceivable), [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable), [success criterion 1.1.1 non text content](https://www.w3.org/TR/WCAG21/#non-text-content) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
  
 However, use of symbols is not always a fail of the accessibility guidelines in all circumstances. You just need to be aware that some screen reader software will not recognise symbols and some screen reader users may have changed their settings to ignore symbols to avoid auditory clutter. This means you should consider how your text reads if you miss out the symbols. For example the sentence 'Some shorthand is used in this spreadsheet, e = estimated, r = revised' still makes sense if read out as 'Some shorthand is used in this spreadsheet, e estimated, r revised'. 
 
