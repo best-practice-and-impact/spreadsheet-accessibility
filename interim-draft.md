@@ -13,7 +13,6 @@ If you have any questions or feedback, please email [gsshelp@statistics.gov.uk](
 * [Accessibility, usability and machine readability](#Accessibility-usability-and-machine-readability)
 * [Example of an accessible spreadsheet](#Example-of-an-accessible-spreadsheet)
 * [Engage with users before making changes](#Engage-with-users-before-making-changes)
-* [Document information](#Document-information)
 * [Tables](#Tables)
 * [Cells with no data](#Cells-with-no-data)
 * [Formatting and use of colour](#Formatting-and-use-of-colour)
@@ -74,31 +73,6 @@ Some questions you might want to ask:
 * Are all of your statistics still needed and used?
 * What additional information is needed to support your users in their use and re-use of the statistics?
 * Are your statistics presented in ways which are simple and convenient for your users?
-
-
-## Document information 
-Providing clear and useful document information improves usability. 
-
-The accessibility guidelines require the title field and information about document language to be complete ([success criterion 2.4.2 page titled](https://www.w3.org/TR/WCAG21/#page-titled) and [3.1.1 language of page](https://www.w3.org/TR/WCAG21/language-of-page)). It is usability best practice to also fill in the author and keyword fields. 
-
-### Adding document information
-Go to 'File', then 'Info' and fill in the following fields:
-* Title
-
-Type in the title of the spreadsheet (more information about titles can be found in the 'Titles of spreadsheets, worksheets and tables' section of this guidance). 
-
-Do not use dashes or underscores here.
-
-* Author
-
-Generally this should be the organisation that published the document – avoid using names of individuals.
-
-* Keywords or Tags
-
-Put in a list of terms that someone might use to search for the document, separated by commas. This helps search engines find the document. It also helps with finding your document internally.
-
-### Setting the document language
-Go to 'File', then 'Options', then 'Language'. Make sure the document has the correct language(s) selected.
 
 ## Tables
 
@@ -737,6 +711,30 @@ Pointers for usability and accessibility:
 * Ensure the spreadsheet itself and all worksheets within it, open in a sensible place by placing the cursor in cell A1 on each of the worksheets before you save.
 * Zoom should be set to 100% when you save your spreadsheet to ensure no enlargement or reduction is active.
 * Avoid zip files as these can be blocked by organisational policies 
+
+### Document information
+Before saving your spreadsheet you should make sure you have provided clear and useful document information. 
+
+The accessibility guidelines require the title field and information about document language to be complete ([success criterion 2.4.2 page titled](https://www.w3.org/TR/WCAG21/#page-titled) and [3.1.1 language of page](https://www.w3.org/TR/WCAG21/language-of-page)). It is usability best practice to also fill in the author and keyword fields.
+
+#### How to add document information
+Go to 'File', then 'Info' and fill in the following fields:
+* Title
+
+Type in the title of the spreadsheet (more information about titles can be found in the 'Titles of spreadsheets, worksheets and tables' section of this guidance). 
+
+Do not use dashes or underscores here.
+
+* Author
+
+Generally this should be the organisation that published the document – avoid using names of individuals.
+
+* Keywords or Tags
+
+Put in a list of terms that someone might use to search for the document, separated by commas. This helps search engines find the document. It also helps with finding your document internally.
+
+### How to set the document language
+Go to 'File', then 'Options', then 'Language'. Make sure the document has the correct language(s) selected.
 
 ### Information to put on the webpage where the link to the spreadsheet lives
 Ensure the webpage that houses the link to your spreadsheet contains a clear description of your data and has clear signposts to supporting information. This will help users find, understand and use your data.
