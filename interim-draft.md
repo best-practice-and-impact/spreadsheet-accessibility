@@ -8,6 +8,26 @@ This guidance is an update to the ['Releasing statistics in spreadsheets' guidan
 
 If you have any questions or feedback, please email [gsshelp@statistics.gov.uk](mailto:gsshelp@statistics.gov.uk).  
 
+## Contents 
+
+* [Accessibility, usability and machine readability](#Accessibility-usability-and-machine-readability)
+* [Example of an accessible spreadsheet](#Example-of-an-accessible-spreadsheet)
+* [Engage with users before making changes](#Engage-with-users-before-making-changes)
+* [Document information](#Document-information)
+* [Tables](#Tables)
+* [Cells with no data](#Cells-with-no-data)
+* [Formatting and use of colour](#Formatting-and-use-of-colour)
+* [Images](#Images) 
+* [Symbols, footnotes and codes](#Symbols-footnotes-and-codes)
+* [Structure](#Structure)
+* [Titles of spreadsheets, worksheets and tables](#Titles-of-spreadsheets-worksheets-and-tables)
+* [Metadata worksheets](#metadata-worksheets)
+* [Communicating uncertainty in spreadsheets](#Communicating-uncertainty-in-spreadsheets)
+* [Worksheets with multiple tables](#Worksheets-with-multiple-tables)
+* [Macros, formulas and application code](#Macros-formulas-and-application-code)
+* [Accessibility checker](#Accessibility-checker)
+* [Saving and publishing spreadsheets](#Saving-and-publishing-spreadsheets)
+
 ## Accessibility, usability and machine readability 
 
 ### Accessibility 
@@ -36,25 +56,6 @@ We have applied our accessibility guidance to the summary of labour market stati
 > “When using the spreadsheet with [screen reader software] JAWS and NVDA I found it to be a pleasant experience. In the past I have found spreadsheets to be extremely confusing, disorientating and stressful. In part this stress came from having to make the document partially accessible for my own needs. If all spreadsheets were created with as much care and attention to detail, I may not be as reluctant to work with them as I am today."
 
 The [ONS labour market summary datasets webpage](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics/current) has a link to the summary of labour market statistics spreadsheet as it was published by ONS in December 2020. 
-
-## Contents 
-
-* [Engage with users before making changes](#Engage-with-users-before-making-changes)
-* [Document information](#Document-information)
-* [Tables](#Tables)
-* [Cells with no data](#Cells-with-no-data)
-* [Formatting and use of colour](#Formatting-and-use-of-colour)
-* [Images](#Images) 
-* [Symbols, footnotes and codes](#Symbols-footnotes-and-codes)
-* [Structure](#Structure)
-* [Titles of spreadsheets, worksheets and tables](#Titles-of-spreadsheets-worksheets-and-tables)
-* [Metadata worksheets](#metadata-worksheets)
-* [Communicating uncertainty in spreadsheets](#Communicating-uncertainty-in-spreadsheets)
-* [Worksheets with multiple tables](#Worksheets-with-multiple-tables)
-* [Macros, formulas and application code](#Macros-formulas-and-application-code)
-* [Accessibility checker](#Accessibility-checker)
-* [Saving and publishing spreadsheets](#Saving-and-publishing-spreadsheets)
-
 
 ## Engage with users before making changes
 Before making any big changes to your spreadsheets you should consult with your users, to warn them of any changes and to find out more about their needs. 
