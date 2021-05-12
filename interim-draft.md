@@ -454,9 +454,11 @@ However, we no longer advise this approach. Firstly because in terms of accessib
 
 Secondly because in terms of machine readability taking this approach often means note columns get added in and taken out fairly often. This means the size and layout of tables changes quite a lot which is no good for programmers or Reproducible Analytical Pipelines. 
 
-We now advise that you add a notes column to the table, on the right. You can either use the note text in the notes table to specify which cell the note refers to or you can write it into the notes column itself (remember all text should be in square brackets, for example: '[note 1] [This note refers to cells B10, B11 and B12]'.  
+In terms of accessibility we now advise that you add a notes column to the table, on the right. You should describe which cell or cells the note applies to but remember all text should be in square brackets, for example: '[note 1] [This note applies to B10, C10 and D10]'.  
 
-Communicating the note in this way means you can use colour to emphasise the cell that has the note. This is OK in this instance because while the rules about colour state it cannot be used as the only way to communicate a message, it can be used for extra emphasis. However, you would still need to check the colour contrast of the text against the background colour met the AA level in the WCAG guidelines. More information on checking colour contrast can be found in the [Formatting and use of colour](#Formatting-and-use-of-colour) section.  
+Communicating the note in this way means you can use colour to emphasise the cell or cells that the note applies to. This is OK in this instance because while the rules about colour state it cannot be used as the only way to communicate a message, it can be used for extra emphasis. However, you still need to check the colour contrast of the text against the background colour meets the AA level in the accessibility guidelines. More information on checking colour contrast can be found in the [Formatting and use of colour](#Formatting-and-use-of-colour) section.  
+
+In terms of machine readability, you would need to specify which variables the note applies to in the notes column as cell references do not carry through. For example: [Variable B, Variable C:note 1]. This would also be OK for accessibility if your variable names are short, if they are long then a person may need to horizontally scroll to read the notes column and this can make things difficult for some users. 
 
 An example of using a notes column to refer to specific cells is coming soon. 
 
