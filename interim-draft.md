@@ -733,7 +733,7 @@ Generally this should be the organisation that published the document – avoid 
 
 Put in a list of terms that someone might use to search for the document, separated by commas. This helps search engines find the document. It also helps with finding your document internally.
 
-### How to set the document language
+#### How to set the document language
 Go to 'File', then 'Options', then 'Language'. Make sure the document has the correct language(s) selected.
 
 ### Information to put on the webpage where the link to the spreadsheet lives
