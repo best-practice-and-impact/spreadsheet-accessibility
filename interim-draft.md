@@ -349,7 +349,7 @@ In terms of machine readability you should also:
 
 * avoid using Excel's indentation tool to indicate subsections or hierarchies (for example indenting a list of regions under a row for 'England') 
 * ensure no cells with text have 'hidden' spaces at the start or end
-* check there are no spaces at the start or end of worksheet names
+* check there are no 'hidden' spaces in tab labels (a good way to avoid this happening is to put underscores between each word, for example: 'Top_10_baby_names') 
 * consider providing a data Application Programming Interface (API) to aid further analysis
 
 ### Checking text colour contrast  
@@ -502,7 +502,7 @@ Ideally each worksheet should have a unique name that clearly describes the info
 
 To avoid any confusion for assistive technology and to improve usability and machine readability you should: 
 
-* remove extra spaces from the start or end of worksheet names
+* check there are no 'hidden' spaces in tab labels (a good way to avoid this happening is to put underscores between each word, for example: 'Top_10_baby_names') 
 * keep worksheet names as consistent as you can between releases
 
 #### Blank worksheets
@@ -616,7 +616,7 @@ Make sure all the written content follows the advice in the ['Making written con
 
 If you have a lot of worksheets in your spreadsheet you should create a table of contents that describes the data within each worksheet. This will ensure you meet accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
-This can live within the cover sheet or on its own worksheet, but make sure it is marked up properly as a table and named 'Table of contents' (more information on marking up and naming tables can be found in the [Tables](#tables) section. If it is on its own worksheet make sure this is named 'Table of contents'.
+This can live within the cover sheet or on its own worksheet, but make sure it is marked up properly as a table and named 'Table of contents' (more information on marking up and naming tables can be found in the [Tables](#tables) section). If it is on its own worksheet make sure this is named 'Table of contents'.
 
 This table of contents can also contain other information such as the source of the data (particularly if several different sources are used throughout the spreadsheet), the date of the last update and the date of the next update. 
 
