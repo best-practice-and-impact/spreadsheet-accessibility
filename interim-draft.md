@@ -435,12 +435,10 @@ In terms of accessibility we now advise that you add a notes column to the table
 
 Communicating the note in this way means you can use colour to emphasise the cell or cells that the note applies to. This is OK in this instance because while the rules about colour state it cannot be used as the only way to communicate a message, it can be used for extra emphasis. However, you still need to check the colour contrast of the text against the background colour meets the AA level in the accessibility guidelines. More information on checking colour contrast can be found in the [Formatting and use of colour](#Formatting-and-use-of-colour) section.  
 
-In terms of machine readability, you would need to specify which variables the note applies to in the notes column as cell references do not carry through. For example: [Variable B, Variable C:note 1]. This would also be OK for accessibility if your variable names are short, if they are long then a person may need to horizontally scroll to read the notes column and this can make things difficult for some users. 
-
 An example of using a notes column to refer to specific cells is coming soon. 
 
 ### Footnotes and machine readability 
-If optimising a spreadsheet to be solely read by machines, you should have no cover sheet, notes worksheet or any note markers. All footnotes and other information contained in the cover sheet should be in a metadata file which specifies which cells refer to which notes. More information on this can be found in the [Metadata worksheets](#metadata-worksheets) section. 
+If optimising data to be solely read by machines, you should be supplying it as a [CSVW (CSV on the web)](https://www.w3.org/TR/tabular-data-primer/) or through an Application Programming Interface (API). Notes are supplied differently when you supply data in these forms. More information on this can be found in the [Metadata worksheets](#metadata-worksheets) section. 
 
 ### Use of symbols 
 You should not use symbols to signpost footnotes because: 
@@ -632,7 +630,7 @@ Remember that the table of notes will need to be marked up and named appropriate
 
 ### How to supply metadata if optimising for machine readability
 
-If you are publishing a spreadsheet optimised for machine readability it is best to remove all information about the data (metadata) from the spreadsheet file. This includes information in the cover sheet, table of contents and any notes. Metadata should instead be provided via an associated metadata file. For example, metadata for 'statistics.csv' should be provided in the 'statistics.csv-metadata.json' file. See [CSVW (CSV on the web)]( https://www.w3.org/TR/tabular-data-primer/#metadata) for an appropriate metadata file specification.
+If you are publishing data to be solely read by machines, metadata should be provided via an associated metadata file. For example, metadata for 'statistics.csv' should be provided in the 'statistics.csv-metadata.json' file. See [CSVW (CSV on the web)]( https://www.w3.org/TR/tabular-data-primer/#metadata) for an appropriate metadata file specification.
 
 We are developing guidance on how to best provide metadata for datasets optimised solely for machine readability. 
 
