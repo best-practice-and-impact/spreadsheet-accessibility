@@ -435,7 +435,7 @@ In terms of accessibility we now advise that you add a notes column to the table
 
 Communicating the note in this way means you can use colour to emphasise the cell or cells that the note applies to. This is OK in this instance because while the rules about colour state it cannot be used as the only way to communicate a message, it can be used for extra emphasis. However, you still need to check the colour contrast of the text against the background colour meets the AA level in the accessibility guidelines. More information on checking colour contrast can be found in the [Formatting and use of colour](#Formatting-and-use-of-colour) section.  
 
-An example of using a notes column to refer to specific cells is coming soon. 
+> [Example of using a notes column to refer to specific cells with colour used as emphasis.](https://gss.civilservice.gov.uk/wp-content/uploads/2021/05/Example-of-a-table-with-a-notes-column-and-colour-emphasis.ods)
 
 ### Footnotes and machine readability 
 If optimising data to be solely read by machines, you should be supplying it as a [CSVW (CSV on the web)](https://www.w3.org/TR/tabular-data-primer/) or through an Application Programming Interface (API). Notes are supplied differently when you supply data in these forms. More information on this can be found in the [Metadata worksheets](#metadata-worksheets) section. 
