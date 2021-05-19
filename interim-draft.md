@@ -266,7 +266,7 @@ When using shorthand you should mention it is used and explain what it means, in
 
 More information on the use of symbols can be found in the [Symbols, footnotes and codes](#symbols-footnotes-and-codes) section). 
 
-> [Example of cells with no data marked up with shorthand (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/05/Example-table-with-shorthand-empty-cells.ods)
+> [Example of cells with no data marked up with shorthand (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/05/Example-table-with-shorthand-for-empty-cells.ods)
 
 ### No to NA
 Note that in our draft update to 'Using symbols in tables' we do not advise using 'NA' to describe cells with no data. While in statistics this often means Not Available, many users will assume it means Not Applicable. 
