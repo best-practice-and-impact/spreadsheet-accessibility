@@ -266,13 +266,15 @@ When using shorthand you should mention it is used and explain what it means, in
 
 More information on the use of symbols can be found in the [Symbols, footnotes and codes](#symbols-footnotes-and-codes) section). 
 
-> [Example of cells with no data marked up descriptively and with shorthand (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/05/Example-table-with-marked-up-empty-cells.ods)
+> [Example of cells with no data marked up with shorthand (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/05/Example-table-with-shorthand-empty-cells.ods)
 
 ### No to NA
 Note that in our draft update to 'Using symbols in tables' we do not advise using 'NA' to describe cells with no data. While in statistics this often means Not Available, many users will assume it means Not Applicable. 
 
 ### Give a heads up 
-If your spreadsheet contains cells with no data for many different reasons - for example some are empty becuase the data was missing, some because the variable was not applicable - it is good practice for accessibility and machine readability to outline the possible reasons for empty cells on the cover sheet. You can say something like 'Some tables in this spreadsheet have cells with no data. When this is the case the cells are marked up descriptively as either "[missing]", "[disclosive]" or "[unavailable]"'. This means users know what to expect and programmers are better able to write code that matches what is in your tables. 
+If your spreadsheet contains cells with no data for many different reasons - for example some are empty becuase the data was missing, some because the variable was not applicable - it is good practice for accessibility and machine readability to outline the possible reasons for empty cells on the cover sheet. You can say something like 'Some tables in this spreadsheet have cells with no data. When this is the case the cells are marked up with shorthand: [x] for not available, [c] for confidential and [z] for not applicable'. This means users know what to expect and programmers are better able to write code that matches what is in your tables. 
+
+Please note the shorthand suggested here is taken from our draft update to the [Using symbols in tables guidance](https://gss.civilservice.gov.uk/policy-store/symbols-in-tables-definitions-and-help/) - please feedback if you have any comments on this update.  
 
 ### Machine readability for cells with no data  
 If you are making a spreadsheet solely for machines to read, it is best practice to leave cells with no data blank and use your metadata file to specify why the cells are blank. More information on how to provide metadata when optimising for machine readability is in the [Metadata worksheets](#Metadata-worksheets) section.
