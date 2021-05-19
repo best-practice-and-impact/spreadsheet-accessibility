@@ -48,7 +48,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 
 ## Example of an accessible spreadsheet
 
-> [Labour market overview data tables, UK, December 2020: accessibility example (ODS, 664KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/05/Labour-market-overview-accessible-example.ods)
+> [Labour market overview data tables, UK, December 2020: accessibility example (ODS, 664KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/05/Labour-market-overview-UK-accessible-example.ods)
 
 We have applied our accessibility guidance to the summary of labour market statistics spreadsheet published in December 2020 by the Office for National Statistics (ONS). We hope this example will help you understand and apply this guidance. We have addressed four of the worksheets in this large and complex spreadsheet. The Digital Accessibility Centre (DAC) have audited this edited version and are happy that it meets all the accessibility guidelines. The feedback from DAC's accessibility tester illustrates the frustrations many users of assistive technology normally have with spreadsheets: 
 
@@ -250,20 +250,21 @@ Note: it is necessary to provide alternative text for images and charts and this
 ### Accessibility and usability for cells with no data
 When cells within a table that contain no data are left blank, it can cause confusion for users of assistive technology because it makes it difficult for their technology to work out where the table starts and ends. Therefore, blank cells could be considered a fail of accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
 
-However, we are carrying out research into this. It may be the case that if a table is marked up correctly, blank cells within a table do not cause a problem for navigation with assistive technology. 
+Furthermore, in terms of usability, blank cells in a table may be considered bad practice as they do not tell a user why there is no data in the cell - a user might incorrectly assume the data value is zero or that there has been a mistake and data is missing. 
 
-In terms of usability, blank cells in a table may be considered bad practice as they do not tell a user why there is no data in the cell - a user might incorrectly assume the data value is zero or that there has been a mistake and data is missing. 
+However, if the following points are met, blank cells should not cause usability or accessibility issues: 
 
-Therefore our advice for cells with no data is to give users information about why there is no data, without using symbols like full stops (..) or dashes (-). Instead, cells with no data should be marked up descriptively, using a word to describe why a cell has no data  for example: '[missing]' or '[disclosive]'. This word should be displayed in brackets because this makes things easier for programmers to adapt spreadsheets for machines to read. We advise the use of square brackets for all descriptions or note markers because we advise round brackets for descriptions of units - it is consistency in the type of brackets used that is important.
+1. There is only one reason a cell in a table may be left blank
+2. The table is marked up correctly (as described in the [tables](#tables) section of this guidance) 
+3. There is a note above the table, in a cell in column A, explaining that some cells are left blank and why 
 
-If you wish to expand on any of your descriptions (for example to explain why some data is missing) you should present the information above the table, in a cell in column A so the information is available before a user comes to the table itself. If the information is lengthy, you can say the full explanation is available on the cover sheet or in the notes table (more information on the cover sheet and notes table can be found in the [Structure](#Structure) and [Metadata worksheets](#Metadata-worksheets) sections). 
+See worksheet 4 on the [example spreadsheet](#Example-of-an-accessible-spreadsheet) for an illustration of this.  
+ 
+If there are several reasons a cell in a table may be left blank you will need to use shorthand to explain why a particular has no data. Do not use symbols like full stops (..) or dashes (-). Follow the harmonised guidance for [Using symbols in tables](https://gss.civilservice.gov.uk/policy-store/symbols-in-tables-definitions-and-help/). Using this guidance ensures cells with no data are marked up in a consistent way across government statistics and analysis. Remember we advise the use of square brackets for all descriptions, shorthand or note markers because it makes them easier to spot. We also advise it because we advise round brackets for descriptions of units - consistency in the type of brackets used is important. 
+
+When using shorthand you should mention it is used and explain what it means, in a cell in column A, above the table. If you wish to expand further on why some cells have no data you can say the full explanation is available on the cover sheet or in the notes table (more information on the cover sheet and notes table can be found in the [Structure](#Structure) and [Metadata worksheets](#Metadata-worksheets) sections). 
 
 More information on the use of symbols can be found in the [Symbols, footnotes and codes](#symbols-footnotes-and-codes) section). 
-
-### Shorthand for cells with no data
-When it is not possible to present a full word within a data table, shorthand can be used. We have a draft update to our [Using symbols in tables](https://github.com/best-practice-and-impact/using-symbols-in-tables-draft-update/blob/main/draft-one.md) guidance that outlines harmonised shorthand to use in common situations. Using this guidance ensures cells with no data are marked up in a consistent way across government statistics and analysis. 
-
-If you use shorthand you should make sure to outline what this shorthand means above the table in a cell in column A. This will ensure a user comes across this information before they get to the table itself. Also make sure to put the shorthand in square brackets as this makes it easier to spot and helps with machine readability.  
 
 > [Example of cells with no data marked up descriptively and with shorthand (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/05/Example-table-with-marked-up-empty-cells.ods)
 
