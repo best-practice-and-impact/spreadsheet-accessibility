@@ -48,7 +48,7 @@ We are planning to publish a checklist for making spreadsheets machine readable 
 
 ## Example of an accessible spreadsheet
 
-> [Labour market overview data tables, UK, December 2020: accessibility example (ODS, 664KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/05/Labour-market-accessible-example.ods)
+> [Labour market overview data tables, UK, December 2020: accessibility example (ODS, 664KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/05/Labour-market-overview-accessibility-example.ods)
 
 We have applied our accessibility guidance to the summary of labour market statistics spreadsheet published in December 2020 by the Office for National Statistics (ONS). We hope this example will help you understand and apply this guidance. We have addressed four of the worksheets in this large and complex spreadsheet. The Digital Accessibility Centre (DAC) have audited this edited version and are happy that it meets all the accessibility guidelines. The feedback from DAC's accessibility tester illustrates the frustrations many users of assistive technology normally have with spreadsheets: 
 
