@@ -569,17 +569,22 @@ Pointers:
 To meet accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 2.4.6 headings and labels](https://www.w3.org/TR/WCAG21/#headings-and-labels) the worksheet title should be in Cell A1 and should be marked up as Headings 1 using the 'Cell Styles' tool on the 'Home' ribbon. This 'marks up' the heading which helps assistive technology navigate around the spreadsheet. 
 
 ### Formatting cells tagged as headings
-The Excel default formatting for headings is not accessible. We advise you to modify the default formatting rather than to simply edit the text colour and cell borders as this is better for accessibility. See the [Formatting and use of colour](#formatting-and-use-of-colour) section for more information. 
+The Excel default formatting for headings is not accessible. You can either edit each heading manually or modify the default formatting.
 
-#### How to modify the default formatting of headings
-1. Select the cell the heading text is in.
-2. Select 'Cell Styles' in the 'Styles' section of the 'Home' ribbon. 
-3. Go to the headings style you want to modify (the title of a worksheet should be 'Headings 1').
-4. Right click and select 'Modify'.
-5. Select 'Format'.
-6. Make sure you choose a sans serif font and at least size 12 (although for headings we would suggest a slightly larger font).
-7. Make sure you select the 'automatic' colour setting (see the [Formatting and use of colour](#formatting-and-use-of-colour) section for more information on why this is important).
-8. We would also suggest you go to 'Borders' and select 'None' as underlined text can be hard to read for people with low vision or dyslexia.
+If you edit manually you will need to:
+* choose the automatic colour setting for the font colour (see the [Formatting and use of colour](#formatting-and-use-of-colour) section for more information on why this is important) 
+* ensure you have chosen a sans serif font in at least size 12 (although for titles a larger size of 14 or 16 is better) - sans serif fonts are easier to read, particularly for people with dyslexia
+* remove the automatic cell border - underlined text is harder to read - again,  particularly for people with dyslexia and those with low vision
+
+If you want to modify the default headings settings you must: 
+* Select the cell the heading text is in.
+* Select 'Cell Styles' in the 'Styles' section of the 'Home' ribbon. 
+* Go to the headings style you want to modify (the title of a worksheet should be 'Headings 1').
+* Right click and select 'Modify'.
+* Select 'Format'.
+* Choose a sans serif font and at least size 12
+* Select the 'automatic' colour setting 
+* Go to 'Borders' and select 'None' 
 
 Note: these instructions may differ for different versions of Excel
 
