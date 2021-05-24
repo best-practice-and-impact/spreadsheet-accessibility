@@ -15,9 +15,9 @@ If you have any questions or feedback, please email [gsshelp@statistics.gov.uk](
 * [Engage with users before making changes](#Engage-with-users-before-making-changes)
 * [Tables](#Tables)
 * [Cells with no data](#Cells-with-no-data)
+* [Symbols, footnotes and codes](#Symbols-footnotes-and-codes)
 * [Formatting and use of colour](#Formatting-and-use-of-colour)
 * [Images](#Images) 
-* [Symbols, footnotes and codes](#Symbols-footnotes-and-codes)
 * [Structure](#Structure)
 * [Titles of spreadsheets, worksheets and tables](#Titles-of-spreadsheets-worksheets-and-tables)
 * [Metadata worksheets](#metadata-worksheets)
@@ -284,6 +284,94 @@ Please note the shorthand suggested here is taken from our draft update to the [
 ### Machine readability for cells with no data  
 If you are making a spreadsheet solely for machines to read, it is best practice to leave cells with no data blank and use your metadata file to specify why the cells are blank. More information on how to provide metadata when optimising for machine readability is in the [Metadata worksheets](#Metadata-worksheets) section.
 
+## Symbols, footnotes and codes 
+### Short footnotes 
+It is best practise in terms of accessibility (and arguably, usability) to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in square brackets instead of using '[p]' or '[r]'. 
+
+If you do need to use letters as a shorthand because of visual clutter, make sure to present a key to what these letters mean above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table. 
+
+You should not use superscript text or symbols as these can be difficult to for users with low vision to see. Furthermore, screen reader software does not differentiate superscript text from non-superscript text and often ignores symbols compeletly becuase it does not recognise them. Therefore symbols and superscript text could fail accessibility [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable) and accessibility [success criterion 1.1.1 non text content](https://www.w3.org/TR/WCAG21/#non-text-content). 
+
+We have a draft update to our guidance on [Using symbols in tables](https://github.com/best-practice-and-impact/using-symbols-in-tables-draft-update/blob/main/draft-one.md) which outlines harmonised shorthand to use in common situations, for exmaple using e for estimated, x for not available. Using this guidance will help to ensure consistent shorthand is used across government which is good for accessibility, usability and machine readability. 
+
+### Detailed footnotes
+When you need to signpost detailed footnotes it has been common practice to use superscript numbers and letters. However as superscript text is likely to fail more than one accessibility guideline we can no longer take this approach. If we simply put normal numbers or letters in this could make some text very confusing (for example: 'Number of people in employment1,2') which could lead us to fail accessibility [guideline 1 perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable). Therefore, when signposting to detailed footnotes we advise you to: 
+* write out the word 'note' in the cell, with the number of the note you need to refer to, and put it in square brackets (we advise square brackets for notes and rounded brackets for units to differentiate them in a consistent way), for example 'Number of people in employment [note 1]'
+* present a list of notes if a cell needs to refer to more than one note – for example, write '[note 1],[note 2],[note 3]' if a cell needs to refer to notes 1, 2 and 3. 
+* try to always put notes in table titles, column headings or row labels - putting them in specific cells may not fail accessibility but it does cause problems for machine readability and usability 
+* if a note is in a column heading, space the text so the note marker sits underneath the column header text and any information about units (you can do this by pressing 'Alt and Enter')
+* for each table that uses notes, mention that notes are used, in a cell in column A above the table and say where the note text can be found (more information about use of cells in column A can be found in the [Structure](#Structure) section) 
+* it is good practice to mention notes, where they can be found and how note markers are presented on the cover sheet -  for example: 'Some tables refer to notes. When notes are mentioned the note marker is presented in square brackets. The note text can be found in the notes table' - this tells users what to expect and helps programmers write code that matches what is in your tables (more information on cover sheets can be found in the [Metadata worksheets](#metadata-worksheets) section).  
+
+When displaying the content of detailed notes it is common practice for them to be placed underneath the table. However there are several issues with this: 
+1. It can take lots of scrolling to get to notes placed under very long tables, particularly for some disabled users - this is bad practice for usability and accessibility. 
+2. Notes placed under tables may be missed by some disabled users who are not expecting them to be there. It is possible to combat this by mentioning that notes sit underneath the table, in a cell in column A above the table (more information about use of cells in column A can be found in the [Structure](#Structure) section).
+3. Notes placed underneath a table need careful (and mostly manual) formatting to be made accessible (see the section on [Structure](#Structure) and [Metadata worksheets](#metadata-worksheets) for more information on how written content should be formatted). Without this formatting you may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
+4. Long detailed notes may result in a need for horizontal scrolling which is bad practice for usability and accessibility. This may happen because the note will need to be displayed in one cell - you should not use merged cells to present long notes as merged cells fail accessibility guidelines (see the section on [Tables](#tables)).
+5. In complex spreadsheets, identical notes are often placed under several tables across many worksheets - this can mean, when certain notes are updated or changed, some are accidentally missed out.
+
+For these reasons we advise you to create a worksheet called 'Notes' which contains a table that lists all the detailed notes for the spreadsheet. 
+Notes placed underneath a table will not necessarily fail the accessibility guidelines but they will need careful consideration and, depending on the size of the table and how they are laid out, they may be considered bad practice. 
+
+> [Example of presenting a key for shorthand and notes (ODS, 4.4KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/04/Example-table-with-notes-and-a-key.ods)
+> See the labour market [example spreadsheet](#example-spreadsheet) also. 
+
+### Footnotes for specific cells 
+Sometimes it is not possible to put a note marker in a title, column heading or row label because it refers to a specific cell. When this is the case we have previously advised to put the marker in separate (very narrow) columns, next to the data. 
+
+However, we no longer advise this approach. Firstly because in terms of accessibility all these columns would need headers and all the blank cells would need to be marked up. This would make the table very wide and difficult to read.
+
+Secondly because in terms of machine readability taking this approach often means note columns get added in and taken out fairly often. This means the size and layout of tables changes quite a lot which is no good for programmers or Reproducible Analytical Pipelines. 
+
+In terms of accessibility we now advise that you add a notes column to the table, on the right. You should describe which cell or cells the note applies to but remember all text should be in square brackets, for example: '[note 1] [This note applies to B10, C10 and D10]'.  
+
+Communicating the note in this way means you can use colour to emphasise the cell or cells that the note applies to. This is OK in this instance because while the rules about colour state it cannot be used as the only way to communicate a message, it can be used for extra emphasis. However, you still need to check the colour contrast of the text against the background colour meets the AA level in the accessibility guidelines. More information on checking colour contrast can be found in the [Formatting and use of colour](#Formatting-and-use-of-colour) section.  
+
+> [Example of using a notes column to refer to specific cells with colour used as emphasis.](https://gss.civilservice.gov.uk/wp-content/uploads/2021/05/Example-of-a-table-with-a-notes-column-and-colour-emphasis.ods)
+
+### Footnotes and machine readability 
+If optimising data to be solely read by machines, you should be supplying it as a [CSVW (CSV on the web)](https://www.w3.org/TR/tabular-data-primer/) or through an Application Programming Interface (API). Notes are supplied differently when you supply data in these forms. More information on this can be found in the [Metadata worksheets](#metadata-worksheets) section. 
+
+### Use of symbols 
+You should not use symbols to signpost footnotes because: 
+* they can be confusing
+* screen readers may not recognise them 
+* users with low vision may not be able to see them
+
+Therefore, if you use symbols to signify notes it may lead to a fail of a number of accessibility guidelines and success criterion, including [guideline 1 perceivable](https://www.w3.org/TR/WCAG21/#perceivable), [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable), [success criterion 1.1.1 non text content](https://www.w3.org/TR/WCAG21/#non-text-content) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
+ 
+However, use of symbols is not always a fail of the accessibility guidelines in all circumstances. You just need to be aware that some screen reader software will not recognise symbols and some screen reader users may have changed their settings to ignore symbols to avoid auditory clutter. This means you should consider how your text reads if you miss out the symbols. For example the sentence 'Some shorthand is used in this spreadsheet, e = estimated, r = revised' still makes sense if read out as 'Some shorthand is used in this spreadsheet, e estimated, r revised'. 
+
+Deque (a company that helps businesses make their websites and mobile applications accessible) has published [research into how different screen reader software deals with symbols](https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/) when using their default settings. They list 17 characters considered 'safe' to use. These include £, %, & and /. But, as mentioned, some users may have changed their settings from the default so in general it is best to use letters or words instead of symbols wherever possible. 
+
+It is OK to use dashes and slashes in classifications and geography codes as these are needed for consistency.  
+
+We are aware that this advice goes against our previously published guidance["Using symbols in tables"](https://gss.civilservice.gov.uk/policy-store/symbols-in-tables-definitions-and-help/). We have developed a [draft update](https://github.com/best-practice-and-impact/using-symbols-in-tables-draft-update/blob/main/draft-one.md) to this guidance which we hope to publish soon. 
+
+### Classifications and geography codes 
+You may need to use classifications or [geography codes](https://www.ons.gov.uk/methodology/geography/geographicalproducts/namescodesandlookups/namesandcodeslistings/namesandcodesforadministrativegeography) in your tables.
+
+Some pointers:
+
+#### 1. Use the right codes
+Make sure you are using the correct, nationally recognised codes. If you need any help in this area the harmonisation leads in the [Best Practice and Impact team](https://gss.civilservice.gov.uk/about-us/support-for-the-gss/) can provide advice. This is important for usability and machine readability. 
+
+#### 2. Classifications, codes and accessibility 
+Classifications and geography codes are generally fine in terms of accessibility as they are usually strings of letters and numbers. When codes are not just strings of letters and numbers, you should still use them consistently. It is OK to use symbols such as dashes and slashes here as that is how the code is constructed.
+
+#### 3. Help users understand codes
+It is best practice to link to supporting information for any codes used, either as a note or on the cover sheet (more information on notes and cover sheets can be found in the [metadata worksheets](#metadata-worksheets) section). 
+
+You should also help users understand any changes in codes or classifications – for example, the [Geography Code History Database](https://www.ons.gov.uk/methodology/geography/geographicalproducts/namescodesandlookups/codehistorydatabasechd) helps users track changes in area codes.
+
+#### 4. Presenting codes in tables
+In terms of usability, machine readability and accessibility ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)), codes should be in separate cells to the description of the code and the data. For example, country code AD should be in a separate cell to the country name Andorra, and then there should be another cell for the data linked to this country. The row or column containing the codes must be labelled clearly. 
+
+> [Example of presenting country codes (ODS, 6.31KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-presenting-country-codes.ods)
+
+### Machine readability - differences in best practice for symbols, footnotes and codes
+If you are making a spreadsheet solely for machines to read you can use symbols but you must provide information on what those symbols mean via the metadata. More information on how to best supply metadata for machine readability can be found in the [Metadata worksheets](#metadata-worksheets) section. 
+
 ## Formatting and use of colour
 
 ### Written content
@@ -399,94 +487,6 @@ You should also check your specific departmental guidance on including images in
 On newer versions of Excel you may just need to right click and select 'Edit Alt Text'. 
 
 If an image is just decorative you should mark it as such by ticking the 'Decorative' checkbox (Excel 2013 does not let you do this but later versions do).
-
-## Symbols, footnotes and codes 
-### Short footnotes 
-It is best practise in terms of accessibility (and arguably, usability) to put as much information as possible at the point of need – for example when data is provisional or revised put the whole word in square brackets instead of using '[p]' or '[r]'. 
-
-If you do need to use letters as a shorthand because of visual clutter, make sure to present a key to what these letters mean above the table in a cell in column A. This ensures a user is made aware of the key before coming to the table. 
-
-You should not use superscript text or symbols as these can be difficult to for users with low vision to see. Furthermore, screen reader software does not differentiate superscript text from non-superscript text and often ignores symbols compeletly becuase it does not recognise them. Therefore symbols and superscript text could fail accessibility [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable) and accessibility [success criterion 1.1.1 non text content](https://www.w3.org/TR/WCAG21/#non-text-content). 
-
-We have a draft update to our guidance on [Using symbols in tables](https://github.com/best-practice-and-impact/using-symbols-in-tables-draft-update/blob/main/draft-one.md) which outlines harmonised shorthand to use in common situations, for exmaple using e for estimated, x for not available. Using this guidance will help to ensure consistent shorthand is used across government which is good for accessibility, usability and machine readability. 
-
-### Detailed footnotes
-When you need to signpost detailed footnotes it has been common practice to use superscript numbers and letters. However as superscript text is likely to fail more than one accessibility guideline we can no longer take this approach. If we simply put normal numbers or letters in this could make some text very confusing (for example: 'Number of people in employment1,2') which could lead us to fail accessibility [guideline 1 perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable). Therefore, when signposting to detailed footnotes we advise you to: 
-* write out the word 'note' in the cell, with the number of the note you need to refer to, and put it in square brackets (we advise square brackets for notes and rounded brackets for units to differentiate them in a consistent way), for example 'Number of people in employment [note 1]'
-* present a list of notes if a cell needs to refer to more than one note – for example, write '[note 1],[note 2],[note 3]' if a cell needs to refer to notes 1, 2 and 3. 
-* try to always put notes in table titles, column headings or row labels - putting them in specific cells may not fail accessibility but it does cause problems for machine readability and usability 
-* if a note is in a column heading, space the text so the note marker sits underneath the column header text and any information about units (you can do this by pressing 'Alt and Enter')
-* for each table that uses notes, mention that notes are used, in a cell in column A above the table and say where the note text can be found (more information about use of cells in column A can be found in the [Structure](#Structure) section) 
-* it is good practice to mention notes, where they can be found and how note markers are presented on the cover sheet -  for example: 'Some tables refer to notes. When notes are mentioned the note marker is presented in square brackets. The note text can be found in the notes table' - this tells users what to expect and helps programmers write code that matches what is in your tables (more information on cover sheets can be found in the [Metadata worksheets](#metadata-worksheets) section).  
-
-When displaying the content of detailed notes it is common practice for them to be placed underneath the table. However there are several issues with this: 
-1. It can take lots of scrolling to get to notes placed under very long tables, particularly for some disabled users - this is bad practice for usability and accessibility. 
-2. Notes placed under tables may be missed by some disabled users who are not expecting them to be there. It is possible to combat this by mentioning that notes sit underneath the table, in a cell in column A above the table (more information about use of cells in column A can be found in the [Structure](#Structure) section).
-3. Notes placed underneath a table need careful (and mostly manual) formatting to be made accessible (see the section on [Structure](#Structure) and [Metadata worksheets](#metadata-worksheets) for more information on how written content should be formatted). Without this formatting you may fail accessibility [guideline 2.4 navigable](https://www.w3.org/TR/WCAG21/#navigable).
-4. Long detailed notes may result in a need for horizontal scrolling which is bad practice for usability and accessibility. This may happen because the note will need to be displayed in one cell - you should not use merged cells to present long notes as merged cells fail accessibility guidelines (see the section on [Tables](#tables)).
-5. In complex spreadsheets, identical notes are often placed under several tables across many worksheets - this can mean, when certain notes are updated or changed, some are accidentally missed out.
-
-For these reasons we advise you to create a worksheet called 'Notes' which contains a table that lists all the detailed notes for the spreadsheet. 
-Notes placed underneath a table will not necessarily fail the accessibility guidelines but they will need careful consideration and, depending on the size of the table and how they are laid out, they may be considered bad practice. 
-
-> [Example of presenting a key for shorthand and notes (ODS, 4.4KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/04/Example-table-with-notes-and-a-key.ods)
-> See the labour market [example spreadsheet](#example-spreadsheet) also. 
-
-### Footnotes for specific cells 
-Sometimes it is not possible to put a note marker in a title, column heading or row label because it refers to a specific cell. When this is the case we have previously advised to put the marker in separate (very narrow) columns, next to the data. 
-
-However, we no longer advise this approach. Firstly because in terms of accessibility all these columns would need headers and all the blank cells would need to be marked up. This would make the table very wide and difficult to read.
-
-Secondly because in terms of machine readability taking this approach often means note columns get added in and taken out fairly often. This means the size and layout of tables changes quite a lot which is no good for programmers or Reproducible Analytical Pipelines. 
-
-In terms of accessibility we now advise that you add a notes column to the table, on the right. You should describe which cell or cells the note applies to but remember all text should be in square brackets, for example: '[note 1] [This note applies to B10, C10 and D10]'.  
-
-Communicating the note in this way means you can use colour to emphasise the cell or cells that the note applies to. This is OK in this instance because while the rules about colour state it cannot be used as the only way to communicate a message, it can be used for extra emphasis. However, you still need to check the colour contrast of the text against the background colour meets the AA level in the accessibility guidelines. More information on checking colour contrast can be found in the [Formatting and use of colour](#Formatting-and-use-of-colour) section.  
-
-> [Example of using a notes column to refer to specific cells with colour used as emphasis.](https://gss.civilservice.gov.uk/wp-content/uploads/2021/05/Example-of-a-table-with-a-notes-column-and-colour-emphasis.ods)
-
-### Footnotes and machine readability 
-If optimising data to be solely read by machines, you should be supplying it as a [CSVW (CSV on the web)](https://www.w3.org/TR/tabular-data-primer/) or through an Application Programming Interface (API). Notes are supplied differently when you supply data in these forms. More information on this can be found in the [Metadata worksheets](#metadata-worksheets) section. 
-
-### Use of symbols 
-You should not use symbols to signpost footnotes because: 
-* they can be confusing
-* screen readers may not recognise them 
-* users with low vision may not be able to see them
-
-Therefore, if you use symbols to signify notes it may lead to a fail of a number of accessibility guidelines and success criterion, including [guideline 1 perceivable](https://www.w3.org/TR/WCAG21/#perceivable), [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable), [success criterion 1.1.1 non text content](https://www.w3.org/TR/WCAG21/#non-text-content) and [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
- 
-However, use of symbols is not always a fail of the accessibility guidelines in all circumstances. You just need to be aware that some screen reader software will not recognise symbols and some screen reader users may have changed their settings to ignore symbols to avoid auditory clutter. This means you should consider how your text reads if you miss out the symbols. For example the sentence 'Some shorthand is used in this spreadsheet, e = estimated, r = revised' still makes sense if read out as 'Some shorthand is used in this spreadsheet, e estimated, r revised'. 
-
-Deque (a company that helps businesses make their websites and mobile applications accessible) has published [research into how different screen reader software deals with symbols](https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/) when using their default settings. They list 17 characters considered 'safe' to use. These include £, %, & and /. But, as mentioned, some users may have changed their settings from the default so in general it is best to use letters or words instead of symbols wherever possible. 
-
-It is OK to use dashes and slashes in classifications and geography codes as these are needed for consistency.  
-
-We are aware that this advice goes against our previously published guidance["Using symbols in tables"](https://gss.civilservice.gov.uk/policy-store/symbols-in-tables-definitions-and-help/). We have developed a [draft update](https://github.com/best-practice-and-impact/using-symbols-in-tables-draft-update/blob/main/draft-one.md) to this guidance which we hope to publish soon. 
-
-### Classifications and geography codes 
-You may need to use classifications or [geography codes](https://www.ons.gov.uk/methodology/geography/geographicalproducts/namescodesandlookups/namesandcodeslistings/namesandcodesforadministrativegeography) in your tables.
-
-Some pointers:
-
-#### 1. Use the right codes
-Make sure you are using the correct, nationally recognised codes. If you need any help in this area the harmonisation leads in the [Best Practice and Impact team](https://gss.civilservice.gov.uk/about-us/support-for-the-gss/) can provide advice. This is important for usability and machine readability. 
-
-#### 2. Classifications, codes and accessibility 
-Classifications and geography codes are generally fine in terms of accessibility as they are usually strings of letters and numbers. When codes are not just strings of letters and numbers, you should still use them consistently. It is OK to use symbols such as dashes and slashes here as that is how the code is constructed.
-
-#### 3. Help users understand codes
-It is best practice to link to supporting information for any codes used, either as a note or on the cover sheet (more information on notes and cover sheets can be found in the [metadata worksheets](#metadata-worksheets) section). 
-
-You should also help users understand any changes in codes or classifications – for example, the [Geography Code History Database](https://www.ons.gov.uk/methodology/geography/geographicalproducts/namescodesandlookups/codehistorydatabasechd) helps users track changes in area codes.
-
-#### 4. Presenting codes in tables
-In terms of usability, machine readability and accessibility ([success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships)), codes should be in separate cells to the description of the code and the data. For example, country code AD should be in a separate cell to the country name Andorra, and then there should be another cell for the data linked to this country. The row or column containing the codes must be labelled clearly. 
-
-> [Example of presenting country codes (ODS, 6.31KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/03/Example-presenting-country-codes.ods)
-
-### Machine readability - differences in best practice for symbols, footnotes and codes
-If you are making a spreadsheet solely for machines to read you can use symbols but you must provide information on what those symbols mean via the metadata. More information on how to best supply metadata for machine readability can be found in the [Metadata worksheets](#metadata-worksheets) section. 
 
 ## Structure
 Properly structuring your content is important to meet accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
