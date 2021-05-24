@@ -297,7 +297,7 @@ We have a draft update to our guidance on [Using symbols in tables](https://gith
 ### Detailed footnotes
 When you need to signpost detailed footnotes it has been common practice to use superscript numbers and letters. However as superscript text is likely to fail more than one accessibility guideline we can no longer take this approach. If we simply put normal numbers or letters in this could make some text very confusing (for example: 'Number of people in employment1,2') which could lead us to fail accessibility [guideline 1 perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 3.1 readable](https://www.w3.org/TR/WCAG21/#readable). Therefore, when signposting to detailed footnotes we advise you to: 
 * write out the word 'note' in the cell, with the number of the note you need to refer to, and put it in square brackets (we advise square brackets for notes and rounded brackets for units to differentiate them in a consistent way), for example 'Number of people in employment [note 1]'
-* present a list of notes if a cell needs to refer to more than one note – for example, write '[note 1],[note 2],[note 3]' if a cell needs to refer to notes 1, 2 and 3. 
+* present a list of notes if a cell needs to refer to more than one note – for example, write '[note 1][note 2][note 3]' if a cell needs to refer to notes 1, 2 and 3. 
 * try to always put notes in table titles, column headings or row labels - putting them in specific cells may not fail accessibility but it does cause problems for machine readability and usability 
 * if a note is in a column heading, space the text so the note marker sits underneath the column header text and any information about units (you can do this by pressing 'Alt and Enter')
 * for each table that uses notes, mention that notes are used, in a cell in column A above the table and say where the note text can be found (more information about use of cells in column A can be found in the [Structure](#Structure) section) 
@@ -319,7 +319,7 @@ Notes placed underneath a table will not necessarily fail the accessibility guid
 ### Footnotes for specific cells 
 Sometimes it is not possible to put a note marker in a title, column heading or row label because it refers to a specific cell. When this is the case we have previously advised to put the marker in separate (very narrow) columns, next to the data. 
 
-However, we no longer advise this approach. Firstly because in terms of accessibility all these columns would need headers and all the blank cells would need to be marked up. This would make the table very wide and difficult to read.
+However, we no longer advise this approach. Firstly because in terms of accessibility all these columns would need headers and all the blank cells might need to be marked up. This would make the table very wide and difficult to read.
 
 Secondly because in terms of machine readability taking this approach often means note columns get added in and taken out fairly often. This means the size and layout of tables changes quite a lot which is no good for programmers or Reproducible Analytical Pipelines. 
 
