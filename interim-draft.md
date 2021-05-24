@@ -260,7 +260,12 @@ However, if the following points are met, blank cells should not cause usability
 
 See worksheet 4 on the [example spreadsheet](#Example-of-an-accessible-spreadsheet) for an illustration of this.  
  
-If there are several reasons a cell in a table may be left blank you will need to use shorthand to explain why a particular has no data. Do not use symbols like full stops (..) or dashes (-). Follow the harmonised guidance for [Using symbols in tables](https://gss.civilservice.gov.uk/policy-store/symbols-in-tables-definitions-and-help/). Using this guidance ensures cells with no data are marked up in a consistent way across government statistics and analysis. Remember we advise the use of square brackets for all descriptions, shorthand or note markers because it makes them easier to spot. We also advise it because we advise round brackets for descriptions of units - consistency in the type of brackets used is important. 
+#### More than one reason for a blank cell
+If there are several reasons a cell in a table may be left blank you will need to use shorthand to explain why a particular cell has no data. 
+
+Do not use symbols like full stops (..) or dashes (-). Instead, you should follow the harmonised guidance for [Using symbols in tables](https://gss.civilservice.gov.uk/policy-store/symbols-in-tables-definitions-and-help/). Using this guidance ensures cells with no data are marked up in a consistent way across government statistics and analysis. 
+
+Also remember we advise the use of square brackets for all descriptions, shorthand or note markers because it makes them easier to spot. We also advise it because we advise round brackets for descriptions of units - consistency in the type of brackets used is important. 
 
 When using shorthand you should mention it is used and explain what it means, in a cell in column A, above the table. If you wish to expand further on why some cells have no data you can say the full explanation is available on the cover sheet or in the notes table (more information on the cover sheet and notes table can be found in the [Structure](#Structure) and [Metadata worksheets](#Metadata-worksheets) sections). 
 
