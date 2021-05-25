@@ -589,7 +589,7 @@ If you want to modify the default headings settings you must:
 Note: these instructions may differ for different versions of Excel
 
 ## Metadata worksheets
-It is best practice for spreadsheets intended for people to open, read and analyse, to include worksheets with information about the data (metadata).
+When creating spreadsheets intended for people to open, read and analyse (as opposed to ones made for machines to read), you should include worksheets with information about the data (this is called, 'metadata').
 
 ### Cover sheet
 
@@ -715,7 +715,7 @@ If you have to include formulas or code, ensure they are hard coded to avoid acc
 ## Accessibility checker
 Newer versions of Excel have a built-in accessibility checker. You can use this to see what issues it flags up. But remember it is a bit like using a spelling and grammar check. It is likely to miss some things and it may bring up things that are not relevant.  
 
-For example, the checker will flag up tables that do not have alt text. As long as your tables are marked up and named correctly you do not need to add this in. In any case, it will be removed if you save your spreadsheet in an Open Document Spreadsheet (ODS) format (which we recommend you do if the website you publish on supports this file type). 
+For example, the checker may flag up tables that do not have alt text. As long as your tables are marked up and named correctly you do not need to add this in. In any case, it will be removed if you save your spreadsheet in an Open Document Spreadsheet (ODS) format (which we recommend you do if the website you publish on supports this file type). 
 
 To run the accessibility checker, go to the 'Review' ribbon and select 'Check Accessibility'.
 
