@@ -8,6 +8,12 @@ This guidance is an update to the ['Releasing statistics in spreadsheets' guidan
 
 If you have any questions or feedback, please email [gsshelp@statistics.gov.uk](mailto:gsshelp@statistics.gov.uk).  
 
+## Checklists
+We have created some checklists for making spreadsheets accessible and optimised for machine readability. These should be used alongside this guidance.  
+
+* [Making spreadsheets accessible: a brief checklist of the basics](https://github.com/best-practice-and-impact/spreadsheet-accessibility/blob/main/accessibility-checklist.md)
+* Making spreadsheets optimised for machine readability checklist is coming soon! 
+
 ## Contents 
 
 * [Accessibility, usability and machine readability](#Accessibility-usability-and-machine-readability)
