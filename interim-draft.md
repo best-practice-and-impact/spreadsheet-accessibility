@@ -162,6 +162,8 @@ Every table in your spreadsheet must have a correctly tagged header row, as desc
 
 Bear in mind that Excel can only tag one row as the header row. It is not necessarily a fail of the accessibility guidelines if you have subheading rows but as they cannot be tagged as headers it may make the table confusing - so whenever possible, it is best avoided. 
 
+Also, be aware that all columns must have text in the header row or Excel will give it a default name when you mark-up the table. Also, header names must be unique – a table can’t have two columns with the same text in the header row. 
+
 Sticking to one header row is also good for machine readability as some programming languages cannot interpret subheading rows.  
 
 You can put information about units or notes in the column heading cell (more information on how to do this in the 'Units' section).
