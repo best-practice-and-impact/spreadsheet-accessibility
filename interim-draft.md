@@ -331,7 +331,7 @@ However, we no longer advise this approach. Firstly because in terms of accessib
 
 Secondly because in terms of machine readability taking this approach often means note columns get added in and taken out fairly often. This means the size and layout of tables changes quite a lot which is no good for programmers or Reproducible Analytical Pipelines. 
 
-In terms of accessibility we now advise that you add a notes column to the table, on the right. You should describe which cell or cells the note applies to but remember all text should be in square brackets, for example: '[note 1] [This note applies to B10, C10 and D10]'.  
+In terms of accessibility we now advise that you add a notes column to the table, on the right. You should describe which cell or cells the note applies to, for example: '[note 1] This note applies to B10, C10 and D10'.  
 
 Communicating the note in this way means you can use colour to emphasise the cell or cells that the note applies to. This is OK in this instance because while the rules about colour state it cannot be used as the only way to communicate a message, it can be used for extra emphasis. However, you still need to check the colour contrast of the text against the background colour meets the AA level in the accessibility guidelines. More information on checking colour contrast can be found in the [Formatting and use of colour](#Formatting-and-use-of-colour) section.  
 
