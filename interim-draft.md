@@ -151,7 +151,9 @@ Restructure your tables so there are no split cells or merged cells or nested ta
 Merged cells, split cells and nested tables make table structure hard to understand for assistive technology like screen reader software. Removing these elements is key to meeting accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships). 
 
 ### Blank rows and columns within tables
-Remove all blank rows and blank columns within tables. These may be perceived as the edge of the data area rather than a divider. Removing them is key to meeting accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics). 
+Remove all blank rows and blank columns within tables. These may be perceived as the edge of the data area rather than a divider and so they could lead you to fail [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).  
+
+If your table is marked up correctly, blank rows and columns may not be as much of an issue, but they can still be confusing so it is best practice to remove them.
 
 If blank rows and columns are used to create space you can do this by adjusting column width and row height instead. 
 
@@ -204,7 +206,7 @@ When rounding you should ensure all figures in a category are rounded to the sam
 ### Grouping
 Objects grouped together are assumed to be associated. When used appropriately grouping may help users understand the data better.
 
-White space can be used to separate the data into groups. You can do this by adjusting column width and row height. Do not use blank rows or columns as this may fail accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).  
+White space can be used to separate the data into groups. You can do this by adjusting column width and row height. Do not use blank rows or columns as this may fail accessibility [success criterion 1.3.1 info and relationships](https://www.w3.org/TR/WCAG21/#info-and-relationships).
 
 > [Example of using white space to split data into groups (ODS, 5KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/02/Labour-market-rates-by-UK-region-Aug-to-Oct-2019.ods) 
 
@@ -418,7 +420,7 @@ This means:
 * if your data needs specific dates for example: 01/02/10 you can present them like this but be aware screen readers will read this as '01 slash 02 slash 10' which can be annoying and cause auditory clutter, so it is best practice to write '1 Feb 2010'
 
 ### Other pointers for formatting that must be followed to meet the accessibility guidelines: 
-* No visual devices such as colour, shading or patterns should be used to divide up data regions ([success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).
+* No visual devices such as colour, shading or patterns should be used to divide up data regions - these devices may fail [success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) and [success criterion 1.3.3 sensory characteristics](https://www.w3.org/TR/WCAG21/#sensory-characteristics).
 * No text is set in a vertical or diagonal direction - this is not mentioned specifically in the accessibility guidelines but it may be considered necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable) and [guideline 4. distinguishable](https://www.w3.org/TR/WCAG21/#distinguishable).
 * No text has spaces between letters in a word for visual effect as this can be difficult to read and screen readers will read the letters out one by one - this is not mentioned specifically in the accessibility guidelines but it may be considered necessary to pass [guideline 1. perceivable](https://www.w3.org/TR/WCAG21/#perceivable).
 * Colour is never used as the only way to communicate a message - this fails accessibility [success criterion 1.4.1 Use of colour](https://www.w3.org/TR/WCAG21/#use-of-color) and complicates machine readability.
