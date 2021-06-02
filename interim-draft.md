@@ -442,7 +442,8 @@ This means:
 * Avoid changing the colour of text to draw attention to it - if you do this you must check the colour contrast of the text against the background colour (more information on how to do this can be found in the 'Checking text colour contrast' sub-section). 
 * Use the 'default' or 'automatic' colour settings for all text - doing this will ensure the spreadsheet takes on the specialised colour settings users of assistive technology may have set up on their software
 * Do not add a background fill - some users will have settings that automatically change the colour of the background to make the content easier for them to read, but this does not happen if you have added a fill colour – even if it is white. 
-* Avoid adding grid lines or cell borders - in general it is better to keep things simple.
+* If you want to give the impression of a plain white background you can turn Excel's automatic grey gridlines off in the 'View' ribbon. 
+* Avoid adding bold grid lines or cell borders - in general it is better to keep things simple.
 * Avoid including images of charts in your spreadsheet, if you do you must carefully consider their accessibility, particularly the colour contrast between chart elements (more information on how to do this can be found in the 'Checking colour contrast in charts' sub-section). 
 * Left align all text in cells outside the table and all row labels within the table.
 * Right align all data within a table and all column headings (except the column of row labels). 
