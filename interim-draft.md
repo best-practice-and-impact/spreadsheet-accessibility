@@ -852,7 +852,7 @@ In terms of accessibility there is not a specific success criterion for file nam
 * Guidance shared with me by the Northern Ireland Statistics and Research Agency (Nisra)
 * [Feedback from the Digital Accessibility Centre (DAC)](https://digitalaccessibilitycentre.org/)
 
-## Releated links 
+## Related links 
 
 * [Government Digital Service guidance on creating and sharing spreadsheets](https://www.gov.uk/guidance/creating-and-sharing-spreadsheets)
 * [Government Digital Service guidance on using the CSV file format](https://www.gov.uk/guidance/using-csv-file-format)
