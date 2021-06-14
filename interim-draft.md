@@ -856,6 +856,6 @@ In terms of accessibility there is not a specific success criterion for file nam
 
 * [Government Digital Service guidance on creating and sharing spreadsheets](https://www.gov.uk/guidance/creating-and-sharing-spreadsheets)
 * [Government Digital Service guidance on using the CSV file format](https://www.gov.uk/guidance/using-csv-file-format)
-
+* Our [guidance on making analytical publications accessible](https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/)
 
 
