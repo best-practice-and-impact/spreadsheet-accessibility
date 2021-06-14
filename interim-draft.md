@@ -1,7 +1,7 @@
 # Releasing statistics in spreadsheets (draft version of update)
 
 ## Who is this guidance for and what is its aim? 
-This guidance has been created for producers of official statistics who need to publish data tables in spreadsheet documents. Its aim is to help improve the usability, accessibility and machine readability of spreadsheets. 
+This guidance has been created for producers of statistics who need to publish data tables in spreadsheet documents. Its aim is to help improve the usability, accessibility and machine readability of spreadsheets. The Government Digital Service have published [guidance on using spreadsheets more generally](https://www.gov.uk/guidance/creating-and-sharing-spreadsheets).  
 
 ## Draft status 
 This guidance is an update to the ['Releasing statistics in spreadsheets' guidance](https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/) on the [Government Statistical Service (GSS) website](https://gss.civilservice.gov.uk/). It is still under review. We are publishing a draft version to give civil servants early information on what they need to implement and to gather feedback. We continue to carry out research and testing. Once this is complete, the guidance will be updated on the GSS website.  
@@ -32,6 +32,8 @@ We have created some checklists for making spreadsheets accessible and optimised
 * [Macros, formulas and application code](#Macros-formulas-and-application-code)
 * [Accessibility checker](#Accessibility-checker)
 * [Saving and publishing spreadsheets](#Saving-and-publishing-spreadsheets)
+* [Sources for this guidance](#sources-for-this-guidance)
+* [Related links](#related-links)
 
 ## Accessibility, usability and machine readability 
 
@@ -850,6 +852,10 @@ In terms of accessibility there is not a specific success criterion for file nam
 * Guidance shared with me by the Northern Ireland Statistics and Research Agency (Nisra)
 * [Feedback from the Digital Accessibility Centre (DAC)](https://digitalaccessibilitycentre.org/)
 
+## Releated links 
+
+* [Government Digital Service guidance on creating and sharing spreadsheets](https://www.gov.uk/guidance/creating-and-sharing-spreadsheets)
+* [Government Digital Service guidance on using the CSV file format](https://www.gov.uk/guidance/using-csv-file-format)
 
 
 
