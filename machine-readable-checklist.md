@@ -51,40 +51,49 @@ Instead you should do this:
 | 03/01/1900 | 83   | United Kingdom | Scotland | Aberdeenshire |
 
 
-6.	Don’t use the indentation tool on Excel to indicate subsections or hierarchies 
-For example, don’t use the indent tool to indent a list of regions under a row for ‘England’. 
-Why again?
-7.	Leave cells with no data blank
+### 6.	Don’t use the indentation tool
+Excel has an indentation tool that sometimes gets used to indicate subsections or hierarchies. This is not good for machine readability. For example, don’t use the indent tool to indent a list of regions under a row for ‘England’. 
+
+### 7.	Leave cells with no data blank
 When a cell has no data, it is best practice for machine readability to leave that cell blank and provide information about why it is blank in a metadata file. 
-8.	Don’t use colour or other formatting as the only way to communicate a message 
-It is not obvious when colour or other formatting has been used so it is difficult to write into a program. 
-9.	Note markers should be in separate cells to data  
-If a specific piece of data needs a note attached to it, it is OK for machine readability to put it in a row label or column heading (in square brackets). Or, if this is not appropriate you can add a notes column to your table on the right and put notes or note markers in there.   
-Each note marker and use of shorthand should be in separate square brackets. For example if you need to refer to note 1 and note 2 and say that a cell contains revised data you should write: [note 1][note 2][r]. 
-Example of spreadsheet with notes column. (with Alex)
-If you are optimising a spreadsheet for machine readability the best thing to do is not use any note markers, shorthand or text in the data cells of your tables.  Instead you should put notes in the metadata file accompanying your spreadsheet and specify which notes apply to which cells. 
-10.	Ensure no cells with text have ‘hidden’ spaces at the start or end
 
-11.	Check there are no spaces at the start or end of worksheet names
+### 8.	Don’t use colour or other formatting as the only way to communicate a message 
+It is not obvious when colour or other formatting has been used so it is difficult for programmers to write it into a program. 
 
-12.	Keep worksheet names as consistent as you can between releases
+### 9.	Notes should be in a metadata file 
+If you are optimising a spreadsheet for machine readability the best thing to do is not use any note markers, shorthand or text in the data cells of your tables. Instead you should put notes in the metadata file accompanying your spreadsheet and specify which notes apply to which cells. 
 
-13.	Use the right codes 
-If your data has codes make sure you are using the correct codes, for example the correct geography codes. Also make sure they are formatted correctly with no extra spaces at the start or end or spaces where there shouldn’t be spaces.  
-14.	Put codes in separate cells 
+### 10.	Remove ‘hidden’ spaces at the start or end of cells with text in
+
+### 11.	Check there are no spaces at the start or end of worksheet names
+
+### 12.	Keep worksheet names as consistent as you can between releases
+
+### 13.	Use the right codes 
+If your data has codes make sure you are using the correct codes, for example the correct geography codes. Also make sure they are formatted correctly with no extra spaces at the start or end or spaces where there shouldn’t be spaces.
+
+### 14.	Put codes in separate cells 
 For example if using country code AD, this should be in a separate cell to the country name Andorra, and then there should be another cell for the data linked to this country.
+
 Example of presenting country codes (ODS, 6.31KB). 
-15.	Use symbols if you need to but explain what they mean in the metadata
-If you are making a spreadsheet solely for machines to read you can use symbols but you must provide information on what those symbols mean via the metadata. 
-Again, symbols and shorthand such as r for revised can be used a note marker or a way to convey information like missing or unavailable but don’t put them in a column with data. You can use them in text cells like the title, column heading or row label (unless the labels are numeric). Or you can put them in a notes column as mentioned. 
-For example a column that reads  ‘7, 7, 6, *’ is not good practice. This goes back to the point about not mixing data types in a column. 
-16.	Be consistent when naming spreadsheets, worksheets and titles of tables 
+
+### 15.	Use symbols if you need to but explain what they mean in the metadata
+If you are making a spreadsheet solely for machines to read you can use shorthand and symbols but you must provide information on what those symbols mean via an accopampanying metadata file. 
+
+These symbols and shorthand should not be in a column with data. You can use them in text cells like the title, column heading or row label (unless the labels are numeric).
+
+For example a column that reads  '7, 7, 6, x' is not good practice. This goes back to the point about mixing data types. 
+
+### 16.	Be consistent when naming spreadsheets, worksheets and titles of tables 
 If names keep changing, programs will keep needing to be updated which makes things difficult. If you have to change something then make sure you warn users in advance and publish a change log so users understand what has changed and when. 
-17.	Each worksheet should only have one table
+
+### 17.	Each worksheet should only have one table
 Multiple tables on a worksheet cause problems for programmers as it is difficult to code where one table ends and another one begins. 
-18.	Do not use macros
+
+### 18.	Do not use macros
 Macros change spreadsheets and their behaviour is difficult to predict for programmers. 
-19.	Publish your data in CSV format 
+
+### 19.	Publish your data in CSV format 
 The CSV format is easy for machines to read. However, it only allows one worksheet per file. If you are supplying many worksheets you can provide them in a zip file. This zip file will contain one CSV file per table and a metadata JSON file.   
 We are looking at providing more guidance around how to publish spreadsheets optimised for machine readability. Please let us know if this is something you need: gsshelp@statistics.gov.uk. 
 
