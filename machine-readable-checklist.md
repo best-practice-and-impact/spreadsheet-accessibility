@@ -55,7 +55,7 @@ Instead you should do this:
 Excel has an indentation tool that sometimes gets used to indicate subsections or hierarchies. This is not good for machine readability. For example, don’t use the indent tool to indent a list of regions under a row for ‘England’. 
 
 ### 7.	Leave cells with no data blank
-When a cell has no data, it is best practice for machine readability to leave that cell blank and provide information about why it is blank in a metadata file. 
+When a cell has no data, it is best practice for machine readability to leave that cell blank and provide information about why it is blank in the accompanying metadata file. 
 
 ### 8.	Don’t use colour or other formatting as the only way to communicate a message 
 It is not obvious when colour or other formatting has been used so it is difficult for programmers to write it into a program. 
@@ -75,14 +75,16 @@ If your data has codes make sure you are using the correct codes, for example th
 ### 14.	Put codes in separate cells 
 For example if using country code AD, this should be in a separate cell to the country name Andorra, and then there should be another cell for the data linked to this country.
 
-Example of presenting country codes (ODS, 6.31KB). 
+| Country name | Country code | Data |
+|--------------|--------------|------|
+| Andorra      | AD           | 120  |
 
 ### 15.	Use symbols if you need to but explain what they mean in the metadata
 If you are making a spreadsheet solely for machines to read you can use shorthand and symbols but you must provide information on what those symbols mean via an accopampanying metadata file. 
 
 These symbols and shorthand should not be in a column with data. You can use them in text cells like the title, column heading or row label (unless the labels are numeric).
 
-For example a column that reads  '7, 7, 6, x' is not good practice. This goes back to the point about mixing data types. 
+For example a column that reads  '7, 7, 6, x' is not good practice. This goes back to the point 5 about mixing data types. 
 
 ### 16.	Be consistent when naming spreadsheets, worksheets and titles of tables 
 If names keep changing, programs will keep needing to be updated which makes things difficult. If you have to change something then make sure you warn users in advance and publish a change log so users understand what has changed and when. 
@@ -94,6 +96,8 @@ Multiple tables on a worksheet cause problems for programmers as it is difficult
 Macros change spreadsheets and their behaviour is difficult to predict for programmers. 
 
 ### 19.	Publish your data in CSV format 
-The CSV format is easy for machines to read. However, it only allows one worksheet per file. If you are supplying many worksheets you can provide them in a zip file. This zip file will contain one CSV file per table and a metadata JSON file.   
-We are looking at providing more guidance around how to publish spreadsheets optimised for machine readability. Please let us know if this is something you need: gsshelp@statistics.gov.uk. 
+The CSV format is easy for machines to read. However, it only allows one worksheet per file. If you are supplying many worksheets you can provide them in a zip file. This zip file should contain one CSV file per table and a metadata JSON file.   
+
+## Do you need more? 
+We are looking at providing more guidance around how to release data in way that is optimised for machine readability. Please let us know if this is something you need vy emailing [gsshelp@statistics.gov.uk](mailto:gsshelp@statistics.gov.uk). 
 
