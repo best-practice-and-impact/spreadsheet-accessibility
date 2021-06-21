@@ -12,12 +12,13 @@ If you have any questions or feedback, please email [gsshelp@statistics.gov.uk](
 We have created some checklists for making spreadsheets accessible and optimised for machine readability. These should be used alongside this guidance.  
 
 * [Making spreadsheets accessible: a brief checklist of the basics](https://github.com/best-practice-and-impact/spreadsheet-accessibility/blob/main/accessibility-checklist.md)
-* Making spreadsheets optimised for machine readability checklist is coming soon! 
+* Making spreadsheets optimised for machine readability checklist (coming soon) 
 
 ## Contents 
 
 * [Accessibility, usability and machine readability](#Accessibility-usability-and-machine-readability)
 * [Example of an accessible spreadsheet](#Example-of-an-accessible-spreadsheet)
+* [Demonstration of how to make a spreadsheet accessible](#Demonstration-of-how-to-make-a-spreadsheet-accessible)
 * [Engage with users before making changes](#Engage-with-users-before-making-changes)
 * [Tables](#Tables)
 * [Cells with no data](#Cells-with-no-data)
@@ -63,6 +64,10 @@ We have applied our accessibility guidance to the summary of labour market stati
 > “When using the spreadsheet with [screen reader software] JAWS and NVDA I found it to be a pleasant experience. In the past I have found spreadsheets to be extremely confusing, disorientating and stressful. In part this stress came from having to make the document partially accessible for my own needs. If all spreadsheets were created with as much care and attention to detail, I may not be as reluctant to work with them as I am today."
 
 The [ONS labour market summary datasets webpage](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics/current) has a link to the summary of labour market statistics spreadsheet as it was published by ONS in December 2020. 
+
+## Demonstration of how to make a spreadsheet accessible
+
+A [demonstration of how to apply this guidance to make a spreadsheet accessible](https://www.youtube.com/watch?v=RlihILhpXoE) is available on the Government Analysis Function YouTube channel. 
 
 ## Engage with users before making changes
 Before making any big changes to your spreadsheets you should consult with your users, to warn them of any changes and to find out more about their needs. 
