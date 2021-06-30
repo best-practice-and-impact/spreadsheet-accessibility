@@ -291,7 +291,7 @@ More information on the use of symbols can be found in the [Symbols, footnotes a
 > [Example of cells with no data marked up with shorthand (ODS, 3.96KB)](https://gss.civilservice.gov.uk/wp-content/uploads/2021/05/Example-table-with-shorthand-for-empty-cells.ods)
 
 ### No to NA
-Note that in our draft update to 'Using symbols in tables' we do not advise using 'NA' to describe cells with no data. While in statistics this often means Not Available, many users will assume it means Not Applicable. 
+We do not advise using 'NA' to describe cells with no data. This shorthand is ambiguous, some may read it as Not Applicable, others may read it as Not Available.
 
 ### Give a heads up 
 If your spreadsheet contains cells with no data for many different reasons - for example some are empty becuase the data was missing, some because the variable was not applicable - it is good practice for accessibility and machine readability to outline the possible reasons for empty cells on the cover sheet. You can say something like 'Some tables in this spreadsheet have cells with no data. When this is the case the cells are marked up with shorthand: [x] for not available, [c] for confidential and [z] for not applicable'. This means users know what to expect and programmers are better able to write code that matches what is in your tables. 
