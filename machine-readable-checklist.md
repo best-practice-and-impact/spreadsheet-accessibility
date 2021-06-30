@@ -70,7 +70,7 @@ If you are optimising a spreadsheet for machine readability the best thing to do
 ### 12.	Keep worksheet names as consistent as you can between releases
 
 ### 13.	Use the right codes 
-If your data has codes make sure you are using the correct codes, for example the correct geography codes. If you need any help in this area the harmonisation leads in the [Best Practice and Impact team can provide advice](https://gss.civilservice.gov.uk/about-us/support-for-the-gss/). Also make sure they are formatted correctly with no extra spaces at the start or end or spaces where there shouldn’t be spaces.
+If your data has codes make sure you are using the correct codes, for example the correct geography codes. If you need any help in this area the harmonisation leads in the [Best Practice and Impact team](https://gss.civilservice.gov.uk/about-us/support-for-the-gss/) can provide advice. Also make sure they are formatted correctly with no extra spaces at the start or end or spaces where there shouldn’t be spaces.
 
 ### 14.	Put codes in separate cells 
 For example if using country code AD, this should be in a separate cell to the country name Andorra, and then there should be another cell for the data linked to this country.
